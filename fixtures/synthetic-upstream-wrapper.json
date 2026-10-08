@@ -1,0 +1,56 @@
+{
+  "format": "chatgpt-observed-1.0",
+  "revision": 1,
+  "rights": {
+    "rights": "owned",
+    "copyright": "Original synthetic content written for this project.",
+    "permission_note": "All text in this fixture was authored for synthetic adapter tests; not real a16z content."
+  },
+  "article": {
+    "schema_version": "1.0",
+    "id": "synthetic-upstream-example",
+    "source": "Original synthetic upstream example",
+    "title": "A small reading experiment",
+    "author": "Reader Studio",
+    "published_at": "2026-09-20",
+    "selected_at": "2026-09-21",
+    "url": "https://example.com/reader/upstream-demo",
+    "topics": [
+      "Learning"
+    ],
+    "selection_reason": "An original sample for adapter tests.",
+    "segments": [
+      {
+        "id": "s001",
+        "en": "A small experiment can make a reading habit easier to maintain.",
+        "zh": "一个小实验可以让阅读习惯更容易坚持。",
+        "type": "paraphrase"
+      }
+    ],
+    "analysis": {
+      "summary": "合成示例：小实验可以支持阅读习惯。",
+      "key_findings": [
+        "明确每次阅读的目标。"
+      ],
+      "limitations": "此文本为适配测试编写，不构成真实研究结论。"
+    },
+    "vocabulary": [
+      {
+        "term": "experiment",
+        "phonetic": "",
+        "part_of_speech": "noun",
+        "meaning_zh": "实验",
+        "example_en": "The experiment lasted one week.",
+        "example_zh": "实验持续了一周。"
+      },
+      {
+        "term": "momentum",
+        "part_of_speech": "noun",
+        "meaning_zh": "动力；势头",
+        "example_en": "A steady habit builds momentum.",
+        "example_zh": "稳定的习惯会积累动力。"
+      }
+    ],
+    "copyright_mode": "bilingual_paraphrase"
+  }
+}

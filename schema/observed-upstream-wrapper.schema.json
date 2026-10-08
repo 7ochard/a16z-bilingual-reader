@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "format": {
+      "type": "string",
+      "const": "chatgpt-observed-1.0"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    "rights": {
+      "type": "object",
+      "properties": {
+        "rights": {
+          "type": "string",
+          "enum": [
+            "owned",
+            "licensed",
+            "public_domain",
+            "permission_granted"
+          ]
+        },
+        "copyright": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "permission_note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "rights",
+        "copyright",
+        "permission_note"
+      ],
+      "additionalProperties": false
+    },
+    "title_zh": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "article": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "1.0"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]{0,119}$"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "published_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "selected_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "url": {
+          "type": "string",
+          "maxLength": 2000,
+          "format": "uri"
+        },
+        "topics": {
+          "minItems": 1,
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        },
+        "selection_reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "segments": {
+          "minItems": 1,
+          "maxItems": 1000,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]{0,119}$"
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 20000
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 20000
+              },
+              "type": {
+                "type": "string",
+                "const": "paraphrase"
+              }
+            },
+            "required": [
+              "id",
+              "en",
+              "zh",
+              "type"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "analysis": {
+          "type": "object",
+          "properties": {
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            "key_findings": {
+              "maxItems": 30,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 3000
+              }
+            },
+            "limitations": {
+              "type": "string",
+              "maxLength": 10000
+            }
+          },
+          "required": [
+            "summary",
+            "key_findings",
+            "limitations"
+          ],
+          "additionalProperties": false
+        },
+        "vocabulary": {
+          "maxItems": 2000,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "term": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "phonetic": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "part_of_speech": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "meaning_zh": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "example_en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 20000
+              },
+              "example_zh": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 20000
+              }
+            },
+            "required": [
+              "term",
+              "part_of_speech",
+              "meaning_zh",
+              "example_en",
+              "example_zh"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "copyright_mode": {
+          "type": "string",
+          "const": "bilingual_paraphrase"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "source",
+        "title",
+        "author",
+        "published_at",
+        "selected_at",
+        "url",
+        "topics",
+        "selection_reason",
+        "segments",
+        "analysis",
+        "vocabulary",
+        "copyright_mode"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "format",
+    "revision",
+    "rights",
+    "article"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,44 @@
+{
+  "name": "a16z-bilingual-reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "start": "node --import tsx server/index.ts",
+    "seed": "node --import tsx scripts/seed.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm test && npm run build",
+    "backup": "node --import tsx scripts/backup.ts",
+    "adapt": "node --import tsx scripts/adapt.ts",
+    "content:validate": "node --import tsx scripts/validate.ts",
+    "content:stage": "node --import tsx scripts/stage.ts",
+    "content:import": "node --import tsx scripts/import-archive.ts",
+    "content:query": "node --import tsx scripts/query.ts",
+    "schema:generate": "node --import tsx scripts/generate-schema.ts"
+  },
+  "dependencies": {
+    "express": "5.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "ts-fsrs": "5.4.2",
+    "zod": "4.1.5",
+    "tsx": "4.20.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/express": "5.0.3",
+    "@types/node": "24.3.1",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.2",
+    "typescript": "5.9.2",
+    "vite": "7.3.7"
+  }
+}
