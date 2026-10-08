@@ -60,3 +60,15 @@ These checks cover the MVP, not a complete security audit, accessibility certifi
 ## Build compatibility note
 
 In the tested Vite/Rollup/React toolchain, Rollup tree shaking entered a CPU-bound nonterminating analysis after modules parsed. `vite.config.ts` disables only tree shaking as an explicit MVP workaround. JSX processing, production minification, asset hashing and security checks remain enabled. This trades a somewhat larger bundle for a reproducible build. The measured release JS is 227.95 kB (71.88 kB gzip), CSS 41.75 kB (9.68 kB gzip), with a 735 ms build on the verification machine. Re-enable tree shaking only after a dependency upgrade passes both the build and browser regression suite.
+
+## Content-archive stabilization verification (2026-10-08 UTC)
+
+This change is limited to the import contract and stable GitHub content archive. The existing React/SQLite architecture, source-only export, FSRS, Node 24 runtime and Vite tree-shaking workaround are retained. Dependencies are unchanged.
+
+- Aggregate `npm run check`: TypeScript, 42/42 Node/API/archive/import tests and production build passed.
+- New coverage includes immutable per-date/per-ID revision pairs; same-day distinct IDs; canonical idempotency; explicit revision updates; publication-date corrections; whole-batch preflight; runtime rollback; maximum-length/case/punctuation-safe IDs; traversal/symlink/lock rejection; orphaned, missing and modified Markdown; oversized-output preflight; latest-revision SQLite import; date/deep-content queries; complete rich analysis/provenance/extension roundtrips; unsafe extension-key rejection; explicit vocabulary associations; summary-only declarations.
+- Independent read-only review additionally exercised 17 filesystem scenario groups and 8 rich-contract groups, including injected Markdown-write failure. Reported issues were fixed and rechecked.
+- Synthetic CLI validation, staging, safe acceptance, repeat acceptance, index import and date query are exercised without importing any real article or modifying private production learning data.
+- Current local browser verification is blocked before any browser test assertion: Playwright's Chromium build 1248 is not installed. A second attempt with the existing `/usr/bin/chromium` fails its process-singleton Unix socket (`Operation not permitted`). Eight cases are authored; zero flows were exercised for this change locally. The earlier 8/8 GitHub result above applies only to its listed prior commit. New-commit browser CI must be checked after authorized publication.
+
+The first formal daily article is still pending. Synthetic contract coverage is not proof that unseen future daily output matches the contract, nor a copyright review of any real article.

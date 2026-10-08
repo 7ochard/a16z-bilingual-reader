@@ -21,7 +21,8 @@
     "content:stage": "node --import tsx scripts/stage.ts",
     "content:import": "node --import tsx scripts/import-archive.ts",
     "content:query": "node --import tsx scripts/query.ts",
-    "schema:generate": "node --import tsx scripts/generate-schema.ts"
+    "schema:generate": "node --import tsx scripts/generate-schema.ts",
+    "content:archive": "node --import tsx scripts/archive.ts"
   },
   "dependencies": {
     "express": "5.1.0",

@@ -18,7 +18,7 @@ test("observed upstream 1.0 adapter preserves original fields and derives determ
   assert.deepEqual(a, b);
   assert.deepEqual(a.articles[0].upstream_snapshot, source.article);
   assert.equal(a.articles[0].segments[0].order, 0);
-  assert.equal(a.articles[0].vocabulary[0].segment_id, "s001");
+  assert.equal(a.articles[0].vocabulary[0].segment_id, null);
   assert.equal(a.articles[0].vocabulary[1].segment_id, null);
   assert.equal(a.articles[0].vocabulary[0].phonetic, undefined);
 });
@@ -86,7 +86,7 @@ test("adapter rejects unknown schemas, unsupported fulltext modes and missing ri
   }
 });
 
-test("AI is not inferred from maintain; full-width and punctuation-delimited words match safely", () => {
+test("only explicit links associate vocabulary; full-width and punctuation-delimited words match safely", () => {
   const source = example();
   source.article.vocabulary = [
     {
@@ -101,6 +101,8 @@ test("AI is not inferred from maintain; full-width and punctuation-delimited wor
     adaptUpstream(source).articles[0].vocabulary[0].segment_id,
     null,
   );
+  source.article.vocabulary[0].segment_id = "s001";
+  assert.throws(() => adaptUpstream(source), /must occur/);
   source.article.segments[0].en =
     "We consider ＡＩ, and a useful AI-based experiment.";
   assert.equal(
@@ -127,17 +129,18 @@ test("AI is not inferred from maintain; full-width and punctuation-delimited wor
 });
 test("committed JSON Schemas stay in sync with structural Zod input validators", async () => {
   const { z } = await import("zod");
-  const { batchSchema, upstreamImportSchema } = await import(
+  const { batchSchema, upstreamImportSchema, upstreamSchema } = await import(
     "../server/schema.js"
   );
   for (const [name, schema] of [
     ["reader-import", batchSchema],
     ["observed-upstream-wrapper", upstreamImportSchema],
+    ["chatgpt-article", upstreamSchema],
   ] as const) {
-    assert.deepEqual(
+    for (const suffix of ["", ".v1.0"]) assert.deepEqual(
       JSON.parse(
         readFileSync(
-          new URL(`../schema/${name}.schema.json`, import.meta.url),
+          new URL(`../schema/${name}${suffix}.schema.json`, import.meta.url),
           "utf8",
         ),
       ),

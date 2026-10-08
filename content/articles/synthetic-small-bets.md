@@ -4,7 +4,11 @@
 
 Reader Studio · Synthetic example · 2026-09-28
 
-Source: https://example.com/reader/small-experiments
+Article ID: synthetic-small-bets · Revision: 1
+
+Source: Reader Studio · Original sample
+
+Original URL: https://example.com/reader/small-experiments
 
 Rights: owned
 
@@ -14,29 +18,29 @@ Written specifically for this open-source demo. Not an a16z article; no real sou
 
 Topics: Company building, Product
 
-> A fictional product team explores why a small, reversible experiment can teach more than a perfect plan.
+Selection / summary: A fictional product team explores why a small, reversible experiment can teach more than a perfect plan.
 
 ## Bilingual reading
 
-### opening
+### opening (paragraph, order 0)
 
 A small team does not need a perfect forecast to make progress. It needs a clear question, a modest experiment, and the patience to learn from an unexpected result. The first step is often smaller than the ambition behind it.
 
 小团队不需要完美的预测才能取得进展。它需要一个清晰的问题、一次规模适中的实验，以及从意外结果中学习的耐心。第一步往往比背后的雄心小得多。
 
-### signal
+### signal (paragraph, order 1)
 
 Imagine a fictional company building a tool for neighborhood libraries. Instead of launching twenty features, the team tests one simple way to reserve a book. A useful signal is whether readers return the following week, not how loudly they praise the first demonstration.
 
 假设一家虚构的公司正在为社区图书馆开发工具。团队没有一次发布二十个功能，而是先测试一种简单的图书预约方式。真正有价值的信号是读者下周是否还会回来，而不是他们在首次演示时赞美得多么热烈。
 
-### reversible
+### reversible (quote, order 2)
 
 A reversible decision creates room for learning. When the cost of changing direction is low, a team can replace arguments about the future with evidence from the present.
 
 可逆的决策为学习留出了空间。当改变方向的成本较低时，团队就可以用当下的证据，取代关于未来的争论。
 
-### compounding
+### compounding (paragraph, order 3)
 
 This habit has a compounding effect. Each experiment improves both the product and the questions the team asks next. Progress comes from a sequence of thoughtful choices, rather than a single dramatic breakthrough.
 
@@ -49,7 +53,8 @@ This habit has a compounding effect. Each experiment improves both the product a
 - 用持续行为判断产品价值，避免只依赖口头赞美。
 - 降低改变方向的成本，让学习逐步累积。
 
-### Discussion
+### discussion
+
 - 你正在处理的哪个问题可以通过一周内的小实验获得证据？
 - 什么行为信号比用户的口头赞美更值得观察？
 
@@ -57,24 +62,40 @@ This habit has a compounding effect. Each experiment improves both the product a
 
 ### forecast
 
+/ˈfɔːrkæst/
+
 预测；对未来情况的判断
 
 An estimate of what may happen in the future.
 
+ID: v-forecast · Segment: opening
+
 ### signal
+
+
 
 信号；能够支持判断的迹象
 
 An observable clue that helps guide a decision.
 
+ID: v-signal · Segment: signal
+
 ### reversible
+
+
 
 可逆的；能够改变或撤回的
 
 Able to be changed back or undone.
 
+ID: v-reversible · Segment: reversible
+
 ### compounding
+
+
 
 逐步累积并相互增强的；复利式的
 
 Growing as earlier gains create further gains.
+
+ID: v-compounding · Segment: compounding

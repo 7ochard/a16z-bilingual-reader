@@ -1,62 +1,46 @@
-import { createHash } from "node:crypto";
-import { containsTerm } from "../shared/text.js";
-import { upstreamImportSchema } from "./schema.js";
+import { upstreamImportSchema, upstreamVocabularyId } from "./schema.js";
 import type { ImportBatch } from "../shared/types.js";
-/** Deliberately supports only the observed simplified example, not an unseen formal schema. */
+/** Frozen observed 1.0 core plus declared, lossless archive extensions. */
 export function adaptUpstream(input: unknown): ImportBatch {
-  const {
-    article: a,
-    revision,
-    rights,
-    title_zh,
-  } = upstreamImportSchema.parse(input);
-  const norm = (s: string) => s.normalize("NFKC").toLocaleLowerCase("en-US");
+  const { article: a, revision, rights, title_zh, extensions } = upstreamImportSchema.parse(input);
+  const { summary, key_findings, limitations, discussion, ...rich } = a.analysis;
   return {
     contract: "bilingual-reader.provisional",
     schema_version: "1.0",
-    articles: [
-      {
-        id: a.id,
-        revision,
-        title: a.title,
-        title_zh: title_zh || a.title,
-        author: a.author,
-        published_at: a.published_at,
-        topics: a.topics,
-        summary: a.selection_reason,
-        source: { name: a.source, url: a.url, ...rights },
-        upstream_snapshot: a,
-        segments: a.segments.map((s, order) => ({
-          id: s.id,
-          order,
-          kind: "paragraph",
-          en: s.en,
-          zh: s.zh,
-        })),
-        analysis: {
-          summary_zh: a.analysis.summary,
-          key_points: a.analysis.key_findings,
-          discussion: [],
-        },
-        vocabulary: a.vocabulary.map((v, index) => {
-          const matches = a.segments.filter((s) => containsTerm(s.en, v.term));
-          return {
-            id:
-              "up-" +
-              createHash("sha256")
-                .update(`${index}\0${norm(v.term)}\0${v.example_en}`)
-                .digest("hex")
-                .slice(0, 24),
-            segment_id: matches.length === 1 ? matches[0].id : null,
-            term: v.term,
-            meaning_zh: v.meaning_zh,
-            ...(v.phonetic ? { phonetic: v.phonetic } : {}),
-            part_of_speech: v.part_of_speech,
-            example_en: v.example_en,
-            example_zh: v.example_zh,
-          };
-        }),
+    articles: [{
+      id: a.id,
+      revision,
+      title: a.title.trim(),
+      title_zh: (title_zh ?? a.title).trim(),
+      author: a.author.trim(),
+      published_at: a.published_at,
+      topics: a.topics.map((topic) => topic.trim()),
+      summary: a.selection_reason.trim(),
+      source: { name: a.source.trim(), url: a.url, ...rights },
+      // Parsing the upstream contract never trims or otherwise transforms strings.
+      upstream_snapshot: a,
+      ...(title_zh !== undefined ? { upstream_title_zh: title_zh } : {}),
+      ...(extensions ? { upstream_wrapper_extensions: extensions } : {}),
+      ...(a.extensions ? { extensions: a.extensions } : {}),
+      ...(a.meta ? { meta: a.meta } : {}),
+      segments: a.segments.map((s, order) => ({
+        id: s.id, order, kind: "paragraph", en: s.en.trim(), zh: s.zh.trim(),
+        ...(s.extensions ? { extensions: s.extensions } : {}),
+      })),
+      analysis: {
+        summary_zh: summary.trim(), key_points: key_findings.map((point) => point.trim()),
+        discussion: (discussion ?? []).map((point) => point.trim()), limitations, ...rich,
       },
-    ],
+      vocabulary: a.vocabulary.map((v) => ({
+        id: upstreamVocabularyId(v),
+        // A textual match is not evidence that the producer intended an association.
+        segment_id: v.segment_id ?? null,
+        term: v.term.trim(), meaning_zh: v.meaning_zh.trim(),
+        ...(v.meaning_en ? { meaning_en: v.meaning_en.trim() } : {}),
+        ...(v.phonetic?.trim() ? { phonetic: v.phonetic.trim() } : {}),
+        part_of_speech: v.part_of_speech.trim(), example_en: v.example_en.trim(), example_zh: v.example_zh.trim(),
+        ...(v.extensions ? { extensions: v.extensions } : {}),
+      })),
+    }],
   };
 }

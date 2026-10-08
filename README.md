@@ -2,7 +2,7 @@
 
 一个轻量、可运行的中英双语阅读与词汇复习 MVP。React 前端 + Node API + 服务端 SQLite，使用 **ts-fsrs 5.4.2** 计算真实的间隔复习计划。
 
-> 当前只附带原创合成示例，未抓取、翻译或导入任何真实 a16z 全文。本项目与 a16z 无隶属或背书关系。已为实际见到的简化版 ChatGPT `schema_version: "1.0"` 示例加入专用适配器（需权利声明包装）；完整正式 schema 和每日输出仍待验证。内部协议保持明确的临时标记。
+> 当前只附带原创合成示例，未抓取、翻译或导入任何真实 a16z 全文。本项目与 a16z 无隶属或背书关系。已为实际见到的简化版 ChatGPT `schema_version: "1.0"` 示例加入专用适配器（需权利声明包装）；已冻结兼容的 1.0 核心及可选深度分析/元数据扩展；第一篇正式每日输出仍待验证。内部协议标记保持兼容。
 
 ## 运行
 
@@ -28,13 +28,14 @@ npm start           # http://127.0.0.1:3001
 ChatGPT 负责收集并生成结构化内容，审核后的 JSON / Markdown 保存在 `content/articles/`。SQLite 负责本地查询和私人学习状态；不会把生词进度写进 Git。当前归档只有原创合成样本。
 
 ```sh
-npm run content:validate -- fixtures/synthetic-upstream-wrapper.json
-npm run content:stage -- fixtures/synthetic-upstream-wrapper.json
+npm run content:validate -- fixtures/synthetic-daily-article.json
+npm run content:stage -- fixtures/synthetic-daily-article.json
+# 审核通过后：npm run content:archive -- reviewed-daily-article.json
 npm run content:import
 npm run content:query -- experiment
 ```
 
-暂存不会自动提交或推送；真实内容须先确认质量、权利和发布授权。详见 [知识库流程](docs/knowledge-workflow.md)。未来飞书等交付渠道可复用 API / CLI，当前未接入。
+当前目标仅为稳定的 GitHub 内容归档；公开部署、账户和跨设备访问不在本轮范围内。归档按日期、文章身份和修订号保存不可覆盖的 JSON/Markdown 对；同版本重导入不产生修改，更新须提高 revision 并显式使用 --update。暂存/归档不会自动提交或推送；真实内容须先确认质量、权利和发布授权。详见 [知识库流程](docs/knowledge-workflow.md)。未来飞书等交付渠道可复用 API / CLI，当前未接入。
 
 ## 已实现
 
@@ -51,7 +52,7 @@ npm run content:query -- experiment
 
 这是**单用户本机服务**。API 只绑定 `127.0.0.1`，校验 Host/Origin，写请求要求 JSON 和专用头，不开放 CORS。默认没有身份认证，不要通过端口转发、反向代理或公开托管绕过限制。要实现手机/多电脑访问，需先加入可靠身份验证、HTTPS、授权隔离及持久磁盘备份。浏览器不是权威数据源；当前版本不声称开箱即用的云同步。
 
-只有你拥有或获准处理的内容可以导入。`source.rights` 和 `permission_note` 是明确的权利声明，不是自动验证工具；字段填写不会产生版权许可。源链接仅作跳转，服务端不会抓取链接。
+只导入自有、获许可内容，或无全文许可时原创的摘要/转述与独立分析。未经授权不得导入第三方全文。`source.rights` 和 `permission_note` 是明确的权利声明，不是自动验证工具；字段填写不会产生版权许可。源链接仅作跳转，服务端不会抓取链接。
 
 ## 检查与备份
 
@@ -66,11 +67,11 @@ npm run backup -- /absolute/path/reader-backup.sqlite
 ## 文档
 
 - [架构与取舍](docs/architecture.md)
-- [临时 schema 与导入规则](docs/import-schema.md)
+- [标准导入格式与版本规则](docs/import-schema.md)
 - [API 契约](docs/api-contract.md)
 - [部署、持久化、备份](docs/deployment.md)
 - [测试步骤与实际结果](docs/testing.md)
 - [开源项目选型报告](docs/open-source-selection.zh.md)
 - [第三方组件与许可证](THIRD_PARTY_NOTICES.md)
 
-源内容样本在 `fixtures/synthetic-library.json`，UI 没有写死文章正文。适配器样本在 `fixtures/synthetic-upstream-wrapper.json`，保留上游字段和无段落关联的词汇例句。完整上游样本到达后，先回归测试，再导入实际获授权内容。
+源内容样本在 `fixtures/synthetic-library.json`，UI 没有写死文章正文。适配器样本在 `fixtures/synthetic-upstream-wrapper.json`，保留上游字段和无段落关联的词汇例句。完整合成标准样本在 `fixtures/synthetic-daily-article.json`（含深度分析与 12 个词汇）。正式上游样本到达后，先回归测试和版权审核，再归档提交。

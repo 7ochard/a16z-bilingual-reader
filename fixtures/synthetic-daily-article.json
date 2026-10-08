@@ -1,0 +1,251 @@
+{
+  "format": "chatgpt-observed-1.0",
+  "revision": 1,
+  "rights": {
+    "rights": "owned",
+    "copyright": "Original synthetic content © 2026 Reader Studio.",
+    "permission_note": "All article, analysis and example text was authored for this fixture; no third-party full text is included.",
+    "extensions": {
+      "fixture_license_note": "Synthetic test material."
+    }
+  },
+  "title_zh": "从小规模可逆试点中学习",
+  "article": {
+    "schema_version": "1.0",
+    "id": "synthetic-daily-2026-10-07",
+    "source": "Reader Studio Synthetic Research",
+    "title": "Learning from a small, reversible pilot",
+    "author": "Reader Studio",
+    "published_at": "2026-10-07",
+    "selected_at": "2026-10-08",
+    "url": "https://example.com/synthetic/reversible-pilot",
+    "topics": [
+      "Product experiments",
+      "Evidence quality"
+    ],
+    "selection_reason": "Wholly invented bilingual daily-archive example with structured reasoning and explicit uncertainty.",
+    "segments": [
+      {
+        "id": "context",
+        "en": "A small team launches a reversible pilot. The team records a baseline before testing its hypothesis, so a later improvement can be compared with the starting point.",
+        "zh": "一个小团队启动了一项可逆的试点。团队在检验假设之前记录基线，从而可以把后来的改进与起点比较。",
+        "type": "paraphrase",
+        "extensions": {
+          "editorial": {
+            "role": "context",
+            "synthetic": true
+          }
+        }
+      },
+      {
+        "id": "evidence",
+        "en": "One observation suggests that shorter instructions reduce friction. However, the sample is tiny, the measurement is imperfect, and the apparent signal may reflect novelty rather than lasting value.",
+        "zh": "一项观察表明，更短的说明可能减少阻力。不过样本很小，测量并不完善，表面上的信号可能源于新鲜感，而非持久价值。",
+        "type": "paraphrase"
+      },
+      {
+        "id": "judgment",
+        "en": "The team treats the result as a trade-off rather than a forecast. A useful constraint is to keep the intervention cheap and ask what evidence would justify a broader commitment.",
+        "zh": "团队把结果视为一种权衡，而非预测。一个有用的约束是保持干预成本较低，并询问什么证据才足以支持更大范围的投入。",
+        "type": "paraphrase"
+      }
+    ],
+    "analysis": {
+      "summary": "这是一则完全虚构的试点案例，用于展示可回溯的中英双语内容归档。它强调先记录基线，再解释观察结果。",
+      "key_findings": [
+        "先定义假设、基线与测量办法。",
+        "小样本信号只能支持有限判断，不能直接外推。"
+      ],
+      "limitations": "所有团队、过程与观察均为原创合成材料，没有真实试验数据。短期观察无法证明长期因果效果。",
+      "claims": [
+        {
+          "id": "claim-baseline",
+          "statement": "预先记录基线有助于解释后续变化，但不能单独建立因果关系。",
+          "evidence_ids": [
+            "evidence-protocol"
+          ],
+          "extensions": {
+            "confidence": "illustrative"
+          }
+        },
+        {
+          "id": "claim-caution",
+          "statement": "微小样本和不完善的测量降低了扩大投入的依据强度。",
+          "evidence_ids": [
+            "evidence-sample"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence-protocol",
+          "description": "合成案例明确写出先记录起点再执行试点的过程。",
+          "source_url": "https://example.com/synthetic/reversible-pilot",
+          "segment_ids": [
+            "context"
+          ],
+          "kind": "synthetic",
+          "extensions": {
+            "method": {
+              "real_data": false,
+              "count": null
+            }
+          }
+        },
+        {
+          "id": "evidence-sample",
+          "description": "第二段明确承认样本过小与测量不足，未给出真实数值或统计结果。",
+          "segment_ids": [
+            "evidence"
+          ],
+          "kind": "synthetic"
+        }
+      ],
+      "industry_implications": [
+        "产品团队可以用低成本且可撤回的试点收集初步证据。",
+        "投资或行业判断仍需独立数据，不应把演示案例当作市场趋势。"
+      ],
+      "independent_judgment": "我的判断是，这个虚构过程适合演示如何记录推理；它没有提供足以支持商业投入的真实证据。下一步应明确停止条件并开展真实验证。",
+      "discussion": [
+        "什么观察会推翻最初假设？",
+        "扩大投入前需要哪些可独立核验的证据？"
+      ],
+      "extensions": {
+        "review": {
+          "status": "synthetic_fixture",
+          "questions": [
+            "durability",
+            "causality"
+          ]
+        }
+      }
+    },
+    "vocabulary": [
+      {
+        "term": "pilot",
+        "part_of_speech": "noun",
+        "meaning_zh": "试点",
+        "example_en": "A pilot can test an idea cheaply.",
+        "example_zh": "试点可以低成本检验想法。",
+        "id": "v-pilot",
+        "phonetic": "/ˈpaɪlət/",
+        "extensions": {
+          "teaching_note": "Supplied example, not a quoted source paragraph."
+        },
+        "segment_id": "context"
+      },
+      {
+        "term": "baseline",
+        "part_of_speech": "noun",
+        "meaning_zh": "基线",
+        "example_en": "We record a baseline before making changes.",
+        "example_zh": "我们在作出改变前记录基线。",
+        "meaning_en": "A starting point used for comparison.",
+        "segment_id": "context"
+      },
+      {
+        "term": "hypothesis",
+        "part_of_speech": "noun",
+        "meaning_zh": "假设",
+        "example_en": "A useful hypothesis can be challenged by evidence.",
+        "example_zh": "有用的假设能够接受证据的检验。",
+        "phonetic": ""
+      },
+      {
+        "term": "observation",
+        "part_of_speech": "noun",
+        "meaning_zh": "观察",
+        "example_en": "One observation rarely settles a difficult question.",
+        "example_zh": "一次观察很少能解决复杂问题。",
+        "segment_id": "evidence"
+      },
+      {
+        "term": "friction",
+        "part_of_speech": "noun",
+        "meaning_zh": "阻力；摩擦",
+        "example_en": "Clear instructions can reduce friction.",
+        "example_zh": "清晰的说明可以减少阻力。"
+      },
+      {
+        "term": "sample",
+        "part_of_speech": "noun",
+        "meaning_zh": "样本",
+        "example_en": "The sample is too small for a strong conclusion.",
+        "example_zh": "样本过小，无法支持有力的结论。",
+        "segment_id": "evidence"
+      },
+      {
+        "term": "measurement",
+        "part_of_speech": "noun",
+        "meaning_zh": "测量",
+        "example_en": "Reliable measurement requires a consistent method.",
+        "example_zh": "可靠的测量需要一致的方法。"
+      },
+      {
+        "term": "signal",
+        "part_of_speech": "noun",
+        "meaning_zh": "信号",
+        "example_en": "A promising signal deserves careful validation.",
+        "example_zh": "有希望的信号值得仔细验证。"
+      },
+      {
+        "term": "trade-off",
+        "part_of_speech": "noun",
+        "meaning_zh": "权衡",
+        "example_en": "Every design choice involves a trade-off.",
+        "example_zh": "每项设计选择都涉及权衡。",
+        "segment_id": "judgment"
+      },
+      {
+        "term": "forecast",
+        "part_of_speech": "noun",
+        "meaning_zh": "预测",
+        "example_en": "A forecast should state its assumptions.",
+        "example_zh": "预测应说明其假设。"
+      },
+      {
+        "term": "constraint",
+        "part_of_speech": "noun",
+        "meaning_zh": "约束",
+        "example_en": "A budget is a practical constraint.",
+        "example_zh": "预算是一项实际约束。"
+      },
+      {
+        "term": "momentum",
+        "part_of_speech": "noun",
+        "meaning_zh": "动力；势头",
+        "example_en": "A steady learning routine builds momentum.",
+        "example_zh": "稳定的学习安排能够积累动力。"
+      }
+    ],
+    "copyright_mode": "bilingual_paraphrase",
+    "meta": {
+      "content_origin": "synthetic",
+      "source_url": "https://example.com/synthetic/reversible-pilot",
+      "generated_at": "2026-10-08T09:00:00Z",
+      "generator": "Reader Studio synthetic fixture",
+      "prompt_version": "archive-1.0",
+      "source_language": "en",
+      "notes": [
+        "Wholly synthetic original writing; not actual a16z or third-party article text."
+      ],
+      "extensions": {
+        "editorial_batch": "synthetic-day-01"
+      }
+    },
+    "extensions": {
+      "archive_notes": {
+        "synthetic": true,
+        "labels": [
+          "daily",
+          "bilingual"
+        ],
+        "nullable": null
+      }
+    }
+  },
+  "extensions": {
+    "producer_contract": "observed-1.0",
+    "original_payload_kind": "synthetic_daily"
+  }
+}

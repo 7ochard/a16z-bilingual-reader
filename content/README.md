@@ -1,10 +1,9 @@
-# Portable knowledge archive
+# Reviewed content archive
 
-`articles/` holds reviewed article JSON and readable Markdown in Git. The initial entry is **original synthetic demonstration content**, not a real a16z article. No real scheduled content has been imported or published.
+Only reviewed source content belongs under `articles/`. JSON is authoritative; each revision has a deterministic Markdown companion. Use `npm run content:archive -- reviewed-input.json` (add `--update` for an explicit higher revision) rather than overwriting files manually. Then review and commit the Git diff under the user's publication authorization.
 
-- JSON is the portable source of truth for knowledge content; Markdown is a derived reading copy.
-- Local SQLite imports the archive for queries and reading. Personal vocabulary, favorites, learning progress and review history stay in the ignored local database, never in Git.
-- Staging is separate from acceptance/publication. Upstream ChatGPT collects/generates material; a reviewer checks the structured output and content rights; then an authorized publisher makes a normal Git commit.
-- No ChatGPT account access, scheduled task, GitHub credential, automatic push, or Feishu integration is embedded in the app.
+New articles use publication-date / collision-resistant identity / revision directories. Existing root-level legacy pairs remain readable. All revision pairs are verified before the latest revision per ID enters the optional SQLite index.
 
-See [knowledge workflow](../docs/knowledge-workflow.md) for validation, staging, importing and publishing boundaries.
+The current checked-in article is original synthetic development content. No formal daily a16z article has been accepted. Never place user learning state, credentials or raw private conversations here.
+
+See [the workflow](../docs/knowledge-workflow.md) and [the standard import contract](../docs/import-schema.md).

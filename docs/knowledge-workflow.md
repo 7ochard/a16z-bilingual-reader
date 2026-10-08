@@ -1,39 +1,79 @@
-# ChatGPT → GitHub knowledge archive → local SQLite
+# ChatGPT → GitHub content archive → optional local index
 
-The intended division of work: an existing ChatGPT task collects and structures bilingual material; the reviewed JSON becomes a versioned GitHub knowledge archive; this project validates, stores, queries, and presents it. Future delivery channels can call the same content/API layer. No Feishu integration or scheduled remote collection is implemented.
+The current goal is a stable GitHub content archive. The existing reader, SQLite, vocabulary review and architecture remain intact. No public deployment, account system, cross-device access, scraper, scheduled collection or ChatGPT prompt change is part of this work.
 
-## Safe, explicit workflow
+ChatGPT supplies reviewed bilingual content; `content/articles/` preserves JSON and readable Markdown; Git records accepted changes. SQLite is an optional local index and private learning store. There is no real a16z article in this repository yet. Wait for the first formal daily output before claiming production compatibility.
 
-1. Obtain the generated JSON. Verify the summary/paraphrase, source, permissions and bilingual alignment. Do not treat a generated copyright label as a license or publish unauthorized full text.
-2. If it is the observed raw upstream example, add the explicit rights/revision wrapper described in `import-schema.md`, or use the local UI's raw-upstream import form. UI import writes only SQLite; it does not publish GitHub content.
-3. Validate without changing any database or remote repository:
+## Standard input and safe workflow
 
-```sh
-npm run content:validate -- fixtures/synthetic-upstream-wrapper.json
-```
-
-4. Prepare a reviewable JSON/Markdown pair in an ignored staging folder:
+1. Keep the complete generated article. The frozen observed `schema_version: "1.0"` core and documented rich optional fields/extensions are in [the import contract](import-schema.md). `schema/chatgpt-article.v1.0.schema.json` is the direct article schema; `fixtures/synthetic-daily-article.json` is a complete synthetic wrapped example, not real a16z content.
+2. Add the existing `format:"chatgpt-observed-1.0"` envelope with a stable `revision`, explicit rights declaration and the `article`. Do not infer a license from `copyright_mode`. For unlicensed third-party sources use only original summaries/paraphrases and independent analysis with `summary_only` and matching provenance. The adapter deliberately does not accept a full-text or quotation mode. Any limited excerpts must be separately reviewed for copyright compliance; labels cannot verify what text was actually copied. Do not relabel a copied full article as a paraphrase. Keep author, publication date, original URL, copyright notice and permission note.
+3. Validate, then stage a review copy without changing the accepted archive or SQLite:
 
 ```sh
-npm run content:stage -- fixtures/synthetic-upstream-wrapper.json
+npm run content:validate -- fixtures/synthetic-daily-article.json
+npm run content:stage -- fixtures/synthetic-daily-article.json
 ```
 
-The command prints its staging directory, derived from a hash of the validated content. It refuses to overwrite an existing directory. It does not commit, push or import. Each JSON file is a single-article internal envelope; original upstream fields are preserved as provenance. Derived Markdown escapes imported HTML and Markdown link/image syntax so source text is not treated as trusted markup. Downstream renderers should still use safe/sanitized rendering.
+Staging prints an ignored directory containing `articles/` and review instructions. No commit, push, import, collection or network call occurs. Staging refuses to replace an existing destination. Source content is plain text; Markdown escapes prose and exposes complete source provenance. Still use safe Markdown renderers downstream.
 
-5. After explicit acceptance of content and publication rights, copy the reviewed `.json`/`.md` pairs into `content/articles/`, using stable article filenames. Increase article `revision` for changed content. Review `git diff` for unexpected data, then make an authorized normal Git commit. Never copy `.staging`, `data/`, private learning state, credentials, or raw personal conversations into Git.
-6. Build/rebuild the local knowledge index from the tracked archive:
+4. After reviewing the entire output and publication rights, accept the reviewed input through the safe archive command. Do not manually copy pairs over existing files:
+
+```sh
+npm run content:archive -- reviewed-daily-article.json
+```
+
+This command writes local files only. First acceptance produces:
+
+```text
+content/articles/YYYY-MM-DD/<readable-id>--<full-sha256-of-id>/r0000000001/article.json
+content/articles/YYYY-MM-DD/<readable-id>--<full-sha256-of-id>/r0000000001/article.md
+```
+
+The date is the first accepted revision's publication date. Later corrections keep this history directory even if the publication date is corrected. The latest actual `published_at` remains in each JSON and is used for date queries. Same-day different articles have separate identities and paths. The full identity hash and bounded prefix avoid case-fold, punctuation and long-ID filename collisions.
+
+5. An identical same-ID, same-revision payload is a true no-op, including when JSON object keys are reordered. Arrays and source string whitespace remain significant. A content change requires a higher revision plus explicit update authorization:
+
+```sh
+npm run content:archive -- reviewed-revision.json --update
+```
+
+Existing pairs are never overwritten. A new immutable revision directory is added; older revisions cannot replace newer content. IDs are exact, case-sensitive upstream article identities. Deduplication is by ID and revision, not fuzzy title matching or URL matching: two IDs for the same URL are different articles. Keep the ID stable upstream; do not mint a new ID just to avoid a revision conflict.
+
+6. Review every changed file and make an authorized normal Git commit/push:
+
+```sh
+git status --short
+git diff -- content/articles
+git add content/articles
+git diff --cached -- content/articles
+git commit -m "Archive reviewed article <stable-id> revision <n>"
+# git push only when publication is authorized
+```
+
+A local acceptance is not a Git commit or a remote backup. Each accepted addition/correction should have its own reviewable Git change. A Git clone plus the archive can reconstruct the content index; private progress is separate. Never add credentials, `.staging/`, `data/`, SQLite, private learning state or raw personal conversations. Do not edit/delete old revision files to make a validation error disappear. Git history records deliberate maintenance.
+
+7. Optionally rebuild/query the local index:
 
 ```sh
 npm run content:import
-npm run content:query -- experiment
+npm run content:query -- --from 2026-10-01 --to 2026-10-31
+npm run content:query -- experiment --topic Learning
 ```
 
-The import validates every file before applying all article updates in one SQLite transaction; duplicate article IDs across files or revision conflicts roll back the whole archive import. Existing read flags, saved context snapshots, cards and review events are retained. Removing a file from Git does not delete it from SQLite in the MVP. Query results are JSON and can feed a future delivery adapter.
+The importer validates every historical JSON/Markdown pair and rejects missing/orphaned/tampered pairs, wrong paths, duplicate revisions and symlinks before opening SQLite. It selects the highest valid revision per ID and imports all selected articles in one transaction. Existing root-level legacy pairs remain supported and must match the deterministic Markdown renderer. Removing a file does not delete a previously imported SQLite article. Search covers source text, bilingual segments, analysis, vocabulary, dates and metadata. Date filters use publication date; all date values can also be found by text search.
 
-## Initial repository content
+## Filesystem reliability and recovery
 
-`content/articles/synthetic-small-bets.json` and `.md` demonstrate the format with original synthetic text. `fixtures/` additionally includes test-only synthetic library and observed-upstream samples. No actual October 8 article or other real a16z content has been fetched, translated, imported or republished.
+- Each JSON/Markdown pair is fully written and fsynced in a temporary directory, then published by one same-filesystem directory rename. Readers never accept half a published pair. Exact serialized limits are 5 MiB JSON and 20 MiB Markdown per article revision; oversized output fails before any publication.
+- The full batch is validated and conflict-checked before publication. Ordinary caught write failures remove only newly created revision directories; existing history is unchanged. Private learning state is not accessed during acceptance.
+- An exclusive `.archive.lock` directory serializes cooperating archive writers. A lock after interruption is never automatically broken. Confirm that no writer is running, review `.pending-*` work and complete revision directories, then manually remove only the stale lock/pending work before retrying. A hard process kill or power failure can leave a subset of complete batch revisions; retrying the same input is safe and finishes the missing ones. Batch-wide crash atomicity is not claimed.
+- Readers ignore uncommitted `.pending-*` directories. They validate only complete published pairs. Directory trees and files must not be symlinks. Use a trusted private checkout: the tool does not claim protection against a hostile process concurrently renaming filesystem ancestors. Do not use a shared attacker-writable archive directory.
+
+## First formal daily article
+
+When the actual output arrives, preserve it in full, validate it against the documented contract, inspect any rejected fields and introduce explicit compatible extensions or a new major source contract where needed. Never silently trim an unknown section, infer missing paragraph links, or flatten deep analysis into a single summary to make import pass. Only after that compatibility and rights review should the first real article be accepted and committed.
 
 ## Backup boundary
 
-Git history protects accepted knowledge content after an authorized commit/push. It does not contain private learning progress. Keep consistent SQLite backups for personal state (`npm run backup -- /private/backup.sqlite`). A source JSON export or repository clone alone cannot restore review history.
+Git history protects committed knowledge content; a verified push makes that content available in the repository. It never substitutes for private learning-state backups. Use `npm run backup -- /private/backup.sqlite` for a consistent SQLite backup. Repository clones and source exports cannot restore review history.

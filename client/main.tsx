@@ -1152,6 +1152,7 @@ function Reader({
                       licensed: "已获许可",
                       public_domain: "公共领域",
                       permission_granted: "已获得授权",
+                      summary_only: "原创摘要与解读（无全文许可）",
                     }[article.source.rights]
                   }
                 </dd>

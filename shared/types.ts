@@ -1,48 +1,50 @@
+/** JSON extensions are validated for depth, size and unsafe keys at import. */
+export type JsonValue = string | number | boolean | null | JsonValue[] | { [key: string]: JsonValue };
+export type Extensions = { [key: string]: JsonValue };
+export type ProvenanceMeta = {
+  content_origin?: "synthetic" | "original" | "third_party_paraphrase";
+  source_url?: string;
+  generated_at?: string;
+  generator?: string;
+  prompt_version?: string;
+  source_language?: string;
+  notes?: string[];
+  extensions?: Extensions;
+};
+export type AnalysisClaim = { id: string; statement: string; evidence_ids?: string[]; extensions?: Extensions };
+export type AnalysisEvidence = {
+  id: string; description: string; source_url?: string; segment_ids?: string[];
+  kind?: "reported" | "observation" | "inference" | "synthetic";
+  extensions?: Extensions;
+};
+export type RichAnalysis = {
+  claims?: AnalysisClaim[];
+  evidence?: AnalysisEvidence[];
+  industry_implications?: string[];
+  independent_judgment?: string;
+  extensions?: Extensions;
+};
 export type Segment = {
-  id: string;
-  order: number;
-  kind: "paragraph" | "heading" | "quote";
-  en: string;
-  zh: string;
+  id: string; order: number; kind: "paragraph" | "heading" | "quote"; en: string; zh: string; extensions?: Extensions;
 };
 export type Vocabulary = {
-  id: string;
-  segment_id: string | null;
-  example_en?: string;
-  example_zh?: string;
-  part_of_speech?: string;
-  term: string;
-  meaning_zh: string;
-  meaning_en?: string;
-  phonetic?: string;
+  id: string; segment_id: string | null; example_en?: string; example_zh?: string; part_of_speech?: string;
+  term: string; meaning_zh: string; meaning_en?: string; phonetic?: string; extensions?: Extensions;
+};
+export type RightsDeclaration = {
+  rights: "owned" | "licensed" | "public_domain" | "permission_granted" | "summary_only";
+  copyright: string; permission_note: string; extensions?: Extensions;
 };
 export type Article = {
-  id: string;
-  revision: number;
-  upstream_snapshot?: UpstreamArticle;
-  title: string;
-  title_zh: string;
-  author: string;
-  published_at: string;
-  topics: string[];
-  source: {
-    name: string;
-    url: string;
-    rights: "owned" | "licensed" | "public_domain" | "permission_granted";
-    copyright: string;
-    permission_note: string;
-  };
-  summary: string;
-  segments: Segment[];
-  vocabulary: Vocabulary[];
-  analysis: { summary_zh: string; key_points: string[]; discussion: string[] };
+  id: string; revision: number; upstream_snapshot?: UpstreamArticle; upstream_wrapper_extensions?: Extensions; upstream_title_zh?: string;
+  title: string; title_zh: string; author: string; published_at: string; topics: string[];
+  source: RightsDeclaration & { name: string; url: string };
+  summary: string; segments: Segment[]; vocabulary: Vocabulary[];
+  analysis: RichAnalysis & { summary_zh: string; key_points: string[]; discussion: string[]; limitations?: string };
+  meta?: ProvenanceMeta; extensions?: Extensions;
 };
-/** Provisional app contract; not a claim of compatibility with the unseen upstream schema 1.0. */
-export type ImportBatch = {
-  contract: "bilingual-reader.provisional";
-  schema_version: "1.0";
-  articles: Article[];
-};
+/** Stable local contract marker retained for compatibility; it does not claim universal ChatGPT schema compatibility. */
+export type ImportBatch = { contract: "bilingual-reader.provisional"; schema_version: "1.0"; articles: Article[] };
 export type ArticleSummary = Pick<
   Article,
   | "id"
@@ -102,26 +104,20 @@ export type ReviewRequest = {
   expected_revision: number;
 };
 
+export type UpstreamVocabulary = {
+  id?: string; segment_id?: string | null; term: string; phonetic?: string; part_of_speech: string;
+  meaning_zh: string; meaning_en?: string; example_en: string; example_zh: string; extensions?: Extensions;
+};
+/** Frozen observed ChatGPT 1.0 core, with explicit optional archive extensions. */
 export type UpstreamArticle = {
-  schema_version: "1.0";
-  id: string;
-  source: string;
-  title: string;
-  author: string;
-  published_at: string;
-  selected_at: string;
-  url: string;
-  topics: string[];
-  selection_reason: string;
-  segments: { id: string; en: string; zh: string; type: "paraphrase" }[];
-  analysis: { summary: string; key_findings: string[]; limitations: string };
-  vocabulary: {
-    term: string;
-    phonetic?: string;
-    part_of_speech: string;
-    meaning_zh: string;
-    example_en: string;
-    example_zh: string;
-  }[];
-  copyright_mode: "bilingual_paraphrase";
+  schema_version: "1.0"; id: string; source: string; title: string; author: string; published_at: string;
+  selected_at: string; url: string; topics: string[]; selection_reason: string;
+  segments: { id: string; en: string; zh: string; type: "paraphrase"; extensions?: Extensions }[];
+  analysis: RichAnalysis & { summary: string; key_findings: string[]; limitations: string; discussion?: string[] };
+  vocabulary: UpstreamVocabulary[];
+  copyright_mode: "bilingual_paraphrase"; meta?: ProvenanceMeta; extensions?: Extensions;
+};
+export type UpstreamImport = {
+  format: "chatgpt-observed-1.0"; revision: number; rights: RightsDeclaration;
+  title_zh?: string; article: UpstreamArticle; extensions?: Extensions;
 };

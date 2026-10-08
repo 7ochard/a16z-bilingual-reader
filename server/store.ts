@@ -11,11 +11,18 @@ import type {
   ReviewRequest,
 } from "../shared/types.js";
 import { parseContent } from "./content.js";
+import { canonicalJSON } from "./canonical.js";
 import { AppError } from "./schema.js";
 const scheduler = fsrs({ enable_fuzz: false });
 type Row = Record<string, any>;
 const normalized = (s: string) =>
   s.normalize("NFKC").trim().toLocaleLowerCase("en-US").replace(/\s+/g, " ");
+const searchableValues = (value: unknown): string => {
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value);
+  if (Array.isArray(value)) return value.map(searchableValues).join(" ");
+  if (value && typeof value === "object") return Object.values(value).map(searchableValues).join(" ");
+  return "";
+};
 export class Store {
   constructor(
     public db: DatabaseSync,
@@ -45,9 +52,9 @@ export class Store {
   private applyArticles(articles: Article[]) {
     for (const article of articles) {
       const data = JSON.stringify(article);
-      const hash = createHash("sha256").update(data).digest("hex");
+      const hash = createHash("sha256").update(canonicalJSON(article)).digest("hex");
       const existing = this.db
-        .prepare("SELECT revision,content_hash FROM articles WHERE id=?")
+        .prepare("SELECT revision,content_hash,data FROM articles WHERE id=?")
         .get(article.id) as Row | undefined;
       if (existing && article.revision < existing.revision)
         throw new AppError(
@@ -57,12 +64,13 @@ export class Store {
       if (
         existing &&
         article.revision === existing.revision &&
-        existing.content_hash !== hash
+        canonicalJSON(JSON.parse(existing.data)) !== canonicalJSON(article)
       )
         throw new AppError(
           409,
           `Article ${article.id}: changed content requires a higher revision`,
         );
+      if (existing && article.revision === existing.revision) continue;
       this.db
         .prepare(
           "INSERT INTO articles(id,revision,content_hash,data) VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET revision=excluded.revision,content_hash=excluded.content_hash,data=excluded.data",
@@ -96,11 +104,10 @@ export class Store {
       .map((r) => this.article(r.id))
       .filter((a) => {
         const query = normalized(filters.q || "");
+        const { read: _read, favorite: _favorite, ...sourceArticle } = a;
         return (
           (!query ||
-            normalized(
-              `${a.title} ${a.title_zh} ${a.summary} ${a.topics.join(" ")} ${a.author} ${a.segments.map((s) => `${s.en} ${s.zh}`).join(" ")}`,
-            ).includes(query)) &&
+            normalized(searchableValues(sourceArticle)).includes(query)) &&
           (!filters.topic || a.topics.includes(filters.topic)) &&
           (!filters.from || a.published_at >= filters.from) &&
           (!filters.to || a.published_at <= filters.to)
