@@ -36,7 +36,7 @@ export type RightsDeclaration = {
   copyright: string; permission_note: string; extensions?: Extensions;
 };
 export type Article = {
-  id: string; revision: number; upstream_snapshot?: UpstreamArticle; upstream_wrapper_extensions?: Extensions; upstream_title_zh?: string;
+  id: string; revision: number; upstream_snapshot?: UpstreamArticle | ChatGPTArticleV100; upstream_wrapper_extensions?: Extensions; upstream_title_zh?: string;
   title: string; title_zh: string; author: string; published_at: string; topics: string[];
   source: RightsDeclaration & { name: string; url: string };
   summary: string; segments: Segment[]; vocabulary: Vocabulary[];
@@ -120,4 +120,21 @@ export type UpstreamArticle = {
 export type UpstreamImport = {
   format: "chatgpt-observed-1.0"; revision: number; rights: RightsDeclaration;
   title_zh?: string; article: UpstreamArticle; extensions?: Extensions;
+};
+
+/** Observed current producer shape; opaque source metadata and analysis items stay lossless. */
+export type ChatGPTArticleV100 = {
+  schema_version: "1.0.0"; id: string; source: Extensions; title: string; author: JsonValue[];
+  published_at: string; selected_at: string; url: string; topics: string[]; selection_reason: string;
+  segments: { id: string; en: string; zh: string; extensions?: Extensions }[];
+  analysis: {
+    core_thesis: string; supporting_evidence: JsonValue[]; industry_significance: JsonValue[];
+    limitations: JsonValue[]; independent_judgment: string; extensions?: Extensions;
+  };
+  vocabulary: (Omit<UpstreamVocabulary, "phonetic"> & { phonetic?: string | null })[]; copyright_mode: "original_summary_only";
+  meta?: Extensions; extensions?: Extensions;
+};
+export type ChatGPTImportV100 = {
+  format: "chatgpt-upstream-1.0.0"; revision: number; rights: RightsDeclaration;
+  title_zh?: string; article: ChatGPTArticleV100; extensions?: Extensions;
 };

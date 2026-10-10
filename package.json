@@ -17,6 +17,7 @@
     "check": "npm run typecheck && npm test && npm run build",
     "backup": "node --import tsx scripts/backup.ts",
     "adapt": "node --import tsx scripts/adapt.ts",
+    "content:prepare": "node --import tsx scripts/prepare-upstream.ts",
     "content:validate": "node --import tsx scripts/validate.ts",
     "content:stage": "node --import tsx scripts/stage.ts",
     "content:import": "node --import tsx scripts/import-archive.ts",

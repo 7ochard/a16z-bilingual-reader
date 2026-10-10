@@ -41,7 +41,7 @@ const rightsDeclaration = z.object({
   permission_note: rawText(1000),
   extensions: optionalExtensions,
 }).strict();
-const source = z.object({ name: text(200), url: sourceUrl, ...rightsDeclaration.shape }).strict();
+const source = z.object({ name: text(300), url: sourceUrl, ...rightsDeclaration.shape }).strict();
 const meta = z.object({
   content_origin: z.enum(["synthetic", "original", "third_party_paraphrase"]).optional(),
   source_url: sourceUrl.optional(),
@@ -78,7 +78,7 @@ const upstreamVocabulary = z.object({
 const normalizeIdentity = (v: string) => v.normalize("NFKC").trim().replace(/\s+/g, " ").toLocaleLowerCase("en-US");
 export const upstreamVocabularyIdentity = (v: Pick<UpstreamVocabulary, "term" | "part_of_speech" | "example_en">): string =>
   JSON.stringify([v.term, v.part_of_speech, v.example_en].map(normalizeIdentity));
-export const upstreamVocabularyId = (v: UpstreamVocabulary): string => v.id ?? "up-" + createHash("sha256").update(upstreamVocabularyIdentity(v)).digest("hex").slice(0, 24);
+export const upstreamVocabularyId = (v: Pick<UpstreamVocabulary, "id" | "term" | "part_of_speech" | "example_en">): string => v.id ?? "up-" + createHash("sha256").update(upstreamVocabularyIdentity(v)).digest("hex").slice(0, 24);
 function checkAnalysis(analysis: z.infer<typeof upstreamAnalysis> | { claims?: z.infer<typeof claim>[]; evidence?: z.infer<typeof evidence>[] }, segmentIds: Set<string>, ctx: z.RefinementCtx) {
   const evidenceIds = new Set((analysis.evidence ?? []).map((e) => e.id));
   if (evidenceIds.size !== (analysis.evidence ?? []).length) ctx.addIssue({ code: "custom", message: "Duplicate analysis evidence IDs" });
@@ -115,18 +115,79 @@ export const upstreamImportSchema = z.object({
   if (wrapper.rights.rights === "summary_only" && (wrapper.article.meta?.content_origin !== "third_party_paraphrase" || wrapper.article.meta.source_url !== wrapper.article.url))
     ctx.addIssue({ code: "custom", message: "summary_only requires meta.content_origin third_party_paraphrase and meta.source_url matching the original source URL; it declares original paraphrase/analysis, not a license" });
 });
+// This is an observed-shape compatibility adapter, not the unavailable upstream JSON Schema.
+// Its opaque source object and analysis array items are retained, never silently stripped.
+const boundedUpstreamItemsV100 = (max: number) => z.preprocess((value, ctx) => {
+  const checked = extensionsSchema.safeParse({ items: value });
+  if (!checked.success) {
+    ctx.addIssue({ code: "custom", message: "Upstream array items must be bounded, safe JSON" });
+    return z.NEVER;
+  }
+  return value;
+}, z.array(z.json()).max(max));
+const upstreamAnalysisItemsV100 = boundedUpstreamItemsV100(100);
+const validateUpstreamJSONV100 = (value: unknown, ctx: z.RefinementCtx) => {
+  let nodes = 0, bytes = 0;
+  const visit = (v: unknown, depth: number): boolean => {
+    if (++nodes > 100000 || depth > 16) return false;
+    if (typeof v === "string") return v.length <= 20000 && (bytes += Buffer.byteLength(v, "utf8")) <= 5 * 1024 * 1024;
+    if (v === null || typeof v === "boolean") return true;
+    if (typeof v === "number") return Number.isFinite(v);
+    if (typeof v !== "object") return false;
+    if (Array.isArray(v)) return v.length <= 2000 && v.every((item) => visit(item, depth + 1));
+    if (Object.getPrototypeOf(v) !== Object.prototype && Object.getPrototypeOf(v) !== null) return false;
+    const entries = Object.entries(v);
+    return entries.length <= 1000 && entries.every(([key, item]) => key.length > 0 && key.length <= 120 &&
+      !["__proto__", "prototype", "constructor"].includes(key) && visit(item, depth + 1));
+  };
+  if (!visit(value, 0) || Buffer.byteLength(JSON.stringify(value), "utf8") > 5 * 1024 * 1024) {
+    ctx.addIssue({ code: "custom", message: "Upstream 1.0.0 must be bounded safe JSON (5 MiB, depth 16, no unsafe keys)" });
+    return z.NEVER;
+  }
+  return value;
+};
+export const upstreamSchemaV100 = z.preprocess(validateUpstreamJSONV100, z.object({
+  schema_version: z.literal("1.0.0"), id, source: extensionsSchema, title: rawText(500),
+  author: boundedUpstreamItemsV100(20), published_at: dateOnly, selected_at: dateOnly, url: sourceUrl,
+  topics: z.array(rawText(100)).min(1).max(20), selection_reason: rawText(2000),
+  segments: z.array(z.object({ id, en: rawText(20000), zh: rawText(20000), extensions: optionalExtensions }).catchall(z.json())).min(1).max(1000),
+  analysis: z.object({
+    core_thesis: rawText(10000), supporting_evidence: upstreamAnalysisItemsV100,
+    industry_significance: upstreamAnalysisItemsV100, limitations: upstreamAnalysisItemsV100,
+    independent_judgment: rawText(20000), extensions: optionalExtensions,
+  }).catchall(z.json()),
+  vocabulary: z.array(upstreamVocabulary.extend({ phonetic: z.string().max(200).nullable().optional() }).catchall(z.json())).max(2000),
+  copyright_mode: z.literal("original_summary_only"), meta: extensionsSchema.optional(), extensions: optionalExtensions,
+}).catchall(z.json()).superRefine((a, ctx) => {
+  if (new Set(a.segments.map((s) => s.id)).size !== a.segments.length)
+    ctx.addIssue({ code: "custom", message: "Duplicate upstream segment IDs" });
+  if (new Set(a.vocabulary.map(upstreamVocabularyId)).size !== a.vocabulary.length ||
+      new Set(a.vocabulary.map(upstreamVocabularyIdentity)).size !== a.vocabulary.length)
+    ctx.addIssue({ code: "custom", message: "Duplicate upstream vocabulary IDs or identities" });
+  for (const v of a.vocabulary) {
+    if (v.segment_id == null) continue;
+    const segment = a.segments.find((s) => s.id === v.segment_id);
+    if (!segment || !containsTerm(segment.en, v.term))
+      ctx.addIssue({ code: "custom", message: `Vocabulary ${v.term} must occur in its explicitly linked English segment` });
+  }
+}));
+export const upstreamImportSchemaV100 = z.object({
+  format: z.literal("chatgpt-upstream-1.0.0"), revision: z.number().int().min(1).max(2147483647),
+  rights: rightsDeclaration, title_zh: rawText(500).optional(), article: upstreamSchemaV100, extensions: optionalExtensions,
+}).strict();
+const upstreamSnapshot = z.union([upstreamSchema, upstreamSchemaV100]);
 const segment = z.object({ id, order: z.number().int().min(0).max(9999), kind: z.enum(["paragraph", "heading", "quote"]), en: text(20000), zh: text(20000), extensions: optionalExtensions }).strict();
 const vocabulary = z.object({
   id, segment_id: id.nullable(), example_en: text(20000).optional(), example_zh: text(20000).optional(),
   part_of_speech: text(200).optional(), term: text(200), meaning_zh: text(2000), meaning_en: text(2000).optional(), phonetic: text(200).optional(), extensions: optionalExtensions,
 }).strict();
 export const articleSchema = z.object({
-  id, upstream_snapshot: upstreamSchema.optional(), upstream_wrapper_extensions: optionalExtensions,
+  id, upstream_snapshot: upstreamSnapshot.optional(), upstream_wrapper_extensions: optionalExtensions,
   upstream_title_zh: rawText(500).optional(),
-  revision: z.number().int().min(1).max(2147483647), title: text(500), title_zh: text(500), author: text(200),
+  revision: z.number().int().min(1).max(2147483647), title: text(500), title_zh: text(500), author: text(262144),
   published_at: dateOnly, topics: z.array(text(100)).min(1).max(20), source, summary: text(2000),
   segments: z.array(segment).min(1).max(1000), vocabulary: z.array(vocabulary).max(2000),
-  analysis: z.object({ summary_zh: text(10000), key_points: z.array(text(3000)).max(30), discussion: z.array(text(3000)).max(30), limitations: z.string().max(10000).optional(), ...richAnalysis }).strict(),
+  analysis: z.object({ summary_zh: text(10000), key_points: z.array(text(262144)).max(100), discussion: z.array(text(262144)).max(101), limitations: z.string().max(262144).optional(), ...richAnalysis }).strict(),
   meta: meta.optional(), extensions: optionalExtensions,
 }).strict().superRefine((a, ctx) => {
   const ids = new Set(a.segments.map((s) => s.id));
@@ -142,7 +203,8 @@ export const articleSchema = z.object({
   checkAnalysis(a.analysis, ids, ctx);
   if (a.source.rights === "summary_only") {
     const original = a.upstream_snapshot;
-    if (!original || original.id !== a.id || original.url !== a.source.url || original.meta?.content_origin !== "third_party_paraphrase" || original.meta.source_url !== a.source.url)
+    if (!original || original.id !== a.id || original.url !== a.source.url ||
+      (original.schema_version === "1.0" && (original.meta?.content_origin !== "third_party_paraphrase" || original.meta.source_url !== a.source.url)))
       ctx.addIssue({ code: "custom", message: "summary_only requires a matching paraphrase upstream_snapshot with original-source provenance" });
     // Prevent an internal batch from attaching a harmless snapshot to unrelated full text.
     if (original && (a.segments.length !== original.segments.length || a.segments.some((s) => {

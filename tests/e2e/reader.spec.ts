@@ -225,3 +225,36 @@ test("hostile imported text remains literal text, never executable HTML", async 
   ).toBe(0);
   expect(dialogSeen).toBe(false);
 });
+
+test("current 1.0.0 raw import keeps rights explicit, renders rich analysis and preserves nullable source fields", async ({ page, request }, info) => {
+  const input = JSON.parse(readFileSync("fixtures/synthetic-upstream-1.0.0.json", "utf8"));
+  input.article.id = `e2e-${info.project.name}-v100`;
+  input.article.title = `Current upstream ${info.project.name}`;
+  await page.goto("/#library");
+  await page.getByRole("button", { name: "导入文章", exact: true }).click();
+  await page.getByLabel("选择文章 JSON 文件").setInputFiles({
+    name: "current-upstream.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify(input.article)),
+  });
+  await expect(page.getByRole("button", { name: "确认权利并导入" })).toBeDisabled();
+  await page.getByLabel("内容使用权利").selectOption("summary_only");
+  await page.getByLabel("版权声明").fill(input.rights.copyright);
+  await page.getByLabel("授权说明").fill(input.rights.permission_note);
+  await page.getByRole("button", { name: "确认权利并导入" }).click();
+  await expect(page.getByRole("dialog")).toHaveCount(0);
+  await page.goto(`/#reader/${input.article.id}`);
+  await expect(page.locator(".segment-en")).toHaveCount(3);
+  await expect(page.locator(".segment-zh")).toHaveCount(3);
+  await expect(page.getByText("Ada Example, Lin Example", { exact: false }).first()).toBeVisible();
+  await page.getByRole("tab", { name: "文章解析", exact: true }).click();
+  await expect(page.locator("#analysis-panel")).toContainText(input.article.analysis.core_thesis.trim());
+  await expect(page.locator("#analysis-panel")).toContainText("没有真实样本或实证验证。");
+  await expect(page.locator("#analysis-panel")).toContainText(input.article.analysis.independent_judgment);
+  const response = await request.get(`/api/articles/${input.article.id}`);
+  const detail = await response.json();
+  expect(detail.upstream_snapshot).toEqual(input.article);
+  expect(detail.upstream_snapshot.vocabulary[0].phonetic).toBeNull();
+  expect(detail.vocabulary[0].phonetic).toBeUndefined();
+  expect(detail.source.rights).toBe("summary_only");
+  await page.screenshot({ path: `test-results/${info.project.name}-v100-analysis.png`, fullPage: true });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
+});

@@ -1,0 +1,208 @@
+{
+  "format": "chatgpt-upstream-1.0.0",
+  "revision": 1,
+  "rights": {
+    "rights": "summary_only",
+    "copyright": "Original synthetic fixture; all people, organizations and research are fictional. No a16z article text is included.",
+    "permission_note": "This fixture contains only independently written bilingual summaries and analysis. It does not claim permission to reproduce any third-party full text."
+  },
+  "title_zh": "  合成研究：从小型试验学习  ",
+  "article": {
+    "schema_version": "1.0.0",
+    "id": "synthetic-upstream-100-learning",
+    "source": {
+      "name": "Synthetic Research Notes",
+      "site_url": "https://example.com",
+      "language": "en",
+      "details": {
+        "fictional": true,
+        "description": "  Original synthetic material  "
+      }
+    },
+    "title": "  Synthetic research: learning from small trials  ",
+    "author": [
+      "Ada Example",
+      {
+        "name": "Lin Example",
+        "affiliation": {
+          "name": "Fictional Learning Lab"
+        },
+        "verified": false
+      }
+    ],
+    "published_at": "2026-10-08",
+    "selected_at": "2026-10-10",
+    "url": "https://example.com/synthetic-upstream-100-learning",
+    "topics": [
+      "Learning",
+      "Synthetic"
+    ],
+    "selection_reason": "原创合成案例，用于验证逐段对照、结构化分析和词汇的无损归档。",
+    "segments": [
+      {
+        "id": "s01",
+        "en": "A small team records a hypothesis before each pilot. A baseline helps the team distinguish evidence from enthusiasm.",
+        "zh": "一个小团队在每次试点前记录假设。基线帮助团队区分证据与热情。",
+        "heading": "A fictional method"
+      },
+      {
+        "id": "s02",
+        "en": "The team compares the observed outcome with the baseline and examines the trade-off. A constraint can be informative even when the result is uncertain.",
+        "zh": "团队将观察结果与基线比较，并审视其中的取舍。即使结果不确定，一项约束也可能带来信息。"
+      },
+      {
+        "id": "s03",
+        "en": "Iteration creates useful feedback, but momentum is not proof of scalability. An incentive can change behavior without improving the underlying process.",
+        "zh": "迭代会产生有用反馈，但势头并不能证明可扩展性。激励可能改变行为，却没有改善底层流程。"
+      }
+    ],
+    "analysis": {
+      "core_thesis": "  在这个虚构案例中，先记录假设和基线，能够使试点结果更易解释。  ",
+      "supporting_evidence": [
+        "案例中先记录假设，再对比观察结果。",
+        {
+          "observation": "试点提供一个可讨论的观察结果。",
+          "confidence": "仅为合成例子，不构成实证结论。",
+          "details": {
+            "reported": false,
+            "values": [
+              1,
+              2,
+              null
+            ]
+          }
+        }
+      ],
+      "industry_significance": [
+        "对组织学习的启示是保留决策依据。",
+        {
+          "question": "如何区分短期反馈与长期能力？",
+          "answer": "需要更多观察，不能从这个虚构案例推断行业趋势。"
+        }
+      ],
+      "limitations": [
+        "该案例完全虚构。",
+        {
+          "caveat": "没有真实样本或实证验证。",
+          "scope": [
+            "不能推断因果",
+            "不能估计规模效应"
+          ]
+        }
+      ],
+      "independent_judgment": "应把试点作为降低不确定性的工具，同时保留失败结果与边界条件。",
+      "commercial_significance": {
+        "note": "额外的分析章节必须原样保留。",
+        "assumptions": [
+          "合成假设，尚未验证。"
+        ]
+      }
+    },
+    "vocabulary": [
+      {
+        "term": "pilot",
+        "part_of_speech": "noun",
+        "meaning_zh": "试点",
+        "example_en": "A pilot can test an idea cheaply.",
+        "example_zh": "试点可以低成本检验想法。",
+        "phonetic": null,
+        "extensions": {
+          "teaching_note": "Supplied example, not a quoted source paragraph."
+        },
+        "pronunciation_source": null
+      },
+      {
+        "term": "baseline",
+        "part_of_speech": "noun",
+        "meaning_zh": "基线",
+        "example_en": "We record a baseline before making changes.",
+        "example_zh": "我们在作出改变前记录基线。",
+        "meaning_en": "A starting point used for comparison.",
+        "phonetic": ""
+      },
+      {
+        "term": "hypothesis",
+        "part_of_speech": "noun",
+        "meaning_zh": "假设",
+        "example_en": "A useful hypothesis can be challenged by evidence.",
+        "example_zh": "有用的假设能够接受证据的检验。",
+        "phonetic": "  "
+      },
+      {
+        "term": "observation",
+        "part_of_speech": "noun",
+        "meaning_zh": "观察",
+        "example_en": "One observation rarely settles a difficult question.",
+        "example_zh": "一次观察很少能解决复杂问题。"
+      },
+      {
+        "term": "friction",
+        "part_of_speech": "noun",
+        "meaning_zh": "阻力；摩擦",
+        "example_en": "Clear instructions can reduce friction.",
+        "example_zh": "清晰的说明可以减少阻力。"
+      },
+      {
+        "term": "sample",
+        "part_of_speech": "noun",
+        "meaning_zh": "样本",
+        "example_en": "The sample is too small for a strong conclusion.",
+        "example_zh": "样本过小，无法支持有力的结论。"
+      },
+      {
+        "term": "measurement",
+        "part_of_speech": "noun",
+        "meaning_zh": "测量",
+        "example_en": "Reliable measurement requires a consistent method.",
+        "example_zh": "可靠的测量需要一致的方法。"
+      },
+      {
+        "term": "signal",
+        "part_of_speech": "noun",
+        "meaning_zh": "信号",
+        "example_en": "A promising signal deserves careful validation.",
+        "example_zh": "有希望的信号值得仔细验证。"
+      },
+      {
+        "term": "trade-off",
+        "part_of_speech": "noun",
+        "meaning_zh": "权衡",
+        "example_en": "Every design choice involves a trade-off.",
+        "example_zh": "每项设计选择都涉及权衡。"
+      },
+      {
+        "term": "forecast",
+        "part_of_speech": "noun",
+        "meaning_zh": "预测",
+        "example_en": "A forecast should state its assumptions.",
+        "example_zh": "预测应说明其假设。"
+      },
+      {
+        "term": "constraint",
+        "part_of_speech": "noun",
+        "meaning_zh": "约束",
+        "example_en": "A budget is a practical constraint.",
+        "example_zh": "预算是一项实际约束。"
+      },
+      {
+        "term": "momentum",
+        "part_of_speech": "noun",
+        "meaning_zh": "动力；势头",
+        "example_en": "A steady learning routine builds momentum.",
+        "example_zh": "稳定的学习安排能够积累动力。"
+      }
+    ],
+    "copyright_mode": "original_summary_only",
+    "meta": {
+      "content_origin": "synthetic",
+      "generator": "synthetic-fixture",
+      "notes": [
+        "No real article or private conversation is copied."
+      ],
+      "producer_extra": {
+        "retained": true
+      }
+    },
+    "producer_note": "  Extra upstream fields remain unchanged in the source snapshot.  "
+  }
+}

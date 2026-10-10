@@ -59,7 +59,7 @@ export function articleMarkdown(input: Article): string {
     lines.push(`\n### ${esc(key.replace(/_/g, " "))}\n\n${outline(value)}`);
   }
   if (a.upstream_snapshot?.analysis.limitations && !("limitations" in a.analysis))
-    lines.push(`\n### Limitations\n\n${esc(a.upstream_snapshot.analysis.limitations)}`);
+    lines.push(`\n### Limitations\n\n${outline(a.upstream_snapshot.analysis.limitations)}`);
   if (a.vocabulary.length) lines.push("\n## Vocabulary", ...a.vocabulary.map((v) =>
     `\n### ${esc(v.term)}\n\n${[v.phonetic, v.part_of_speech].filter((value): value is string => !!value).map(esc).join(" · ")}\n\n${esc(v.meaning_zh)}${v.meaning_en ? `\n\n${esc(v.meaning_en)}` : ""}\n\nID: ${esc(v.id)} · ${v.segment_id === null ? "Article-level vocabulary; no inferred segment association" : `Segment: ${esc(v.segment_id)}`}${v.example_en ? `\n\nSupplied example (not a source quotation): ${esc(v.example_en)}\n\n${esc(v.example_zh || "")}` : ""}${v.extensions ? `\n\nVocabulary extensions:\n${outline(v.extensions)}` : ""}`,
   ));

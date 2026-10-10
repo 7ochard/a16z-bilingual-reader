@@ -6,16 +6,16 @@ ChatGPT supplies reviewed bilingual content; `content/articles/` preserves JSON 
 
 ## Standard input and safe workflow
 
-1. Keep the complete generated article. The frozen observed `schema_version: "1.0"` core and documented rich optional fields/extensions are in [the import contract](import-schema.md). `schema/chatgpt-article.v1.0.schema.json` is the direct article schema; `fixtures/synthetic-daily-article.json` is a complete synthetic wrapped example, not real a16z content.
-2. Add the existing `format:"chatgpt-observed-1.0"` envelope with a stable `revision`, explicit rights declaration and the `article`. Do not infer a license from `copyright_mode`. For unlicensed third-party sources use only original summaries/paraphrases and independent analysis with `summary_only` and matching provenance. The adapter deliberately does not accept a full-text or quotation mode. Any limited excerpts must be separately reviewed for copyright compliance; labels cannot verify what text was actually copied. Do not relabel a copied full article as a paraphrase. Keep author, publication date, original URL, copyright notice and permission note.
+1. Keep the complete generated article unchanged. The current observed `schema_version: "1.0.0"` producer shape is primary; the earlier `1.0` example remains supported. See [the import contract](import-schema.md), `schema/chatgpt-article.v1.0.0.schema.json` and the fully synthetic `fixtures/synthetic-upstream-1.0.0.json`. The producer schema attachment itself has not been recovered, so local compatibility limits are not claimed as upstream requirements.
+2. Keep local review metadata separate: `revision`, explicit `rights`, optional translated title/extensions. Run `npm run content:prepare -- raw-article.json local-review.json new-wrapper.json`; it selects `format:"chatgpt-upstream-1.0.0"` or the legacy wrapper and leaves the producer file untouched. Do not infer a license from `copyright_mode`. For unlicensed third-party sources use only original summaries/paraphrases and independent analysis with `summary_only` and the source URL; legacy `1.0` also requires its existing matching provenance metadata. The adapter deliberately does not accept a full-text or quotation mode. Any limited excerpts must be separately reviewed for copyright compliance; labels cannot verify what text was actually copied. Do not relabel a copied full article as a paraphrase. Keep author, publication date, original URL, copyright notice and permission note.
 3. Validate, then stage a review copy without changing the accepted archive or SQLite:
 
 ```sh
-npm run content:validate -- fixtures/synthetic-daily-article.json
-npm run content:stage -- fixtures/synthetic-daily-article.json
+npm run content:validate -- fixtures/synthetic-upstream-1.0.0.json
+npm run content:stage -- fixtures/synthetic-upstream-1.0.0.json
 ```
 
-Staging prints an ignored directory containing `articles/` and review instructions. No commit, push, import, collection or network call occurs. Staging refuses to replace an existing destination. Source content is plain text; Markdown escapes prose and exposes complete source provenance. Still use safe Markdown renderers downstream.
+Staging prints an ignored directory containing `articles/` and review instructions. No commit, push, import, collection or network call occurs. Staging refuses to replace an existing destination. Source content is plain text; Markdown escapes prose and exposes complete source provenance, including the unchanged source JSON values. It is a derived reading view, not the original response Markdown bytes. Still use safe Markdown renderers downstream.
 
 4. After reviewing the entire output and publication rights, accept the reviewed input through the safe archive command. Do not manually copy pairs over existing files:
 
@@ -72,7 +72,7 @@ The importer validates every historical JSON/Markdown pair and rejects missing/o
 
 ## First formal daily article
 
-When the actual output arrives, preserve it in full, validate it against the documented contract, inspect any rejected fields and introduce explicit compatible extensions or a new major source contract where needed. Never silently trim an unknown section, infer missing paragraph links, or flatten deep analysis into a single summary to make import pass. Only after that compatibility and rights review should the first real article be accepted and committed.
+When the actual JSON/Markdown attachments arrive, preserve and review them in full. Validate the observed shape, inspect any mismatch and adjust the downstream adapter to the producer before acceptance. Do not rewrite the producer to satisfy the old reader contract. Extra upstream fields already survive in the source snapshot; incompatible known fields still require an explicit compatibility decision. Never silently trim an unknown section, infer missing paragraph links, or flatten deep analysis into a single summary to make import pass. Domain-opportunity research remains separate from learning JSON. A `1.0` → `1.0.0` change under an existing ID needs a higher revision and `--update`, preserving all history and private learning state. Only after that compatibility and rights review should the first real article be accepted and committed.
 
 ## Backup boundary
 

@@ -2,7 +2,7 @@
 
 一个轻量、可运行的中英双语阅读与词汇复习 MVP。React 前端 + Node API + 服务端 SQLite，使用 **ts-fsrs 5.4.2** 计算真实的间隔复习计划。
 
-> 当前只附带原创合成示例，未抓取、翻译或导入任何真实 a16z 全文。本项目与 a16z 无隶属或背书关系。已为实际见到的简化版 ChatGPT `schema_version: "1.0"` 示例加入专用适配器（需权利声明包装）；已冻结兼容的 1.0 核心及可选深度分析/元数据扩展；第一篇正式每日输出仍待验证。内部协议标记保持兼容。
+> 当前只附带原创合成示例，未抓取、翻译或导入任何真实 a16z 全文。本项目与 a16z 无隶属或背书关系。以当前已观察到的 ChatGPT `schema_version: "1.0.0"` 为主，兼容早期简化版 `1.0`；原始 JSON 值、作者数组、完整分析与空音标可无损保留。权利与修订信息在本地另加，不要求上游改格式。实际附件 schema 和第一篇正式文章仍待验证；内部协议标记保持兼容。
 
 ## 运行
 
@@ -28,8 +28,8 @@ npm start           # http://127.0.0.1:3001
 ChatGPT 负责收集并生成结构化内容，审核后的 JSON / Markdown 保存在 `content/articles/`。SQLite 负责本地查询和私人学习状态；不会把生词进度写进 Git。当前归档只有原创合成样本。
 
 ```sh
-npm run content:validate -- fixtures/synthetic-daily-article.json
-npm run content:stage -- fixtures/synthetic-daily-article.json
+npm run content:validate -- fixtures/synthetic-upstream-1.0.0.json
+npm run content:stage -- fixtures/synthetic-upstream-1.0.0.json
 # 审核通过后：npm run content:archive -- reviewed-daily-article.json
 npm run content:import
 npm run content:query -- experiment
@@ -74,4 +74,4 @@ npm run backup -- /absolute/path/reader-backup.sqlite
 - [开源项目选型报告](docs/open-source-selection.zh.md)
 - [第三方组件与许可证](THIRD_PARTY_NOTICES.md)
 
-源内容样本在 `fixtures/synthetic-library.json`，UI 没有写死文章正文。适配器样本在 `fixtures/synthetic-upstream-wrapper.json`，保留上游字段和无段落关联的词汇例句。完整合成标准样本在 `fixtures/synthetic-daily-article.json`（含深度分析与 12 个词汇）。正式上游样本到达后，先回归测试和版权审核，再归档提交。
+源内容样本在 `fixtures/synthetic-library.json`，UI 没有写死文章正文。当前 1.0.0 适配样本在 `fixtures/synthetic-upstream-1.0.0.json`；早期 1.0 样本在 `fixtures/synthetic-upstream-wrapper.json`。两者都保留上游字段和无段落关联的词汇例句。完整合成标准样本在 `fixtures/synthetic-daily-article.json`（含深度分析与 12 个词汇）。正式上游样本到达后，先回归测试和版权审核，再归档提交。

@@ -643,7 +643,8 @@ function ImportModal({
     try {
       const payload = isUpstream
         ? {
-            format: "chatgpt-observed-1.0",
+            format: typeof content === "object" && "schema_version" in content && content.schema_version === "1.0.0"
+              ? "chatgpt-upstream-1.0.0" : "chatgpt-observed-1.0",
             revision,
             rights: {
               rights,
@@ -669,15 +670,15 @@ function ImportModal({
     <Modal title="导入你的文章" onClose={onClose} busy={busy}>
       <form onSubmit={submit}>
         <p className="modal-intro">
-          上传中英对照 JSON。支持已观察到的上游 1.0
-          样例、附权利声明的适配包，以及本应用的批量格式。不会自动生成翻译。
+          上传中英对照 JSON。支持已观察到的上游 1.0.0 / 1.0
+          格式、附权利声明的适配包，以及本应用的批量格式。不会自动生成翻译。
         </p>
         <div className="contract-note">
           <strong>接口仍在对齐中</strong>
           <p>
             应用批量格式：bilingual-reader.provisional / 1.0
             <br />
-            上游适配格式：chatgpt-observed-1.0
+            上游适配格式：chatgpt-upstream-1.0.0（兼容旧 1.0）
           </p>
           <p>
             适配基于已提供样例，不代表完整上游接口兼容承诺。完整字段说明请参阅项目
@@ -712,6 +713,7 @@ function ImportModal({
                 onChange={(event) => setRights(event.target.value)}
               >
                 <option value="">请选择你的权利依据</option>
+                <option value="summary_only">原创摘要与解读（无全文许可）</option>
                 <option value="owned">自有内容</option>
                 <option value="licensed">已获许可</option>
                 <option value="public_domain">公共领域</option>
@@ -1121,12 +1123,12 @@ function Reader({
                   )}
                 </div>
               </div>
-              {article.upstream_snapshot?.analysis.limitations && (
+              {(article.analysis.limitations || (article.upstream_snapshot?.schema_version === "1.0" && article.upstream_snapshot.analysis.limitations)) && (
                 <div className="analysis-section analysis-caveat">
                   <span className="analysis-index">04</span>
                   <div>
                     <h3>局限与注意事项</h3>
-                    <p>{article.upstream_snapshot.analysis.limitations}</p>
+                    <p>{article.analysis.limitations || (article.upstream_snapshot?.schema_version === "1.0" ? article.upstream_snapshot.analysis.limitations : "")}</p>
                   </div>
                 </div>
               )}

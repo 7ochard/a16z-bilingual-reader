@@ -1,13 +1,20 @@
 # Versioned JSON Schemas
 
-Generated from the authoritative Zod input validators with `npm run schema:generate`:
+Generated from the runtime Zod input validators with `npm run schema:generate`.
 
-- `chatgpt-article.v1.0.schema.json`: frozen observed ChatGPT article core plus explicit optional rich-analysis/provenance/extension fields
-- `observed-upstream-wrapper.v1.0.schema.json`: rights-aware import wrapper with revision and the full article
-- `reader-import.v1.0.schema.json`: existing internal reader batch marker, retained for compatibility
+Primary observed producer format:
 
-Each has an identical unversioned `.schema.json` compatibility alias. The complete synthetic wrapped example is `fixtures/synthetic-daily-article.json`; no real article has been accepted. The direct article schema validates the producer's article shape, but raw unwrapped articles are not accepted by the importer because they lack the explicit rights/revision envelope.
+- `chatgpt-article.v1.0.0.schema.json`: current direct article shape, with object source, author array, rich analysis arrays and nullable phonetic
+- `upstream-wrapper.v1.0.0.schema.json`: local review envelope with explicit rights and revision; the upstream article does not need rewriting
 
-These are structural schemas for this observed contract, not a claim of universal ChatGPT compatibility. Runtime semantic checks also enforce real calendar dates, duplicate IDs/orders, analysis/vocabulary references, actual term occurrence for explicit vocabulary links, source URL safety, extension depth/size/unsafe keys, summary-only provenance, revision conflicts, archive paths and pair integrity. Always run `npm run content:validate -- input.json` before review/acceptance. Schemas and declarations cannot verify the truth of a permission claim or the originality of text.
+These current schemas describe local compatibility and safety bounds. The producer's original schema attachment was not recovered; its source child fields, required list and array item schemas are not claimed. Bounded extra producer fields are preserved in the snapshot rather than dropped. The complete example `fixtures/synthetic-upstream-1.0.0.json` is synthetic only.
 
-See `docs/import-schema.md` for the exact standard and version-change rules.
+Backward-compatible files:
+
+- `chatgpt-article.v1.0.schema.json`: legacy reduced example plus existing optional archive extensions
+- `observed-upstream-wrapper.v1.0.schema.json`: legacy rights-aware wrapper
+- `reader-import.v1.0.schema.json`: existing internal reader marker, extended to retain either source version
+
+Each legacy file keeps its unversioned alias; these aliases are not silently retargeted to the new producer shape. Old direct/wrapper schemas and archived content remain unchanged. A direct producer schema validates shape; importing still requires local rights/revision metadata. `npm run content:prepare -- raw.json local-review.json new-wrapper.json` adds that metadata without changing the raw source file.
+
+JSON Schema describes structure. Runtime semantic checks additionally enforce real dates, duplicate IDs/orders, references, term occurrence for explicit links, safe URLs, JSON size/depth/unsafe keys, summary-only body consistency, revision conflicts, archive paths and pair integrity. Declarations cannot verify permission or originality. See `docs/import-schema.md` for mapping, limits and migration rules.
