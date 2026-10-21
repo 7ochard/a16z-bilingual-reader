@@ -1,66 +1,61 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "article": {
-    "title": "This Week in Charts: Agents Denied",
-    "title_zh": "智能体遭拒：AI 购物面临的真实阻力",
-    "published_at": "2026-10-16",
-    "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied"
+    "title": "Superhuman Hardware Design Is The Easy Part",
+    "published_at": "2026-10-20",
+    "url": "https://a16z.com/superhuman-hardware-design-is-the-easy-part/",
+    "title_zh": "超人级硬件设计只是简单的部分"
   },
   "words": [
     {
-      "term": "forbidden",
-      "ipa": "/fɚˈbɪd.ən/",
-      "meaning_zh": "被禁止的；被拒绝访问的"
+      "term": "lossy",
+      "ipa": "/ˈlɑː.si/",
+      "meaning_zh": "有信息损失的"
     },
     {
-      "term": "disintermediation",
-      "ipa": "/ˌdɪsɪntərˌmidiˈeɪʃən/",
-      "meaning_zh": "去中介化；绕过平台直接交易"
+      "term": "machinist",
+      "ipa": "/məˈʃiː.nɪst/",
+      "meaning_zh": "机械加工技师"
     },
     {
-      "term": "apprehensive",
-      "ipa": "/ˌæp.rəˈhen.sɪv/",
-      "meaning_zh": "忧虑的；有所顾虑的"
+      "term": "variability",
+      "ipa": "/ˌver.i.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "工艺波动性"
     },
     {
-      "term": "chargeback",
-      "ipa": "/ˈtʃɑːrdʒ.bæk/",
-      "meaning_zh": "拒付；发卡方主导的争议退款"
+      "term": "tolerance",
+      "ipa": "/ˈtɑː.lɚ.əns/",
+      "meaning_zh": "工程公差"
     },
     {
-      "term": "clickstream",
-      "ipa": "/ˈklɪkˌstrim/",
-      "meaning_zh": "点击流；用户跨页面访问路径"
+      "term": "inventory",
+      "ipa": "/ˈɪn.vən.tɔːr.i/",
+      "meaning_zh": "库存"
     },
     {
-      "term": "attribution",
-      "ipa": "/ˌæt.rəˈbjuː.ʃən/",
-      "meaning_zh": "归因；业绩来源认定"
+      "term": "variance",
+      "ipa": "/ˈver.i.əns/",
+      "meaning_zh": "产出波动"
     },
     {
-      "term": "skew",
-      "ipa": "/skjuː/",
-      "meaning_zh": "偏斜；销售分布不均"
+      "term": "sparse",
+      "ipa": "/spɑːrs/",
+      "meaning_zh": "数据稀疏的"
     },
     {
-      "term": "capex",
-      "ipa": "/ˈkæp.eks/",
-      "meaning_zh": "资本性支出"
+      "term": "latency",
+      "ipa": "/ˈleɪ.tən.si/",
+      "meaning_zh": "反馈延迟"
     },
     {
-      "term": "hyperscaler",
-      "ipa": "/ˈhaɪpərskeɪlər/",
-      "meaning_zh": "超大规模云计算运营商"
+      "term": "qualitative",
+      "ipa": "/ˈkwɑː.lə.teɪ.t̬ɪv/",
+      "meaning_zh": "定性的"
     },
     {
-      "term": "issuance",
-      "ipa": "/ˈɪʃ.u.əns/",
-      "meaning_zh": "债券发行；发行量"
-    },
-    {
-      "term": "sentiment",
-      "ipa": "/ˈsen.tə.mənt/",
-      "meaning_zh": "情绪；消费者信心"
+      "term": "simulation",
+      "ipa": "/ˌsɪm.jəˈleɪ.ʃən/",
+      "meaning_zh": "仿真"
     }
   ]
 }

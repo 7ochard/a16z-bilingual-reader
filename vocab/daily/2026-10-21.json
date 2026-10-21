@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-21",
+  "article": {
+    "title": "Superhuman Hardware Design Is The Easy Part",
+    "published_at": "2026-10-20",
+    "url": "https://a16z.com/superhuman-hardware-design-is-the-easy-part/",
+    "title_zh": "超人级硬件设计只是简单的部分"
+  },
+  "words": [
+    {
+      "term": "lossy",
+      "ipa": "/ˈlɑː.si/",
+      "meaning_zh": "有信息损失的"
+    },
+    {
+      "term": "machinist",
+      "ipa": "/məˈʃiː.nɪst/",
+      "meaning_zh": "机械加工技师"
+    },
+    {
+      "term": "variability",
+      "ipa": "/ˌver.i.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "工艺波动性"
+    },
+    {
+      "term": "tolerance",
+      "ipa": "/ˈtɑː.lɚ.əns/",
+      "meaning_zh": "工程公差"
+    },
+    {
+      "term": "inventory",
+      "ipa": "/ˈɪn.vən.tɔːr.i/",
+      "meaning_zh": "库存"
+    },
+    {
+      "term": "variance",
+      "ipa": "/ˈver.i.əns/",
+      "meaning_zh": "产出波动"
+    },
+    {
+      "term": "sparse",
+      "ipa": "/spɑːrs/",
+      "meaning_zh": "数据稀疏的"
+    },
+    {
+      "term": "latency",
+      "ipa": "/ˈleɪ.tən.si/",
+      "meaning_zh": "反馈延迟"
+    },
+    {
+      "term": "qualitative",
+      "ipa": "/ˈkwɑː.lə.teɪ.t̬ɪv/",
+      "meaning_zh": "定性的"
+    },
+    {
+      "term": "simulation",
+      "ipa": "/ˌsɪm.jəˈleɪ.ʃən/",
+      "meaning_zh": "仿真"
+    }
+  ]
+}
