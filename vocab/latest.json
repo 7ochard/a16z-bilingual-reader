@@ -1,66 +1,61 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "article": {
-    "title": "Investing in Eka Robotics",
-    "title_zh": "投资Eka Robotics：从灵巧演示到生产验收",
-    "published_at": "2026-10-20",
-    "url": "https://a16z.com/announcement/investing-in-eka-robotics/"
+    "title": "a16z Frontier",
+    "title_zh": "a16z Frontier：从技术标签到真实需求",
+    "published_at": "2026-10-22",
+    "url": "https://a16z.com/a16z-frontier/"
   },
   "words": [
     {
-      "term": "assembly",
-      "ipa": "/əˈsem.bli/",
-      "meaning_zh": "装配"
+      "term": "scope",
+      "ipa": "/skoʊp/",
+      "meaning_zh": "范围"
     },
     {
-      "term": "logistics",
-      "ipa": "/ləˈdʒɪs.tɪks/",
-      "meaning_zh": "物流"
+      "term": "expansion",
+      "ipa": "/ɪkˈspæn.ʃən/",
+      "meaning_zh": "扩展"
     },
     {
-      "term": "automate",
-      "ipa": "/ˈɑː.t̬ə.meɪt/",
-      "meaning_zh": "使工作自动化"
+      "term": "advocate",
+      "ipa": "/ˈæd.və.keɪt/",
+      "meaning_zh": "倡导"
     },
     {
-      "term": "variable",
-      "ipa": "/ˈver.i.ə.bəl/",
-      "meaning_zh": "多变的"
+      "term": "sensible",
+      "ipa": "/ˈsen.sə.bəl/",
+      "meaning_zh": "合理的"
     },
     {
-      "term": "deform",
-      "ipa": "/dɪˈfɔːrm/",
-      "meaning_zh": "变形"
+      "term": "regulation",
+      "ipa": "/ˌreɡ.jəˈleɪ.ʃən/",
+      "meaning_zh": "监管"
     },
     {
-      "term": "align",
-      "ipa": "/əˈlaɪn/",
-      "meaning_zh": "对齐"
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "基础设施"
     },
     {
-      "term": "dexterous",
-      "ipa": "/ˈdek.strəs/",
-      "meaning_zh": "灵巧的"
+      "term": "mainstream",
+      "ipa": "/ˈmeɪn.striːm/",
+      "meaning_zh": "主流"
     },
     {
-      "term": "automation",
-      "ipa": "/ˌɑː.t̬əˈmeɪ.ʃən/",
-      "meaning_zh": "自动化"
+      "term": "traction",
+      "ipa": "/ˈtræk.ʃən/",
+      "meaning_zh": "市场认可"
     },
     {
-      "term": "constraint",
-      "ipa": "/kənˈstreɪnt/",
-      "meaning_zh": "制约因素"
+      "term": "spawn",
+      "ipa": "/spɑːn/",
+      "meaning_zh": "催生"
     },
     {
-      "term": "versatility",
-      "ipa": "/ˌvɝː.səˈtɪl.ə.t̬i/",
-      "meaning_zh": "应对多种任务的能力"
-    },
-    {
-      "term": "manipulation",
-      "ipa": "/məˌnɪp.jəˈleɪ.ʃən/",
-      "meaning_zh": "抓取与操作物体"
+      "term": "autonomous",
+      "ipa": "/ɑːˈtɑː.nə.məs/",
+      "meaning_zh": "自主运行的"
     }
   ]
 }
