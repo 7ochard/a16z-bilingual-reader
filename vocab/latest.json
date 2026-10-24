@@ -1,61 +1,61 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "article": {
-    "title": "a16z Frontier",
-    "title_zh": "a16z Frontier：从技术标签到真实需求",
-    "published_at": "2026-10-22",
-    "url": "https://a16z.com/a16z-frontier/"
+    "title": "Patch or Die",
+    "title_zh": "Patch or Die：从安全告警到可验证的处置",
+    "published_at": "2026-10-23",
+    "url": "https://www.a16z.news/p/patch-or-die"
   },
   "words": [
     {
-      "term": "scope",
-      "ipa": "/skoʊp/",
-      "meaning_zh": "范围"
+      "term": "patch",
+      "ipa": "/pætʃ/",
+      "meaning_zh": "修补安全漏洞"
     },
     {
-      "term": "expansion",
-      "ipa": "/ɪkˈspæn.ʃən/",
-      "meaning_zh": "扩展"
+      "term": "drastic",
+      "ipa": "/ˈdræs.tɪk/",
+      "meaning_zh": "大刀阔斧的"
     },
     {
-      "term": "advocate",
-      "ipa": "/ˈæd.və.keɪt/",
-      "meaning_zh": "倡导"
+      "term": "portfolio",
+      "ipa": "/ˌpɔːrtˈfoʊ.li.oʊ/",
+      "meaning_zh": "投资组合"
     },
     {
-      "term": "sensible",
-      "ipa": "/ˈsen.sə.bəl/",
-      "meaning_zh": "合理的"
+      "term": "cybersecurity",
+      "ipa": "/ˌsaɪ.bɚ.səˈkjʊr.ə.t̬i/",
+      "meaning_zh": "网络安全"
     },
     {
-      "term": "regulation",
-      "ipa": "/ˌreɡ.jəˈleɪ.ʃən/",
-      "meaning_zh": "监管"
+      "term": "rate",
+      "ipa": "/reɪt/",
+      "meaning_zh": "漏洞发现与利用速度"
     },
     {
-      "term": "infrastructure",
-      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
-      "meaning_zh": "基础设施"
+      "term": "flood",
+      "ipa": "/flʌd/",
+      "meaning_zh": "大量涌现"
     },
     {
-      "term": "mainstream",
-      "ipa": "/ˈmeɪn.striːm/",
-      "meaning_zh": "主流"
+      "term": "scale",
+      "ipa": "/skeɪl/",
+      "meaning_zh": "规模"
     },
     {
-      "term": "traction",
-      "ipa": "/ˈtræk.ʃən/",
-      "meaning_zh": "市场认可"
+      "term": "risk",
+      "ipa": "/rɪsk/",
+      "meaning_zh": "风险"
     },
     {
-      "term": "spawn",
-      "ipa": "/spɑːn/",
-      "meaning_zh": "催生"
+      "term": "automate",
+      "ipa": "/ˈɑː.t̬ə.meɪt/",
+      "meaning_zh": "使攻击流程自动化"
     },
     {
-      "term": "autonomous",
-      "ipa": "/ɑːˈtɑː.nə.məs/",
-      "meaning_zh": "自主运行的"
+      "term": "threat",
+      "ipa": "/θret/",
+      "meaning_zh": "安全威胁"
     }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-24",
+  "article": {
+    "title": "Patch or Die",
+    "title_zh": "Patch or Die：从安全告警到可验证的处置",
+    "published_at": "2026-10-23",
+    "url": "https://www.a16z.news/p/patch-or-die"
+  },
+  "words": [
+    {
+      "term": "patch",
+      "ipa": "/pætʃ/",
+      "meaning_zh": "修补安全漏洞"
+    },
+    {
+      "term": "drastic",
+      "ipa": "/ˈdræs.tɪk/",
+      "meaning_zh": "大刀阔斧的"
+    },
+    {
+      "term": "portfolio",
+      "ipa": "/ˌpɔːrtˈfoʊ.li.oʊ/",
+      "meaning_zh": "投资组合"
+    },
+    {
+      "term": "cybersecurity",
+      "ipa": "/ˌsaɪ.bɚ.səˈkjʊr.ə.t̬i/",
+      "meaning_zh": "网络安全"
+    },
+    {
+      "term": "rate",
+      "ipa": "/reɪt/",
+      "meaning_zh": "漏洞发现与利用速度"
+    },
+    {
+      "term": "flood",
+      "ipa": "/flʌd/",
+      "meaning_zh": "大量涌现"
+    },
+    {
+      "term": "scale",
+      "ipa": "/skeɪl/",
+      "meaning_zh": "规模"
+    },
+    {
+      "term": "risk",
+      "ipa": "/rɪsk/",
+      "meaning_zh": "风险"
+    },
+    {
+      "term": "automate",
+      "ipa": "/ˈɑː.t̬ə.meɪt/",
+      "meaning_zh": "使攻击流程自动化"
+    },
+    {
+      "term": "threat",
+      "ipa": "/θret/",
+      "meaning_zh": "安全威胁"
+    }
+  ]
+}
