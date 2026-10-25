@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "article": {
+    "title": "Charts of the Week: Attention is All You Need",
+    "title_zh": "注意力就是一切：寻找增长的真正瓶颈",
+    "published_at": "2026-10-23",
+    "url": "https://www.a16z.news/p/charts-of-the-week-attention-is-all"
+  },
+  "words": [
+    {
+      "term": "attention",
+      "ipa": "/əˈten.ʃən/",
+      "meaning_zh": "注意力"
+    },
+    {
+      "term": "obsolete",
+      "ipa": "/ˌɑːb.səlˈiːt/",
+      "meaning_zh": "过时淘汰的"
+    },
+    {
+      "term": "consumption",
+      "ipa": "/kənˈsʌmp.ʃən/",
+      "meaning_zh": "媒体消费"
+    },
+    {
+      "term": "depreciation",
+      "ipa": "/dɪˌpriː.ʃiˈeɪ.ʃən/",
+      "meaning_zh": "折旧"
+    },
+    {
+      "term": "surplus",
+      "ipa": "/ˈsɝː.pləs/",
+      "meaning_zh": "超出折旧预期的差额"
+    },
+    {
+      "term": "inflection",
+      "ipa": "/ɪnˈflek.ʃən/",
+      "meaning_zh": "需求增长拐点"
+    },
+    {
+      "term": "capacity",
+      "ipa": "/kəˈpæs.ə.t̬i/",
+      "meaning_zh": "产能"
+    },
+    {
+      "term": "utilization",
+      "ipa": "/ˌjuː.t̬əl.əˈzeɪ.ʃən/",
+      "meaning_zh": "产能利用率"
+    },
+    {
+      "term": "backlog",
+      "ipa": "/ˈbæk.lɑːɡ/",
+      "meaning_zh": "积压订单"
+    },
+    {
+      "term": "shortfall",
+      "ipa": "/ˈʃɔːrt.fɑːl/",
+      "meaning_zh": "供给缺口"
+    }
+  ]
+}

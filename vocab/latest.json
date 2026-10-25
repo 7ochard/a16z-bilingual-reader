@@ -1,61 +1,61 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "article": {
-    "title": "Patch or Die",
-    "title_zh": "Patch or Die：从安全告警到可验证的处置",
+    "title": "Charts of the Week: Attention is All You Need",
+    "title_zh": "注意力就是一切：寻找增长的真正瓶颈",
     "published_at": "2026-10-23",
-    "url": "https://www.a16z.news/p/patch-or-die"
+    "url": "https://www.a16z.news/p/charts-of-the-week-attention-is-all"
   },
   "words": [
     {
-      "term": "patch",
-      "ipa": "/pætʃ/",
-      "meaning_zh": "修补安全漏洞"
+      "term": "attention",
+      "ipa": "/əˈten.ʃən/",
+      "meaning_zh": "注意力"
     },
     {
-      "term": "drastic",
-      "ipa": "/ˈdræs.tɪk/",
-      "meaning_zh": "大刀阔斧的"
+      "term": "obsolete",
+      "ipa": "/ˌɑːb.səlˈiːt/",
+      "meaning_zh": "过时淘汰的"
     },
     {
-      "term": "portfolio",
-      "ipa": "/ˌpɔːrtˈfoʊ.li.oʊ/",
-      "meaning_zh": "投资组合"
+      "term": "consumption",
+      "ipa": "/kənˈsʌmp.ʃən/",
+      "meaning_zh": "媒体消费"
     },
     {
-      "term": "cybersecurity",
-      "ipa": "/ˌsaɪ.bɚ.səˈkjʊr.ə.t̬i/",
-      "meaning_zh": "网络安全"
+      "term": "depreciation",
+      "ipa": "/dɪˌpriː.ʃiˈeɪ.ʃən/",
+      "meaning_zh": "折旧"
     },
     {
-      "term": "rate",
-      "ipa": "/reɪt/",
-      "meaning_zh": "漏洞发现与利用速度"
+      "term": "surplus",
+      "ipa": "/ˈsɝː.pləs/",
+      "meaning_zh": "超出折旧预期的差额"
     },
     {
-      "term": "flood",
-      "ipa": "/flʌd/",
-      "meaning_zh": "大量涌现"
+      "term": "inflection",
+      "ipa": "/ɪnˈflek.ʃən/",
+      "meaning_zh": "需求增长拐点"
     },
     {
-      "term": "scale",
-      "ipa": "/skeɪl/",
-      "meaning_zh": "规模"
+      "term": "capacity",
+      "ipa": "/kəˈpæs.ə.t̬i/",
+      "meaning_zh": "产能"
     },
     {
-      "term": "risk",
-      "ipa": "/rɪsk/",
-      "meaning_zh": "风险"
+      "term": "utilization",
+      "ipa": "/ˌjuː.t̬əl.əˈzeɪ.ʃən/",
+      "meaning_zh": "产能利用率"
     },
     {
-      "term": "automate",
-      "ipa": "/ˈɑː.t̬ə.meɪt/",
-      "meaning_zh": "使攻击流程自动化"
+      "term": "backlog",
+      "ipa": "/ˈbæk.lɑːɡ/",
+      "meaning_zh": "积压订单"
     },
     {
-      "term": "threat",
-      "ipa": "/θret/",
-      "meaning_zh": "安全威胁"
+      "term": "shortfall",
+      "ipa": "/ˈʃɔːrt.fɑːl/",
+      "meaning_zh": "供给缺口"
     }
   ]
 }
