@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "article": {
+    "title": "Why Hardware Specialization is Back",
+    "published_at": "2026-10-21",
+    "url": "https://www.a16z.news/p/why-hardware-specialization-is-back",
+    "title_zh": "硬件专用化为何回归"
+  },
+  "words": [
+    {
+      "term": "hardware",
+      "ipa": "/ˈhɑːrd.wer/",
+      "meaning_zh": "硬件"
+    },
+    {
+      "term": "specialized",
+      "ipa": "/ˈspeʃ.ə.laɪzd/",
+      "meaning_zh": "专用的"
+    },
+    {
+      "term": "computation",
+      "ipa": "/ˌkɑːm.pjəˈteɪ.ʃən/",
+      "meaning_zh": "计算"
+    },
+    {
+      "term": "architecture",
+      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
+      "meaning_zh": "芯片架构"
+    },
+    {
+      "term": "leverage",
+      "ipa": "/ˈlev.ɚ.ɪdʒ/",
+      "meaning_zh": "利用"
+    },
+    {
+      "term": "transistor",
+      "ipa": "/trænˈzɪs.tɚ/",
+      "meaning_zh": "晶体管"
+    },
+    {
+      "term": "bandwidth",
+      "ipa": "/ˈbænd.wɪtθ/",
+      "meaning_zh": "带宽"
+    },
+    {
+      "term": "inference",
+      "ipa": "/ˈɪn.fɚ.əns/",
+      "meaning_zh": "模型推理"
+    },
+    {
+      "term": "accelerator",
+      "ipa": "/ekˈsel.ɚ.eɪ.t̬ɚ/",
+      "meaning_zh": "加速器"
+    },
+    {
+      "term": "heterogeneous",
+      "ipa": "/ˌhet̬.ə.roʊˈdʒiː.ni.əs/",
+      "meaning_zh": "异构的"
+    }
+  ]
+}

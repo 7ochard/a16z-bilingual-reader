@@ -1,61 +1,61 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "article": {
-    "title": "Charts of the Week: Attention is All You Need",
-    "title_zh": "注意力就是一切：寻找增长的真正瓶颈",
-    "published_at": "2026-10-23",
-    "url": "https://www.a16z.news/p/charts-of-the-week-attention-is-all"
+    "title": "Why Hardware Specialization is Back",
+    "published_at": "2026-10-21",
+    "url": "https://www.a16z.news/p/why-hardware-specialization-is-back",
+    "title_zh": "硬件专用化为何回归"
   },
   "words": [
     {
-      "term": "attention",
-      "ipa": "/əˈten.ʃən/",
-      "meaning_zh": "注意力"
+      "term": "hardware",
+      "ipa": "/ˈhɑːrd.wer/",
+      "meaning_zh": "硬件"
     },
     {
-      "term": "obsolete",
-      "ipa": "/ˌɑːb.səlˈiːt/",
-      "meaning_zh": "过时淘汰的"
+      "term": "specialized",
+      "ipa": "/ˈspeʃ.ə.laɪzd/",
+      "meaning_zh": "专用的"
     },
     {
-      "term": "consumption",
-      "ipa": "/kənˈsʌmp.ʃən/",
-      "meaning_zh": "媒体消费"
+      "term": "computation",
+      "ipa": "/ˌkɑːm.pjəˈteɪ.ʃən/",
+      "meaning_zh": "计算"
     },
     {
-      "term": "depreciation",
-      "ipa": "/dɪˌpriː.ʃiˈeɪ.ʃən/",
-      "meaning_zh": "折旧"
+      "term": "architecture",
+      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
+      "meaning_zh": "芯片架构"
     },
     {
-      "term": "surplus",
-      "ipa": "/ˈsɝː.pləs/",
-      "meaning_zh": "超出折旧预期的差额"
+      "term": "leverage",
+      "ipa": "/ˈlev.ɚ.ɪdʒ/",
+      "meaning_zh": "利用"
     },
     {
-      "term": "inflection",
-      "ipa": "/ɪnˈflek.ʃən/",
-      "meaning_zh": "需求增长拐点"
+      "term": "transistor",
+      "ipa": "/trænˈzɪs.tɚ/",
+      "meaning_zh": "晶体管"
     },
     {
-      "term": "capacity",
-      "ipa": "/kəˈpæs.ə.t̬i/",
-      "meaning_zh": "产能"
+      "term": "bandwidth",
+      "ipa": "/ˈbænd.wɪtθ/",
+      "meaning_zh": "带宽"
     },
     {
-      "term": "utilization",
-      "ipa": "/ˌjuː.t̬əl.əˈzeɪ.ʃən/",
-      "meaning_zh": "产能利用率"
+      "term": "inference",
+      "ipa": "/ˈɪn.fɚ.əns/",
+      "meaning_zh": "模型推理"
     },
     {
-      "term": "backlog",
-      "ipa": "/ˈbæk.lɑːɡ/",
-      "meaning_zh": "积压订单"
+      "term": "accelerator",
+      "ipa": "/ekˈsel.ɚ.eɪ.t̬ɚ/",
+      "meaning_zh": "加速器"
     },
     {
-      "term": "shortfall",
-      "ipa": "/ˈʃɔːrt.fɑːl/",
-      "meaning_zh": "供给缺口"
+      "term": "heterogeneous",
+      "ipa": "/ˌhet̬.ə.roʊˈdʒiː.ni.əs/",
+      "meaning_zh": "异构的"
     }
   ]
 }
