@@ -1,61 +1,61 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "article": {
-    "title": "Why Hardware Specialization is Back",
-    "published_at": "2026-10-21",
-    "url": "https://www.a16z.news/p/why-hardware-specialization-is-back",
-    "title_zh": "硬件专用化为何回归"
+    "title": "Let Chaos Reign, and Then Rein In Chaos",
+    "title_zh": "先让混乱涌现，再为混乱设限",
+    "published_at": "2026-10-26",
+    "url": "https://a16z.com/let-chaos-reign-and-then-rein-in-chaos/"
   },
   "words": [
     {
-      "term": "hardware",
-      "ipa": "/ˈhɑːrd.wer/",
-      "meaning_zh": "硬件"
+      "term": "chaos",
+      "ipa": "/ˈkeɪ.ɑːs/",
+      "meaning_zh": "无序混乱"
     },
     {
-      "term": "specialized",
-      "ipa": "/ˈspeʃ.ə.laɪzd/",
-      "meaning_zh": "专用的"
+      "term": "disruptive",
+      "ipa": "/dɪsˈrʌp.t̬ɪv/",
+      "meaning_zh": "颠覆性的"
     },
     {
-      "term": "computation",
-      "ipa": "/ˌkɑːm.pjəˈteɪ.ʃən/",
-      "meaning_zh": "计算"
+      "term": "adoption",
+      "ipa": "/əˈdɑːp.ʃən/",
+      "meaning_zh": "技术采用"
     },
     {
-      "term": "architecture",
-      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
-      "meaning_zh": "芯片架构"
+      "term": "consequential",
+      "ipa": "/ˌkɑːn.səˈkwən.tʃəl/",
+      "meaning_zh": "影响重大的"
     },
     {
-      "term": "leverage",
-      "ipa": "/ˈlev.ɚ.ɪdʒ/",
-      "meaning_zh": "利用"
+      "term": "enthusiasm",
+      "ipa": "/ɪnˈθuː.zi.æz.əm/",
+      "meaning_zh": "积极热情"
     },
     {
-      "term": "transistor",
-      "ipa": "/trænˈzɪs.tɚ/",
-      "meaning_zh": "晶体管"
+      "term": "ownership",
+      "ipa": "/ˈoʊ.nɚ.ʃɪp/",
+      "meaning_zh": "主动负责意识"
     },
     {
-      "term": "bandwidth",
-      "ipa": "/ˈbænd.wɪtθ/",
-      "meaning_zh": "带宽"
+      "term": "alignment",
+      "ipa": "/əˈlaɪn.mənt/",
+      "meaning_zh": "组织目标一致"
     },
     {
-      "term": "inference",
-      "ipa": "/ˈɪn.fɚ.əns/",
-      "meaning_zh": "模型推理"
+      "term": "procurement",
+      "ipa": "/prəˈkjʊr.mənt/",
+      "meaning_zh": "采购"
     },
     {
-      "term": "accelerator",
-      "ipa": "/ekˈsel.ɚ.eɪ.t̬ɚ/",
-      "meaning_zh": "加速器"
+      "term": "proliferation",
+      "ipa": "/prəˌlɪf.əˈreɪ.ʃən/",
+      "meaning_zh": "大量普及"
     },
     {
-      "term": "heterogeneous",
-      "ipa": "/ˌhet̬.ə.roʊˈdʒiː.ni.əs/",
-      "meaning_zh": "异构的"
+      "term": "autonomy",
+      "ipa": "/ɑːˈtɑː.nə.mi/",
+      "meaning_zh": "自主权"
     }
   ]
 }
