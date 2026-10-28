@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-28",
+  "article": {
+    "title": "Databricks & the Future of the Firm",
+    "title_zh": "Databricks 与企业的未来",
+    "published_at": "2026-10-27",
+    "url": "https://a16z.com/databricks-the-future-of-the-firm/"
+  },
+  "words": [
+    {
+      "term": "automation",
+      "ipa": "/ˌɑː.t̬əˈmeɪ.ʃən/",
+      "meaning_zh": "自动化"
+    },
+    {
+      "term": "empowerment",
+      "ipa": "/ɪmˈpaʊ.ɚ.mənt/",
+      "meaning_zh": "赋予员工自主权"
+    },
+    {
+      "term": "initiative",
+      "ipa": "/ɪˈnɪʃ.ə.t̬ɪv/",
+      "meaning_zh": "主动采取行动"
+    },
+    {
+      "term": "authority",
+      "ipa": "/əˈθɔːr.ə.t̬i/",
+      "meaning_zh": "决策权限"
+    },
+    {
+      "term": "hierarchy",
+      "ipa": "/ˈhaɪ.rɑːr.ki/",
+      "meaning_zh": "组织层级"
+    },
+    {
+      "term": "database",
+      "ipa": "/ˈdeɪ.t̬ə.beɪs/",
+      "meaning_zh": "数据库"
+    },
+    {
+      "term": "architectural",
+      "ipa": "/ˌɑːr.kəˈtek.tʃɚ.əl/",
+      "meaning_zh": "系统架构层面的"
+    },
+    {
+      "term": "complexity",
+      "ipa": "/kəmˈplek.sə.t̬i/",
+      "meaning_zh": "组织复杂性"
+    },
+    {
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "基础设施"
+    },
+    {
+      "term": "reliability",
+      "ipa": "/rɪˌlaɪ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "可靠性"
+    },
+    {
+      "term": "architecture",
+      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
+      "meaning_zh": "系统架构"
+    },
+    {
+      "term": "ontology",
+      "ipa": "/ɑːnˈtɑː.lə.dʒi/",
+      "meaning_zh": "业务概念及关系模型"
+    }
+  ]
+}

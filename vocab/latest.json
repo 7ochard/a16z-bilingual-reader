@@ -1,61 +1,71 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "article": {
-    "title": "Let Chaos Reign, and Then Rein In Chaos",
-    "title_zh": "先让混乱涌现，再为混乱设限",
-    "published_at": "2026-10-26",
-    "url": "https://a16z.com/let-chaos-reign-and-then-rein-in-chaos/"
+    "title": "Databricks & the Future of the Firm",
+    "title_zh": "Databricks 与企业的未来",
+    "published_at": "2026-10-27",
+    "url": "https://a16z.com/databricks-the-future-of-the-firm/"
   },
   "words": [
     {
-      "term": "chaos",
-      "ipa": "/ˈkeɪ.ɑːs/",
-      "meaning_zh": "无序混乱"
+      "term": "automation",
+      "ipa": "/ˌɑː.t̬əˈmeɪ.ʃən/",
+      "meaning_zh": "自动化"
     },
     {
-      "term": "disruptive",
-      "ipa": "/dɪsˈrʌp.t̬ɪv/",
-      "meaning_zh": "颠覆性的"
+      "term": "empowerment",
+      "ipa": "/ɪmˈpaʊ.ɚ.mənt/",
+      "meaning_zh": "赋予员工自主权"
     },
     {
-      "term": "adoption",
-      "ipa": "/əˈdɑːp.ʃən/",
-      "meaning_zh": "技术采用"
+      "term": "initiative",
+      "ipa": "/ɪˈnɪʃ.ə.t̬ɪv/",
+      "meaning_zh": "主动采取行动"
     },
     {
-      "term": "consequential",
-      "ipa": "/ˌkɑːn.səˈkwən.tʃəl/",
-      "meaning_zh": "影响重大的"
+      "term": "authority",
+      "ipa": "/əˈθɔːr.ə.t̬i/",
+      "meaning_zh": "决策权限"
     },
     {
-      "term": "enthusiasm",
-      "ipa": "/ɪnˈθuː.zi.æz.əm/",
-      "meaning_zh": "积极热情"
+      "term": "hierarchy",
+      "ipa": "/ˈhaɪ.rɑːr.ki/",
+      "meaning_zh": "组织层级"
     },
     {
-      "term": "ownership",
-      "ipa": "/ˈoʊ.nɚ.ʃɪp/",
-      "meaning_zh": "主动负责意识"
+      "term": "database",
+      "ipa": "/ˈdeɪ.t̬ə.beɪs/",
+      "meaning_zh": "数据库"
     },
     {
-      "term": "alignment",
-      "ipa": "/əˈlaɪn.mənt/",
-      "meaning_zh": "组织目标一致"
+      "term": "architectural",
+      "ipa": "/ˌɑːr.kəˈtek.tʃɚ.əl/",
+      "meaning_zh": "系统架构层面的"
     },
     {
-      "term": "procurement",
-      "ipa": "/prəˈkjʊr.mənt/",
-      "meaning_zh": "采购"
+      "term": "complexity",
+      "ipa": "/kəmˈplek.sə.t̬i/",
+      "meaning_zh": "组织复杂性"
     },
     {
-      "term": "proliferation",
-      "ipa": "/prəˌlɪf.əˈreɪ.ʃən/",
-      "meaning_zh": "大量普及"
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "基础设施"
     },
     {
-      "term": "autonomy",
-      "ipa": "/ɑːˈtɑː.nə.mi/",
-      "meaning_zh": "自主权"
+      "term": "reliability",
+      "ipa": "/rɪˌlaɪ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "可靠性"
+    },
+    {
+      "term": "architecture",
+      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
+      "meaning_zh": "系统架构"
+    },
+    {
+      "term": "ontology",
+      "ipa": "/ɑːnˈtɑː.lə.dʒi/",
+      "meaning_zh": "业务概念及关系模型"
     }
   ]
 }
