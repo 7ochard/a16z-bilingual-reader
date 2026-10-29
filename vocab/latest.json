@@ -1,51 +1,21 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "article": {
-    "title": "Databricks & the Future of the Firm",
-    "title_zh": "Databricks 与企业的未来",
-    "published_at": "2026-10-27",
-    "url": "https://a16z.com/databricks-the-future-of-the-firm/"
+    "title": "The New Security Agenda",
+    "title_zh": "新的安全议程",
+    "published_at": "2026-10-28",
+    "url": "https://a16z.com/the-new-security-agenda/"
   },
   "words": [
     {
-      "term": "automation",
-      "ipa": "/ˌɑː.t̬əˈmeɪ.ʃən/",
-      "meaning_zh": "自动化"
+      "term": "quantum computing",
+      "ipa": "/ˌkwɑːn.t̬əm kəmˈpjuː.t̬ɪŋ/",
+      "meaning_zh": "量子计算"
     },
     {
-      "term": "empowerment",
-      "ipa": "/ɪmˈpaʊ.ɚ.mənt/",
-      "meaning_zh": "赋予员工自主权"
-    },
-    {
-      "term": "initiative",
-      "ipa": "/ɪˈnɪʃ.ə.t̬ɪv/",
-      "meaning_zh": "主动采取行动"
-    },
-    {
-      "term": "authority",
-      "ipa": "/əˈθɔːr.ə.t̬i/",
-      "meaning_zh": "决策权限"
-    },
-    {
-      "term": "hierarchy",
-      "ipa": "/ˈhaɪ.rɑːr.ki/",
-      "meaning_zh": "组织层级"
-    },
-    {
-      "term": "database",
-      "ipa": "/ˈdeɪ.t̬ə.beɪs/",
-      "meaning_zh": "数据库"
-    },
-    {
-      "term": "architectural",
-      "ipa": "/ˌɑːr.kəˈtek.tʃɚ.əl/",
-      "meaning_zh": "系统架构层面的"
-    },
-    {
-      "term": "complexity",
-      "ipa": "/kəmˈplek.sə.t̬i/",
-      "meaning_zh": "组织复杂性"
+      "term": "cybersecurity",
+      "ipa": "/ˌsaɪ.bɚ.səˈkjʊr.ə.t̬i/",
+      "meaning_zh": "网络安全"
     },
     {
       "term": "infrastructure",
@@ -53,19 +23,49 @@
       "meaning_zh": "基础设施"
     },
     {
-      "term": "reliability",
-      "ipa": "/rɪˌlaɪ.əˈbɪl.ə.t̬i/",
-      "meaning_zh": "可靠性"
+      "term": "incident",
+      "ipa": "/ˈɪn.sɪ.dənt/",
+      "meaning_zh": "安全事件"
     },
     {
-      "term": "architecture",
-      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
-      "meaning_zh": "系统架构"
+      "term": "preview",
+      "ipa": "/ˈpriː.vjuː/",
+      "meaning_zh": "预示；初步展现"
     },
     {
-      "term": "ontology",
-      "ipa": "/ɑːnˈtɑː.lə.dʒi/",
-      "meaning_zh": "业务概念及关系模型"
+      "term": "encryption",
+      "ipa": "/ɪnˈkrip.ʃən/",
+      "meaning_zh": "加密"
+    },
+    {
+      "term": "exploit",
+      "ipa": "/ɪkˈsplɔɪt/",
+      "meaning_zh": "利用漏洞"
+    },
+    {
+      "term": "enterprise",
+      "ipa": "/ˈen.t̬ɚ.praɪz/",
+      "meaning_zh": "企业"
+    },
+    {
+      "term": "headcount",
+      "ipa": "/ˈhed.kaʊnt/",
+      "meaning_zh": "员工人数"
+    },
+    {
+      "term": "exposure",
+      "ipa": "/ɪkˈspoʊ.ʒɚ/",
+      "meaning_zh": "风险暴露"
+    },
+    {
+      "term": "remediation",
+      "ipa": "/rɪˌmiː.diˈeɪ.ʃən/",
+      "meaning_zh": "漏洞修复"
+    },
+    {
+      "term": "governance",
+      "ipa": "/ˈɡʌv.ɚ.nəns/",
+      "meaning_zh": "治理"
     }
   ]
 }
