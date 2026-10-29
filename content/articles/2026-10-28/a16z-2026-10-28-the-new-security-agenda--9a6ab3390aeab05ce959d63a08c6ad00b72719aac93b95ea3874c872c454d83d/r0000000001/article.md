@@ -1,0 +1,380 @@
+# The New Security Agenda
+
+新的安全议程
+
+Stephenie Zhang, Owen Colby · 2026-10-28
+
+Article ID: a16z-2026-10-28-the-new-security-agenda · Revision: 1
+
+Source: a16z.com
+
+Original URL: https://a16z.com/the-new-security-agenda/
+
+Selected: 2026-10-29
+
+Copyright mode: original\_summary\_only
+
+Rights: summary\_only
+
+Source article © 2026 Andreessen Horowitz. This archive contains independently written summaries, commentary and example sentences, not the source full text.
+
+No permission to reproduce the original full article is claimed. Only original bilingual summaries and independent analysis are archived; consult the linked official source for the article.
+
+Topics: AI Security, Enterprise Software, Agent Permissions, Security Operations
+
+Selection / summary: 官方新文讨论企业安全采购与代理权限，适合用来拆解安全产品的验收方法。当天精选正文不可读取，未取得原始 JSON；本记录为依据已核实官方原文独立生成的原创摘要，不冒充上游文件。
+
+## Bilingual reading
+
+### s01 (paragraph, order 0)
+
+The authors see AI as both an expanding security burden and a tool for handling it. Their survey covers 100 security leaders at large companies.
+
+作者把 AI 同时视为新增安全负担和处理这些负担的工具。其调查涵盖大型企业的 100 位安全负责人。
+
+### s02 (paragraph, order 1)
+
+They report growing spending intentions, but adoption still involves pilots. Discovering flaws faster does not automatically mean fixing them faster.
+
+文章报告了支出增长意愿，但应用仍涉及试点。更快发现漏洞并不自动意味着更快修复。
+
+### s03 (paragraph, order 2)
+
+Agent access needs oversight. Buyers also weigh new capabilities against the convenience of incumbent platforms.
+
+代理访问需要监督。采购者也会在新能力与既有平台的便利之间权衡。
+
+## Analysis
+
+阅读定位：将本文作为安全产品需求线索，而非已经兑现的市场规模预测。以下深入分析均为本归档的独立推演。
+- 原文以企业安全负责人的调查和供应商案例为依据；调查表达的是受访者状态及计划，不是采购合同或因果实验。
+
+### discussion
+
+- 独立解读一：产品的有效产出单位可以设为一次有证据支持的风险关闭，而不是一次模型调用或一条新告警。设计验收时，把发现、确认责任人、批准变更、部署以及复测分别计时。若发现速度提高而后续队列持续增长，业务收益仍可能为负。这是建议的评估方法，不是原文已经测得的效果。
+- 独立解读二：代理权限应随动作性质分层，而非给整个代理统一贴上可信标签。例如，读取测试环境日志、创建待审工单和修改生产权限是三类不同操作。为每类定义证据要求、审批主体、有效期和撤销方式，才能判断一次任务是否在授权范围内结束。
+- 独立解读三：界面不应只显示已完成，还应展示哪些结论来自实测、哪些来自推断、哪些动作仍待批准。可把失败状态设计成可恢复的中间结果：保留已收集证据，说明缺少哪项权限，再允许合适的人接续。这样既减少无谓重跑，也避免把停止误解为成功。
+- 独立判断与试点方案：先限定一个低风险、可回滚的工作流，记录旧流程的处理时长、人工复核时间和误判率，再用相同类型的任务比较新流程。至少测试四种异常：证据相互矛盾、工具超时、权限在任务中途被撤销、已修复问题再次出现。验收重点是系统能否正确停止、保留过程并把责任交给明确的人。安全收益应以复测成功且未引入新问题为前提；成本计算还要包含接入、维护与误报处理。只有这些结果可重复，才扩大自动执行范围。该方案是原创建议，并非调查中的实证结论。
+
+### limitations
+
+原文带有投资机构的商业视角，所举产品不能视为独立比较后的最佳选择。本文没有复核调查原始数据，也没有验证文中提及的安全事件或供应商效果。
+
+独立方法限制：受访者的计划可能改变；不同组织对生产使用和自动化的定义也可能不同。不能把问卷比例直接外推到所有企业，更不能据此计算确定的收入。
+
+独立风险提示：单纯提高修复工单数量可能促使团队拆分工单、优先处理容易的事项，反而掩盖高影响风险。指标必须与严重度、复发情况和实际验证结果一起解释。
+
+### independent judgment
+
+独立判断与试点方案：先限定一个低风险、可回滚的工作流，记录旧流程的处理时长、人工复核时间和误判率，再用相同类型的任务比较新流程。至少测试四种异常：证据相互矛盾、工具超时、权限在任务中途被撤销、已修复问题再次出现。验收重点是系统能否正确停止、保留过程并把责任交给明确的人。安全收益应以复测成功且未引入新问题为前提；成本计算还要包含接入、维护与误报处理。只有这些结果可重复，才扩大自动执行范围。该方案是原创建议，并非调查中的实证结论。
+
+## Vocabulary
+
+### quantum computing
+
+/ˌkwɑːn.t̬əm kəmˈpjuː.t̬ɪŋ/ · n. phrase
+
+量子计算
+
+ID: up-36b4276578ab07032091580b · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): Quantum computing requires a different approach to information processing.
+
+量子计算需要不同的信息处理方式。
+
+### cybersecurity
+
+/ˌsaɪ.bɚ.səˈkjʊr.ə.t̬i/ · n.
+
+网络安全
+
+ID: up-51b8c15ded1b5d3f66f8d7dd · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): Cybersecurity depends on clear ownership as well as reliable software.
+
+网络安全既依赖可靠软件，也依赖明确的责任归属。
+
+### infrastructure
+
+/ˈɪn.frəˌstrʌk.tʃɚ/ · n.
+
+基础设施
+
+ID: up-5b31150420f11b835f7f1415 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): The team tested the update on isolated infrastructure first.
+
+团队先在隔离的基础设施上测试了更新。
+
+### incident
+
+/ˈɪn.sɪ.dənt/ · n.
+
+安全事件
+
+ID: up-37d1f09f33421d5207cc84a4 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): An incident report should separate observations from assumptions.
+
+事件报告应当区分观察结果和假设。
+
+### preview
+
+/ˈpriː.vjuː/ · n.
+
+预示；初步展现
+
+ID: up-326e21cb439ddbba0cb31b88 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): The demo offered a preview rather than a complete evaluation.
+
+演示只是初步展现，并非完整评估。
+
+### encryption
+
+/ɪnˈkrip.ʃən/ · n.
+
+加密
+
+ID: up-0fe02ec8b657cdb8f82b4087 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): Encryption does not replace careful access management.
+
+加密不能替代谨慎的访问管理。
+
+### exploit
+
+/ɪkˈsplɔɪt/ · v.
+
+利用漏洞
+
+ID: up-9f372a68272a87fee370dde8 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): The review asks whether an attacker could exploit the weakness.
+
+审查要判断攻击者能否利用这一弱点。
+
+### enterprise
+
+/ˈen.t̬ɚ.praɪz/ · n.
+
+企业
+
+ID: up-2dc402acd36afc2aea97575a · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): An enterprise needs evidence before granting production access.
+
+企业在授予生产访问权限前需要证据。
+
+### headcount
+
+/ˈhed.kaʊnt/ · n.
+
+员工人数
+
+ID: up-4c81cf838de53b18963e2100 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): A larger headcount alone does not guarantee better coordination.
+
+员工人数更多并不自动保证协作更好。
+
+### exposure
+
+/ɪkˈspoʊ.ʒɚ/ · n.
+
+风险暴露
+
+ID: up-6fa720895a16a1454ef97bf8 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): The audit identified exposure that the original test had missed.
+
+审计发现了原先测试遗漏的风险暴露。
+
+### remediation
+
+/rɪˌmiː.diˈeɪ.ʃən/ · n.
+
+漏洞修复
+
+ID: up-80f63d39249a7540fcf6b4c9 · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): Remediation is incomplete until a new test confirms the result.
+
+在新测试确认结果之前，修复仍不算完成。
+
+### governance
+
+/ˈɡʌv.ɚ.nəns/ · n.
+
+治理
+
+ID: up-52d6c1165806b18e1dfb997f · Article-level vocabulary; no inferred segment association
+
+Supplied example (not a source quotation): Governance makes responsibility visible when several teams share a tool.
+
+当多个团队共用工具时，治理让责任变得清晰。
+
+## Complete provenance and extensions
+
+```json
+{
+  "upstream_snapshot": {
+    "schema_version": "1.0.0",
+    "id": "a16z-2026-10-28-the-new-security-agenda",
+    "source": {
+      "publisher": "Andreessen Horowitz",
+      "domain": "a16z.com",
+      "content_type": "official_article"
+    },
+    "title": "The New Security Agenda",
+    "author": [
+      "Stephenie Zhang",
+      "Owen Colby"
+    ],
+    "published_at": "2026-10-28",
+    "selected_at": "2026-10-29",
+    "url": "https://a16z.com/the-new-security-agenda/",
+    "topics": [
+      "AI Security",
+      "Enterprise Software",
+      "Agent Permissions",
+      "Security Operations"
+    ],
+    "selection_reason": "官方新文讨论企业安全采购与代理权限，适合用来拆解安全产品的验收方法。当天精选正文不可读取，未取得原始 JSON；本记录为依据已核实官方原文独立生成的原创摘要，不冒充上游文件。",
+    "segments": [
+      {
+        "id": "s01",
+        "en": "The authors see AI as both an expanding security burden and a tool for handling it. Their survey covers 100 security leaders at large companies.",
+        "zh": "作者把 AI 同时视为新增安全负担和处理这些负担的工具。其调查涵盖大型企业的 100 位安全负责人。"
+      },
+      {
+        "id": "s02",
+        "en": "They report growing spending intentions, but adoption still involves pilots. Discovering flaws faster does not automatically mean fixing them faster.",
+        "zh": "文章报告了支出增长意愿，但应用仍涉及试点。更快发现漏洞并不自动意味着更快修复。"
+      },
+      {
+        "id": "s03",
+        "en": "Agent access needs oversight. Buyers also weigh new capabilities against the convenience of incumbent platforms.",
+        "zh": "代理访问需要监督。采购者也会在新能力与既有平台的便利之间权衡。"
+      }
+    ],
+    "analysis": {
+      "core_thesis": "阅读定位：将本文作为安全产品需求线索，而非已经兑现的市场规模预测。以下深入分析均为本归档的独立推演。",
+      "supporting_evidence": [
+        "原文以企业安全负责人的调查和供应商案例为依据；调查表达的是受访者状态及计划，不是采购合同或因果实验。"
+      ],
+      "industry_significance": [
+        "独立解读一：产品的有效产出单位可以设为一次有证据支持的风险关闭，而不是一次模型调用或一条新告警。设计验收时，把发现、确认责任人、批准变更、部署以及复测分别计时。若发现速度提高而后续队列持续增长，业务收益仍可能为负。这是建议的评估方法，不是原文已经测得的效果。",
+        "独立解读二：代理权限应随动作性质分层，而非给整个代理统一贴上可信标签。例如，读取测试环境日志、创建待审工单和修改生产权限是三类不同操作。为每类定义证据要求、审批主体、有效期和撤销方式，才能判断一次任务是否在授权范围内结束。",
+        "独立解读三：界面不应只显示已完成，还应展示哪些结论来自实测、哪些来自推断、哪些动作仍待批准。可把失败状态设计成可恢复的中间结果：保留已收集证据，说明缺少哪项权限，再允许合适的人接续。这样既减少无谓重跑，也避免把停止误解为成功。"
+      ],
+      "limitations": [
+        "原文带有投资机构的商业视角，所举产品不能视为独立比较后的最佳选择。本文没有复核调查原始数据，也没有验证文中提及的安全事件或供应商效果。",
+        "独立方法限制：受访者的计划可能改变；不同组织对生产使用和自动化的定义也可能不同。不能把问卷比例直接外推到所有企业，更不能据此计算确定的收入。",
+        "独立风险提示：单纯提高修复工单数量可能促使团队拆分工单、优先处理容易的事项，反而掩盖高影响风险。指标必须与严重度、复发情况和实际验证结果一起解释。"
+      ],
+      "independent_judgment": "独立判断与试点方案：先限定一个低风险、可回滚的工作流，记录旧流程的处理时长、人工复核时间和误判率，再用相同类型的任务比较新流程。至少测试四种异常：证据相互矛盾、工具超时、权限在任务中途被撤销、已修复问题再次出现。验收重点是系统能否正确停止、保留过程并把责任交给明确的人。安全收益应以复测成功且未引入新问题为前提；成本计算还要包含接入、维护与误报处理。只有这些结果可重复，才扩大自动执行范围。该方案是原创建议，并非调查中的实证结论。"
+    },
+    "vocabulary": [
+      {
+        "term": "quantum computing",
+        "phonetic": "/ˌkwɑːn.t̬əm kəmˈpjuː.t̬ɪŋ/",
+        "part_of_speech": "n. phrase",
+        "meaning_zh": "量子计算",
+        "example_en": "Quantum computing requires a different approach to information processing.",
+        "example_zh": "量子计算需要不同的信息处理方式。"
+      },
+      {
+        "term": "cybersecurity",
+        "phonetic": "/ˌsaɪ.bɚ.səˈkjʊr.ə.t̬i/",
+        "part_of_speech": "n.",
+        "meaning_zh": "网络安全",
+        "example_en": "Cybersecurity depends on clear ownership as well as reliable software.",
+        "example_zh": "网络安全既依赖可靠软件，也依赖明确的责任归属。"
+      },
+      {
+        "term": "infrastructure",
+        "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+        "part_of_speech": "n.",
+        "meaning_zh": "基础设施",
+        "example_en": "The team tested the update on isolated infrastructure first.",
+        "example_zh": "团队先在隔离的基础设施上测试了更新。"
+      },
+      {
+        "term": "incident",
+        "phonetic": "/ˈɪn.sɪ.dənt/",
+        "part_of_speech": "n.",
+        "meaning_zh": "安全事件",
+        "example_en": "An incident report should separate observations from assumptions.",
+        "example_zh": "事件报告应当区分观察结果和假设。"
+      },
+      {
+        "term": "preview",
+        "phonetic": "/ˈpriː.vjuː/",
+        "part_of_speech": "n.",
+        "meaning_zh": "预示；初步展现",
+        "example_en": "The demo offered a preview rather than a complete evaluation.",
+        "example_zh": "演示只是初步展现，并非完整评估。"
+      },
+      {
+        "term": "encryption",
+        "phonetic": "/ɪnˈkrip.ʃən/",
+        "part_of_speech": "n.",
+        "meaning_zh": "加密",
+        "example_en": "Encryption does not replace careful access management.",
+        "example_zh": "加密不能替代谨慎的访问管理。"
+      },
+      {
+        "term": "exploit",
+        "phonetic": "/ɪkˈsplɔɪt/",
+        "part_of_speech": "v.",
+        "meaning_zh": "利用漏洞",
+        "example_en": "The review asks whether an attacker could exploit the weakness.",
+        "example_zh": "审查要判断攻击者能否利用这一弱点。"
+      },
+      {
+        "term": "enterprise",
+        "phonetic": "/ˈen.t̬ɚ.praɪz/",
+        "part_of_speech": "n.",
+        "meaning_zh": "企业",
+        "example_en": "An enterprise needs evidence before granting production access.",
+        "example_zh": "企业在授予生产访问权限前需要证据。"
+      },
+      {
+        "term": "headcount",
+        "phonetic": "/ˈhed.kaʊnt/",
+        "part_of_speech": "n.",
+        "meaning_zh": "员工人数",
+        "example_en": "A larger headcount alone does not guarantee better coordination.",
+        "example_zh": "员工人数更多并不自动保证协作更好。"
+      },
+      {
+        "term": "exposure",
+        "phonetic": "/ɪkˈspoʊ.ʒɚ/",
+        "part_of_speech": "n.",
+        "meaning_zh": "风险暴露",
+        "example_en": "The audit identified exposure that the original test had missed.",
+        "example_zh": "审计发现了原先测试遗漏的风险暴露。"
+      },
+      {
+        "term": "remediation",
+        "phonetic": "/rɪˌmiː.diˈeɪ.ʃən/",
+        "part_of_speech": "n.",
+        "meaning_zh": "漏洞修复",
+        "example_en": "Remediation is incomplete until a new test confirms the result.",
+        "example_zh": "在新测试确认结果之前，修复仍不算完成。"
+      },
+      {
+        "term": "governance",
+        "phonetic": "/ˈɡʌv.ɚ.nəns/",
+        "part_of_speech": "n.",
+        "meaning_zh": "治理",
+        "example_en": "Governance makes responsibility visible when several teams share a tool.",
+        "example_zh": "当多个团队共用工具时，治理让责任变得清晰。"
+      }
+    ],
+    "copyright_mode": "original_summary_only"
+  },
+  "upstream_title_zh": "新的安全议程"
+}
+```
