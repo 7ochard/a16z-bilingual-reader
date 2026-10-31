@@ -1,66 +1,61 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "article": {
-    "title": "The American Dynamism 50 2026: Production is Deterrence",
-    "published_at": "2026-10-29",
-    "url": "https://a16z.com/american-dynamism-50-2026/",
-    "title_zh": "2026 美国活力 50 强：生产即威慑"
+    "title": "The Evolving Landscape of Venture Capital Mindsets",
+    "title_zh": "风险投资思维方式的演变",
+    "published_at": "2026-10-28",
+    "url": "https://a16z.com/the-evolving-landscape-of-venture-capital-mindsets/"
   },
   "words": [
     {
-      "term": "production",
-      "ipa": "/prəˈdʌk.ʃən/",
-      "meaning_zh": "生产；量产"
+      "term": "partnership",
+      "ipa": "/ˈpɑːrt.nɚ.ʃɪp/",
+      "meaning_zh": "合伙组织"
     },
     {
-      "term": "deterrence",
-      "ipa": "/dɪˈter.ənts/",
-      "meaning_zh": "威慑"
+      "term": "speculative",
+      "ipa": "/ˈspek.jə.lə.t̬ɪv/",
+      "meaning_zh": "推测性的"
     },
     {
-      "term": "conflict",
-      "ipa": "/ˈkɑːn.flɪkt/",
-      "meaning_zh": "冲突；战争"
+      "term": "capital",
+      "ipa": "/ˈkæp.ə.t̬əl/",
+      "meaning_zh": "资本；资金"
     },
     {
-      "term": "defense",
-      "ipa": "/dɪˈfens/",
-      "meaning_zh": "国防"
+      "term": "analysis",
+      "ipa": "/əˈnæl.ə.sɪs/",
+      "meaning_zh": "分析"
     },
     {
-      "term": "industrial",
-      "ipa": "/ɪnˈdʌs.tri.əl/",
-      "meaning_zh": "工业的"
+      "term": "influence",
+      "ipa": "/ˈɪn.flu.əns/",
+      "meaning_zh": "影响因素"
     },
     {
-      "term": "domestic",
-      "ipa": "/dəˈmes.tɪk/",
-      "meaning_zh": "本国的"
+      "term": "metrics",
+      "ipa": "/ˈmet.rɪks/",
+      "meaning_zh": "业务衡量指标"
     },
     {
-      "term": "critical",
-      "ipa": "/ˈkrɪt̬.ɪ.kəl/",
-      "meaning_zh": "关键的"
+      "term": "contradictory",
+      "ipa": "/ˌkɑːn.trəˈdɪk.tɚ.i/",
+      "meaning_zh": "相互矛盾的"
     },
     {
-      "term": "energy",
-      "ipa": "/ˈen.ɚ.dʒi/",
-      "meaning_zh": "能源"
+      "term": "traction",
+      "ipa": "/ˈtræk.ʃən/",
+      "meaning_zh": "市场认可与增长势头"
     },
     {
-      "term": "performance",
-      "ipa": "/pɚˈfɔːr.məns/",
-      "meaning_zh": "性能"
+      "term": "diligence",
+      "ipa": "/ˈdɪl.ə.dʒəns/",
+      "meaning_zh": "尽职调查"
     },
     {
-      "term": "capability",
-      "ipa": "/ˌkeɪ.pəˈbɪl.ə.t̬i/",
-      "meaning_zh": "作战能力"
-    },
-    {
-      "term": "resilient",
-      "ipa": "/rɪˈzɪl.jənt/",
-      "meaning_zh": "抗冲击且能恢复的"
+      "term": "coherent",
+      "ipa": "/koʊˈhɪr.ənt/",
+      "meaning_zh": "连贯一致的"
     }
   ]
 }
