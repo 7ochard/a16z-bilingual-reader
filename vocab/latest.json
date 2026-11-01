@@ -1,61 +1,61 @@
 {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "article": {
-    "title": "The Evolving Landscape of Venture Capital Mindsets",
-    "title_zh": "风险投资思维方式的演变",
-    "published_at": "2026-10-28",
-    "url": "https://a16z.com/the-evolving-landscape-of-venture-capital-mindsets/"
+    "title": "New Founder Archetypes in the AI Age",
+    "title_zh": "AI 时代的新创业者类型",
+    "published_at": "2026-10-30",
+    "url": "https://a16z.com/new-founder-archetypes-in-the-ai-age/"
   },
   "words": [
     {
-      "term": "partnership",
-      "ipa": "/ˈpɑːrt.nɚ.ʃɪp/",
-      "meaning_zh": "合伙组织"
+      "term": "archetype",
+      "ipa": "/ˈɑːr.kə.taɪp/",
+      "meaning_zh": "典型创业者类型"
     },
     {
-      "term": "speculative",
-      "ipa": "/ˈspek.jə.lə.t̬ɪv/",
-      "meaning_zh": "推测性的"
+      "term": "leverage",
+      "ipa": "/ˈlev.ɚ.ɪdʒ/",
+      "meaning_zh": "能力放大效应"
     },
     {
-      "term": "capital",
-      "ipa": "/ˈkæp.ə.t̬əl/",
-      "meaning_zh": "资本；资金"
+      "term": "bottleneck",
+      "ipa": "/ˈbɑː.t̬əl.nek/",
+      "meaning_zh": "限制进展的瓶颈"
     },
     {
-      "term": "analysis",
-      "ipa": "/əˈnæl.ə.sɪs/",
-      "meaning_zh": "分析"
+      "term": "prototype",
+      "ipa": "/ˈproʊ.t̬ə.taɪp/",
+      "meaning_zh": "产品原型"
     },
     {
-      "term": "influence",
-      "ipa": "/ˈɪn.flu.əns/",
-      "meaning_zh": "影响因素"
+      "term": "reliable",
+      "ipa": "/rɪˈlaɪ.ə.bəl/",
+      "meaning_zh": "可靠的"
     },
     {
-      "term": "metrics",
-      "ipa": "/ˈmet.rɪks/",
-      "meaning_zh": "业务衡量指标"
+      "term": "judgment",
+      "ipa": "/ˈdʒʌdʒ.mənt/",
+      "meaning_zh": "判断力"
     },
     {
-      "term": "contradictory",
-      "ipa": "/ˌkɑːn.trəˈdɪk.tɚ.i/",
-      "meaning_zh": "相互矛盾的"
+      "term": "incremental",
+      "ipa": "/ˌɪŋ.krəˈmen.t̬əl/",
+      "meaning_zh": "渐进式的"
     },
     {
-      "term": "traction",
-      "ipa": "/ˈtræk.ʃən/",
-      "meaning_zh": "市场认可与增长势头"
+      "term": "distribution",
+      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
+      "meaning_zh": "产品触达与分发"
     },
     {
-      "term": "diligence",
-      "ipa": "/ˈdɪl.ə.dʒəns/",
-      "meaning_zh": "尽职调查"
+      "term": "sustainable",
+      "ipa": "/səˈsteɪ.nə.bəl/",
+      "meaning_zh": "可持续的"
     },
     {
-      "term": "coherent",
-      "ipa": "/koʊˈhɪr.ənt/",
-      "meaning_zh": "连贯一致的"
+      "term": "persistence",
+      "ipa": "/pɚˈsɪs.təns/",
+      "meaning_zh": "坚持不懈"
     }
   ]
 }
