@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "article": {
-    "title": "New Founder Archetypes in the AI Age",
-    "title_zh": "AI 时代的新创业者类型",
-    "published_at": "2026-10-30",
-    "url": "https://a16z.com/new-founder-archetypes-in-the-ai-age/"
+    "title": "Winning the Relay Race: Long-Running Agents in High-Value Customer Journeys",
+    "title_zh": "赢得接力赛：高价值客户旅程中的长期运行智能体",
+    "published_at": "2026-10-14",
+    "url": "https://a16z.com/winning-the-relay-race-long-running-agents-in-high-value-customer-journeys/"
   },
   "words": [
     {
-      "term": "archetype",
-      "ipa": "/ˈɑːr.kə.taɪp/",
-      "meaning_zh": "典型创业者类型"
+      "term": "outage",
+      "ipa": "/ˈaʊ.t̬ɪdʒ/",
+      "meaning_zh": "服务中断"
     },
     {
-      "term": "leverage",
-      "ipa": "/ˈlev.ɚ.ɪdʒ/",
-      "meaning_zh": "能力放大效应"
+      "term": "mortgage",
+      "ipa": "/ˈmɔːr.ɡɪdʒ/",
+      "meaning_zh": "住房抵押贷款"
     },
     {
-      "term": "bottleneck",
-      "ipa": "/ˈbɑː.t̬əl.nek/",
-      "meaning_zh": "限制进展的瓶颈"
+      "term": "revenue",
+      "ipa": "/ˈrev.ə.nuː/",
+      "meaning_zh": "业务收入"
     },
     {
-      "term": "prototype",
-      "ipa": "/ˈproʊ.t̬ə.taɪp/",
-      "meaning_zh": "产品原型"
+      "term": "intake",
+      "ipa": "/ˈɪn.teɪk/",
+      "meaning_zh": "客户初步接洽"
     },
     {
-      "term": "reliable",
-      "ipa": "/rɪˈlaɪ.ə.bəl/",
-      "meaning_zh": "可靠的"
-    },
-    {
-      "term": "judgment",
-      "ipa": "/ˈdʒʌdʒ.mənt/",
-      "meaning_zh": "判断力"
-    },
-    {
-      "term": "incremental",
-      "ipa": "/ˌɪŋ.krəˈmen.t̬əl/",
-      "meaning_zh": "渐进式的"
-    },
-    {
-      "term": "distribution",
-      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
-      "meaning_zh": "产品触达与分发"
-    },
-    {
-      "term": "sustainable",
-      "ipa": "/səˈsteɪ.nə.bəl/",
-      "meaning_zh": "可持续的"
+      "term": "evidence",
+      "ipa": "/ˈev.ə.dəns/",
+      "meaning_zh": "案件证据"
     },
     {
       "term": "persistence",
       "ipa": "/pɚˈsɪs.təns/",
-      "meaning_zh": "坚持不懈"
+      "meaning_zh": "持续跟进的毅力"
+    },
+    {
+      "term": "reliability",
+      "ipa": "/rɪˌlaɪ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "执行可靠性"
+    },
+    {
+      "term": "procurement",
+      "ipa": "/prəˈkjʊr.mənt/",
+      "meaning_zh": "企业采购"
+    },
+    {
+      "term": "attribution",
+      "ipa": "/ˌæt.rəˈbjuː.ʃən/",
+      "meaning_zh": "成果贡献归因"
+    },
+    {
+      "term": "compliance",
+      "ipa": "/kəmˈplaɪ.əns/",
+      "meaning_zh": "合规要求"
     }
   ]
 }
