@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "article": {
-    "title": "Winning the Relay Race: Long-Running Agents in High-Value Customer Journeys",
-    "title_zh": "赢得接力赛：高价值客户旅程中的长期运行智能体",
-    "published_at": "2026-10-14",
-    "url": "https://a16z.com/winning-the-relay-race-long-running-agents-in-high-value-customer-journeys/"
+    "title": "How AI Applications Earn Their Premium",
+    "published_at": "2026-11-02",
+    "url": "https://a16z.com/how-ai-applications-earn-their-premium/",
+    "title_zh": "AI 应用如何赢得溢价"
   },
   "words": [
     {
-      "term": "outage",
-      "ipa": "/ˈaʊ.t̬ɪdʒ/",
-      "meaning_zh": "服务中断"
+      "term": "premium",
+      "ipa": "/ˈpriː.mi.əm/",
+      "meaning_zh": "产品溢价"
     },
     {
-      "term": "mortgage",
-      "ipa": "/ˈmɔːr.ɡɪdʒ/",
-      "meaning_zh": "住房抵押贷款"
+      "term": "inference",
+      "ipa": "/ˈɪn.fɚ.əns/",
+      "meaning_zh": "模型推理"
     },
     {
-      "term": "revenue",
-      "ipa": "/ˈrev.ə.nuː/",
-      "meaning_zh": "业务收入"
+      "term": "vulnerable",
+      "ipa": "/ˈvʌl.nɚ.ə.bəl/",
+      "meaning_zh": "易被替代的"
     },
     {
-      "term": "intake",
-      "ipa": "/ˈɪn.teɪk/",
-      "meaning_zh": "客户初步接洽"
+      "term": "expertise",
+      "ipa": "/ˌek.spɝːˈtiːz/",
+      "meaning_zh": "领域专长"
     },
     {
-      "term": "evidence",
-      "ipa": "/ˈev.ə.dəns/",
-      "meaning_zh": "案件证据"
+      "term": "reliable",
+      "ipa": "/rɪˈlaɪ.ə.bəl/",
+      "meaning_zh": "可靠的"
     },
     {
-      "term": "persistence",
-      "ipa": "/pɚˈsɪs.təns/",
-      "meaning_zh": "持续跟进的毅力"
+      "term": "execution",
+      "ipa": "/ˌek.səˈkjuː.ʃən/",
+      "meaning_zh": "任务执行"
     },
     {
-      "term": "reliability",
-      "ipa": "/rɪˌlaɪ.əˈbɪl.ə.t̬i/",
-      "meaning_zh": "执行可靠性"
+      "term": "context",
+      "ipa": "/ˈkɑːn.tekst/",
+      "meaning_zh": "任务背景信息"
     },
     {
-      "term": "procurement",
-      "ipa": "/prəˈkjʊr.mənt/",
-      "meaning_zh": "企业采购"
+      "term": "evaluation",
+      "ipa": "/ɪˌvæl.juˈeɪ.ʃən/",
+      "meaning_zh": "效果评估"
     },
     {
-      "term": "attribution",
-      "ipa": "/ˌæt.rəˈbjuː.ʃən/",
-      "meaning_zh": "成果贡献归因"
+      "term": "accuracy",
+      "ipa": "/ˈæk.jɚ.ə.si/",
+      "meaning_zh": "结果准确性"
     },
     {
-      "term": "compliance",
-      "ipa": "/kəmˈplaɪ.əns/",
-      "meaning_zh": "合规要求"
+      "term": "adoption",
+      "ipa": "/əˈdɑːp.ʃən/",
+      "meaning_zh": "产品采用"
     }
   ]
 }

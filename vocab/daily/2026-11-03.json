@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-03",
+  "article": {
+    "title": "How AI Applications Earn Their Premium",
+    "published_at": "2026-11-02",
+    "url": "https://a16z.com/how-ai-applications-earn-their-premium/",
+    "title_zh": "AI 应用如何赢得溢价"
+  },
+  "words": [
+    {
+      "term": "premium",
+      "ipa": "/ˈpriː.mi.əm/",
+      "meaning_zh": "产品溢价"
+    },
+    {
+      "term": "inference",
+      "ipa": "/ˈɪn.fɚ.əns/",
+      "meaning_zh": "模型推理"
+    },
+    {
+      "term": "vulnerable",
+      "ipa": "/ˈvʌl.nɚ.ə.bəl/",
+      "meaning_zh": "易被替代的"
+    },
+    {
+      "term": "expertise",
+      "ipa": "/ˌek.spɝːˈtiːz/",
+      "meaning_zh": "领域专长"
+    },
+    {
+      "term": "reliable",
+      "ipa": "/rɪˈlaɪ.ə.bəl/",
+      "meaning_zh": "可靠的"
+    },
+    {
+      "term": "execution",
+      "ipa": "/ˌek.səˈkjuː.ʃən/",
+      "meaning_zh": "任务执行"
+    },
+    {
+      "term": "context",
+      "ipa": "/ˈkɑːn.tekst/",
+      "meaning_zh": "任务背景信息"
+    },
+    {
+      "term": "evaluation",
+      "ipa": "/ɪˌvæl.juˈeɪ.ʃən/",
+      "meaning_zh": "效果评估"
+    },
+    {
+      "term": "accuracy",
+      "ipa": "/ˈæk.jɚ.ə.si/",
+      "meaning_zh": "结果准确性"
+    },
+    {
+      "term": "adoption",
+      "ipa": "/əˈdɑːp.ʃən/",
+      "meaning_zh": "产品采用"
+    }
+  ]
+}
