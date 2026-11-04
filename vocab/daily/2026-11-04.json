@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-04",
+  "article": {
+    "title": "Investing in Tutor Intelligence",
+    "title_zh": "投资 Tutor Intelligence：用真实交付检验机器人价值",
+    "published_at": "2026-11-02",
+    "url": "https://a16z.com/announcement/investing-in-tutor-intelligence/"
+  },
+  "words": [
+    {
+      "term": "robotics",
+      "ipa": "/roʊˈbɑː.t̬ɪks/",
+      "meaning_zh": "机器人技术"
+    },
+    {
+      "term": "prevailing",
+      "ipa": "/prɪˈveɪ.lɪŋ/",
+      "meaning_zh": "当前主流的"
+    },
+    {
+      "term": "accuracy",
+      "ipa": "/ˈæk.jɚ.ə.si/",
+      "meaning_zh": "作业准确性"
+    },
+    {
+      "term": "deployment",
+      "ipa": "/dɪˈplɔɪ.mənt/",
+      "meaning_zh": "实际部署"
+    },
+    {
+      "term": "autonomy",
+      "ipa": "/ɑːˈtɑː.nə.mi/",
+      "meaning_zh": "自主作业能力"
+    },
+    {
+      "term": "fleet",
+      "ipa": "/fliːt/",
+      "meaning_zh": "机器人机群"
+    },
+    {
+      "term": "capital",
+      "ipa": "/ˈkæp.ə.t̬əl/",
+      "meaning_zh": "前期投入资金"
+    },
+    {
+      "term": "scenario",
+      "ipa": "/səˈner.i.oʊ/",
+      "meaning_zh": "实际作业场景"
+    },
+    {
+      "term": "enterprise",
+      "ipa": "/ˈen.t̬ɚ.praɪz/",
+      "meaning_zh": "企业"
+    },
+    {
+      "term": "logistics",
+      "ipa": "/ləˈdʒɪs.tɪks/",
+      "meaning_zh": "物流"
+    }
+  ]
+}
