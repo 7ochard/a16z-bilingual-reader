@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-06",
+  "article": {
+    "title": "The Exploit Was the Bottleneck",
+    "published_at": "2026-11-05",
+    "url": "https://a16z.com/the-exploit-was-the-bottleneck/",
+    "title_zh": "漏洞利用曾是瓶颈"
+  },
+  "words": [
+    {
+      "term": "campaign",
+      "ipa": "/kæmˈpeɪn/",
+      "meaning_zh": "有组织的一系列行动"
+    },
+    {
+      "term": "frontier",
+      "ipa": "/frʌnˈtɪr/",
+      "meaning_zh": "技术或知识的前沿"
+    },
+    {
+      "term": "critical",
+      "ipa": "/ˈkrɪt̬.ɪ.kəl/",
+      "meaning_zh": "严重的；关键的"
+    },
+    {
+      "term": "decoy",
+      "ipa": "/ˈdiː.kɔɪ/",
+      "meaning_zh": "诱饵；用于迷惑的假目标"
+    },
+    {
+      "term": "disclosure",
+      "ipa": "/dɪˈskloʊ.ʒɚ/",
+      "meaning_zh": "披露；公开信息"
+    },
+    {
+      "term": "advisory",
+      "ipa": "/ədˈvaɪ.zɚ.i/",
+      "meaning_zh": "公告；警示通知"
+    },
+    {
+      "term": "vulnerability",
+      "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "漏洞；易受损害之处"
+    },
+    {
+      "term": "bottleneck",
+      "ipa": "/ˈbɑː.t̬əl.nek/",
+      "meaning_zh": "瓶颈；限制进度的环节"
+    },
+    {
+      "term": "expertise",
+      "ipa": "/ˌek.spɝːˈtiːz/",
+      "meaning_zh": "专业知识与技能"
+    },
+    {
+      "term": "catastrophe",
+      "ipa": "/kəˈtæs.trə.fi/",
+      "meaning_zh": "灾难；严重的不幸事件"
+    }
+  ]
+}
