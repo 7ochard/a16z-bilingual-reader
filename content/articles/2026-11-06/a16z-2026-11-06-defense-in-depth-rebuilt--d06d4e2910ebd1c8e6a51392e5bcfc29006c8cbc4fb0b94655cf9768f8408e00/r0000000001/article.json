@@ -1,0 +1,351 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-06-defense-in-depth-rebuilt-for-machine-speed",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-06-defense-in-depth-rebuilt-for-machine-speed",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "Defense in Depth, Rebuilt for Machine Speed",
+        "author": [
+          "Asaf Ezra",
+          "Stephenie Zhang"
+        ],
+        "published_at": "2026-11-06",
+        "selected_at": "2026-11-07",
+        "url": "https://a16z.com/defense-in-depth-rebuilt-for-machine-speed/",
+        "topics": [
+          "Cybersecurity",
+          "Defense in Depth",
+          "Business Continuity",
+          "AI Security"
+        ],
+        "selection_reason": "选读官方新文章，继续学习安全防御与业务连续性的关系。未取得当天上游 JSON；本内容根据已核实的公开原文独立撰写。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "The authors argue that protection must remain effective when software updates cannot arrive quickly.",
+            "zh": "作者认为，即使软件无法及时更新，防护也应持续有效。"
+          },
+          {
+            "id": "s02",
+            "en": "Their priorities include restricting access, containing damage, and demonstrating that recovery actually works.",
+            "zh": "其重点包括限制访问、控制损害，以及证明恢复能力确实可用。"
+          },
+          {
+            "id": "s03",
+            "en": "They see opportunities for integrated security services, while acknowledging the risks of concentrated providers and automated intervention.",
+            "zh": "他们看好整合式安全服务，也承认供应商集中和自动干预带来的风险。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "Reading lens / 阅读视角：How should a buyer distinguish a convincing security demonstration from dependable daily operation? 以下从采购验收与组织治理角度作独立推演，不是原文的额外结论。",
+          "supporting_evidence": [
+            {
+              "en": "The official page confirms the title, authors, publication date and summarized position. The external incident statistics it cites were not independently audited here.",
+              "zh": "已核对官方页面的标题、作者、发布日期及上述观点；未独立审计其引用的外部事件统计。"
+            }
+          ],
+          "industry_significance": [
+            {
+              "en": "Independent analysis: A procurement trial should include ordinary business traffic, not only a curated threat demonstration. Before the trial, the buyer and vendor can agree on acceptable service disruption, which functions must remain available, and what counts as a successful result. Recording unsuccessful trials prevents a compelling single demonstration from becoming the only evidence used in a purchasing decision.",
+              "zh": "独立分析：采购试验应包含普通业务流量，而不只展示精选威胁。试验前可约定可接受的业务中断、必须保留的功能和成功标准。记录失败试验，有助于避免采购决策只依赖一次漂亮演示。"
+            },
+            {
+              "en": "Independent analysis: Responsibility should be checked at handoffs. If a managed service reports that an incident is closed, the customer still needs to know who confirmed the affected business process is usable. A useful acceptance record connects a technical observation, an accountable person and a business check. This makes service quality easier to compare without assuming that more alerts or more automated actions necessarily mean better protection.",
+              "zh": "独立分析：责任交接处尤其值得检查。托管服务宣布事件结束后，客户仍需知道谁确认了业务流程可以正常使用。一份有效验收记录应连接技术观察、责任人和业务检查，从而比较服务质量，而不把更多告警或自动操作直接等同于更好防护。"
+            },
+            {
+              "en": "Independent analysis: Supplier dependence can be evaluated through an exit exercise. Ask whether asset records, decision histories and operating procedures remain usable if the service is unavailable or the contract ends. If those materials cannot be exported and understood by another team, an apparently inexpensive service may create a costly transition later. This is a proposed purchasing test, not a claim about any named vendor.",
+              "zh": "独立分析：可通过退出演练评估供应商依赖。服务不可用或合同结束时，资产记录、决策历史和操作流程是否仍能使用？若无法导出并交由另一团队理解，表面便宜的服务可能带来较高迁移成本。这是建议的采购检查，不是对具体供应商的判断。"
+            }
+          ],
+          "limitations": [
+            {
+              "en": "An investment essay helps generate questions but does not establish that a product category is commercially or technically proven.",
+              "zh": "投资机构文章可用于提出问题，但不能据此认定某类产品已获得商业或技术验证。"
+            },
+            {
+              "en": "A controlled trial may miss rare combinations of failures. Passing the trial should therefore have a defined scope and an expiration date for re-evaluation.",
+              "zh": "受控试验可能遗漏少见的故障组合。通过试验应有明确适用范围，并约定重新评估的期限。"
+            },
+            {
+              "en": "The proposed evaluation framework is general commentary. Real systems require authorized, environment-specific review, especially where an interruption can affect physical safety.",
+              "zh": "上述评估框架属于一般评论。实际系统需要获得授权、结合环境开展审查，尤其是中断可能影响人身安全的场景。"
+            }
+          ],
+          "independent_judgment": "Independent judgment: Start with one service whose normal operation can be checked clearly. Establish a baseline, agree on the test boundary, record both protective benefit and operational cost, and ask a business owner to review the result. Expand only when the evidence supports the next scope. Keep unresolved exceptions visible instead of averaging them away in a dashboard. This approach makes uncertainty an explicit management decision rather than an implicit promise from a tool.\n\n独立判断：可从一个正常运行状态容易核验的服务开始。建立基线、约定试验边界，同时记录防护收益与运行成本，再请业务负责人复核。证据足以支持下一步范围时再扩大应用。未解决的例外应保持可见，不能被仪表盘平均值掩盖。这样，不确定性成为明确的管理决策，而不是工具默认承担的承诺。"
+        },
+        "vocabulary": [
+          {
+            "term": "vulnerability",
+            "phonetic": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
+            "part_of_speech": "noun",
+            "meaning_zh": "安全漏洞",
+            "example_en": "The audit found a vulnerability in a retired service.",
+            "example_zh": "审计发现一个已停用服务中的安全漏洞。",
+            "pronunciation_source": "https://dictionary.cambridge.org/zhs/发音/英语/vulnerability"
+          },
+          {
+            "term": "remediation",
+            "phonetic": "/rɪˌmiː.diˈeɪ.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "漏洞修复",
+            "example_en": "The remediation plan assigned an owner to each unresolved issue.",
+            "example_zh": "漏洞修复计划为每个未解决问题指定了负责人。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/remediation"
+          },
+          {
+            "term": "outage",
+            "phonetic": "/ˈaʊ.t̬ɪdʒ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "服务中断",
+            "example_en": "A brief outage delayed the daily inventory report.",
+            "example_zh": "一次短暂的服务中断推迟了每日库存报告。",
+            "pronunciation_source": "https://dictionary.cambridge.org/es/pronunciación/ingles/outage"
+          },
+          {
+            "term": "exposure",
+            "phonetic": "/ɪkˈspoʊ.ʒɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "暴露于网络风险",
+            "example_en": "The review measured exposure before and after the configuration change.",
+            "example_zh": "审查衡量了配置变更前后的风险暴露。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/exposure"
+          },
+          {
+            "term": "quarantine",
+            "phonetic": "/ˈkwɔːr.ən.tiːn/",
+            "part_of_speech": "noun",
+            "meaning_zh": "隔离受感染设备",
+            "example_en": "The test laptop stayed in quarantine until the inspection was complete.",
+            "example_zh": "这台测试笔记本在检查完成前一直处于隔离状态。",
+            "pronunciation_source": "https://dictionary.cambridge.org/fr/prononciation/anglais/quarantine"
+          },
+          {
+            "term": "segmentation",
+            "phonetic": "/ˌseɡ.menˈteɪ.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "网络分段隔离",
+            "example_en": "Network segmentation separated the training lab from the office systems.",
+            "example_zh": "网络分段隔离将培训实验室与办公系统分开。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/segmentation"
+          },
+          {
+            "term": "recovery",
+            "phonetic": "/rɪˈkʌv.ɚ.i/",
+            "part_of_speech": "noun",
+            "meaning_zh": "灾后恢复",
+            "example_en": "The recovery exercise revealed a missing dependency.",
+            "example_zh": "灾后恢复演练发现了一个缺失的依赖项。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/recovery"
+          },
+          {
+            "term": "credentials",
+            "phonetic": "/krɪˈden·ʃəlz/",
+            "part_of_speech": "plural noun",
+            "meaning_zh": "身份验证凭据",
+            "example_en": "The application requested temporary credentials for a single task.",
+            "example_zh": "应用为单项任务申请了临时身份验证凭据。",
+            "pronunciation_source": "https://dictionary.cambridge.org/dictionary/english/credentials"
+          },
+          {
+            "term": "isolation",
+            "phonetic": "/ˌaɪ.səlˈeɪ.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "访问路径隔离",
+            "example_en": "The team checked whether isolation still worked during maintenance.",
+            "example_zh": "团队检查了维护期间隔离措施是否仍然有效。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/isolation"
+          },
+          {
+            "term": "restoration",
+            "phonetic": "/ˌres.təˈreɪ.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "备份还原",
+            "example_en": "Data restoration finished before the next business shift began.",
+            "example_zh": "数据还原在下一班工作开始前完成。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/restoration"
+          }
+        ],
+        "copyright_mode": "original_summary_only",
+        "meta": {
+          "content_origin": "third_party_paraphrase",
+          "source_url": "https://a16z.com/defense-in-depth-rebuilt-for-machine-speed/",
+          "generated_at": "2026-11-07T02:47:15.547573+00:00",
+          "generator": "Original bilingual editorial summary",
+          "notes": [
+            "Newly authored from the verified official public article, not a recovered upstream attachment. No full text or source quotations reproduced.",
+            "The analytical purchasing framework and vocabulary examples are original teaching material, not claims or examples attributed to the source authors.",
+            "US IPA verified in indexed Cambridge Dictionary content. Vocabulary follows first occurrence in the official article body."
+          ]
+        }
+      },
+      "upstream_title_zh": "为机器速度重建纵深防御",
+      "revision": 1,
+      "title": "Defense in Depth, Rebuilt for Machine Speed",
+      "title_zh": "为机器速度重建纵深防御",
+      "author": "Asaf Ezra, Stephenie Zhang",
+      "published_at": "2026-11-06",
+      "topics": [
+        "Cybersecurity",
+        "Defense in Depth",
+        "Business Continuity",
+        "AI Security"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/defense-in-depth-rebuilt-for-machine-speed/",
+        "rights": "summary_only",
+        "copyright": "Source article copyright Andreessen Horowitz; independently written summaries and analysis supplied for learning.",
+        "permission_note": "Only original short bilingual summaries, critical commentary and teaching examples are archived. No full-text permission or license is claimed."
+      },
+      "summary": "选读官方新文章，继续学习安全防御与业务连续性的关系。未取得当天上游 JSON；本内容根据已核实的公开原文独立撰写。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "The authors argue that protection must remain effective when software updates cannot arrive quickly.",
+          "zh": "作者认为，即使软件无法及时更新，防护也应持续有效。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "Their priorities include restricting access, containing damage, and demonstrating that recovery actually works.",
+          "zh": "其重点包括限制访问、控制损害，以及证明恢复能力确实可用。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "They see opportunities for integrated security services, while acknowledging the risks of concentrated providers and automated intervention.",
+          "zh": "他们看好整合式安全服务，也承认供应商集中和自动干预带来的风险。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-63408a9c54c3ab8898e487ff",
+          "segment_id": null,
+          "example_en": "The audit found a vulnerability in a retired service.",
+          "example_zh": "审计发现一个已停用服务中的安全漏洞。",
+          "part_of_speech": "noun",
+          "term": "vulnerability",
+          "meaning_zh": "安全漏洞",
+          "phonetic": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/"
+        },
+        {
+          "id": "up-ed83f1f883c02a1891ee1b18",
+          "segment_id": null,
+          "example_en": "The remediation plan assigned an owner to each unresolved issue.",
+          "example_zh": "漏洞修复计划为每个未解决问题指定了负责人。",
+          "part_of_speech": "noun",
+          "term": "remediation",
+          "meaning_zh": "漏洞修复",
+          "phonetic": "/rɪˌmiː.diˈeɪ.ʃən/"
+        },
+        {
+          "id": "up-cc015448b6849330499e535d",
+          "segment_id": null,
+          "example_en": "A brief outage delayed the daily inventory report.",
+          "example_zh": "一次短暂的服务中断推迟了每日库存报告。",
+          "part_of_speech": "noun",
+          "term": "outage",
+          "meaning_zh": "服务中断",
+          "phonetic": "/ˈaʊ.t̬ɪdʒ/"
+        },
+        {
+          "id": "up-26bf07756cca7f940e36cfc2",
+          "segment_id": null,
+          "example_en": "The review measured exposure before and after the configuration change.",
+          "example_zh": "审查衡量了配置变更前后的风险暴露。",
+          "part_of_speech": "noun",
+          "term": "exposure",
+          "meaning_zh": "暴露于网络风险",
+          "phonetic": "/ɪkˈspoʊ.ʒɚ/"
+        },
+        {
+          "id": "up-a9443392d0e09a8b2cd968fe",
+          "segment_id": null,
+          "example_en": "The test laptop stayed in quarantine until the inspection was complete.",
+          "example_zh": "这台测试笔记本在检查完成前一直处于隔离状态。",
+          "part_of_speech": "noun",
+          "term": "quarantine",
+          "meaning_zh": "隔离受感染设备",
+          "phonetic": "/ˈkwɔːr.ən.tiːn/"
+        },
+        {
+          "id": "up-e6b48c3071772646eda7a740",
+          "segment_id": null,
+          "example_en": "Network segmentation separated the training lab from the office systems.",
+          "example_zh": "网络分段隔离将培训实验室与办公系统分开。",
+          "part_of_speech": "noun",
+          "term": "segmentation",
+          "meaning_zh": "网络分段隔离",
+          "phonetic": "/ˌseɡ.menˈteɪ.ʃən/"
+        },
+        {
+          "id": "up-402dbfb83804fc56f3de4644",
+          "segment_id": null,
+          "example_en": "The recovery exercise revealed a missing dependency.",
+          "example_zh": "灾后恢复演练发现了一个缺失的依赖项。",
+          "part_of_speech": "noun",
+          "term": "recovery",
+          "meaning_zh": "灾后恢复",
+          "phonetic": "/rɪˈkʌv.ɚ.i/"
+        },
+        {
+          "id": "up-f5babe0a5c028e80ce508371",
+          "segment_id": null,
+          "example_en": "The application requested temporary credentials for a single task.",
+          "example_zh": "应用为单项任务申请了临时身份验证凭据。",
+          "part_of_speech": "plural noun",
+          "term": "credentials",
+          "meaning_zh": "身份验证凭据",
+          "phonetic": "/krɪˈden·ʃəlz/"
+        },
+        {
+          "id": "up-493dffb2ac9fd9ad534268d4",
+          "segment_id": null,
+          "example_en": "The team checked whether isolation still worked during maintenance.",
+          "example_zh": "团队检查了维护期间隔离措施是否仍然有效。",
+          "part_of_speech": "noun",
+          "term": "isolation",
+          "meaning_zh": "访问路径隔离",
+          "phonetic": "/ˌaɪ.səlˈeɪ.ʃən/"
+        },
+        {
+          "id": "up-525ab35501c79ee5d6e231f6",
+          "segment_id": null,
+          "example_en": "Data restoration finished before the next business shift began.",
+          "example_zh": "数据还原在下一班工作开始前完成。",
+          "part_of_speech": "noun",
+          "term": "restoration",
+          "meaning_zh": "备份还原",
+          "phonetic": "/ˌres.təˈreɪ.ʃən/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "Reading lens / 阅读视角：How should a buyer distinguish a convincing security demonstration from dependable daily operation? 以下从采购验收与组织治理角度作独立推演，不是原文的额外结论。",
+        "key_points": [
+          "{\n  \"en\": \"The official page confirms the title, authors, publication date and summarized position. The external incident statistics it cites were not independently audited here.\",\n  \"zh\": \"已核对官方页面的标题、作者、发布日期及上述观点；未独立审计其引用的外部事件统计。\"\n}"
+        ],
+        "discussion": [
+          "{\n  \"en\": \"Independent analysis: A procurement trial should include ordinary business traffic, not only a curated threat demonstration. Before the trial, the buyer and vendor can agree on acceptable service disruption, which functions must remain available, and what counts as a successful result. Recording unsuccessful trials prevents a compelling single demonstration from becoming the only evidence used in a purchasing decision.\",\n  \"zh\": \"独立分析：采购试验应包含普通业务流量，而不只展示精选威胁。试验前可约定可接受的业务中断、必须保留的功能和成功标准。记录失败试验，有助于避免采购决策只依赖一次漂亮演示。\"\n}",
+          "{\n  \"en\": \"Independent analysis: Responsibility should be checked at handoffs. If a managed service reports that an incident is closed, the customer still needs to know who confirmed the affected business process is usable. A useful acceptance record connects a technical observation, an accountable person and a business check. This makes service quality easier to compare without assuming that more alerts or more automated actions necessarily mean better protection.\",\n  \"zh\": \"独立分析：责任交接处尤其值得检查。托管服务宣布事件结束后，客户仍需知道谁确认了业务流程可以正常使用。一份有效验收记录应连接技术观察、责任人和业务检查，从而比较服务质量，而不把更多告警或自动操作直接等同于更好防护。\"\n}",
+          "{\n  \"en\": \"Independent analysis: Supplier dependence can be evaluated through an exit exercise. Ask whether asset records, decision histories and operating procedures remain usable if the service is unavailable or the contract ends. If those materials cannot be exported and understood by another team, an apparently inexpensive service may create a costly transition later. This is a proposed purchasing test, not a claim about any named vendor.\",\n  \"zh\": \"独立分析：可通过退出演练评估供应商依赖。服务不可用或合同结束时，资产记录、决策历史和操作流程是否仍能使用？若无法导出并交由另一团队理解，表面便宜的服务可能带来较高迁移成本。这是建议的采购检查，不是对具体供应商的判断。\"\n}",
+          "Independent judgment: Start with one service whose normal operation can be checked clearly. Establish a baseline, agree on the test boundary, record both protective benefit and operational cost, and ask a business owner to review the result. Expand only when the evidence supports the next scope. Keep unresolved exceptions visible instead of averaging them away in a dashboard. This approach makes uncertainty an explicit management decision rather than an implicit promise from a tool.\n\n独立判断：可从一个正常运行状态容易核验的服务开始。建立基线、约定试验边界，同时记录防护收益与运行成本，再请业务负责人复核。证据足以支持下一步范围时再扩大应用。未解决的例外应保持可见，不能被仪表盘平均值掩盖。这样，不确定性成为明确的管理决策，而不是工具默认承担的承诺。"
+        ],
+        "limitations": "{\n  \"en\": \"An investment essay helps generate questions but does not establish that a product category is commercially or technically proven.\",\n  \"zh\": \"投资机构文章可用于提出问题，但不能据此认定某类产品已获得商业或技术验证。\"\n}\n\n{\n  \"en\": \"A controlled trial may miss rare combinations of failures. Passing the trial should therefore have a defined scope and an expiration date for re-evaluation.\",\n  \"zh\": \"受控试验可能遗漏少见的故障组合。通过试验应有明确适用范围，并约定重新评估的期限。\"\n}\n\n{\n  \"en\": \"The proposed evaluation framework is general commentary. Real systems require authorized, environment-specific review, especially where an interruption can affect physical safety.\",\n  \"zh\": \"上述评估框架属于一般评论。实际系统需要获得授权、结合环境开展审查，尤其是中断可能影响人身安全的场景。\"\n}",
+        "independent_judgment": "Independent judgment: Start with one service whose normal operation can be checked clearly. Establish a baseline, agree on the test boundary, record both protective benefit and operational cost, and ask a business owner to review the result. Expand only when the evidence supports the next scope. Keep unresolved exceptions visible instead of averaging them away in a dashboard. This approach makes uncertainty an explicit management decision rather than an implicit promise from a tool.\n\n独立判断：可从一个正常运行状态容易核验的服务开始。建立基线、约定试验边界，同时记录防护收益与运行成本，再请业务负责人复核。证据足以支持下一步范围时再扩大应用。未解决的例外应保持可见，不能被仪表盘平均值掩盖。这样，不确定性成为明确的管理决策，而不是工具默认承担的承诺。"
+      }
+    }
+  ]
+}
