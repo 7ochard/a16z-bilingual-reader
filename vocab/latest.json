@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "article": {
-    "title": "The Exploit Was the Bottleneck",
-    "published_at": "2026-11-05",
-    "url": "https://a16z.com/the-exploit-was-the-bottleneck/",
-    "title_zh": "漏洞利用曾是瓶颈"
+    "title": "Defense in Depth, Rebuilt for Machine Speed",
+    "title_zh": "为机器速度重建纵深防御",
+    "published_at": "2026-11-06",
+    "url": "https://a16z.com/defense-in-depth-rebuilt-for-machine-speed/"
   },
   "words": [
     {
-      "term": "campaign",
-      "ipa": "/kæmˈpeɪn/",
-      "meaning_zh": "有组织的一系列行动"
-    },
-    {
-      "term": "frontier",
-      "ipa": "/frʌnˈtɪr/",
-      "meaning_zh": "技术或知识的前沿"
-    },
-    {
-      "term": "critical",
-      "ipa": "/ˈkrɪt̬.ɪ.kəl/",
-      "meaning_zh": "严重的；关键的"
-    },
-    {
-      "term": "decoy",
-      "ipa": "/ˈdiː.kɔɪ/",
-      "meaning_zh": "诱饵；用于迷惑的假目标"
-    },
-    {
-      "term": "disclosure",
-      "ipa": "/dɪˈskloʊ.ʒɚ/",
-      "meaning_zh": "披露；公开信息"
-    },
-    {
-      "term": "advisory",
-      "ipa": "/ədˈvaɪ.zɚ.i/",
-      "meaning_zh": "公告；警示通知"
-    },
-    {
       "term": "vulnerability",
       "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
-      "meaning_zh": "漏洞；易受损害之处"
+      "meaning_zh": "安全漏洞"
     },
     {
-      "term": "bottleneck",
-      "ipa": "/ˈbɑː.t̬əl.nek/",
-      "meaning_zh": "瓶颈；限制进度的环节"
+      "term": "remediation",
+      "ipa": "/rɪˌmiː.diˈeɪ.ʃən/",
+      "meaning_zh": "漏洞修复"
     },
     {
-      "term": "expertise",
-      "ipa": "/ˌek.spɝːˈtiːz/",
-      "meaning_zh": "专业知识与技能"
+      "term": "outage",
+      "ipa": "/ˈaʊ.t̬ɪdʒ/",
+      "meaning_zh": "服务中断"
     },
     {
-      "term": "catastrophe",
-      "ipa": "/kəˈtæs.trə.fi/",
-      "meaning_zh": "灾难；严重的不幸事件"
+      "term": "exposure",
+      "ipa": "/ɪkˈspoʊ.ʒɚ/",
+      "meaning_zh": "暴露于网络风险"
+    },
+    {
+      "term": "quarantine",
+      "ipa": "/ˈkwɔːr.ən.tiːn/",
+      "meaning_zh": "隔离受感染设备"
+    },
+    {
+      "term": "segmentation",
+      "ipa": "/ˌseɡ.menˈteɪ.ʃən/",
+      "meaning_zh": "网络分段隔离"
+    },
+    {
+      "term": "recovery",
+      "ipa": "/rɪˈkʌv.ɚ.i/",
+      "meaning_zh": "灾后恢复"
+    },
+    {
+      "term": "credentials",
+      "ipa": "/krɪˈden·ʃəlz/",
+      "meaning_zh": "身份验证凭据"
+    },
+    {
+      "term": "isolation",
+      "ipa": "/ˌaɪ.səlˈeɪ.ʃən/",
+      "meaning_zh": "访问路径隔离"
+    },
+    {
+      "term": "restoration",
+      "ipa": "/ˌres.təˈreɪ.ʃən/",
+      "meaning_zh": "备份还原"
     }
   ]
 }
