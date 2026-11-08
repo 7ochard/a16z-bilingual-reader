@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-08",
+  "article": {
+    "title": "Investing in Phaze",
+    "title_zh": "投资 Phaze",
+    "published_at": "2026-11-04",
+    "url": "https://a16z.com/announcement/investing-in-phaze/"
+  },
+  "words": [
+    {
+      "term": "productivity",
+      "ipa": "/ˌproʊ.dəkˈtɪv.ə.t̬i/",
+      "meaning_zh": "生产效率"
+    },
+    {
+      "term": "abstraction",
+      "ipa": "/æbˈstræk.ʃən/",
+      "meaning_zh": "抽象化"
+    },
+    {
+      "term": "hardware",
+      "ipa": "/ˈhɑːrd.wer/",
+      "meaning_zh": "硬件"
+    },
+    {
+      "term": "sophisticated",
+      "ipa": "/səˈfɪs.tə.keɪ.t̬ɪd/",
+      "meaning_zh": "技术娴熟的"
+    },
+    {
+      "term": "remote",
+      "ipa": "/rɪˈmoʊt/",
+      "meaning_zh": "远程的"
+    },
+    {
+      "term": "access",
+      "ipa": "/ˈæk.ses/",
+      "meaning_zh": "访问"
+    },
+    {
+      "term": "interactive",
+      "ipa": "/ˌɪn.t̬ɚˈræk.tɪv/",
+      "meaning_zh": "交互式的"
+    },
+    {
+      "term": "latency",
+      "ipa": "/ˈleɪ.tən.si/",
+      "meaning_zh": "延迟"
+    },
+    {
+      "term": "compatibility",
+      "ipa": "/kəmˌpæt̬.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "兼容性"
+    },
+    {
+      "term": "administration",
+      "ipa": "/ədˌmɪn.əˈstreɪ.ʃən/",
+      "meaning_zh": "系统管理"
+    },
+    {
+      "term": "seamless",
+      "ipa": "/ˈsiːm.ləs/",
+      "meaning_zh": "顺畅无缝的"
+    },
+    {
+      "term": "acquisition",
+      "ipa": "/ˌæk.wəˈzɪʃ.ən/",
+      "meaning_zh": "收购"
+    }
+  ]
+}

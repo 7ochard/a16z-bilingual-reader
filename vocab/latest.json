@@ -1,61 +1,71 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "article": {
-    "title": "Defense in Depth, Rebuilt for Machine Speed",
-    "title_zh": "为机器速度重建纵深防御",
-    "published_at": "2026-11-06",
-    "url": "https://a16z.com/defense-in-depth-rebuilt-for-machine-speed/"
+    "title": "Investing in Phaze",
+    "title_zh": "投资 Phaze",
+    "published_at": "2026-11-04",
+    "url": "https://a16z.com/announcement/investing-in-phaze/"
   },
   "words": [
     {
-      "term": "vulnerability",
-      "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
-      "meaning_zh": "安全漏洞"
+      "term": "productivity",
+      "ipa": "/ˌproʊ.dəkˈtɪv.ə.t̬i/",
+      "meaning_zh": "生产效率"
     },
     {
-      "term": "remediation",
-      "ipa": "/rɪˌmiː.diˈeɪ.ʃən/",
-      "meaning_zh": "漏洞修复"
+      "term": "abstraction",
+      "ipa": "/æbˈstræk.ʃən/",
+      "meaning_zh": "抽象化"
     },
     {
-      "term": "outage",
-      "ipa": "/ˈaʊ.t̬ɪdʒ/",
-      "meaning_zh": "服务中断"
+      "term": "hardware",
+      "ipa": "/ˈhɑːrd.wer/",
+      "meaning_zh": "硬件"
     },
     {
-      "term": "exposure",
-      "ipa": "/ɪkˈspoʊ.ʒɚ/",
-      "meaning_zh": "暴露于网络风险"
+      "term": "sophisticated",
+      "ipa": "/səˈfɪs.tə.keɪ.t̬ɪd/",
+      "meaning_zh": "技术娴熟的"
     },
     {
-      "term": "quarantine",
-      "ipa": "/ˈkwɔːr.ən.tiːn/",
-      "meaning_zh": "隔离受感染设备"
+      "term": "remote",
+      "ipa": "/rɪˈmoʊt/",
+      "meaning_zh": "远程的"
     },
     {
-      "term": "segmentation",
-      "ipa": "/ˌseɡ.menˈteɪ.ʃən/",
-      "meaning_zh": "网络分段隔离"
+      "term": "access",
+      "ipa": "/ˈæk.ses/",
+      "meaning_zh": "访问"
     },
     {
-      "term": "recovery",
-      "ipa": "/rɪˈkʌv.ɚ.i/",
-      "meaning_zh": "灾后恢复"
+      "term": "interactive",
+      "ipa": "/ˌɪn.t̬ɚˈræk.tɪv/",
+      "meaning_zh": "交互式的"
     },
     {
-      "term": "credentials",
-      "ipa": "/krɪˈden·ʃəlz/",
-      "meaning_zh": "身份验证凭据"
+      "term": "latency",
+      "ipa": "/ˈleɪ.tən.si/",
+      "meaning_zh": "延迟"
     },
     {
-      "term": "isolation",
-      "ipa": "/ˌaɪ.səlˈeɪ.ʃən/",
-      "meaning_zh": "访问路径隔离"
+      "term": "compatibility",
+      "ipa": "/kəmˌpæt̬.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "兼容性"
     },
     {
-      "term": "restoration",
-      "ipa": "/ˌres.təˈreɪ.ʃən/",
-      "meaning_zh": "备份还原"
+      "term": "administration",
+      "ipa": "/ədˌmɪn.əˈstreɪ.ʃən/",
+      "meaning_zh": "系统管理"
+    },
+    {
+      "term": "seamless",
+      "ipa": "/ˈsiːm.ləs/",
+      "meaning_zh": "顺畅无缝的"
+    },
+    {
+      "term": "acquisition",
+      "ipa": "/ˌæk.wəˈzɪʃ.ən/",
+      "meaning_zh": "收购"
     }
   ]
 }
