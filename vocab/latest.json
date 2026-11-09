@@ -1,71 +1,61 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "article": {
-    "title": "Investing in Phaze",
-    "title_zh": "投资 Phaze",
-    "published_at": "2026-11-04",
-    "url": "https://a16z.com/announcement/investing-in-phaze/"
+    "title": "Charts of the Week: Apple Skips Capex, and the Crowd Goes Wild (Sort Of)",
+    "title_zh": "本周图表：苹果避开资本支出热潮，市场为之喝彩（也不尽然）",
+    "published_at": "2026-11-06",
+    "url": "https://www.a16z.news/p/charts-of-the-week-apple-skips-capex"
   },
   "words": [
     {
-      "term": "productivity",
-      "ipa": "/ˌproʊ.dəkˈtɪv.ə.t̬i/",
-      "meaning_zh": "生产效率"
+      "term": "capex",
+      "ipa": "/ˈkæp.eks/",
+      "meaning_zh": "资本支出"
     },
     {
-      "term": "abstraction",
-      "ipa": "/æbˈstræk.ʃən/",
-      "meaning_zh": "抽象化"
+      "term": "earnings",
+      "ipa": "/ˈɝː.nɪŋz/",
+      "meaning_zh": "公司盈利"
     },
     {
-      "term": "hardware",
-      "ipa": "/ˈhɑːrd.wer/",
-      "meaning_zh": "硬件"
+      "term": "quadrant",
+      "ipa": "/ˈkwɑː.drənt/",
+      "meaning_zh": "象限"
     },
     {
-      "term": "sophisticated",
-      "ipa": "/səˈfɪs.tə.keɪ.t̬ɪd/",
-      "meaning_zh": "技术娴熟的"
+      "term": "rebound",
+      "ipa": "/ˈriː.baʊnd/",
+      "meaning_zh": "反弹"
     },
     {
-      "term": "remote",
-      "ipa": "/rɪˈmoʊt/",
-      "meaning_zh": "远程的"
+      "term": "moribund",
+      "ipa": "/ˈmɔːr.ɪ.bʌnd/",
+      "meaning_zh": "低迷的；缺乏活力的"
     },
     {
-      "term": "access",
-      "ipa": "/ˈæk.ses/",
-      "meaning_zh": "访问"
+      "term": "concentration",
+      "ipa": "/ˌkɑːn.sənˈtreɪ.ʃən/",
+      "meaning_zh": "集中；集中程度"
     },
     {
-      "term": "interactive",
-      "ipa": "/ˌɪn.t̬ɚˈræk.tɪv/",
-      "meaning_zh": "交互式的"
+      "term": "ratio",
+      "ipa": "/ˈreɪ.ʃi.oʊ/",
+      "meaning_zh": "比率"
     },
     {
-      "term": "latency",
-      "ipa": "/ˈleɪ.tən.si/",
-      "meaning_zh": "延迟"
+      "term": "revenue",
+      "ipa": "/ˈrev.ə.nuː/",
+      "meaning_zh": "营业收入"
     },
     {
-      "term": "compatibility",
-      "ipa": "/kəmˌpæt̬.əˈbɪl.ə.t̬i/",
-      "meaning_zh": "兼容性"
+      "term": "compound",
+      "ipa": "/kəmˈpaʊnd/",
+      "meaning_zh": "复合增长；累积增长"
     },
     {
-      "term": "administration",
-      "ipa": "/ədˌmɪn.əˈstreɪ.ʃən/",
-      "meaning_zh": "系统管理"
-    },
-    {
-      "term": "seamless",
-      "ipa": "/ˈsiːm.ləs/",
-      "meaning_zh": "顺畅无缝的"
-    },
-    {
-      "term": "acquisition",
-      "ipa": "/ˌæk.wəˈzɪʃ.ən/",
-      "meaning_zh": "收购"
+      "term": "aggregate",
+      "ipa": "/ˈæɡ.rə.ɡət/",
+      "meaning_zh": "总计；整体"
     }
   ]
 }
