@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "article": {
-    "title": "Charts of the Week: Apple Skips Capex, and the Crowd Goes Wild (Sort Of)",
-    "title_zh": "本周图表：苹果避开资本支出热潮，市场为之喝彩（也不尽然）",
-    "published_at": "2026-11-06",
-    "url": "https://www.a16z.news/p/charts-of-the-week-apple-skips-capex"
+    "title": "America Can Build Again. Here’s How",
+    "title_zh": "美国能够再次建设：路径何在",
+    "published_at": "2026-11-09",
+    "url": "https://a16z.com/america-can-build-again-heres-how/"
   },
   "words": [
     {
-      "term": "capex",
-      "ipa": "/ˈkæp.eks/",
-      "meaning_zh": "资本支出"
+      "term": "modular",
+      "ipa": "/ˈmɑː.dʒə.lɚ/",
+      "meaning_zh": "模块化的"
     },
     {
-      "term": "earnings",
-      "ipa": "/ˈɝː.nɪŋz/",
-      "meaning_zh": "公司盈利"
+      "term": "permitting",
+      "ipa": "/pərˈmɪt̬.ɪŋ/",
+      "meaning_zh": "许可审批"
     },
     {
-      "term": "quadrant",
-      "ipa": "/ˈkwɑː.drənt/",
-      "meaning_zh": "象限"
+      "term": "litigation",
+      "ipa": "/ˌlɪt̬.əˈɡeɪ.ʃən/",
+      "meaning_zh": "诉讼"
     },
     {
-      "term": "rebound",
-      "ipa": "/ˈriː.baʊnd/",
-      "meaning_zh": "反弹"
+      "term": "transmission",
+      "ipa": "/trænˈsmɪʃ.ən/",
+      "meaning_zh": "电力输送"
     },
     {
-      "term": "moribund",
-      "ipa": "/ˈmɔːr.ɪ.bʌnd/",
-      "meaning_zh": "低迷的；缺乏活力的"
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "基础设施"
     },
     {
-      "term": "concentration",
-      "ipa": "/ˌkɑːn.sənˈtreɪ.ʃən/",
-      "meaning_zh": "集中；集中程度"
+      "term": "capital",
+      "ipa": "/ˈkæp.ə.t̬əl/",
+      "meaning_zh": "资本；资金"
     },
     {
-      "term": "ratio",
-      "ipa": "/ˈreɪ.ʃi.oʊ/",
-      "meaning_zh": "比率"
+      "term": "profitability",
+      "ipa": "/ˌprɑː.fɪ.t̬əˈbɪl.ə.t̬i/",
+      "meaning_zh": "盈利能力"
     },
     {
-      "term": "revenue",
-      "ipa": "/ˈrev.ə.nuː/",
-      "meaning_zh": "营业收入"
+      "term": "financing",
+      "ipa": "/ˈfaɪnænsɪŋ/",
+      "meaning_zh": "融资；资金支持"
     },
     {
-      "term": "compound",
-      "ipa": "/kəmˈpaʊnd/",
-      "meaning_zh": "复合增长；累积增长"
+      "term": "substantive",
+      "ipa": "/səbˈstæn.t̬ɪv/",
+      "meaning_zh": "实质性的"
     },
     {
-      "term": "aggregate",
-      "ipa": "/ˈæɡ.rə.ɡət/",
-      "meaning_zh": "总计；整体"
+      "term": "procedural",
+      "ipa": "/prəˈsiː.dʒɚ.əl/",
+      "meaning_zh": "程序性的"
     }
   ]
 }
