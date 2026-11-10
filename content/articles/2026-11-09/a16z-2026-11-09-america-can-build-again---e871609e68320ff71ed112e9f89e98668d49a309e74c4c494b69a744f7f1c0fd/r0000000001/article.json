@@ -1,0 +1,328 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-09-america-can-build-again-heres-how",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-09-america-can-build-again-heres-how",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "America Can Build Again. Here’s How",
+        "author": [
+          "Matt Cronin"
+        ],
+        "published_at": "2026-11-09",
+        "selected_at": "2026-11-10",
+        "url": "https://a16z.com/america-can-build-again-heres-how/",
+        "topics": [
+          "American Dynamism",
+          "Infrastructure",
+          "Permitting Reform",
+          "Project Economics",
+          "Environmental Review"
+        ],
+        "selection_reason": "今日选取一篇尚未归档的官方政策评论，练习区分作者主张、经验材料与可检验的经营判断。下列短摘要为原创改写，分析与词汇例句为独立撰写；不替代原文或法律意见。 / Selected for examining how policy uncertainty enters project economics. The brief summary, analysis and practice examples are newly written.",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "Cronin argues that fragmented approvals obstruct American construction despite available engineering expertise.",
+            "zh": "Cronin 认为，审批环节分散使美国建设受阻，即使工程能力并不匮乏。"
+          },
+          {
+            "id": "s02",
+            "en": "He separates environmental protection from procedural delay and advocates more predictable project decisions.",
+            "zh": "他区分环境保护与程序拖延，主张提高项目决策的可预期性。"
+          },
+          {
+            "id": "s03",
+            "en": "His proposed reforms emphasize deadlines, coordinated reviews, and greater durability of permits.",
+            "zh": "他提出的改革重点包括明确时限、协调审查及增强许可的稳定性。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "作者主张提高建设审批的确定性。以下讨论进一步检验这种主张如何转化为可衡量的项目结果。 / The author favors greater approval certainty; the analysis below develops independent ways to test its practical value.",
+          "supporting_evidence": [
+            "原文采用项目案例与跨国比较支撑论点；本文不将这些材料视为已经完成的因果识别。 / The essay draws on project examples and international comparisons; these do not by themselves establish causality."
+          ],
+          "industry_significance": [
+            {
+              "en": "Independent analysis: Time should enter the model as a distribution, not a single completion date. Suppose a hypothetical project will receive $100 million in year five. At a 10% annual discount rate, that receipt is worth about $62.1 million today; a two-year delay reduces it to about $51.3 million. This isolated timing effect excludes construction inflation, interim revenue, taxes and financing details. It illustrates sensitivity, not an estimate of any project in the article.",
+              "zh": "独立分析：应把工期视为一个概率分布，而不是单一日期。假设某项目第五年取得一亿美元收入，以每年10%折现，现值约为6210万美元；推迟两年后约为5130万美元。这一假设计算仅隔离时间影响，未计入建设通胀、中间收入、税费及融资细节，也不估算原文中的任何项目。"
+            },
+            {
+              "en": "Independent analysis: A useful approval-workflow product would record who owns each decision, what evidence is missing, and when dependencies become actionable. The buyer should measure fewer repeated submissions, less rework and shorter handoff delays. Generating documents faster is valuable only if it removes the actual constraint. Software cannot grant an agency authority it does not possess.",
+              "zh": "独立分析：审批协作产品可以记录每项决定的责任人、缺失证据及前置条件何时满足。购买者应衡量重复提交、返工和交接等待是否减少。只有实际瓶颈被消除，文档生成加速才会转化为项目价值；软件本身无法赋予机构并不存在的权限。"
+            },
+            {
+              "en": "Independent analysis: Procurement should distinguish an earlier decision from an earlier successful operation. A pilot could track days from a complete application to a decision, days from approval to commissioning, and the share of files reopened. Each metric needs a fixed starting definition and comparable project categories. Otherwise a team can appear faster merely by moving difficult work outside the reported interval.",
+              "zh": "独立分析：采购评估应区分更早作出决定与更早投入有效运营。试点可以跟踪完整申请至决定的天数、获批至投运的天数以及重新审查的比例。每个指标都需要固定起点和可比项目分类，否则团队可能只是把困难工作挪到统计区间之外，看上去更快。"
+            }
+          ],
+          "limitations": [
+            {
+              "en": "Independent critique: Comparing unusually successful historical projects with unusually delayed contemporary ones risks selection bias. A stronger study would include completed, rejected and abandoned projects, control for scope and geography, and report medians and tail outcomes. The essay alone cannot isolate the contribution of regulation from procurement, design changes, labor availability or financing.",
+              "zh": "独立评估：把历史上的杰出项目与当代严重延期项目相比，可能存在选择偏差。更有说服力的研究应同时纳入完工、被拒和中止项目，控制规模及地理差异，并报告中位数与长尾结果。仅凭该评论无法将监管影响与采购、设计变更、劳动力供给和融资因素分离。"
+            },
+            {
+              "en": "Independent critique: A speed target can create incentives to reject difficult applications, defer impact assessments, or undercount affected communities. Evaluation therefore needs outcome safeguards: compliance findings, preventable damage, community participation and the cost of later corrections. Faster processing is not a sufficient definition of public value.",
+              "zh": "独立评估：速度目标可能诱使执行者拒绝复杂申请、推迟影响评估，或少计受影响社区。评估因此需要同时观察合规发现、可避免损害、公众参与及后续纠错成本。办得更快不足以单独定义公共价值。"
+            },
+            {
+              "en": "Scope note: The discussion treats the article as an argument, not a statement that its preferred legislation is enacted or that its legal descriptions apply to a particular project. Legislative status and jurisdiction-specific duties would require separate current primary-source verification before action.",
+              "zh": "范围说明：这里把原文作为一种政策论证阅读，不据此声称作者支持的立法已经生效，也不把文中的法律概述直接套用到具体项目。采取行动前，立法进展及特定辖区义务需另查最新一手资料。"
+            }
+          ],
+          "independent_judgment": "独立判断：最值得验证的假设是，决策时间更可预测能否同时降低返工、改善资金安排并保持公共利益保护。可以先在相似项目中开展有限试点，预先定义完整申请、延期、损害和投运等指标，并保留未成功项目的数据。若审批变快但建设成本、环境结果或公众纠纷恶化，就不能把流程提速直接当成改革成功。对创业者而言，先明确谁为哪一种等待付费，再决定做资料协同、证据核验还是进度工具，比笼统销售“审批自动化”更有判断价值。 / Independent judgment: Test whether predictable decision times reduce rework and improve planning while preserving safeguards. Start with a bounded comparison of similar projects and retain failed cases. If faster approval accompanies worse costs, environmental outcomes or disputes, speed alone is not success. A founder should identify who bears which waiting cost before choosing a workflow product."
+        },
+        "vocabulary": [
+          {
+            "term": "modular",
+            "phonetic": "/ˈmɑː.dʒə.lɚ/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "模块化的",
+            "example_en": "The modular design allows a damaged unit to be replaced without rebuilding the entire facility.",
+            "example_zh": "模块化设计使损坏单元可以单独更换，无须重建整座设施。"
+          },
+          {
+            "term": "permitting",
+            "phonetic": "/pərˈmɪt̬.ɪŋ/",
+            "part_of_speech": "n.（动名词）",
+            "meaning_zh": "许可审批",
+            "example_en": "The project manager listed permitting dependencies before ordering equipment.",
+            "example_zh": "项目经理在订购设备前列出了许可审批的前置条件。"
+          },
+          {
+            "term": "litigation",
+            "phonetic": "/ˌlɪt̬.əˈɡeɪ.ʃən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "诉讼",
+            "example_en": "The budget includes a reserve for litigation, but the team has not assumed a favorable outcome.",
+            "example_zh": "预算包含诉讼准备金，但团队没有预设有利结果。"
+          },
+          {
+            "term": "transmission",
+            "phonetic": "/trænˈsmɪʃ.ən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "电力输送",
+            "example_en": "A transmission upgrade can be useful even when no new power plant is built.",
+            "example_zh": "即使没有新建发电厂，输电升级也可能有价值。"
+          },
+          {
+            "term": "infrastructure",
+            "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+            "part_of_speech": "n.",
+            "meaning_zh": "基础设施",
+            "example_en": "The infrastructure plan includes maintenance funding as well as construction costs.",
+            "example_zh": "基础设施计划既包含建设成本，也包含维护资金。"
+          },
+          {
+            "term": "capital",
+            "phonetic": "/ˈkæp.ə.t̬əl/",
+            "part_of_speech": "n.",
+            "meaning_zh": "资本；资金",
+            "example_en": "The company holds enough capital to withstand a longer approval period.",
+            "example_zh": "公司保留了足够资金，以应对更长的审批期。"
+          },
+          {
+            "term": "profitability",
+            "phonetic": "/ˌprɑː.fɪ.t̬əˈbɪl.ə.t̬i/",
+            "part_of_speech": "n.",
+            "meaning_zh": "盈利能力",
+            "example_en": "Profitability depends on operating costs and demand, not only on completion speed.",
+            "example_zh": "盈利能力取决于运营成本与需求，不仅取决于完工速度。"
+          },
+          {
+            "term": "financing",
+            "phonetic": "/ˈfaɪnænsɪŋ/",
+            "part_of_speech": "n.",
+            "meaning_zh": "融资；资金支持",
+            "example_en": "The financing agreement separates construction milestones from operating targets.",
+            "example_zh": "融资协议将建设里程碑与运营目标分开规定。"
+          },
+          {
+            "term": "substantive",
+            "phonetic": "/səbˈstæn.t̬ɪv/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "实质性的",
+            "example_en": "A substantive review asks whether the proposed safeguard actually prevents harm.",
+            "example_zh": "实质性审查关注拟议保护措施是否真正避免损害。"
+          },
+          {
+            "term": "procedural",
+            "phonetic": "/prəˈsiː.dʒɚ.əl/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "程序性的",
+            "example_en": "A procedural checklist records which consultations must occur before a decision.",
+            "example_zh": "程序性清单记录作出决定前必须开展哪些咨询。"
+          }
+        ],
+        "copyright_mode": "original_summary_only"
+      },
+      "upstream_title_zh": "美国能够再次建设：路径何在",
+      "revision": 1,
+      "title": "America Can Build Again. Here’s How",
+      "title_zh": "美国能够再次建设：路径何在",
+      "author": "Matt Cronin",
+      "published_at": "2026-11-09",
+      "topics": [
+        "American Dynamism",
+        "Infrastructure",
+        "Permitting Reform",
+        "Project Economics",
+        "Environmental Review"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/america-can-build-again-heres-how/",
+        "rights": "summary_only",
+        "copyright": "Original article © 2026 Andreessen Horowitz; author Matt Cronin. This archive contains a short original bilingual summary, independent commentary and original vocabulary examples, not the article text.",
+        "permission_note": "No full-text license is claimed. Content was newly prepared from the verified official source page; no recovered upstream JSON attachment is claimed. Publication is limited to original summary and analysis with source attribution."
+      },
+      "summary": "今日选取一篇尚未归档的官方政策评论，练习区分作者主张、经验材料与可检验的经营判断。下列短摘要为原创改写，分析与词汇例句为独立撰写；不替代原文或法律意见。 / Selected for examining how policy uncertainty enters project economics. The brief summary, analysis and practice examples are newly written.",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "Cronin argues that fragmented approvals obstruct American construction despite available engineering expertise.",
+          "zh": "Cronin 认为，审批环节分散使美国建设受阻，即使工程能力并不匮乏。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "He separates environmental protection from procedural delay and advocates more predictable project decisions.",
+          "zh": "他区分环境保护与程序拖延，主张提高项目决策的可预期性。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "His proposed reforms emphasize deadlines, coordinated reviews, and greater durability of permits.",
+          "zh": "他提出的改革重点包括明确时限、协调审查及增强许可的稳定性。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-75bf00d0e9c17ae75bb51ac8",
+          "segment_id": null,
+          "example_en": "The modular design allows a damaged unit to be replaced without rebuilding the entire facility.",
+          "example_zh": "模块化设计使损坏单元可以单独更换，无须重建整座设施。",
+          "part_of_speech": "adj.",
+          "term": "modular",
+          "meaning_zh": "模块化的",
+          "phonetic": "/ˈmɑː.dʒə.lɚ/"
+        },
+        {
+          "id": "up-f4eeeb07a6276b0c2e8ae9b2",
+          "segment_id": null,
+          "example_en": "The project manager listed permitting dependencies before ordering equipment.",
+          "example_zh": "项目经理在订购设备前列出了许可审批的前置条件。",
+          "part_of_speech": "n.（动名词）",
+          "term": "permitting",
+          "meaning_zh": "许可审批",
+          "phonetic": "/pərˈmɪt̬.ɪŋ/"
+        },
+        {
+          "id": "up-66f675ac922168762a53bccb",
+          "segment_id": null,
+          "example_en": "The budget includes a reserve for litigation, but the team has not assumed a favorable outcome.",
+          "example_zh": "预算包含诉讼准备金，但团队没有预设有利结果。",
+          "part_of_speech": "n.",
+          "term": "litigation",
+          "meaning_zh": "诉讼",
+          "phonetic": "/ˌlɪt̬.əˈɡeɪ.ʃən/"
+        },
+        {
+          "id": "up-0633775a9ccccbe51fc12b68",
+          "segment_id": null,
+          "example_en": "A transmission upgrade can be useful even when no new power plant is built.",
+          "example_zh": "即使没有新建发电厂，输电升级也可能有价值。",
+          "part_of_speech": "n.",
+          "term": "transmission",
+          "meaning_zh": "电力输送",
+          "phonetic": "/trænˈsmɪʃ.ən/"
+        },
+        {
+          "id": "up-71e58749448e35f48b3c7651",
+          "segment_id": null,
+          "example_en": "The infrastructure plan includes maintenance funding as well as construction costs.",
+          "example_zh": "基础设施计划既包含建设成本，也包含维护资金。",
+          "part_of_speech": "n.",
+          "term": "infrastructure",
+          "meaning_zh": "基础设施",
+          "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/"
+        },
+        {
+          "id": "up-5ed8bc6c5d6c821fdbc39a16",
+          "segment_id": null,
+          "example_en": "The company holds enough capital to withstand a longer approval period.",
+          "example_zh": "公司保留了足够资金，以应对更长的审批期。",
+          "part_of_speech": "n.",
+          "term": "capital",
+          "meaning_zh": "资本；资金",
+          "phonetic": "/ˈkæp.ə.t̬əl/"
+        },
+        {
+          "id": "up-5693fb3bbd01ffda78b45f90",
+          "segment_id": null,
+          "example_en": "Profitability depends on operating costs and demand, not only on completion speed.",
+          "example_zh": "盈利能力取决于运营成本与需求，不仅取决于完工速度。",
+          "part_of_speech": "n.",
+          "term": "profitability",
+          "meaning_zh": "盈利能力",
+          "phonetic": "/ˌprɑː.fɪ.t̬əˈbɪl.ə.t̬i/"
+        },
+        {
+          "id": "up-f39f882e022881830371a6e9",
+          "segment_id": null,
+          "example_en": "The financing agreement separates construction milestones from operating targets.",
+          "example_zh": "融资协议将建设里程碑与运营目标分开规定。",
+          "part_of_speech": "n.",
+          "term": "financing",
+          "meaning_zh": "融资；资金支持",
+          "phonetic": "/ˈfaɪnænsɪŋ/"
+        },
+        {
+          "id": "up-d6e78cf0203075bbd3d816c6",
+          "segment_id": null,
+          "example_en": "A substantive review asks whether the proposed safeguard actually prevents harm.",
+          "example_zh": "实质性审查关注拟议保护措施是否真正避免损害。",
+          "part_of_speech": "adj.",
+          "term": "substantive",
+          "meaning_zh": "实质性的",
+          "phonetic": "/səbˈstæn.t̬ɪv/"
+        },
+        {
+          "id": "up-581927be6b9745953ea74107",
+          "segment_id": null,
+          "example_en": "A procedural checklist records which consultations must occur before a decision.",
+          "example_zh": "程序性清单记录作出决定前必须开展哪些咨询。",
+          "part_of_speech": "adj.",
+          "term": "procedural",
+          "meaning_zh": "程序性的",
+          "phonetic": "/prəˈsiː.dʒɚ.əl/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "作者主张提高建设审批的确定性。以下讨论进一步检验这种主张如何转化为可衡量的项目结果。 / The author favors greater approval certainty; the analysis below develops independent ways to test its practical value.",
+        "key_points": [
+          "原文采用项目案例与跨国比较支撑论点；本文不将这些材料视为已经完成的因果识别。 / The essay draws on project examples and international comparisons; these do not by themselves establish causality."
+        ],
+        "discussion": [
+          "{\n  \"en\": \"Independent analysis: Time should enter the model as a distribution, not a single completion date. Suppose a hypothetical project will receive $100 million in year five. At a 10% annual discount rate, that receipt is worth about $62.1 million today; a two-year delay reduces it to about $51.3 million. This isolated timing effect excludes construction inflation, interim revenue, taxes and financing details. It illustrates sensitivity, not an estimate of any project in the article.\",\n  \"zh\": \"独立分析：应把工期视为一个概率分布，而不是单一日期。假设某项目第五年取得一亿美元收入，以每年10%折现，现值约为6210万美元；推迟两年后约为5130万美元。这一假设计算仅隔离时间影响，未计入建设通胀、中间收入、税费及融资细节，也不估算原文中的任何项目。\"\n}",
+          "{\n  \"en\": \"Independent analysis: A useful approval-workflow product would record who owns each decision, what evidence is missing, and when dependencies become actionable. The buyer should measure fewer repeated submissions, less rework and shorter handoff delays. Generating documents faster is valuable only if it removes the actual constraint. Software cannot grant an agency authority it does not possess.\",\n  \"zh\": \"独立分析：审批协作产品可以记录每项决定的责任人、缺失证据及前置条件何时满足。购买者应衡量重复提交、返工和交接等待是否减少。只有实际瓶颈被消除，文档生成加速才会转化为项目价值；软件本身无法赋予机构并不存在的权限。\"\n}",
+          "{\n  \"en\": \"Independent analysis: Procurement should distinguish an earlier decision from an earlier successful operation. A pilot could track days from a complete application to a decision, days from approval to commissioning, and the share of files reopened. Each metric needs a fixed starting definition and comparable project categories. Otherwise a team can appear faster merely by moving difficult work outside the reported interval.\",\n  \"zh\": \"独立分析：采购评估应区分更早作出决定与更早投入有效运营。试点可以跟踪完整申请至决定的天数、获批至投运的天数以及重新审查的比例。每个指标都需要固定起点和可比项目分类，否则团队可能只是把困难工作挪到统计区间之外，看上去更快。\"\n}",
+          "独立判断：最值得验证的假设是，决策时间更可预测能否同时降低返工、改善资金安排并保持公共利益保护。可以先在相似项目中开展有限试点，预先定义完整申请、延期、损害和投运等指标，并保留未成功项目的数据。若审批变快但建设成本、环境结果或公众纠纷恶化，就不能把流程提速直接当成改革成功。对创业者而言，先明确谁为哪一种等待付费，再决定做资料协同、证据核验还是进度工具，比笼统销售“审批自动化”更有判断价值。 / Independent judgment: Test whether predictable decision times reduce rework and improve planning while preserving safeguards. Start with a bounded comparison of similar projects and retain failed cases. If faster approval accompanies worse costs, environmental outcomes or disputes, speed alone is not success. A founder should identify who bears which waiting cost before choosing a workflow product."
+        ],
+        "limitations": "{\n  \"en\": \"Independent critique: Comparing unusually successful historical projects with unusually delayed contemporary ones risks selection bias. A stronger study would include completed, rejected and abandoned projects, control for scope and geography, and report medians and tail outcomes. The essay alone cannot isolate the contribution of regulation from procurement, design changes, labor availability or financing.\",\n  \"zh\": \"独立评估：把历史上的杰出项目与当代严重延期项目相比，可能存在选择偏差。更有说服力的研究应同时纳入完工、被拒和中止项目，控制规模及地理差异，并报告中位数与长尾结果。仅凭该评论无法将监管影响与采购、设计变更、劳动力供给和融资因素分离。\"\n}\n\n{\n  \"en\": \"Independent critique: A speed target can create incentives to reject difficult applications, defer impact assessments, or undercount affected communities. Evaluation therefore needs outcome safeguards: compliance findings, preventable damage, community participation and the cost of later corrections. Faster processing is not a sufficient definition of public value.\",\n  \"zh\": \"独立评估：速度目标可能诱使执行者拒绝复杂申请、推迟影响评估，或少计受影响社区。评估因此需要同时观察合规发现、可避免损害、公众参与及后续纠错成本。办得更快不足以单独定义公共价值。\"\n}\n\n{\n  \"en\": \"Scope note: The discussion treats the article as an argument, not a statement that its preferred legislation is enacted or that its legal descriptions apply to a particular project. Legislative status and jurisdiction-specific duties would require separate current primary-source verification before action.\",\n  \"zh\": \"范围说明：这里把原文作为一种政策论证阅读，不据此声称作者支持的立法已经生效，也不把文中的法律概述直接套用到具体项目。采取行动前，立法进展及特定辖区义务需另查最新一手资料。\"\n}",
+        "independent_judgment": "独立判断：最值得验证的假设是，决策时间更可预测能否同时降低返工、改善资金安排并保持公共利益保护。可以先在相似项目中开展有限试点，预先定义完整申请、延期、损害和投运等指标，并保留未成功项目的数据。若审批变快但建设成本、环境结果或公众纠纷恶化，就不能把流程提速直接当成改革成功。对创业者而言，先明确谁为哪一种等待付费，再决定做资料协同、证据核验还是进度工具，比笼统销售“审批自动化”更有判断价值。 / Independent judgment: Test whether predictable decision times reduce rework and improve planning while preserving safeguards. Start with a bounded comparison of similar projects and retain failed cases. If faster approval accompanies worse costs, environmental outcomes or disputes, speed alone is not success. A founder should identify who bears which waiting cost before choosing a workflow product."
+      }
+    }
+  ]
+}
