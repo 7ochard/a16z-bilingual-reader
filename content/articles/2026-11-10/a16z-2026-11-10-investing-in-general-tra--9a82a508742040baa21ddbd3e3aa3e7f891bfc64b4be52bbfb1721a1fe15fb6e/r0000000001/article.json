@@ -1,0 +1,335 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-10-investing-in-general-translation",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-10-investing-in-general-translation",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "Investing in General Translation",
+        "author": [
+          "Jennifer Li",
+          "Martin Casado",
+          "Jason Cui"
+        ],
+        "published_at": "2026-11-10",
+        "selected_at": "2026-11-11",
+        "url": "https://a16z.com/announcement/investing-in-general-translation/",
+        "topics": [
+          "Localization",
+          "Developer infrastructure",
+          "AI",
+          "Product development"
+        ],
+        "selection_reason": "选择近期官方文章，关注本地化如何进入产品开发流程。已核实官方原文与现有归档，未取得当天精选的原始 JSON；本条是重新编写的原创摘要与独立解读，不是恢复的上游文件。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "The authors frame localization as a coordination problem across product surfaces, not just a language conversion task.",
+            "zh": "作者把本地化视为跨产品界面的协作问题，而不仅是语言转换。"
+          },
+          {
+            "id": "s02",
+            "en": "Their investment announcement presents General Translation as developer infrastructure that brings this work into everyday product development.",
+            "zh": "这篇投资公告将 General Translation 定位为开发者基础设施，把这类工作纳入日常产品开发。"
+          },
+          {
+            "id": "s03",
+            "en": "The announcement expresses an investment thesis; it does not establish independently measured improvements in quality or delivery speed.",
+            "zh": "公告表达的是投资判断，并未确立经独立测量的质量或交付速度提升。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "原文的核心视角是把本地化纳入开发基础设施。以下深度解读由编者独立提出，是评估建议，不代表原作者结论或对该产品的实测。",
+          "supporting_evidence": [
+            "原文是投资公告，适合用于识别产品方向，不宜充当采购效果证明。",
+            "独立验证建议：在引入任何方案前，用同一批页面建立基线，记录人工处理时间、语义错误数、布局缺陷数和回滚耗时；把内容难度与目标语言保持一致，再比较结果。",
+            "独立验证建议：将复数、日期、货币、变量插值、长按钮文案和屏幕阅读顺序纳入测试。单句翻译正确，不代表完整交互正确。"
+          ],
+          "industry_significance": [
+            "独立产品判断：翻译单元应携带界面角色和允许的长度，而不是只有文本。一个词位于导航、错误提示或付款确认中，验收要求可能完全不同。可用组件标识连接设计与实现，但仍需测试标识在重构后的稳定性。",
+            "独立工程判断：发布单元应包含源文本版本、翻译版本和审核状态。源文本变化后，旧译文应被标为待复核；不能因为缓存命中就把旧内容当作当前有效版本。",
+            "独立组织判断：自动化减少搬运工作后，责任划分仍需明确。产品负责人定义意图，语言审校检查语义，设计与开发验证交互；关键错误必须能追到版本与责任环节。"
+          ],
+          "limitations": [
+            "本文未实测 General Translation，不能确认其集成覆盖、成本、翻译质量、隐私保障或服务稳定性。投资方与被介绍公司存在利益关系。",
+            "独立风险分析：自动化容易让错误更快传播。支付、退款、权限与安全提示应单独设置审核门槛，并保留立即回退的途径；不能把生成成功等同于允许发布。",
+            "独立风险分析：测试只覆盖常用语言和短文本会产生偏差。应记录未覆盖的语言、字体、文字方向及辅助技术，不把有限试点的结果扩展成全面保证。"
+          ],
+          "independent_judgment": "我的判断是先验证一次可追溯的小范围变更，而不是一次迁移全部文案。选一个低风险页面，明确源文案、译文和版式的验收人；在正常修改之外，故意测试缺失译文、网络失败、重复提交与源文本回退。将采购标准设为质量达标时的总维护成本，包括人工复核与失败修复。若工具让初次翻译更快，却提高日后纠错成本，应保留现有流程或缩小接入范围。"
+        },
+        "vocabulary": [
+          {
+            "term": "unprecedented",
+            "phonetic": "/ʌnˈpres.ə.den.t̬ɪd/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "前所未有的",
+            "example_en": "The team faced unprecedented demand after the launch.",
+            "example_zh": "上线后，团队遇到了前所未有的需求。"
+          },
+          {
+            "term": "deliberately",
+            "phonetic": "/dɪˈlɪb.ɚ.ət.li/",
+            "part_of_speech": "adverb",
+            "meaning_zh": "有意识地",
+            "example_en": "We deliberately tested the longest labels first.",
+            "example_zh": "我们有意识地先测试最长的标签。"
+          },
+          {
+            "term": "audience",
+            "phonetic": "/ˈɑː.di.əns/",
+            "part_of_speech": "noun",
+            "meaning_zh": "目标用户群",
+            "example_en": "A new audience may interpret the same icon differently.",
+            "example_zh": "新的用户群可能会对同一图标作出不同理解。"
+          },
+          {
+            "term": "disparate",
+            "phonetic": "/ˈdɪs.pɚ.ət/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "各不相同的",
+            "example_en": "The review combines feedback from disparate sources.",
+            "example_zh": "这次评审整合了不同来源的反馈。"
+          },
+          {
+            "term": "brittle",
+            "phonetic": "/ˈbrɪt̬.əl/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "脆弱易出错的",
+            "example_en": "A brittle script failed when the file name changed.",
+            "example_zh": "文件名一变，这个脆弱的脚本就失效了。"
+          },
+          {
+            "term": "maintenance",
+            "phonetic": "/ˈmeɪn.tən.əns/",
+            "part_of_speech": "noun",
+            "meaning_zh": "维护",
+            "example_en": "Budget for maintenance before adding another language.",
+            "example_zh": "增加一种语言前，应预留维护预算。"
+          },
+          {
+            "term": "disruption",
+            "phonetic": "/dɪsˈrʌp.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "颠覆性变革",
+            "example_en": "Disruption creates an opportunity but does not guarantee adoption.",
+            "example_zh": "颠覆性变革创造机会，但不保证产品会被采用。"
+          },
+          {
+            "term": "infrastructure",
+            "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "基础设施",
+            "example_en": "Shared infrastructure should expose clear failure signals.",
+            "example_zh": "共享基础设施应提供明确的故障信号。"
+          },
+          {
+            "term": "integrate",
+            "phonetic": "/ˈɪn.t̬ə.ɡreɪt/",
+            "part_of_speech": "verb",
+            "meaning_zh": "集成接入",
+            "example_en": "Integrate the checker into a small test project first.",
+            "example_zh": "先把检查器接入一个小型测试项目。"
+          },
+          {
+            "term": "consistent",
+            "phonetic": "/kənˈsɪs.tənt/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "保持一致的",
+            "example_en": "Keep the meaning consistent even when the wording changes.",
+            "example_zh": "即使用词改变，也要保持含义一致。"
+          }
+        ],
+        "copyright_mode": "original_summary_only"
+      },
+      "upstream_wrapper_extensions": {
+        "pronunciation_verification": {
+          "dictionary": "Cambridge Dictionary",
+          "accent": "US",
+          "verified_at": "2026-11-11",
+          "method": "US IPA verified in indexed Cambridge pronunciation entries; direct page fetches returned 403. Optional schwa display spaces were normalized.",
+          "urls": [
+            "https://dictionary.cambridge.org/us/pronunciation/english/unprecedented",
+            "https://dictionary.cambridge.org/us/pronunciation/english/deliberately",
+            "https://dictionary.cambridge.org/us/pronunciation/english/audience",
+            "https://dictionary.cambridge.org/us/pronunciation/english/disparate",
+            "https://dictionary.cambridge.org/us/pronunciation/english/brittle",
+            "https://dictionary.cambridge.org/us/pronunciation/english/maintenance",
+            "https://dictionary.cambridge.org/us/pronunciation/english/infrastructure",
+            "https://dictionary.cambridge.org/us/pronunciation/english/integrate",
+            "https://dictionary.cambridge.org/us/pronunciation/english/consistent",
+            "https://dictionary.cambridge.org/pl/pronunciation/english/disruption"
+          ]
+        },
+        "examples": "All vocabulary examples are original practice sentences, not source quotations."
+      },
+      "upstream_title_zh": "投资 General Translation：让本地化进入开发流程",
+      "revision": 1,
+      "title": "Investing in General Translation",
+      "title_zh": "投资 General Translation：让本地化进入开发流程",
+      "author": "Jennifer Li, Martin Casado, Jason Cui",
+      "published_at": "2026-11-10",
+      "topics": [
+        "Localization",
+        "Developer infrastructure",
+        "AI",
+        "Product development"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/announcement/investing-in-general-translation/",
+        "rights": "summary_only",
+        "copyright": "Original source © 2026 Andreessen Horowitz. This archive contains independently written summaries, commentary and original practice examples only.",
+        "permission_note": "No permission to reproduce the original full text is claimed. The source was verified on a16z.com; summary and analysis are newly authored, not a recovered upstream attachment."
+      },
+      "summary": "选择近期官方文章，关注本地化如何进入产品开发流程。已核实官方原文与现有归档，未取得当天精选的原始 JSON；本条是重新编写的原创摘要与独立解读，不是恢复的上游文件。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "The authors frame localization as a coordination problem across product surfaces, not just a language conversion task.",
+          "zh": "作者把本地化视为跨产品界面的协作问题，而不仅是语言转换。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "Their investment announcement presents General Translation as developer infrastructure that brings this work into everyday product development.",
+          "zh": "这篇投资公告将 General Translation 定位为开发者基础设施，把这类工作纳入日常产品开发。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "The announcement expresses an investment thesis; it does not establish independently measured improvements in quality or delivery speed.",
+          "zh": "公告表达的是投资判断，并未确立经独立测量的质量或交付速度提升。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-79f1014d1ee13f89936f0aba",
+          "segment_id": null,
+          "example_en": "The team faced unprecedented demand after the launch.",
+          "example_zh": "上线后，团队遇到了前所未有的需求。",
+          "part_of_speech": "adjective",
+          "term": "unprecedented",
+          "meaning_zh": "前所未有的",
+          "phonetic": "/ʌnˈpres.ə.den.t̬ɪd/"
+        },
+        {
+          "id": "up-54a2cc9b1a48072c18081ec6",
+          "segment_id": null,
+          "example_en": "We deliberately tested the longest labels first.",
+          "example_zh": "我们有意识地先测试最长的标签。",
+          "part_of_speech": "adverb",
+          "term": "deliberately",
+          "meaning_zh": "有意识地",
+          "phonetic": "/dɪˈlɪb.ɚ.ət.li/"
+        },
+        {
+          "id": "up-954a00a5d38963633fc0f18a",
+          "segment_id": null,
+          "example_en": "A new audience may interpret the same icon differently.",
+          "example_zh": "新的用户群可能会对同一图标作出不同理解。",
+          "part_of_speech": "noun",
+          "term": "audience",
+          "meaning_zh": "目标用户群",
+          "phonetic": "/ˈɑː.di.əns/"
+        },
+        {
+          "id": "up-1e34fa54ea7901b815e6ab41",
+          "segment_id": null,
+          "example_en": "The review combines feedback from disparate sources.",
+          "example_zh": "这次评审整合了不同来源的反馈。",
+          "part_of_speech": "adjective",
+          "term": "disparate",
+          "meaning_zh": "各不相同的",
+          "phonetic": "/ˈdɪs.pɚ.ət/"
+        },
+        {
+          "id": "up-7a3a9dac5ee8a4eb5bf91879",
+          "segment_id": null,
+          "example_en": "A brittle script failed when the file name changed.",
+          "example_zh": "文件名一变，这个脆弱的脚本就失效了。",
+          "part_of_speech": "adjective",
+          "term": "brittle",
+          "meaning_zh": "脆弱易出错的",
+          "phonetic": "/ˈbrɪt̬.əl/"
+        },
+        {
+          "id": "up-e5b53d02cb05f12012c7aafb",
+          "segment_id": null,
+          "example_en": "Budget for maintenance before adding another language.",
+          "example_zh": "增加一种语言前，应预留维护预算。",
+          "part_of_speech": "noun",
+          "term": "maintenance",
+          "meaning_zh": "维护",
+          "phonetic": "/ˈmeɪn.tən.əns/"
+        },
+        {
+          "id": "up-3cfea45ac257c35f0110e00d",
+          "segment_id": null,
+          "example_en": "Disruption creates an opportunity but does not guarantee adoption.",
+          "example_zh": "颠覆性变革创造机会，但不保证产品会被采用。",
+          "part_of_speech": "noun",
+          "term": "disruption",
+          "meaning_zh": "颠覆性变革",
+          "phonetic": "/dɪsˈrʌp.ʃən/"
+        },
+        {
+          "id": "up-554a68679a6bda059ca514ed",
+          "segment_id": null,
+          "example_en": "Shared infrastructure should expose clear failure signals.",
+          "example_zh": "共享基础设施应提供明确的故障信号。",
+          "part_of_speech": "noun",
+          "term": "infrastructure",
+          "meaning_zh": "基础设施",
+          "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/"
+        },
+        {
+          "id": "up-d391e268a2f1920f50c7be14",
+          "segment_id": null,
+          "example_en": "Integrate the checker into a small test project first.",
+          "example_zh": "先把检查器接入一个小型测试项目。",
+          "part_of_speech": "verb",
+          "term": "integrate",
+          "meaning_zh": "集成接入",
+          "phonetic": "/ˈɪn.t̬ə.ɡreɪt/"
+        },
+        {
+          "id": "up-c1e3a95161be96c375bfb934",
+          "segment_id": null,
+          "example_en": "Keep the meaning consistent even when the wording changes.",
+          "example_zh": "即使用词改变，也要保持含义一致。",
+          "part_of_speech": "adjective",
+          "term": "consistent",
+          "meaning_zh": "保持一致的",
+          "phonetic": "/kənˈsɪs.tənt/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "原文的核心视角是把本地化纳入开发基础设施。以下深度解读由编者独立提出，是评估建议，不代表原作者结论或对该产品的实测。",
+        "key_points": [
+          "原文是投资公告，适合用于识别产品方向，不宜充当采购效果证明。",
+          "独立验证建议：在引入任何方案前，用同一批页面建立基线，记录人工处理时间、语义错误数、布局缺陷数和回滚耗时；把内容难度与目标语言保持一致，再比较结果。",
+          "独立验证建议：将复数、日期、货币、变量插值、长按钮文案和屏幕阅读顺序纳入测试。单句翻译正确，不代表完整交互正确。"
+        ],
+        "discussion": [
+          "独立产品判断：翻译单元应携带界面角色和允许的长度，而不是只有文本。一个词位于导航、错误提示或付款确认中，验收要求可能完全不同。可用组件标识连接设计与实现，但仍需测试标识在重构后的稳定性。",
+          "独立工程判断：发布单元应包含源文本版本、翻译版本和审核状态。源文本变化后，旧译文应被标为待复核；不能因为缓存命中就把旧内容当作当前有效版本。",
+          "独立组织判断：自动化减少搬运工作后，责任划分仍需明确。产品负责人定义意图，语言审校检查语义，设计与开发验证交互；关键错误必须能追到版本与责任环节。",
+          "我的判断是先验证一次可追溯的小范围变更，而不是一次迁移全部文案。选一个低风险页面，明确源文案、译文和版式的验收人；在正常修改之外，故意测试缺失译文、网络失败、重复提交与源文本回退。将采购标准设为质量达标时的总维护成本，包括人工复核与失败修复。若工具让初次翻译更快，却提高日后纠错成本，应保留现有流程或缩小接入范围。"
+        ],
+        "limitations": "本文未实测 General Translation，不能确认其集成覆盖、成本、翻译质量、隐私保障或服务稳定性。投资方与被介绍公司存在利益关系。\n\n独立风险分析：自动化容易让错误更快传播。支付、退款、权限与安全提示应单独设置审核门槛，并保留立即回退的途径；不能把生成成功等同于允许发布。\n\n独立风险分析：测试只覆盖常用语言和短文本会产生偏差。应记录未覆盖的语言、字体、文字方向及辅助技术，不把有限试点的结果扩展成全面保证。",
+        "independent_judgment": "我的判断是先验证一次可追溯的小范围变更，而不是一次迁移全部文案。选一个低风险页面，明确源文案、译文和版式的验收人；在正常修改之外，故意测试缺失译文、网络失败、重复提交与源文本回退。将采购标准设为质量达标时的总维护成本，包括人工复核与失败修复。若工具让初次翻译更快，却提高日后纠错成本，应保留现有流程或缩小接入范围。"
+      }
+    }
+  ]
+}
