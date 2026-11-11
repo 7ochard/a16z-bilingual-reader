@@ -1,31 +1,46 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "article": {
-    "title": "America Can Build Again. Here’s How",
-    "title_zh": "美国能够再次建设：路径何在",
-    "published_at": "2026-11-09",
-    "url": "https://a16z.com/america-can-build-again-heres-how/"
+    "title": "Investing in General Translation",
+    "title_zh": "投资 General Translation：让本地化进入开发流程",
+    "published_at": "2026-11-10",
+    "url": "https://a16z.com/announcement/investing-in-general-translation/"
   },
   "words": [
     {
-      "term": "modular",
-      "ipa": "/ˈmɑː.dʒə.lɚ/",
-      "meaning_zh": "模块化的"
+      "term": "unprecedented",
+      "ipa": "/ʌnˈpres.ə.den.t̬ɪd/",
+      "meaning_zh": "前所未有的"
     },
     {
-      "term": "permitting",
-      "ipa": "/pərˈmɪt̬.ɪŋ/",
-      "meaning_zh": "许可审批"
+      "term": "deliberately",
+      "ipa": "/dɪˈlɪb.ɚ.ət.li/",
+      "meaning_zh": "有意识地"
     },
     {
-      "term": "litigation",
-      "ipa": "/ˌlɪt̬.əˈɡeɪ.ʃən/",
-      "meaning_zh": "诉讼"
+      "term": "audience",
+      "ipa": "/ˈɑː.di.əns/",
+      "meaning_zh": "目标用户群"
     },
     {
-      "term": "transmission",
-      "ipa": "/trænˈsmɪʃ.ən/",
-      "meaning_zh": "电力输送"
+      "term": "disparate",
+      "ipa": "/ˈdɪs.pɚ.ət/",
+      "meaning_zh": "各不相同的"
+    },
+    {
+      "term": "brittle",
+      "ipa": "/ˈbrɪt̬.əl/",
+      "meaning_zh": "脆弱易出错的"
+    },
+    {
+      "term": "maintenance",
+      "ipa": "/ˈmeɪn.tən.əns/",
+      "meaning_zh": "维护"
+    },
+    {
+      "term": "disruption",
+      "ipa": "/dɪsˈrʌp.ʃən/",
+      "meaning_zh": "颠覆性变革"
     },
     {
       "term": "infrastructure",
@@ -33,29 +48,14 @@
       "meaning_zh": "基础设施"
     },
     {
-      "term": "capital",
-      "ipa": "/ˈkæp.ə.t̬əl/",
-      "meaning_zh": "资本；资金"
+      "term": "integrate",
+      "ipa": "/ˈɪn.t̬ə.ɡreɪt/",
+      "meaning_zh": "集成接入"
     },
     {
-      "term": "profitability",
-      "ipa": "/ˌprɑː.fɪ.t̬əˈbɪl.ə.t̬i/",
-      "meaning_zh": "盈利能力"
-    },
-    {
-      "term": "financing",
-      "ipa": "/ˈfaɪnænsɪŋ/",
-      "meaning_zh": "融资；资金支持"
-    },
-    {
-      "term": "substantive",
-      "ipa": "/səbˈstæn.t̬ɪv/",
-      "meaning_zh": "实质性的"
-    },
-    {
-      "term": "procedural",
-      "ipa": "/prəˈsiː.dʒɚ.əl/",
-      "meaning_zh": "程序性的"
+      "term": "consistent",
+      "ipa": "/kənˈsɪs.tənt/",
+      "meaning_zh": "保持一致的"
     }
   ]
 }

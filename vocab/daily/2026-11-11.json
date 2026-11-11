@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-11",
+  "article": {
+    "title": "Investing in General Translation",
+    "title_zh": "投资 General Translation：让本地化进入开发流程",
+    "published_at": "2026-11-10",
+    "url": "https://a16z.com/announcement/investing-in-general-translation/"
+  },
+  "words": [
+    {
+      "term": "unprecedented",
+      "ipa": "/ʌnˈpres.ə.den.t̬ɪd/",
+      "meaning_zh": "前所未有的"
+    },
+    {
+      "term": "deliberately",
+      "ipa": "/dɪˈlɪb.ɚ.ət.li/",
+      "meaning_zh": "有意识地"
+    },
+    {
+      "term": "audience",
+      "ipa": "/ˈɑː.di.əns/",
+      "meaning_zh": "目标用户群"
+    },
+    {
+      "term": "disparate",
+      "ipa": "/ˈdɪs.pɚ.ət/",
+      "meaning_zh": "各不相同的"
+    },
+    {
+      "term": "brittle",
+      "ipa": "/ˈbrɪt̬.əl/",
+      "meaning_zh": "脆弱易出错的"
+    },
+    {
+      "term": "maintenance",
+      "ipa": "/ˈmeɪn.tən.əns/",
+      "meaning_zh": "维护"
+    },
+    {
+      "term": "disruption",
+      "ipa": "/dɪsˈrʌp.ʃən/",
+      "meaning_zh": "颠覆性变革"
+    },
+    {
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "基础设施"
+    },
+    {
+      "term": "integrate",
+      "ipa": "/ˈɪn.t̬ə.ɡreɪt/",
+      "meaning_zh": "集成接入"
+    },
+    {
+      "term": "consistent",
+      "ipa": "/kənˈsɪs.tənt/",
+      "meaning_zh": "保持一致的"
+    }
+  ]
+}
