@@ -1,0 +1,334 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-10-welcome-to-the-b2a-economy",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-10-welcome-to-the-b2a-economy",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "Welcome to the B2A Economy",
+        "author": [
+          "Olivia Moore",
+          "Justine Moore"
+        ],
+        "published_at": "2026-11-10",
+        "selected_at": "2026-11-12",
+        "url": "https://a16z.com/welcome-to-the-b2a-economy/",
+        "topics": [
+          "AI agents",
+          "Distribution",
+          "Agent commerce",
+          "Product design"
+        ],
+        "selection_reason": "关注代理参与发现、选择与执行时的产品分发变化。已读取官方原文并检查现有归档；当天精选没有可用原始 JSON，本记录为重新生成的原创摘要与独立解读，不是取得或恢复的上游文件。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "The authors argue that agents could become an important route through which people discover and use products.",
+            "zh": "作者认为，代理可能成为人们发现和使用产品的重要渠道。"
+          },
+          {
+            "id": "s02",
+            "en": "They distinguish answering a question from carrying out a task, with implications for distribution and supporting infrastructure.",
+            "zh": "文章区分回答问题与执行任务，并讨论这种变化对分发和配套基础设施的影响。"
+          },
+          {
+            "id": "s03",
+            "en": "This is a forward-looking market thesis, not proof that every business should immediately redesign its sales process.",
+            "zh": "这是一种面向未来的市场判断，不等于证明所有企业都应立即重做销售流程。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "原文将代理视为潜在分发渠道。以下为编者独立提出的产品评估框架，不是原作者结论，也不表示已对文中产品完成测试。",
+          "supporting_evidence": [
+            "原文可用于识别研究方向；本文未独立复核其中各项市场统计，不将其转述为已确认的行业基线。",
+            "独立验证建议：把一次交易拆为发现商品、核实规格、比较约束、确认付款和取得回执，分别记录成功率。只有前两步改善时，不应宣称端到端交易能力已成立。",
+            "独立验证建议：用同一商品、价格与库存条件，对比人工流程和代理流程。记录用户纠正次数、误选规格次数、完成时间与退款处理成本，而不只统计进入网站的请求量。"
+          ],
+          "industry_significance": [
+            "独立设计判断：面向代理的数据接口与面向人的界面应共享事实来源。价格、库存、尺寸、交付限制和退款条件若分别维护，代理可能在较旧的信息上执行正确的步骤，却产生错误的交易。",
+            "独立工程判断：可执行性需要清晰的状态转换。提交订单后应返回可核查的状态；超时不代表失败，重复点击也不应产生第二笔订单。幂等标识与状态查询应作为验收项，而不是仅在演示成功后补做。",
+            "独立商业判断：新增分发渠道可能同时引入平台依赖。评估时应区分新增客户与原有客户换入口，并测量净贡献，避免将渠道迁移误认为需求增长。"
+          ],
+          "limitations": [
+            "本文未实测任何代理或商家集成，不能保证其兼容性、定价、可靠性或商家资格要求。官方文章仍包含预测和引用数据，不能替代独立验证。",
+            "独立风险分析：代理能理解任务不代表拥有付款或分享数据的权限。商品选择、费用上限、订阅承诺与数据接收方应在执行前明确，重大变更后应重新确认。",
+            "独立风险分析：促销流量、少量高意愿用户或单一平台测试可能造成选择偏差。应记录失败样本和覆盖范围，不把小样本效果扩展为普遍结论。"
+          ],
+          "independent_judgment": "我的判断是先验证一个低风险、可回退的闭环。挑选规格明确的少量商品，统一商品事实与交易规则，先运行只读比较和模拟下单，再在明确授权下测试真实流程。上线门槛应包括价格变化、缺货、重复提交、支付结果不确定和取消操作。只有质量与总维护成本同时达标，才扩大品类或开放更多执行权限；接入一种新渠道本身不构成增长证据。"
+        },
+        "vocabulary": [
+          {
+            "term": "adoption",
+            "phonetic": "/əˈdɑːp.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "采用与普及",
+            "example_en": "Adoption should be measured by completed tasks, not registrations.",
+            "example_zh": "衡量采用情况应看完成的任务，而不是注册数量。"
+          },
+          {
+            "term": "measurable",
+            "phonetic": "/ˈmeʒ.ɚ.ə.bəl/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "可衡量的",
+            "example_en": "Set a measurable target before starting the pilot.",
+            "example_zh": "试点开始前应设定可衡量的目标。"
+          },
+          {
+            "term": "distribution",
+            "phonetic": "/ˌdɪs.trɪˈbjuː.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "产品触达用户的渠道",
+            "example_en": "A new distribution channel may reach existing customers first.",
+            "example_zh": "新的分发渠道可能先触达已有客户。"
+          },
+          {
+            "term": "subscribe",
+            "phonetic": "/səbˈskraɪb/",
+            "part_of_speech": "verb",
+            "meaning_zh": "订阅服务",
+            "example_en": "Ask for approval before you subscribe to a paid service.",
+            "example_zh": "订阅付费服务之前应取得批准。"
+          },
+          {
+            "term": "threat",
+            "phonetic": "/θret/",
+            "part_of_speech": "noun",
+            "meaning_zh": "威胁",
+            "example_en": "An unclear refund policy can become a threat to customer trust.",
+            "example_zh": "不明确的退款政策可能威胁客户信任。"
+          },
+          {
+            "term": "referral",
+            "phonetic": "/rɪˈfɝː.əl/",
+            "part_of_speech": "noun",
+            "meaning_zh": "推荐引流",
+            "example_en": "Track each referral through to a completed order.",
+            "example_zh": "跟踪每次推荐引流，直到订单完成。"
+          },
+          {
+            "term": "revenue",
+            "phonetic": "/ˈrev.ə.nuː/",
+            "part_of_speech": "noun",
+            "meaning_zh": "营收",
+            "example_en": "Higher traffic does not always produce higher revenue.",
+            "example_zh": "更高的流量并不总能带来更多营收。"
+          },
+          {
+            "term": "emergence",
+            "phonetic": "/ɪˈmɝː.dʒəns/",
+            "part_of_speech": "noun",
+            "meaning_zh": "涌现",
+            "example_en": "The emergence of a new channel creates fresh testing needs.",
+            "example_zh": "新渠道的涌现带来了新的测试需求。"
+          },
+          {
+            "term": "infrastructure",
+            "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "基础设施",
+            "example_en": "Reliable infrastructure makes failures easier to diagnose.",
+            "example_zh": "可靠的基础设施让故障更容易诊断。"
+          },
+          {
+            "term": "fraud",
+            "phonetic": "/frɑːd/",
+            "part_of_speech": "noun",
+            "meaning_zh": "欺诈",
+            "example_en": "A fraud check should distinguish suspicious behavior from ordinary automation.",
+            "example_zh": "欺诈检查应区分可疑行为与普通自动化。"
+          }
+        ],
+        "copyright_mode": "original_summary_only"
+      },
+      "upstream_wrapper_extensions": {
+        "pronunciation_verification": {
+          "dictionary": "Cambridge Dictionary",
+          "accent": "US",
+          "verified_at": "2026-11-12",
+          "method": "US IPA verified in indexed Cambridge pronunciation pages. Direct page fetches returned 403. Extraction-only spaces within IPA were removed.",
+          "urls": [
+            "https://dictionary.cambridge.org/us/pronunciation/english/adoption",
+            "https://dictionary.cambridge.org/us/pronunciation/english/measurable",
+            "https://dictionary.cambridge.org/us/pronunciation/english/distribution",
+            "https://dictionary.cambridge.org/us/pronunciation/english/subscribe",
+            "https://dictionary.cambridge.org/us/pronunciation/english/threat",
+            "https://dictionary.cambridge.org/pronunciation/english/referral",
+            "https://dictionary.cambridge.org/us/pronunciation/english/revenue",
+            "https://dictionary.cambridge.org/us/pronunciation/english/emergence",
+            "https://dictionary.cambridge.org/us/pronunciation/english/infrastructure",
+            "https://dictionary.cambridge.org/us/pronunciation/english/fraud"
+          ]
+        },
+        "examples": "All vocabulary examples are original practice sentences, not source quotations."
+      },
+      "upstream_title_zh": "欢迎来到 B2A 经济",
+      "revision": 1,
+      "title": "Welcome to the B2A Economy",
+      "title_zh": "欢迎来到 B2A 经济",
+      "author": "Olivia Moore, Justine Moore",
+      "published_at": "2026-11-10",
+      "topics": [
+        "AI agents",
+        "Distribution",
+        "Agent commerce",
+        "Product design"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/welcome-to-the-b2a-economy/",
+        "rights": "summary_only",
+        "copyright": "Original article © 2026 Andreessen Horowitz. Original bilingual summaries, independent commentary and practice examples created for this archive.",
+        "permission_note": "No full-text reproduction permission is claimed. This record contains original summaries and independent analysis, not the full source article or a translation of it."
+      },
+      "summary": "关注代理参与发现、选择与执行时的产品分发变化。已读取官方原文并检查现有归档；当天精选没有可用原始 JSON，本记录为重新生成的原创摘要与独立解读，不是取得或恢复的上游文件。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "The authors argue that agents could become an important route through which people discover and use products.",
+          "zh": "作者认为，代理可能成为人们发现和使用产品的重要渠道。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "They distinguish answering a question from carrying out a task, with implications for distribution and supporting infrastructure.",
+          "zh": "文章区分回答问题与执行任务，并讨论这种变化对分发和配套基础设施的影响。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "This is a forward-looking market thesis, not proof that every business should immediately redesign its sales process.",
+          "zh": "这是一种面向未来的市场判断，不等于证明所有企业都应立即重做销售流程。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-8aa775962d4d974d90f05171",
+          "segment_id": null,
+          "example_en": "Adoption should be measured by completed tasks, not registrations.",
+          "example_zh": "衡量采用情况应看完成的任务，而不是注册数量。",
+          "part_of_speech": "noun",
+          "term": "adoption",
+          "meaning_zh": "采用与普及",
+          "phonetic": "/əˈdɑːp.ʃən/"
+        },
+        {
+          "id": "up-dc0b4d90ef0fc90f77263db8",
+          "segment_id": null,
+          "example_en": "Set a measurable target before starting the pilot.",
+          "example_zh": "试点开始前应设定可衡量的目标。",
+          "part_of_speech": "adjective",
+          "term": "measurable",
+          "meaning_zh": "可衡量的",
+          "phonetic": "/ˈmeʒ.ɚ.ə.bəl/"
+        },
+        {
+          "id": "up-47336bc8eb31303b15df7ab3",
+          "segment_id": null,
+          "example_en": "A new distribution channel may reach existing customers first.",
+          "example_zh": "新的分发渠道可能先触达已有客户。",
+          "part_of_speech": "noun",
+          "term": "distribution",
+          "meaning_zh": "产品触达用户的渠道",
+          "phonetic": "/ˌdɪs.trɪˈbjuː.ʃən/"
+        },
+        {
+          "id": "up-ae0c2231c0bc38f9aabf1d2b",
+          "segment_id": null,
+          "example_en": "Ask for approval before you subscribe to a paid service.",
+          "example_zh": "订阅付费服务之前应取得批准。",
+          "part_of_speech": "verb",
+          "term": "subscribe",
+          "meaning_zh": "订阅服务",
+          "phonetic": "/səbˈskraɪb/"
+        },
+        {
+          "id": "up-3788e7f55b52c00b1f11e198",
+          "segment_id": null,
+          "example_en": "An unclear refund policy can become a threat to customer trust.",
+          "example_zh": "不明确的退款政策可能威胁客户信任。",
+          "part_of_speech": "noun",
+          "term": "threat",
+          "meaning_zh": "威胁",
+          "phonetic": "/θret/"
+        },
+        {
+          "id": "up-c61a35ae423a443b4148334d",
+          "segment_id": null,
+          "example_en": "Track each referral through to a completed order.",
+          "example_zh": "跟踪每次推荐引流，直到订单完成。",
+          "part_of_speech": "noun",
+          "term": "referral",
+          "meaning_zh": "推荐引流",
+          "phonetic": "/rɪˈfɝː.əl/"
+        },
+        {
+          "id": "up-838caf64c4589a155fde3176",
+          "segment_id": null,
+          "example_en": "Higher traffic does not always produce higher revenue.",
+          "example_zh": "更高的流量并不总能带来更多营收。",
+          "part_of_speech": "noun",
+          "term": "revenue",
+          "meaning_zh": "营收",
+          "phonetic": "/ˈrev.ə.nuː/"
+        },
+        {
+          "id": "up-f97eafadc70e3b466d567cd7",
+          "segment_id": null,
+          "example_en": "The emergence of a new channel creates fresh testing needs.",
+          "example_zh": "新渠道的涌现带来了新的测试需求。",
+          "part_of_speech": "noun",
+          "term": "emergence",
+          "meaning_zh": "涌现",
+          "phonetic": "/ɪˈmɝː.dʒəns/"
+        },
+        {
+          "id": "up-45ecd21104b33cac1d0de761",
+          "segment_id": null,
+          "example_en": "Reliable infrastructure makes failures easier to diagnose.",
+          "example_zh": "可靠的基础设施让故障更容易诊断。",
+          "part_of_speech": "noun",
+          "term": "infrastructure",
+          "meaning_zh": "基础设施",
+          "phonetic": "/ˈɪn.frəˌstrʌk.tʃɚ/"
+        },
+        {
+          "id": "up-fc39ceb7e5b1803401b52211",
+          "segment_id": null,
+          "example_en": "A fraud check should distinguish suspicious behavior from ordinary automation.",
+          "example_zh": "欺诈检查应区分可疑行为与普通自动化。",
+          "part_of_speech": "noun",
+          "term": "fraud",
+          "meaning_zh": "欺诈",
+          "phonetic": "/frɑːd/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "原文将代理视为潜在分发渠道。以下为编者独立提出的产品评估框架，不是原作者结论，也不表示已对文中产品完成测试。",
+        "key_points": [
+          "原文可用于识别研究方向；本文未独立复核其中各项市场统计，不将其转述为已确认的行业基线。",
+          "独立验证建议：把一次交易拆为发现商品、核实规格、比较约束、确认付款和取得回执，分别记录成功率。只有前两步改善时，不应宣称端到端交易能力已成立。",
+          "独立验证建议：用同一商品、价格与库存条件，对比人工流程和代理流程。记录用户纠正次数、误选规格次数、完成时间与退款处理成本，而不只统计进入网站的请求量。"
+        ],
+        "discussion": [
+          "独立设计判断：面向代理的数据接口与面向人的界面应共享事实来源。价格、库存、尺寸、交付限制和退款条件若分别维护，代理可能在较旧的信息上执行正确的步骤，却产生错误的交易。",
+          "独立工程判断：可执行性需要清晰的状态转换。提交订单后应返回可核查的状态；超时不代表失败，重复点击也不应产生第二笔订单。幂等标识与状态查询应作为验收项，而不是仅在演示成功后补做。",
+          "独立商业判断：新增分发渠道可能同时引入平台依赖。评估时应区分新增客户与原有客户换入口，并测量净贡献，避免将渠道迁移误认为需求增长。",
+          "我的判断是先验证一个低风险、可回退的闭环。挑选规格明确的少量商品，统一商品事实与交易规则，先运行只读比较和模拟下单，再在明确授权下测试真实流程。上线门槛应包括价格变化、缺货、重复提交、支付结果不确定和取消操作。只有质量与总维护成本同时达标，才扩大品类或开放更多执行权限；接入一种新渠道本身不构成增长证据。"
+        ],
+        "limitations": "本文未实测任何代理或商家集成，不能保证其兼容性、定价、可靠性或商家资格要求。官方文章仍包含预测和引用数据，不能替代独立验证。\n\n独立风险分析：代理能理解任务不代表拥有付款或分享数据的权限。商品选择、费用上限、订阅承诺与数据接收方应在执行前明确，重大变更后应重新确认。\n\n独立风险分析：促销流量、少量高意愿用户或单一平台测试可能造成选择偏差。应记录失败样本和覆盖范围，不把小样本效果扩展为普遍结论。",
+        "independent_judgment": "我的判断是先验证一个低风险、可回退的闭环。挑选规格明确的少量商品，统一商品事实与交易规则，先运行只读比较和模拟下单，再在明确授权下测试真实流程。上线门槛应包括价格变化、缺货、重复提交、支付结果不确定和取消操作。只有质量与总维护成本同时达标，才扩大品类或开放更多执行权限；接入一种新渠道本身不构成增长证据。"
+      }
+    }
+  ]
+}
