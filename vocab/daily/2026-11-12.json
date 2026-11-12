@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "title": "Welcome to the B2A Economy",
+    "title_zh": "欢迎来到 B2A 经济",
+    "published_at": "2026-11-10",
+    "url": "https://a16z.com/welcome-to-the-b2a-economy/"
+  },
+  "words": [
+    {
+      "term": "adoption",
+      "ipa": "/əˈdɑːp.ʃən/",
+      "meaning_zh": "采用与普及"
+    },
+    {
+      "term": "measurable",
+      "ipa": "/ˈmeʒ.ɚ.ə.bəl/",
+      "meaning_zh": "可衡量的"
+    },
+    {
+      "term": "distribution",
+      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
+      "meaning_zh": "产品触达用户的渠道"
+    },
+    {
+      "term": "subscribe",
+      "ipa": "/səbˈskraɪb/",
+      "meaning_zh": "订阅服务"
+    },
+    {
+      "term": "threat",
+      "ipa": "/θret/",
+      "meaning_zh": "威胁"
+    },
+    {
+      "term": "referral",
+      "ipa": "/rɪˈfɝː.əl/",
+      "meaning_zh": "推荐引流"
+    },
+    {
+      "term": "revenue",
+      "ipa": "/ˈrev.ə.nuː/",
+      "meaning_zh": "营收"
+    },
+    {
+      "term": "emergence",
+      "ipa": "/ɪˈmɝː.dʒəns/",
+      "meaning_zh": "涌现"
+    },
+    {
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "基础设施"
+    },
+    {
+      "term": "fraud",
+      "ipa": "/frɑːd/",
+      "meaning_zh": "欺诈"
+    }
+  ]
+}

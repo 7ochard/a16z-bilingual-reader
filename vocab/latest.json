@@ -1,46 +1,51 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "article": {
-    "title": "Investing in General Translation",
-    "title_zh": "投资 General Translation：让本地化进入开发流程",
+    "title": "Welcome to the B2A Economy",
+    "title_zh": "欢迎来到 B2A 经济",
     "published_at": "2026-11-10",
-    "url": "https://a16z.com/announcement/investing-in-general-translation/"
+    "url": "https://a16z.com/welcome-to-the-b2a-economy/"
   },
   "words": [
     {
-      "term": "unprecedented",
-      "ipa": "/ʌnˈpres.ə.den.t̬ɪd/",
-      "meaning_zh": "前所未有的"
+      "term": "adoption",
+      "ipa": "/əˈdɑːp.ʃən/",
+      "meaning_zh": "采用与普及"
     },
     {
-      "term": "deliberately",
-      "ipa": "/dɪˈlɪb.ɚ.ət.li/",
-      "meaning_zh": "有意识地"
+      "term": "measurable",
+      "ipa": "/ˈmeʒ.ɚ.ə.bəl/",
+      "meaning_zh": "可衡量的"
     },
     {
-      "term": "audience",
-      "ipa": "/ˈɑː.di.əns/",
-      "meaning_zh": "目标用户群"
+      "term": "distribution",
+      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
+      "meaning_zh": "产品触达用户的渠道"
     },
     {
-      "term": "disparate",
-      "ipa": "/ˈdɪs.pɚ.ət/",
-      "meaning_zh": "各不相同的"
+      "term": "subscribe",
+      "ipa": "/səbˈskraɪb/",
+      "meaning_zh": "订阅服务"
     },
     {
-      "term": "brittle",
-      "ipa": "/ˈbrɪt̬.əl/",
-      "meaning_zh": "脆弱易出错的"
+      "term": "threat",
+      "ipa": "/θret/",
+      "meaning_zh": "威胁"
     },
     {
-      "term": "maintenance",
-      "ipa": "/ˈmeɪn.tən.əns/",
-      "meaning_zh": "维护"
+      "term": "referral",
+      "ipa": "/rɪˈfɝː.əl/",
+      "meaning_zh": "推荐引流"
     },
     {
-      "term": "disruption",
-      "ipa": "/dɪsˈrʌp.ʃən/",
-      "meaning_zh": "颠覆性变革"
+      "term": "revenue",
+      "ipa": "/ˈrev.ə.nuː/",
+      "meaning_zh": "营收"
+    },
+    {
+      "term": "emergence",
+      "ipa": "/ɪˈmɝː.dʒəns/",
+      "meaning_zh": "涌现"
     },
     {
       "term": "infrastructure",
@@ -48,14 +53,9 @@
       "meaning_zh": "基础设施"
     },
     {
-      "term": "integrate",
-      "ipa": "/ˈɪn.t̬ə.ɡreɪt/",
-      "meaning_zh": "集成接入"
-    },
-    {
-      "term": "consistent",
-      "ipa": "/kənˈsɪs.tənt/",
-      "meaning_zh": "保持一致的"
+      "term": "fraud",
+      "ipa": "/frɑːd/",
+      "meaning_zh": "欺诈"
     }
   ]
 }
