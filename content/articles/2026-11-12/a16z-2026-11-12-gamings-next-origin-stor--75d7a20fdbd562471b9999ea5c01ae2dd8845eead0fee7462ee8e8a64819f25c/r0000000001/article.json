@@ -1,0 +1,314 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-12-gamings-next-origin-stories",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-12-gamings-next-origin-stories",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "Gaming’s Next Origin Stories",
+        "author": [
+          "Elena Burger",
+          "Anish Acharya",
+          "Jonathan Lai"
+        ],
+        "published_at": "2026-11-12",
+        "selected_at": "2026-11-13",
+        "url": "https://a16z.com/gamings-next-origin-stories/",
+        "topics": [
+          "AI game development",
+          "Creative tools",
+          "Prototyping",
+          "Game design"
+        ],
+        "selection_reason": "选择近期官方文章，讨论 AI 工具如何改变游戏创作入口与原型验证。未取得当天精选的原始 JSON；本条依据核实后的官方原文重新编写，不是恢复的上游文件。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "The authors argue that AI can broaden participation in game creation without erasing the distinct ambitions of independent makers, tool builders, and large studios.",
+            "zh": "作者认为，AI 能扩大游戏创作的参与范围，同时保留独立创作者、工具开发者和大型工作室各自的追求。"
+          },
+          {
+            "id": "s02",
+            "en": "They describe assistance with production, new experiences, extensions, and recovery of older games. These examples suggest more routes from an idea to something playable.",
+            "zh": "文章介绍了制作辅助、新体验、扩展和旧游戏恢复等方向。这些案例提示，从想法到可试玩作品的路径可能增多。"
+          },
+          {
+            "id": "s03",
+            "en": "The article leaves room for an important distinction: enjoying creation is not the same as delivering a finished game that holds an audience.",
+            "zh": "文章保留了一个重要区别：享受创作过程，不等于交付能持续吸引玩家的完整游戏。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "原文讨论的是创作门槛与探索空间的变化。以下分析由编者独立提出，作为设计和产品验证方法，不是原作者结论或对具体工具的实测。",
+          "supporting_evidence": [
+            "原文主要通过创作案例展开论点，没有给出可推广到全部团队的效率或商业回报测量。",
+            "独立验证建议：把想法拆成一个可观察行为，例如玩家是否能在无提示的情况下完成一次交易或理解一次失败。先写通过条件，再使用生成工具，避免以产出数量代替设计证据。",
+            "独立验证建议：保留人工与 AI 辅助两组相近任务的工时记录，同时统计审查、修改和回滚时间。仅比较初次生成速度，会漏掉交付后维护的成本。"
+          ],
+          "industry_significance": [
+            "独立产品判断：创作工具应帮助使用者缩小假设，而不只是扩大场景。一个面板可以要求作者明确目标玩家、关键动作与失败条件，再将这些条件关联到可重复的试玩记录。这样更容易分清想象是否已成为可验证体验。",
+            "独立设计判断：生成资产之间需要共享约束。色彩、比例、碰撞范围和交互反馈都应有统一规则；局部看起来精致的资源放在一起，仍可能产生误导玩家的信号。可将这些规则做成简单检查清单，并保留例外的理由。",
+            "独立工程判断：每次接受生成修改前，应先检验已有行为。至少覆盖新建存档、加载旧存档、中途退出和重复触发交互。允许工具探索实现方式，不等于允许它悄悄改变玩家已经学会的规则。"
+          ],
+          "limitations": [
+            "本文未实测文中模型、游戏或开发工具。案例不能证明普遍可用性、稳定成本、商业成功或内容权利已获许可。",
+            "独立风险分析：恢复或改编旧作品时，技术上能够运行并不等于有权公开分发。代码、人物、声音和素材可能分别涉及不同权利；在对外发布前，应逐项核对授权范围。",
+            "独立风险分析：熟悉制作过程的人可能会高估作品的易懂程度。试玩应包含不知道设计意图的人，并区分创作者自身的成就感、首次新鲜感和后续重玩意愿。"
+          ],
+          "independent_judgment": "我的判断是先做一个十分钟以内的完整体验闭环，再决定是否扩展世界。明确进入、理解目标、行动、反馈与结束五个环节；找少量目标玩家在无指导条件下试玩，记录他们停顿、误解和主动再次尝试的位置。优先修复阻断理解的问题，而不是继续堆内容。若参与者喜欢的是制作工具而非成品，也可以把创作体验作为产品方向，但需重新确定用户、价值和验收指标，不能把两种需求混为一谈。"
+        },
+        "vocabulary": [
+          {
+            "term": "industry",
+            "phonetic": "/ˈɪn.də.stri/",
+            "part_of_speech": "n.",
+            "meaning_zh": "游戏行业",
+            "example_en": "A small studio can challenge assumptions in an established industry.",
+            "example_zh": "小型工作室可以挑战成熟行业中的固有假设。"
+          },
+          {
+            "term": "conventional",
+            "phonetic": "/kənˈven.ʃən.əl/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "传统的",
+            "example_en": "A conventional production plan may leave little room for experiments.",
+            "example_zh": "传统制作计划可能很少给实验留下空间。"
+          },
+          {
+            "term": "prophetic",
+            "phonetic": "/prəˈfet̬.ɪk/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "有前瞻性的",
+            "example_en": "The toolmaker had a prophetic view of interactive worlds.",
+            "example_zh": "这位工具创造者对交互世界抱有前瞻性的看法。"
+          },
+          {
+            "term": "hardware",
+            "phonetic": "/ˈhɑːrd.wer/",
+            "part_of_speech": "n.",
+            "meaning_zh": "硬件",
+            "example_en": "Test the prototype on the hardware your players actually own.",
+            "example_zh": "在玩家实际拥有的硬件上测试原型。"
+          },
+          {
+            "term": "depth",
+            "phonetic": "/depθ/",
+            "part_of_speech": "n.",
+            "meaning_zh": "内容深度",
+            "example_en": "More objects do not automatically give a game greater depth.",
+            "example_zh": "更多物件并不会自动赋予游戏更深的内容。"
+          },
+          {
+            "term": "compelling",
+            "phonetic": "/kəmˈpel.ɪŋ/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "有说服力的",
+            "example_en": "A compelling demo still needs evidence of repeat play.",
+            "example_zh": "有吸引力的演示仍需反复游玩的证据。"
+          },
+          {
+            "term": "ambitious",
+            "phonetic": "/æmˈbɪʃ.əs/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "雄心勃勃的",
+            "example_en": "Break an ambitious game into small testable interactions.",
+            "example_zh": "把雄心勃勃的游戏拆成可测试的小交互。"
+          },
+          {
+            "term": "prototype",
+            "phonetic": "/ˈproʊ.t̬ə.taɪp/",
+            "part_of_speech": "n.",
+            "meaning_zh": "可试玩原型",
+            "example_en": "The prototype tests one mechanic rather than an entire world.",
+            "example_zh": "这个原型测试一种机制，而非完整世界。"
+          },
+          {
+            "term": "serendipitous",
+            "phonetic": "/ˌser.ənˈdɪp.ə.t̬əs/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "意外而有趣的",
+            "example_en": "A serendipitous encounter can make a virtual shop memorable.",
+            "example_zh": "一次意外而有趣的相遇可以让虚拟商店令人难忘。"
+          },
+          {
+            "term": "coherent",
+            "phonetic": "/koʊˈhɪr.ənt/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "连贯一致的",
+            "example_en": "Players need coherent rules even in a surprising world.",
+            "example_zh": "即使在充满意外的世界中，玩家也需要一致的规则。"
+          }
+        ],
+        "copyright_mode": "original_summary_only"
+      },
+      "upstream_title_zh": "游戏创作者的下一批起点故事",
+      "revision": 1,
+      "title": "Gaming’s Next Origin Stories",
+      "title_zh": "游戏创作者的下一批起点故事",
+      "author": "Elena Burger, Anish Acharya, Jonathan Lai",
+      "published_at": "2026-11-12",
+      "topics": [
+        "AI game development",
+        "Creative tools",
+        "Prototyping",
+        "Game design"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/gamings-next-origin-stories/",
+        "rights": "summary_only",
+        "copyright": "Original article © Andreessen Horowitz. This archive contains original summaries, independent commentary and original vocabulary examples, not the source full text.",
+        "permission_note": "No full-text republication permission claimed. Official source verified; original bilingual summaries and independent analysis only. US IPA checked against Cambridge Dictionary pronunciation entries."
+      },
+      "summary": "选择近期官方文章，讨论 AI 工具如何改变游戏创作入口与原型验证。未取得当天精选的原始 JSON；本条依据核实后的官方原文重新编写，不是恢复的上游文件。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "The authors argue that AI can broaden participation in game creation without erasing the distinct ambitions of independent makers, tool builders, and large studios.",
+          "zh": "作者认为，AI 能扩大游戏创作的参与范围，同时保留独立创作者、工具开发者和大型工作室各自的追求。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "They describe assistance with production, new experiences, extensions, and recovery of older games. These examples suggest more routes from an idea to something playable.",
+          "zh": "文章介绍了制作辅助、新体验、扩展和旧游戏恢复等方向。这些案例提示，从想法到可试玩作品的路径可能增多。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "The article leaves room for an important distinction: enjoying creation is not the same as delivering a finished game that holds an audience.",
+          "zh": "文章保留了一个重要区别：享受创作过程，不等于交付能持续吸引玩家的完整游戏。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-ddc26dde142e000f75791c33",
+          "segment_id": null,
+          "example_en": "A small studio can challenge assumptions in an established industry.",
+          "example_zh": "小型工作室可以挑战成熟行业中的固有假设。",
+          "part_of_speech": "n.",
+          "term": "industry",
+          "meaning_zh": "游戏行业",
+          "phonetic": "/ˈɪn.də.stri/"
+        },
+        {
+          "id": "up-e217b16c400047712aaca124",
+          "segment_id": null,
+          "example_en": "A conventional production plan may leave little room for experiments.",
+          "example_zh": "传统制作计划可能很少给实验留下空间。",
+          "part_of_speech": "adj.",
+          "term": "conventional",
+          "meaning_zh": "传统的",
+          "phonetic": "/kənˈven.ʃən.əl/"
+        },
+        {
+          "id": "up-139ecabc1d057c2048a50f6d",
+          "segment_id": null,
+          "example_en": "The toolmaker had a prophetic view of interactive worlds.",
+          "example_zh": "这位工具创造者对交互世界抱有前瞻性的看法。",
+          "part_of_speech": "adj.",
+          "term": "prophetic",
+          "meaning_zh": "有前瞻性的",
+          "phonetic": "/prəˈfet̬.ɪk/"
+        },
+        {
+          "id": "up-f2e76795ec34aba14406de5a",
+          "segment_id": null,
+          "example_en": "Test the prototype on the hardware your players actually own.",
+          "example_zh": "在玩家实际拥有的硬件上测试原型。",
+          "part_of_speech": "n.",
+          "term": "hardware",
+          "meaning_zh": "硬件",
+          "phonetic": "/ˈhɑːrd.wer/"
+        },
+        {
+          "id": "up-9159a2222dfefd7935362af1",
+          "segment_id": null,
+          "example_en": "More objects do not automatically give a game greater depth.",
+          "example_zh": "更多物件并不会自动赋予游戏更深的内容。",
+          "part_of_speech": "n.",
+          "term": "depth",
+          "meaning_zh": "内容深度",
+          "phonetic": "/depθ/"
+        },
+        {
+          "id": "up-fd9881271fcd6da3f87c20e4",
+          "segment_id": null,
+          "example_en": "A compelling demo still needs evidence of repeat play.",
+          "example_zh": "有吸引力的演示仍需反复游玩的证据。",
+          "part_of_speech": "adj.",
+          "term": "compelling",
+          "meaning_zh": "有说服力的",
+          "phonetic": "/kəmˈpel.ɪŋ/"
+        },
+        {
+          "id": "up-27359d4a3028f7f2cc003689",
+          "segment_id": null,
+          "example_en": "Break an ambitious game into small testable interactions.",
+          "example_zh": "把雄心勃勃的游戏拆成可测试的小交互。",
+          "part_of_speech": "adj.",
+          "term": "ambitious",
+          "meaning_zh": "雄心勃勃的",
+          "phonetic": "/æmˈbɪʃ.əs/"
+        },
+        {
+          "id": "up-55add5c5bd61dc3fc7ca8a4f",
+          "segment_id": null,
+          "example_en": "The prototype tests one mechanic rather than an entire world.",
+          "example_zh": "这个原型测试一种机制，而非完整世界。",
+          "part_of_speech": "n.",
+          "term": "prototype",
+          "meaning_zh": "可试玩原型",
+          "phonetic": "/ˈproʊ.t̬ə.taɪp/"
+        },
+        {
+          "id": "up-1983e74b44bee487529be0d8",
+          "segment_id": null,
+          "example_en": "A serendipitous encounter can make a virtual shop memorable.",
+          "example_zh": "一次意外而有趣的相遇可以让虚拟商店令人难忘。",
+          "part_of_speech": "adj.",
+          "term": "serendipitous",
+          "meaning_zh": "意外而有趣的",
+          "phonetic": "/ˌser.ənˈdɪp.ə.t̬əs/"
+        },
+        {
+          "id": "up-cae6f27d9658489d1178c5ab",
+          "segment_id": null,
+          "example_en": "Players need coherent rules even in a surprising world.",
+          "example_zh": "即使在充满意外的世界中，玩家也需要一致的规则。",
+          "part_of_speech": "adj.",
+          "term": "coherent",
+          "meaning_zh": "连贯一致的",
+          "phonetic": "/koʊˈhɪr.ənt/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "原文讨论的是创作门槛与探索空间的变化。以下分析由编者独立提出，作为设计和产品验证方法，不是原作者结论或对具体工具的实测。",
+        "key_points": [
+          "原文主要通过创作案例展开论点，没有给出可推广到全部团队的效率或商业回报测量。",
+          "独立验证建议：把想法拆成一个可观察行为，例如玩家是否能在无提示的情况下完成一次交易或理解一次失败。先写通过条件，再使用生成工具，避免以产出数量代替设计证据。",
+          "独立验证建议：保留人工与 AI 辅助两组相近任务的工时记录，同时统计审查、修改和回滚时间。仅比较初次生成速度，会漏掉交付后维护的成本。"
+        ],
+        "discussion": [
+          "独立产品判断：创作工具应帮助使用者缩小假设，而不只是扩大场景。一个面板可以要求作者明确目标玩家、关键动作与失败条件，再将这些条件关联到可重复的试玩记录。这样更容易分清想象是否已成为可验证体验。",
+          "独立设计判断：生成资产之间需要共享约束。色彩、比例、碰撞范围和交互反馈都应有统一规则；局部看起来精致的资源放在一起，仍可能产生误导玩家的信号。可将这些规则做成简单检查清单，并保留例外的理由。",
+          "独立工程判断：每次接受生成修改前，应先检验已有行为。至少覆盖新建存档、加载旧存档、中途退出和重复触发交互。允许工具探索实现方式，不等于允许它悄悄改变玩家已经学会的规则。",
+          "我的判断是先做一个十分钟以内的完整体验闭环，再决定是否扩展世界。明确进入、理解目标、行动、反馈与结束五个环节；找少量目标玩家在无指导条件下试玩，记录他们停顿、误解和主动再次尝试的位置。优先修复阻断理解的问题，而不是继续堆内容。若参与者喜欢的是制作工具而非成品，也可以把创作体验作为产品方向，但需重新确定用户、价值和验收指标，不能把两种需求混为一谈。"
+        ],
+        "limitations": "本文未实测文中模型、游戏或开发工具。案例不能证明普遍可用性、稳定成本、商业成功或内容权利已获许可。\n\n独立风险分析：恢复或改编旧作品时，技术上能够运行并不等于有权公开分发。代码、人物、声音和素材可能分别涉及不同权利；在对外发布前，应逐项核对授权范围。\n\n独立风险分析：熟悉制作过程的人可能会高估作品的易懂程度。试玩应包含不知道设计意图的人，并区分创作者自身的成就感、首次新鲜感和后续重玩意愿。",
+        "independent_judgment": "我的判断是先做一个十分钟以内的完整体验闭环，再决定是否扩展世界。明确进入、理解目标、行动、反馈与结束五个环节；找少量目标玩家在无指导条件下试玩，记录他们停顿、误解和主动再次尝试的位置。优先修复阻断理解的问题，而不是继续堆内容。若参与者喜欢的是制作工具而非成品，也可以把创作体验作为产品方向，但需重新确定用户、价值和验收指标，不能把两种需求混为一谈。"
+      }
+    }
+  ]
+}
