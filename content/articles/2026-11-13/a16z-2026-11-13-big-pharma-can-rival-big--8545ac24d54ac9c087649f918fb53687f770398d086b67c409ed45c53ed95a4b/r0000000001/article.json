@@ -1,0 +1,333 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-13-big-pharma-can-rival-big-software",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-13-big-pharma-can-rival-big-software",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "Big Pharma Can Rival Big Software",
+        "author": [
+          "Caroline Goggins",
+          "Justin Kahl",
+          "Alex Immerman",
+          "Michael Cialone",
+          "Paxton Paine",
+          "Vineeta Agarwala"
+        ],
+        "published_at": "2026-11-13",
+        "selected_at": "2026-11-14",
+        "url": "https://a16z.com/big-pharma-can-rival-big-software/",
+        "topics": [
+          "Bio + AI",
+          "Drug Development",
+          "Business Models",
+          "Evidence Quality",
+          "Research Productivity"
+        ],
+        "selection_reason": "选取尚未归档的官方产业评论，练习把技术愿景转化为可证伪的经营假设。摘要为原创改写，以下分析和例句均为独立撰写，不替代原文，也不构成医疗或投资建议。 / Selected to practice turning a technology narrative into testable operating hypotheses. Summary, commentary and examples are newly written, not medical or investment advice.",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "The authors argue that AI could improve pharmaceutical economics, while biological validation remains difficult.",
+            "zh": "作者认为，AI可能改善制药经济性，但生物学验证依然困难。"
+          },
+          {
+            "id": "s02",
+            "en": "They distinguish supplying research tools from owning drug-development programs.",
+            "zh": "他们区分提供研究工具与自有药物研发项目两条路径。"
+          },
+          {
+            "id": "s03",
+            "en": "Their optimism depends on better models producing real therapeutic progress, not merely attractive computational results.",
+            "zh": "其乐观判断有赖于更好的模型带来真实治疗进展，而非仅有漂亮的计算结果。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "阅读重点是区分预测性能、研发产出和企业价值，三者之间需要独立证据。 / The central reading exercise is to separate prediction quality, research output and business value; each transition needs evidence.",
+          "supporting_evidence": [
+            "原文提供产业案例与商业合作信号；这里将其视为研究线索，而非疗效或投资回报的证明。 / Industry examples and partnerships in the essay are leads for investigation, not proof of efficacy or returns."
+          ],
+          "industry_significance": [
+            {
+              "en": "Independent analysis: Start with a decision ledger rather than a model leaderboard. For each recommendation, record the available alternatives, the evidence available at that time, the action taken and the eventual outcome. Freeze the evaluation plan before results arrive. A system that correctly predicts an easy case may add no value if the existing team already makes the same decision. The relevant comparison is whether access to the system changes a costly decision for the better, not whether its answer sounds scientifically plausible.",
+              "zh": "独立分析：评估应先建立决策台账，而非模型排行榜。逐项记录建议提出时可选方案、当时证据、实际行动及最终结果，并在结果出现前固定评估计划。如果现有团队本来就能判断某个简单案例，系统预测正确也未必创造增量价值。真正要比较的是使用系统是否改善了代价高昂的决策，而不是回答听起来是否符合科学常识。"
+            },
+            {
+              "en": "Independent analysis: Consider a deliberately simplified research queue. Ten proposals cost one budget unit each to review, and two ultimately justify another experiment. If a tool doubles proposal volume without improving selection, the review budget doubles while the useful fraction stays unchanged. If it instead identifies the same two useful proposals from five reviews, the benefit is a smaller workload. These invented numbers illustrate why proposal throughput and decision productivity need separate metrics; they are not estimates of drug discovery performance.",
+              "zh": "独立分析：考虑一个刻意简化的研究队列。十个提案各消耗一个预算单位进行审查，其中两个最终值得追加实验。工具若只让提案数量翻倍，却未改善筛选，审查预算会翻倍，有用提案的比例不变。若能通过五次审查找到原来的两个有效提案，收益才是工作量下降。这些假设数字用于说明提案吞吐量与决策生产率应分开衡量，不是对药物研发表现的估算。"
+            },
+            {
+              "en": "Independent analysis: A vendor and a customer should agree on an auditable acceptance unit before pricing. Examples might include an independently reproduced result or a decision package accepted without substantial rework, rather than tokens generated. Contracts should specify who pays for inconclusive work, how failures are recorded, and whether customers may export provenance. This is a product-design framework, not a claim about any company mentioned by the authors.",
+              "zh": "独立分析：供应商与客户应在定价前约定可审计的验收单位，例如被独立复现的结果，或无须重大返工即可采用的决策材料，而不是生成的词元数。合同还应明确谁承担不确定结果的成本、怎样记录失败，以及客户能否导出证据来源。这是产品设计框架，不是对原文所提公司的事实判断。"
+            }
+          ],
+          "limitations": [
+            {
+              "en": "Independent critique: Evaluating only programs that reached a public milestone creates a missing-denominator problem. A useful comparison must retain abandoned proposals, negative experiments, time spent on corrections and the cost of expert supervision. Matching projects by task difficulty and start date would help, but cannot remove every difference between teams. A marketing case study is not a substitute for such a comparison.",
+              "zh": "独立评估：若只评估达到公开里程碑的项目，就会遗漏分母。有效比较必须保留被放弃的提案、阴性实验、纠错时间与专家监督成本。按任务难度和启动时间匹配项目虽有帮助，但无法消除团队间全部差异。营销案例不能替代这样的比较。"
+            },
+            {
+              "en": "Independent critique: A pooled accuracy score can conceal failures on unfamiliar populations or measurement methods. Before expanding a system, report performance separately for the intended use conditions, document exclusions and preserve uncertainty rather than forcing a confident answer. This is an evaluation principle, not guidance for diagnosing or treating a patient. Clinical decisions require appropriately qualified professionals and relevant evidence.",
+              "zh": "独立评估：综合准确率可能掩盖系统在陌生人群或测量方法上的失误。扩大使用范围前，应分别报告目标使用条件下的表现，记录排除项，并保留不确定性，而不是强行给出自信答案。这是评估原则，不是诊断或治疗建议；临床决定需要具备资质的专业人员及相关证据。"
+            },
+            {
+              "en": "Independent critique: Better research performance does not automatically identify who captures the gain. A buyer may retain savings, competition may lower prices, or integration costs may consume the benefit. Any commercial thesis therefore needs a separate account of willingness to pay, implementation effort and customer retention. No valuation or return forecast is inferred here.",
+              "zh": "独立评估：研发表现更好并不能自动确定谁获得收益。买方可能保留节省额，竞争可能压低价格，集成成本也可能抵消好处。因此，商业判断还需单独分析付费意愿、实施投入及客户留存。这里不据此推导估值或回报预测。"
+            }
+          ],
+          "independent_judgment": "独立判断：最有价值的试点不是证明AI能生成更多候选答案，而是证明它能在固定资源下改善一项明确决策。先选择可复核、边界清楚的任务，预先定义失败标准，保留人工基线和负面结果，再衡量监督成本、返工及结果质量。如果只看到演示更快，却无法解释下游工作是否减少，应把结论限制在局部效率，而不是宣布整个研发模式已被改写。 / Independent judgment: Begin with a bounded, auditable decision and a fixed resource budget. Predefine failure, retain a human baseline and preserve negative results. Measure supervision, rework and outcome quality together. A faster demonstration without evidence of reduced downstream work supports a narrow efficiency claim, not a conclusion that an entire research model has changed."
+        },
+        "vocabulary": [
+          {
+            "term": "blockbuster",
+            "phonetic": "/ˈblɑːkˌbʌs.tɚ/",
+            "part_of_speech": "n.",
+            "meaning_zh": "重磅畅销药",
+            "example_en": "A blockbuster can leave a company dependent on one product.",
+            "example_zh": "一种重磅畅销药可能使公司依赖单一产品。"
+          },
+          {
+            "term": "clinical",
+            "phonetic": "/ˈklɪn.ɪ.kəl/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "临床的",
+            "example_en": "The team separated laboratory findings from clinical evidence.",
+            "example_zh": "团队将实验室发现与临床证据分开。"
+          },
+          {
+            "term": "intersection",
+            "phonetic": "/ˌɪn.t̬ɚˈsek.ʃən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "技术与生物学交汇点",
+            "example_en": "The project sits at the intersection of statistics and experimental science.",
+            "example_zh": "该项目位于统计学与实验科学的交汇点。"
+          },
+          {
+            "term": "annuity",
+            "phonetic": "/əˈnjuː.ə.t̬i/",
+            "part_of_speech": "n.",
+            "meaning_zh": "持续收益来源",
+            "example_en": "The analyst questioned whether the revenue stream really resembled an annuity.",
+            "example_zh": "分析师质疑该收入流是否真的类似持续年金收益。"
+          },
+          {
+            "term": "productivity",
+            "phonetic": "/ˌproʊ.dəkˈtɪv.ə.t̬i/",
+            "part_of_speech": "n.",
+            "meaning_zh": "研发产出效率",
+            "example_en": "Research productivity should include the cost of failed experiments.",
+            "example_zh": "研发产出效率应将失败实验的成本纳入计算。"
+          },
+          {
+            "term": "pharmaceutical",
+            "phonetic": "/ˌfɑːr.məˈsuː.t̬ɪ.kəl/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "制药的",
+            "example_en": "The pharmaceutical team documented every change to its evaluation plan.",
+            "example_zh": "制药团队记录了评估计划的每次变更。"
+          },
+          {
+            "term": "portfolio",
+            "phonetic": "/ˌpɔːrtˈfoʊ.li.oʊ/",
+            "part_of_speech": "n.",
+            "meaning_zh": "药物产品组合",
+            "example_en": "The portfolio contains programs with different timelines and risks.",
+            "example_zh": "该产品组合包含时间表与风险各异的项目。"
+          },
+          {
+            "term": "patent",
+            "phonetic": "/ˈpæt.ənt/",
+            "part_of_speech": "n.",
+            "meaning_zh": "专利",
+            "example_en": "The review recorded the patent separately from evidence of product demand.",
+            "example_zh": "审查将专利与产品需求证据分别记录。"
+          },
+          {
+            "term": "exclusivity",
+            "phonetic": "/ˌeks.kluːˈsɪv.ə.t̬i/",
+            "part_of_speech": "n.",
+            "meaning_zh": "市场独占权",
+            "example_en": "The forecast includes a scenario in which exclusivity ends earlier.",
+            "example_zh": "预测包含独占权提前结束的情景。"
+          },
+          {
+            "term": "efficacy",
+            "phonetic": "/ˈef.ə.kə.si/",
+            "part_of_speech": "n.",
+            "meaning_zh": "药物疗效",
+            "example_en": "The researchers did not treat a simulation as proof of efficacy.",
+            "example_zh": "研究人员没有把模拟结果当作疗效证明。"
+          }
+        ],
+        "copyright_mode": "original_summary_only"
+      },
+      "upstream_title_zh": "大型制药企业能否比肩大型软件企业",
+      "revision": 1,
+      "title": "Big Pharma Can Rival Big Software",
+      "title_zh": "大型制药企业能否比肩大型软件企业",
+      "author": "Caroline Goggins, Justin Kahl, Alex Immerman, Michael Cialone, Paxton Paine, Vineeta Agarwala",
+      "published_at": "2026-11-13",
+      "topics": [
+        "Bio + AI",
+        "Drug Development",
+        "Business Models",
+        "Evidence Quality",
+        "Research Productivity"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/big-pharma-can-rival-big-software/",
+        "rights": "summary_only",
+        "copyright": "Original article © 2026 Andreessen Horowitz, by Caroline Goggins, Justin Kahl, Alex Immerman, Michael Cialone, Paxton Paine and Vineeta Agarwala. This archive contains original bilingual summaries, independent commentary and newly written vocabulary examples.",
+        "permission_note": "No full-text license is claimed. Newly prepared from the verified official article; no recovered upstream JSON attachment is claimed. Publication is limited to original summary and analysis with attribution."
+      },
+      "summary": "选取尚未归档的官方产业评论，练习把技术愿景转化为可证伪的经营假设。摘要为原创改写，以下分析和例句均为独立撰写，不替代原文，也不构成医疗或投资建议。 / Selected to practice turning a technology narrative into testable operating hypotheses. Summary, commentary and examples are newly written, not medical or investment advice.",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "The authors argue that AI could improve pharmaceutical economics, while biological validation remains difficult.",
+          "zh": "作者认为，AI可能改善制药经济性，但生物学验证依然困难。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "They distinguish supplying research tools from owning drug-development programs.",
+          "zh": "他们区分提供研究工具与自有药物研发项目两条路径。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "Their optimism depends on better models producing real therapeutic progress, not merely attractive computational results.",
+          "zh": "其乐观判断有赖于更好的模型带来真实治疗进展，而非仅有漂亮的计算结果。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-c7d864360602eae7ffa18dde",
+          "segment_id": null,
+          "example_en": "A blockbuster can leave a company dependent on one product.",
+          "example_zh": "一种重磅畅销药可能使公司依赖单一产品。",
+          "part_of_speech": "n.",
+          "term": "blockbuster",
+          "meaning_zh": "重磅畅销药",
+          "phonetic": "/ˈblɑːkˌbʌs.tɚ/"
+        },
+        {
+          "id": "up-7e66fe6ea89dadedee7c350d",
+          "segment_id": null,
+          "example_en": "The team separated laboratory findings from clinical evidence.",
+          "example_zh": "团队将实验室发现与临床证据分开。",
+          "part_of_speech": "adj.",
+          "term": "clinical",
+          "meaning_zh": "临床的",
+          "phonetic": "/ˈklɪn.ɪ.kəl/"
+        },
+        {
+          "id": "up-7056ddb07657e7f0721df042",
+          "segment_id": null,
+          "example_en": "The project sits at the intersection of statistics and experimental science.",
+          "example_zh": "该项目位于统计学与实验科学的交汇点。",
+          "part_of_speech": "n.",
+          "term": "intersection",
+          "meaning_zh": "技术与生物学交汇点",
+          "phonetic": "/ˌɪn.t̬ɚˈsek.ʃən/"
+        },
+        {
+          "id": "up-f43f0507e64cff11c3c911d9",
+          "segment_id": null,
+          "example_en": "The analyst questioned whether the revenue stream really resembled an annuity.",
+          "example_zh": "分析师质疑该收入流是否真的类似持续年金收益。",
+          "part_of_speech": "n.",
+          "term": "annuity",
+          "meaning_zh": "持续收益来源",
+          "phonetic": "/əˈnjuː.ə.t̬i/"
+        },
+        {
+          "id": "up-286f8a178a9d343cd07a2e38",
+          "segment_id": null,
+          "example_en": "Research productivity should include the cost of failed experiments.",
+          "example_zh": "研发产出效率应将失败实验的成本纳入计算。",
+          "part_of_speech": "n.",
+          "term": "productivity",
+          "meaning_zh": "研发产出效率",
+          "phonetic": "/ˌproʊ.dəkˈtɪv.ə.t̬i/"
+        },
+        {
+          "id": "up-2b29563106a90c5dee15a5e8",
+          "segment_id": null,
+          "example_en": "The pharmaceutical team documented every change to its evaluation plan.",
+          "example_zh": "制药团队记录了评估计划的每次变更。",
+          "part_of_speech": "adj.",
+          "term": "pharmaceutical",
+          "meaning_zh": "制药的",
+          "phonetic": "/ˌfɑːr.məˈsuː.t̬ɪ.kəl/"
+        },
+        {
+          "id": "up-fe771c84d3f7027941893ce0",
+          "segment_id": null,
+          "example_en": "The portfolio contains programs with different timelines and risks.",
+          "example_zh": "该产品组合包含时间表与风险各异的项目。",
+          "part_of_speech": "n.",
+          "term": "portfolio",
+          "meaning_zh": "药物产品组合",
+          "phonetic": "/ˌpɔːrtˈfoʊ.li.oʊ/"
+        },
+        {
+          "id": "up-7538ad457d2ed43e66f531ba",
+          "segment_id": null,
+          "example_en": "The review recorded the patent separately from evidence of product demand.",
+          "example_zh": "审查将专利与产品需求证据分别记录。",
+          "part_of_speech": "n.",
+          "term": "patent",
+          "meaning_zh": "专利",
+          "phonetic": "/ˈpæt.ənt/"
+        },
+        {
+          "id": "up-0820b170db33f7282f679c0c",
+          "segment_id": null,
+          "example_en": "The forecast includes a scenario in which exclusivity ends earlier.",
+          "example_zh": "预测包含独占权提前结束的情景。",
+          "part_of_speech": "n.",
+          "term": "exclusivity",
+          "meaning_zh": "市场独占权",
+          "phonetic": "/ˌeks.kluːˈsɪv.ə.t̬i/"
+        },
+        {
+          "id": "up-66210886377d318156af3e6e",
+          "segment_id": null,
+          "example_en": "The researchers did not treat a simulation as proof of efficacy.",
+          "example_zh": "研究人员没有把模拟结果当作疗效证明。",
+          "part_of_speech": "n.",
+          "term": "efficacy",
+          "meaning_zh": "药物疗效",
+          "phonetic": "/ˈef.ə.kə.si/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "阅读重点是区分预测性能、研发产出和企业价值，三者之间需要独立证据。 / The central reading exercise is to separate prediction quality, research output and business value; each transition needs evidence.",
+        "key_points": [
+          "原文提供产业案例与商业合作信号；这里将其视为研究线索，而非疗效或投资回报的证明。 / Industry examples and partnerships in the essay are leads for investigation, not proof of efficacy or returns."
+        ],
+        "discussion": [
+          "{\n  \"en\": \"Independent analysis: Start with a decision ledger rather than a model leaderboard. For each recommendation, record the available alternatives, the evidence available at that time, the action taken and the eventual outcome. Freeze the evaluation plan before results arrive. A system that correctly predicts an easy case may add no value if the existing team already makes the same decision. The relevant comparison is whether access to the system changes a costly decision for the better, not whether its answer sounds scientifically plausible.\",\n  \"zh\": \"独立分析：评估应先建立决策台账，而非模型排行榜。逐项记录建议提出时可选方案、当时证据、实际行动及最终结果，并在结果出现前固定评估计划。如果现有团队本来就能判断某个简单案例，系统预测正确也未必创造增量价值。真正要比较的是使用系统是否改善了代价高昂的决策，而不是回答听起来是否符合科学常识。\"\n}",
+          "{\n  \"en\": \"Independent analysis: Consider a deliberately simplified research queue. Ten proposals cost one budget unit each to review, and two ultimately justify another experiment. If a tool doubles proposal volume without improving selection, the review budget doubles while the useful fraction stays unchanged. If it instead identifies the same two useful proposals from five reviews, the benefit is a smaller workload. These invented numbers illustrate why proposal throughput and decision productivity need separate metrics; they are not estimates of drug discovery performance.\",\n  \"zh\": \"独立分析：考虑一个刻意简化的研究队列。十个提案各消耗一个预算单位进行审查，其中两个最终值得追加实验。工具若只让提案数量翻倍，却未改善筛选，审查预算会翻倍，有用提案的比例不变。若能通过五次审查找到原来的两个有效提案，收益才是工作量下降。这些假设数字用于说明提案吞吐量与决策生产率应分开衡量，不是对药物研发表现的估算。\"\n}",
+          "{\n  \"en\": \"Independent analysis: A vendor and a customer should agree on an auditable acceptance unit before pricing. Examples might include an independently reproduced result or a decision package accepted without substantial rework, rather than tokens generated. Contracts should specify who pays for inconclusive work, how failures are recorded, and whether customers may export provenance. This is a product-design framework, not a claim about any company mentioned by the authors.\",\n  \"zh\": \"独立分析：供应商与客户应在定价前约定可审计的验收单位，例如被独立复现的结果，或无须重大返工即可采用的决策材料，而不是生成的词元数。合同还应明确谁承担不确定结果的成本、怎样记录失败，以及客户能否导出证据来源。这是产品设计框架，不是对原文所提公司的事实判断。\"\n}",
+          "独立判断：最有价值的试点不是证明AI能生成更多候选答案，而是证明它能在固定资源下改善一项明确决策。先选择可复核、边界清楚的任务，预先定义失败标准，保留人工基线和负面结果，再衡量监督成本、返工及结果质量。如果只看到演示更快，却无法解释下游工作是否减少，应把结论限制在局部效率，而不是宣布整个研发模式已被改写。 / Independent judgment: Begin with a bounded, auditable decision and a fixed resource budget. Predefine failure, retain a human baseline and preserve negative results. Measure supervision, rework and outcome quality together. A faster demonstration without evidence of reduced downstream work supports a narrow efficiency claim, not a conclusion that an entire research model has changed."
+        ],
+        "limitations": "{\n  \"en\": \"Independent critique: Evaluating only programs that reached a public milestone creates a missing-denominator problem. A useful comparison must retain abandoned proposals, negative experiments, time spent on corrections and the cost of expert supervision. Matching projects by task difficulty and start date would help, but cannot remove every difference between teams. A marketing case study is not a substitute for such a comparison.\",\n  \"zh\": \"独立评估：若只评估达到公开里程碑的项目，就会遗漏分母。有效比较必须保留被放弃的提案、阴性实验、纠错时间与专家监督成本。按任务难度和启动时间匹配项目虽有帮助，但无法消除团队间全部差异。营销案例不能替代这样的比较。\"\n}\n\n{\n  \"en\": \"Independent critique: A pooled accuracy score can conceal failures on unfamiliar populations or measurement methods. Before expanding a system, report performance separately for the intended use conditions, document exclusions and preserve uncertainty rather than forcing a confident answer. This is an evaluation principle, not guidance for diagnosing or treating a patient. Clinical decisions require appropriately qualified professionals and relevant evidence.\",\n  \"zh\": \"独立评估：综合准确率可能掩盖系统在陌生人群或测量方法上的失误。扩大使用范围前，应分别报告目标使用条件下的表现，记录排除项，并保留不确定性，而不是强行给出自信答案。这是评估原则，不是诊断或治疗建议；临床决定需要具备资质的专业人员及相关证据。\"\n}\n\n{\n  \"en\": \"Independent critique: Better research performance does not automatically identify who captures the gain. A buyer may retain savings, competition may lower prices, or integration costs may consume the benefit. Any commercial thesis therefore needs a separate account of willingness to pay, implementation effort and customer retention. No valuation or return forecast is inferred here.\",\n  \"zh\": \"独立评估：研发表现更好并不能自动确定谁获得收益。买方可能保留节省额，竞争可能压低价格，集成成本也可能抵消好处。因此，商业判断还需单独分析付费意愿、实施投入及客户留存。这里不据此推导估值或回报预测。\"\n}",
+        "independent_judgment": "独立判断：最有价值的试点不是证明AI能生成更多候选答案，而是证明它能在固定资源下改善一项明确决策。先选择可复核、边界清楚的任务，预先定义失败标准，保留人工基线和负面结果，再衡量监督成本、返工及结果质量。如果只看到演示更快，却无法解释下游工作是否减少，应把结论限制在局部效率，而不是宣布整个研发模式已被改写。 / Independent judgment: Begin with a bounded, auditable decision and a fixed resource budget. Predefine failure, retain a human baseline and preserve negative results. Measure supervision, rework and outcome quality together. A faster demonstration without evidence of reduced downstream work supports a narrow efficiency claim, not a conclusion that an entire research model has changed."
+      }
+    }
+  ]
+}
