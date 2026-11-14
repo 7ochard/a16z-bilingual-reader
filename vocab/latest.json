@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "article": {
-    "title": "Gaming’s Next Origin Stories",
-    "title_zh": "游戏创作者的下一批起点故事",
-    "published_at": "2026-11-12",
-    "url": "https://a16z.com/gamings-next-origin-stories/"
+    "title": "Big Pharma Can Rival Big Software",
+    "title_zh": "大型制药企业能否比肩大型软件企业",
+    "published_at": "2026-11-13",
+    "url": "https://a16z.com/big-pharma-can-rival-big-software/"
   },
   "words": [
     {
-      "term": "industry",
-      "ipa": "/ˈɪn.də.stri/",
-      "meaning_zh": "游戏行业"
+      "term": "blockbuster",
+      "ipa": "/ˈblɑːkˌbʌs.tɚ/",
+      "meaning_zh": "重磅畅销药"
     },
     {
-      "term": "conventional",
-      "ipa": "/kənˈven.ʃən.əl/",
-      "meaning_zh": "传统的"
+      "term": "clinical",
+      "ipa": "/ˈklɪn.ɪ.kəl/",
+      "meaning_zh": "临床的"
     },
     {
-      "term": "prophetic",
-      "ipa": "/prəˈfet̬.ɪk/",
-      "meaning_zh": "有前瞻性的"
+      "term": "intersection",
+      "ipa": "/ˌɪn.t̬ɚˈsek.ʃən/",
+      "meaning_zh": "技术与生物学交汇点"
     },
     {
-      "term": "hardware",
-      "ipa": "/ˈhɑːrd.wer/",
-      "meaning_zh": "硬件"
+      "term": "annuity",
+      "ipa": "/əˈnjuː.ə.t̬i/",
+      "meaning_zh": "持续收益来源"
     },
     {
-      "term": "depth",
-      "ipa": "/depθ/",
-      "meaning_zh": "内容深度"
+      "term": "productivity",
+      "ipa": "/ˌproʊ.dəkˈtɪv.ə.t̬i/",
+      "meaning_zh": "研发产出效率"
     },
     {
-      "term": "compelling",
-      "ipa": "/kəmˈpel.ɪŋ/",
-      "meaning_zh": "有说服力的"
+      "term": "pharmaceutical",
+      "ipa": "/ˌfɑːr.məˈsuː.t̬ɪ.kəl/",
+      "meaning_zh": "制药的"
     },
     {
-      "term": "ambitious",
-      "ipa": "/æmˈbɪʃ.əs/",
-      "meaning_zh": "雄心勃勃的"
+      "term": "portfolio",
+      "ipa": "/ˌpɔːrtˈfoʊ.li.oʊ/",
+      "meaning_zh": "药物产品组合"
     },
     {
-      "term": "prototype",
-      "ipa": "/ˈproʊ.t̬ə.taɪp/",
-      "meaning_zh": "可试玩原型"
+      "term": "patent",
+      "ipa": "/ˈpæt.ənt/",
+      "meaning_zh": "专利"
     },
     {
-      "term": "serendipitous",
-      "ipa": "/ˌser.ənˈdɪp.ə.t̬əs/",
-      "meaning_zh": "意外而有趣的"
+      "term": "exclusivity",
+      "ipa": "/ˌeks.kluːˈsɪv.ə.t̬i/",
+      "meaning_zh": "市场独占权"
     },
     {
-      "term": "coherent",
-      "ipa": "/koʊˈhɪr.ənt/",
-      "meaning_zh": "连贯一致的"
+      "term": "efficacy",
+      "ipa": "/ˈef.ə.kə.si/",
+      "meaning_zh": "药物疗效"
     }
   ]
 }
