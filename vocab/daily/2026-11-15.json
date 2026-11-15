@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-15",
+  "article": {
+    "title": "Super Intelligence-Era Critical Infrastructure Cyber Defense Plan",
+    "title_zh": "超级智能时代的关键基础设施网络防御计划",
+    "published_at": "2026-11-12",
+    "url": "https://a16z.com/super-intelligence-era-critical-infrastructure-cyber-defense-plan/"
+  },
+  "words": [
+    {
+      "term": "weakness",
+      "ipa": "/ˈwiːk.nəs/",
+      "meaning_zh": "安全弱点"
+    },
+    {
+      "term": "equipment",
+      "ipa": "/ɪˈkwɪp.mənt/",
+      "meaning_zh": "设备"
+    },
+    {
+      "term": "failure",
+      "ipa": "/ˈfeɪ.ljɚ/",
+      "meaning_zh": "系统失效"
+    },
+    {
+      "term": "vendor",
+      "ipa": "/ˈven.dɚ/",
+      "meaning_zh": "供应商"
+    },
+    {
+      "term": "utility",
+      "ipa": "/juːˈtɪl.ə.t̬i/",
+      "meaning_zh": "公用事业运营商"
+    },
+    {
+      "term": "resilience",
+      "ipa": "/rɪˈzɪl.jəns/",
+      "meaning_zh": "抗冲击与恢复能力"
+    },
+    {
+      "term": "governance",
+      "ipa": "/ˈɡʌv.ɚ.nəns/",
+      "meaning_zh": "治理机制"
+    },
+    {
+      "term": "vulnerability",
+      "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "安全漏洞"
+    },
+    {
+      "term": "replica",
+      "ipa": "/ˈrep.lɪ.kə/",
+      "meaning_zh": "仿真副本"
+    }
+  ]
+}

@@ -1,61 +1,56 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "article": {
-    "title": "Big Pharma Can Rival Big Software",
-    "title_zh": "大型制药企业能否比肩大型软件企业",
-    "published_at": "2026-11-13",
-    "url": "https://a16z.com/big-pharma-can-rival-big-software/"
+    "title": "Super Intelligence-Era Critical Infrastructure Cyber Defense Plan",
+    "title_zh": "超级智能时代的关键基础设施网络防御计划",
+    "published_at": "2026-11-12",
+    "url": "https://a16z.com/super-intelligence-era-critical-infrastructure-cyber-defense-plan/"
   },
   "words": [
     {
-      "term": "blockbuster",
-      "ipa": "/ˈblɑːkˌbʌs.tɚ/",
-      "meaning_zh": "重磅畅销药"
+      "term": "weakness",
+      "ipa": "/ˈwiːk.nəs/",
+      "meaning_zh": "安全弱点"
     },
     {
-      "term": "clinical",
-      "ipa": "/ˈklɪn.ɪ.kəl/",
-      "meaning_zh": "临床的"
+      "term": "equipment",
+      "ipa": "/ɪˈkwɪp.mənt/",
+      "meaning_zh": "设备"
     },
     {
-      "term": "intersection",
-      "ipa": "/ˌɪn.t̬ɚˈsek.ʃən/",
-      "meaning_zh": "技术与生物学交汇点"
+      "term": "failure",
+      "ipa": "/ˈfeɪ.ljɚ/",
+      "meaning_zh": "系统失效"
     },
     {
-      "term": "annuity",
-      "ipa": "/əˈnjuː.ə.t̬i/",
-      "meaning_zh": "持续收益来源"
+      "term": "vendor",
+      "ipa": "/ˈven.dɚ/",
+      "meaning_zh": "供应商"
     },
     {
-      "term": "productivity",
-      "ipa": "/ˌproʊ.dəkˈtɪv.ə.t̬i/",
-      "meaning_zh": "研发产出效率"
+      "term": "utility",
+      "ipa": "/juːˈtɪl.ə.t̬i/",
+      "meaning_zh": "公用事业运营商"
     },
     {
-      "term": "pharmaceutical",
-      "ipa": "/ˌfɑːr.məˈsuː.t̬ɪ.kəl/",
-      "meaning_zh": "制药的"
+      "term": "resilience",
+      "ipa": "/rɪˈzɪl.jəns/",
+      "meaning_zh": "抗冲击与恢复能力"
     },
     {
-      "term": "portfolio",
-      "ipa": "/ˌpɔːrtˈfoʊ.li.oʊ/",
-      "meaning_zh": "药物产品组合"
+      "term": "governance",
+      "ipa": "/ˈɡʌv.ɚ.nəns/",
+      "meaning_zh": "治理机制"
     },
     {
-      "term": "patent",
-      "ipa": "/ˈpæt.ənt/",
-      "meaning_zh": "专利"
+      "term": "vulnerability",
+      "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "安全漏洞"
     },
     {
-      "term": "exclusivity",
-      "ipa": "/ˌeks.kluːˈsɪv.ə.t̬i/",
-      "meaning_zh": "市场独占权"
-    },
-    {
-      "term": "efficacy",
-      "ipa": "/ˈef.ə.kə.si/",
-      "meaning_zh": "药物疗效"
+      "term": "replica",
+      "ipa": "/ˈrep.lɪ.kə/",
+      "meaning_zh": "仿真副本"
     }
   ]
 }
