@@ -1,0 +1,367 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-12-super-intelligence-era-critical-infrastructure-cyber-defense-plan",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-12-super-intelligence-era-critical-infrastructure-cyber-defense-plan",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "content_type": "official_article"
+        },
+        "title": "Super Intelligence-Era Critical Infrastructure Cyber Defense Plan",
+        "author": [
+          "Anne Neuberger"
+        ],
+        "published_at": "2026-11-12",
+        "selected_at": "2026-11-15",
+        "url": "https://a16z.com/super-intelligence-era-critical-infrastructure-cyber-defense-plan/",
+        "topics": [
+          "Critical Infrastructure",
+          "Cybersecurity",
+          "AI Defense",
+          "Operational Resilience"
+        ],
+        "selection_reason": "通过官方政策评论，练习区分技术能力、运行安全与问责机制。本文为原创摘要及独立解读，不是原文译本或现行政策认定。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "Neuberger proposes concentrating AI-assisted cyber defense on infrastructure failures with nationwide consequences.",
+            "zh": "Neuberger建议将AI辅助网络防御优先用于可能造成全国性影响的基础设施故障。"
+          },
+          {
+            "id": "s02",
+            "en": "Her proposal combines containment for aging equipment, operational continuity exercises and executive accountability.",
+            "zh": "她的方案结合老旧设备风险控制、业务连续性演练与高管问责。"
+          },
+          {
+            "id": "s03",
+            "en": "The article advocates outcome-based oversight and human approval for changes to control networks. It is a proposal, not evidence that these arrangements are operating successfully.",
+            "zh": "文章主张以实际结果监督，并由人批准控制网络的变更。这是一项提案，不是这些安排已成功运行的证据。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "独立阅读框架：更快发现问题，不等于更安全地完成变更。应分别评估发现、验证、批准、部署和恢复。 / Independent reading framework: faster discovery does not automatically mean safer change. Evaluate discovery, validation, approval, deployment and recovery separately.",
+          "supporting_evidence": [
+            "原文将企业领导层责任与技术执行放在同一个方案里；这启发了下面的独立评估框架，而非为其成效提供实证。 / The proposal links executive responsibility with technical execution; this motivates the framework below but does not empirically validate it."
+          ],
+          "industry_significance": [
+            {
+              "en": "Independent analysis: Treat a security recommendation as a change request with a safety case. The evidence packet should identify the affected dependency, explain the expected benefit, describe possible service disruption and specify a rollback owner. A fluent explanation is not a substitute for an approved operating procedure. This distinction matters even when a recommendation is technically correct: a safe configuration on one device may interact badly with an undocumented dependency elsewhere. The product opportunity is therefore a reliable evidence-and-approval workflow, not simply a larger stream of alerts.",
+              "zh": "独立分析：应将安全建议视为附带安全论证的变更请求。证据包应指出受影响的依赖、预期收益、可能的服务中断以及负责回滚的人。流畅的解释不能代替已获批准的操作程序。即使建议在技术上正确，这种区分仍然重要：对单台设备安全的配置，也可能与其他地方未记录的依赖产生冲突。因此，产品机会在于可靠的证据与审批流程，而不仅是更多告警。"
+            },
+            {
+              "en": "Independent analysis: Consider an invented comparison between two review queues. Team A processes one hundred alerts but leaves ten consequential decisions unresolved. Team B processes forty alerts and closes all ten decisions with independently checked evidence. Counting alerts alone would reward the wrong team. A useful scorecard would separate investigation volume, time awaiting authorization, rejected recommendations and verified recovery outcomes. Keep the denominator stable and record excluded systems so apparent improvement cannot come from quietly narrowing the measured population. These numbers are illustrative, not observations about infrastructure operators.",
+              "zh": "独立分析：假设两支团队处理不同审查队列。甲队处理一百个告警，却留下十项重大决策未解决；乙队处理四十个告警，并用独立核验的证据完成全部十项决策。只统计告警会奖励错误的团队。有效记分表应分别记录调查量、等待授权的时间、被否决建议及验证过的恢复结果。还应固定分母并记录排除系统，避免通过悄悄缩小统计范围制造改善。这些数字仅为示例，不是对基础设施运营商的观察。"
+            },
+            {
+              "en": "Independent analysis: Shared tooling can reduce duplicated effort, but it can also create a common failure mode. Before centralizing a critical workflow, ask whether participants retain an independent recovery route and can export their evidence. A procurement review should examine failure isolation, operator training and the cost of leaving the platform. The strongest demonstration is not an impressive dashboard; it is a controlled exercise in which the organization detects a mistaken recommendation, refuses it and still sustains its service.",
+              "zh": "独立分析：共享工具能减少重复劳动，也可能引入共同故障模式。集中关键流程前，应检查参与方是否保留独立恢复路径，以及能否导出自己的证据。采购审查应涵盖故障隔离、操作员培训和退出平台的成本。最有力的演示不是漂亮的仪表盘，而是受控演练中，组织能识别错误建议、拒绝执行并继续维持服务。"
+            }
+          ],
+          "limitations": [
+            {
+              "en": "Independent critique: A policy essay cannot establish implementation costs or comparative effectiveness. A credible pilot would pre-register acceptance criteria, include difficult legacy environments and publish failures as well as successes. Improvement against a weak baseline should not be confused with superiority over an experienced operating team.",
+              "zh": "独立批评：政策评论无法证明实施成本或相对效果。可信试点需要事先确定验收标准、纳入困难的遗留环境，并同时记录失败与成功。相比薄弱基线的提升，不应被误认为胜过经验丰富的运营团队。"
+            }
+          ],
+          "independent_judgment": "我的判断：先选择边界清晰、可逆且有人负责的工作流程，再评估是否扩大自动化权限。验收问题应是“错误发生后能否被发现、停止并恢复”，而不只是“平时回答有多快”。这是一种独立的系统设计判断，不是原文作者的原话，也不是对任何具体设施的操作指令。 / My judgment: begin with bounded, reversible workflows under named ownership before considering broader automation. Ask whether errors can be detected, stopped and recovered from, not only how quickly the system answers in normal conditions. This is independent design commentary, not an instruction for any particular facility."
+        },
+        "vocabulary": [
+          {
+            "term": "weakness",
+            "phonetic": "/ˈwiːk.nəs/",
+            "part_of_speech": "noun",
+            "meaning_zh": "安全弱点",
+            "example_en": "The review revealed a weakness in the approval process.",
+            "example_zh": "审查发现审批流程中的一个弱点。"
+          },
+          {
+            "term": "equipment",
+            "phonetic": "/ɪˈkwɪp.mənt/",
+            "part_of_speech": "noun",
+            "meaning_zh": "设备",
+            "example_en": "The team tested the equipment before approving the change.",
+            "example_zh": "团队在批准变更前测试了设备。"
+          },
+          {
+            "term": "failure",
+            "phonetic": "/ˈfeɪ.ljɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "系统失效",
+            "example_en": "A local failure should not interrupt every service.",
+            "example_zh": "局部失效不应中断所有服务。"
+          },
+          {
+            "term": "vendor",
+            "phonetic": "/ˈven.dɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "供应商",
+            "example_en": "The vendor supplied evidence for an independent review.",
+            "example_zh": "供应商提供了独立审查所需证据。"
+          },
+          {
+            "term": "utility",
+            "phonetic": "/juːˈtɪl.ə.t̬i/",
+            "part_of_speech": "noun",
+            "meaning_zh": "公用事业运营商",
+            "example_en": "The utility assigned an owner to the recovery exercise.",
+            "example_zh": "公用事业运营商为恢复演练指定了负责人。"
+          },
+          {
+            "term": "resilience",
+            "phonetic": "/rɪˈzɪl.jəns/",
+            "part_of_speech": "noun",
+            "meaning_zh": "抗冲击与恢复能力",
+            "example_en": "Resilience requires practice rather than a promise.",
+            "example_zh": "抗冲击与恢复能力需要实践，而非承诺。"
+          },
+          {
+            "term": "governance",
+            "phonetic": "/ˈɡʌv.ɚ.nəns/",
+            "part_of_speech": "noun",
+            "meaning_zh": "治理机制",
+            "example_en": "Clear governance separates recommendations from authorization.",
+            "example_zh": "清晰的治理机制将建议与授权分开。"
+          },
+          {
+            "term": "vulnerability",
+            "phonetic": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
+            "part_of_speech": "noun",
+            "meaning_zh": "安全漏洞",
+            "example_en": "The report described the vulnerability without overstating its impact.",
+            "example_zh": "报告说明了漏洞，但没有夸大其影响。"
+          },
+          {
+            "term": "replica",
+            "phonetic": "/ˈrep.lɪ.kə/",
+            "part_of_speech": "noun",
+            "meaning_zh": "仿真副本",
+            "example_en": "The replica omitted a dependency found in the live system.",
+            "example_zh": "仿真副本遗漏了实际系统中的一个依赖。"
+          },
+          {
+            "term": "containment",
+            "phonetic": null,
+            "part_of_speech": "noun",
+            "meaning_zh": "风险遏制",
+            "example_en": "Containment buys time for a carefully tested repair.",
+            "example_zh": "风险遏制为经过仔细测试的修复争取时间。"
+          }
+        ],
+        "copyright_mode": "original_summary_only",
+        "meta": {
+          "pronunciation_sources": [
+            {
+              "term": "weakness",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/weakness",
+              "accent": "US"
+            },
+            {
+              "term": "equipment",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/equipment",
+              "accent": "US"
+            },
+            {
+              "term": "failure",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/failure",
+              "accent": "US"
+            },
+            {
+              "term": "vendor",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/vendor",
+              "accent": "US"
+            },
+            {
+              "term": "utility",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/utility",
+              "accent": "US"
+            },
+            {
+              "term": "resilience",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/resilience",
+              "accent": "US"
+            },
+            {
+              "term": "governance",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/governance",
+              "accent": "US"
+            },
+            {
+              "term": "vulnerability",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/vulnerability",
+              "accent": "US"
+            },
+            {
+              "term": "replica",
+              "url": "https://dictionary.cambridge.org/us/dictionary/english/replica",
+              "accent": "US"
+            }
+          ],
+          "vocabulary_note": "Original examples. Source plurals normalized to dictionary headwords. Containment has no claimed verified pronunciation."
+        }
+      },
+      "upstream_title_zh": "超级智能时代的关键基础设施网络防御计划",
+      "revision": 1,
+      "title": "Super Intelligence-Era Critical Infrastructure Cyber Defense Plan",
+      "title_zh": "超级智能时代的关键基础设施网络防御计划",
+      "author": "Anne Neuberger",
+      "published_at": "2026-11-12",
+      "topics": [
+        "Critical Infrastructure",
+        "Cybersecurity",
+        "AI Defense",
+        "Operational Resilience"
+      ],
+      "source": {
+        "name": "a16z.com",
+        "url": "https://a16z.com/super-intelligence-era-critical-infrastructure-cyber-defense-plan/",
+        "rights": "summary_only",
+        "copyright": "Source article © 2026 Andreessen Horowitz. Original summaries, independent commentary and examples only.",
+        "permission_note": "No full-text reproduction or translation permission claimed. Source verified on the official publisher website; this is newly generated schema-compatible content, not a recovered upstream JSON."
+      },
+      "summary": "通过官方政策评论，练习区分技术能力、运行安全与问责机制。本文为原创摘要及独立解读，不是原文译本或现行政策认定。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "Neuberger proposes concentrating AI-assisted cyber defense on infrastructure failures with nationwide consequences.",
+          "zh": "Neuberger建议将AI辅助网络防御优先用于可能造成全国性影响的基础设施故障。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "Her proposal combines containment for aging equipment, operational continuity exercises and executive accountability.",
+          "zh": "她的方案结合老旧设备风险控制、业务连续性演练与高管问责。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "The article advocates outcome-based oversight and human approval for changes to control networks. It is a proposal, not evidence that these arrangements are operating successfully.",
+          "zh": "文章主张以实际结果监督，并由人批准控制网络的变更。这是一项提案，不是这些安排已成功运行的证据。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-d303737402e8f4119766a64c",
+          "segment_id": null,
+          "example_en": "The review revealed a weakness in the approval process.",
+          "example_zh": "审查发现审批流程中的一个弱点。",
+          "part_of_speech": "noun",
+          "term": "weakness",
+          "meaning_zh": "安全弱点",
+          "phonetic": "/ˈwiːk.nəs/"
+        },
+        {
+          "id": "up-b3299b535539057d8dcbf072",
+          "segment_id": null,
+          "example_en": "The team tested the equipment before approving the change.",
+          "example_zh": "团队在批准变更前测试了设备。",
+          "part_of_speech": "noun",
+          "term": "equipment",
+          "meaning_zh": "设备",
+          "phonetic": "/ɪˈkwɪp.mənt/"
+        },
+        {
+          "id": "up-8f578bfa2e5c9e7f2232dc40",
+          "segment_id": null,
+          "example_en": "A local failure should not interrupt every service.",
+          "example_zh": "局部失效不应中断所有服务。",
+          "part_of_speech": "noun",
+          "term": "failure",
+          "meaning_zh": "系统失效",
+          "phonetic": "/ˈfeɪ.ljɚ/"
+        },
+        {
+          "id": "up-2e4dd6306481f0425e557d50",
+          "segment_id": null,
+          "example_en": "The vendor supplied evidence for an independent review.",
+          "example_zh": "供应商提供了独立审查所需证据。",
+          "part_of_speech": "noun",
+          "term": "vendor",
+          "meaning_zh": "供应商",
+          "phonetic": "/ˈven.dɚ/"
+        },
+        {
+          "id": "up-58f8dc8e85f433a68888ee8b",
+          "segment_id": null,
+          "example_en": "The utility assigned an owner to the recovery exercise.",
+          "example_zh": "公用事业运营商为恢复演练指定了负责人。",
+          "part_of_speech": "noun",
+          "term": "utility",
+          "meaning_zh": "公用事业运营商",
+          "phonetic": "/juːˈtɪl.ə.t̬i/"
+        },
+        {
+          "id": "up-7abdf4015cb9b1a4429ea1d1",
+          "segment_id": null,
+          "example_en": "Resilience requires practice rather than a promise.",
+          "example_zh": "抗冲击与恢复能力需要实践，而非承诺。",
+          "part_of_speech": "noun",
+          "term": "resilience",
+          "meaning_zh": "抗冲击与恢复能力",
+          "phonetic": "/rɪˈzɪl.jəns/"
+        },
+        {
+          "id": "up-086e2d2ed64a39ef7dd4e437",
+          "segment_id": null,
+          "example_en": "Clear governance separates recommendations from authorization.",
+          "example_zh": "清晰的治理机制将建议与授权分开。",
+          "part_of_speech": "noun",
+          "term": "governance",
+          "meaning_zh": "治理机制",
+          "phonetic": "/ˈɡʌv.ɚ.nəns/"
+        },
+        {
+          "id": "up-650b26e3b1d04eb7652068b8",
+          "segment_id": null,
+          "example_en": "The report described the vulnerability without overstating its impact.",
+          "example_zh": "报告说明了漏洞，但没有夸大其影响。",
+          "part_of_speech": "noun",
+          "term": "vulnerability",
+          "meaning_zh": "安全漏洞",
+          "phonetic": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/"
+        },
+        {
+          "id": "up-30be96cb3e4cf3328ca2cf6d",
+          "segment_id": null,
+          "example_en": "The replica omitted a dependency found in the live system.",
+          "example_zh": "仿真副本遗漏了实际系统中的一个依赖。",
+          "part_of_speech": "noun",
+          "term": "replica",
+          "meaning_zh": "仿真副本",
+          "phonetic": "/ˈrep.lɪ.kə/"
+        },
+        {
+          "id": "up-952c338be416ab598cea6a66",
+          "segment_id": null,
+          "example_en": "Containment buys time for a carefully tested repair.",
+          "example_zh": "风险遏制为经过仔细测试的修复争取时间。",
+          "part_of_speech": "noun",
+          "term": "containment",
+          "meaning_zh": "风险遏制"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "独立阅读框架：更快发现问题，不等于更安全地完成变更。应分别评估发现、验证、批准、部署和恢复。 / Independent reading framework: faster discovery does not automatically mean safer change. Evaluate discovery, validation, approval, deployment and recovery separately.",
+        "key_points": [
+          "原文将企业领导层责任与技术执行放在同一个方案里；这启发了下面的独立评估框架，而非为其成效提供实证。 / The proposal links executive responsibility with technical execution; this motivates the framework below but does not empirically validate it."
+        ],
+        "discussion": [
+          "{\n  \"en\": \"Independent analysis: Treat a security recommendation as a change request with a safety case. The evidence packet should identify the affected dependency, explain the expected benefit, describe possible service disruption and specify a rollback owner. A fluent explanation is not a substitute for an approved operating procedure. This distinction matters even when a recommendation is technically correct: a safe configuration on one device may interact badly with an undocumented dependency elsewhere. The product opportunity is therefore a reliable evidence-and-approval workflow, not simply a larger stream of alerts.\",\n  \"zh\": \"独立分析：应将安全建议视为附带安全论证的变更请求。证据包应指出受影响的依赖、预期收益、可能的服务中断以及负责回滚的人。流畅的解释不能代替已获批准的操作程序。即使建议在技术上正确，这种区分仍然重要：对单台设备安全的配置，也可能与其他地方未记录的依赖产生冲突。因此，产品机会在于可靠的证据与审批流程，而不仅是更多告警。\"\n}",
+          "{\n  \"en\": \"Independent analysis: Consider an invented comparison between two review queues. Team A processes one hundred alerts but leaves ten consequential decisions unresolved. Team B processes forty alerts and closes all ten decisions with independently checked evidence. Counting alerts alone would reward the wrong team. A useful scorecard would separate investigation volume, time awaiting authorization, rejected recommendations and verified recovery outcomes. Keep the denominator stable and record excluded systems so apparent improvement cannot come from quietly narrowing the measured population. These numbers are illustrative, not observations about infrastructure operators.\",\n  \"zh\": \"独立分析：假设两支团队处理不同审查队列。甲队处理一百个告警，却留下十项重大决策未解决；乙队处理四十个告警，并用独立核验的证据完成全部十项决策。只统计告警会奖励错误的团队。有效记分表应分别记录调查量、等待授权的时间、被否决建议及验证过的恢复结果。还应固定分母并记录排除系统，避免通过悄悄缩小统计范围制造改善。这些数字仅为示例，不是对基础设施运营商的观察。\"\n}",
+          "{\n  \"en\": \"Independent analysis: Shared tooling can reduce duplicated effort, but it can also create a common failure mode. Before centralizing a critical workflow, ask whether participants retain an independent recovery route and can export their evidence. A procurement review should examine failure isolation, operator training and the cost of leaving the platform. The strongest demonstration is not an impressive dashboard; it is a controlled exercise in which the organization detects a mistaken recommendation, refuses it and still sustains its service.\",\n  \"zh\": \"独立分析：共享工具能减少重复劳动，也可能引入共同故障模式。集中关键流程前，应检查参与方是否保留独立恢复路径，以及能否导出自己的证据。采购审查应涵盖故障隔离、操作员培训和退出平台的成本。最有力的演示不是漂亮的仪表盘，而是受控演练中，组织能识别错误建议、拒绝执行并继续维持服务。\"\n}",
+          "我的判断：先选择边界清晰、可逆且有人负责的工作流程，再评估是否扩大自动化权限。验收问题应是“错误发生后能否被发现、停止并恢复”，而不只是“平时回答有多快”。这是一种独立的系统设计判断，不是原文作者的原话，也不是对任何具体设施的操作指令。 / My judgment: begin with bounded, reversible workflows under named ownership before considering broader automation. Ask whether errors can be detected, stopped and recovered from, not only how quickly the system answers in normal conditions. This is independent design commentary, not an instruction for any particular facility."
+        ],
+        "limitations": "{\n  \"en\": \"Independent critique: A policy essay cannot establish implementation costs or comparative effectiveness. A credible pilot would pre-register acceptance criteria, include difficult legacy environments and publish failures as well as successes. Improvement against a weak baseline should not be confused with superiority over an experienced operating team.\",\n  \"zh\": \"独立批评：政策评论无法证明实施成本或相对效果。可信试点需要事先确定验收标准、纳入困难的遗留环境，并同时记录失败与成功。相比薄弱基线的提升，不应被误认为胜过经验丰富的运营团队。\"\n}",
+        "independent_judgment": "我的判断：先选择边界清晰、可逆且有人负责的工作流程，再评估是否扩大自动化权限。验收问题应是“错误发生后能否被发现、停止并恢复”，而不只是“平时回答有多快”。这是一种独立的系统设计判断，不是原文作者的原话，也不是对任何具体设施的操作指令。 / My judgment: begin with bounded, reversible workflows under named ownership before considering broader automation. Ask whether errors can be detected, stopped and recovered from, not only how quickly the system answers in normal conditions. This is independent design commentary, not an instruction for any particular facility."
+      }
+    }
+  ]
+}
