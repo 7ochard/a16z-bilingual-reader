@@ -1,56 +1,51 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "article": {
-    "title": "Super Intelligence-Era Critical Infrastructure Cyber Defense Plan",
-    "title_zh": "超级智能时代的关键基础设施网络防御计划",
-    "published_at": "2026-11-12",
-    "url": "https://a16z.com/super-intelligence-era-critical-infrastructure-cyber-defense-plan/"
+    "title": "Hip-Hop Has No Social Security. Paid in Full Is Trying to Change That.",
+    "title_zh": "嘻哈先驱缺少保障，Paid in Full 正尝试补上缺口",
+    "published_at": "2026-11-07",
+    "url": "https://www.a16z.news/p/hip-hop-has-no-social-security-paid"
   },
   "words": [
     {
-      "term": "weakness",
-      "ipa": "/ˈwiːk.nəs/",
-      "meaning_zh": "安全弱点"
+      "term": "independent",
+      "ipa": "/ˌɪn.dɪˈpen.dənt/",
+      "meaning_zh": "独立经营的"
     },
     {
-      "term": "equipment",
-      "ipa": "/ɪˈkwɪp.mənt/",
-      "meaning_zh": "设备"
+      "term": "rhythm",
+      "ipa": "/ˈrɪð.əm/",
+      "meaning_zh": "节奏"
     },
     {
-      "term": "failure",
-      "ipa": "/ˈfeɪ.ljɚ/",
-      "meaning_zh": "系统失效"
+      "term": "novelty",
+      "ipa": "/ˈnɑː.vəl.t̬i/",
+      "meaning_zh": "新奇事物"
     },
     {
-      "term": "vendor",
-      "ipa": "/ˈven.dɚ/",
-      "meaning_zh": "供应商"
+      "term": "royalty",
+      "ipa": "/ˈrɔɪ.əl.t̬i/",
+      "meaning_zh": "版税"
     },
     {
-      "term": "utility",
-      "ipa": "/juːˈtɪl.ə.t̬i/",
-      "meaning_zh": "公用事业运营商"
+      "term": "litigation",
+      "ipa": "/ˌlɪt̬.əˈɡeɪ.ʃən/",
+      "meaning_zh": "诉讼"
     },
     {
-      "term": "resilience",
-      "ipa": "/rɪˈzɪl.jəns/",
-      "meaning_zh": "抗冲击与恢复能力"
+      "term": "remuneration",
+      "ipa": "/rɪˌmjuː.nəˈreɪ.ʃən/",
+      "meaning_zh": "报酬"
     },
     {
-      "term": "governance",
-      "ipa": "/ˈɡʌv.ɚ.nəns/",
-      "meaning_zh": "治理机制"
+      "term": "grant",
+      "ipa": "/ɡrænt/",
+      "meaning_zh": "资助金"
     },
     {
-      "term": "vulnerability",
-      "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
-      "meaning_zh": "安全漏洞"
-    },
-    {
-      "term": "replica",
-      "ipa": "/ˈrep.lɪ.kə/",
-      "meaning_zh": "仿真副本"
+      "term": "integrity",
+      "ipa": "/ɪnˈteɡ.rə.t̬i/",
+      "meaning_zh": "创作操守"
     }
   ]
 }
