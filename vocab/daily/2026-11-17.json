@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-17",
+  "article": {
+    "title": "The Dream of the 1990s Is Alive Again in Cybersecurity",
+    "title_zh": "网络安全重现九十年代的挑战",
+    "published_at": "2026-11-16",
+    "url": "https://a16z.com/the-dream-of-the-1990s-is-alive-again-in-cybersecurity/"
+  },
+  "words": [
+    {
+      "term": "vulnerability",
+      "ipa": "/ˌvʌl.nɚ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "安全漏洞"
+    },
+    {
+      "term": "offensive",
+      "ipa": "/əˈfen.sɪv/",
+      "meaning_zh": "进攻性的"
+    },
+    {
+      "term": "defensive",
+      "ipa": "/dɪˈfen.sɪv/",
+      "meaning_zh": "防御性的"
+    },
+    {
+      "term": "capacity",
+      "ipa": "/kəˈpæs.ə.t̬i/",
+      "meaning_zh": "职责或身份"
+    },
+    {
+      "term": "cadence",
+      "ipa": "/ˈkeɪ.dəns/",
+      "meaning_zh": "反复发生的节奏"
+    },
+    {
+      "term": "devastating",
+      "ipa": "/ˈdev.ə.steɪ.t̬ɪŋ/",
+      "meaning_zh": "破坏性极强的"
+    },
+    {
+      "term": "exploit",
+      "ipa": "/ɪkˈsplɔɪt/",
+      "meaning_zh": "利用漏洞"
+    },
+    {
+      "term": "foundational",
+      "ipa": "/faʊnˈdeɪ.ʃən.əl/",
+      "meaning_zh": "基础性的"
+    },
+    {
+      "term": "expertise",
+      "ipa": "/ˌek.spɝːˈtiːz/",
+      "meaning_zh": "专业能力"
+    },
+    {
+      "term": "substantial",
+      "ipa": "/səbˈstæn.ʃəl/",
+      "meaning_zh": "大量的"
+    }
+  ]
+}
