@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "article": {
-    "title": "Investing in First Person Labs",
-    "title_zh": "投资 First Person Labs：个人上下文的控制权",
-    "published_at": "2026-11-17",
-    "url": "https://a16z.com/announcement/investing-in-first-person-labs/"
+    "title": "Investing in Linq",
+    "title_zh": "投资 Linq：把智能体带进用户已有的消息渠道",
+    "published_at": "2026-11-18",
+    "url": "https://a16z.com/announcement/investing-in-linq/"
   },
   "words": [
     {
-      "term": "personal",
-      "ipa": "/ˈpɝː.sən.əl/",
-      "meaning_zh": "个人的"
+      "term": "mainstream",
+      "ipa": "/ˈmeɪn.striːm/",
+      "meaning_zh": "主流"
     },
     {
-      "term": "context",
-      "ipa": "/ˈkɑːn.tekst/",
-      "meaning_zh": "个人背景信息"
+      "term": "reservation",
+      "ipa": "/ˌrez.ɚˈveɪ.ʃən/",
+      "meaning_zh": "预约；预订"
     },
     {
-      "term": "sensitive",
-      "ipa": "/ˈsen.sə.t̬ɪv/",
-      "meaning_zh": "涉及隐私的"
+      "term": "adapt",
+      "ipa": "/əˈdæpt/",
+      "meaning_zh": "适应新的使用方式"
     },
     {
-      "term": "model",
-      "ipa": "/ˈmɑː.dəl/",
-      "meaning_zh": "个人信息模型"
+      "term": "novel",
+      "ipa": "/ˈnɑː.vəl/",
+      "meaning_zh": "新颖的"
     },
     {
-      "term": "influence",
-      "ipa": "/ˈɪn.flu.əns/",
-      "meaning_zh": "影响力"
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "消息通信基础设施"
     },
     {
-      "term": "accumulate",
-      "ipa": "/əˈkjuː.mjə.leɪt/",
-      "meaning_zh": "积累"
+      "term": "scalable",
+      "ipa": "/ˈskeɪ.lə.bəl/",
+      "meaning_zh": "可扩展的"
     },
     {
-      "term": "architecture",
-      "ipa": "/ˈɑːr.kə.tek.tʃɚ/",
-      "meaning_zh": "系统架构"
+      "term": "operational",
+      "ipa": "/ˌɑː.pəˈreɪ.ʃən.əl/",
+      "meaning_zh": "运营层面的"
     },
     {
-      "term": "portable",
-      "ipa": "/ˈpɔːr.t̬ə.bəl/",
-      "meaning_zh": "可迁移的"
+      "term": "extension",
+      "ipa": "/ɪkˈsten.ʃən/",
+      "meaning_zh": "团队能力的延伸"
     },
     {
-      "term": "intelligence",
-      "ipa": "/ɪnˈtel.ə.dʒəns/",
-      "meaning_zh": "智能能力"
+      "term": "integrate",
+      "ipa": "/ˈɪn.t̬ə.ɡreɪt/",
+      "meaning_zh": "接入现有系统"
     },
     {
-      "term": "privacy",
-      "ipa": "/ˈpraɪ.və.si/",
-      "meaning_zh": "隐私"
+      "term": "legitimately",
+      "ipa": "/ləˈdʒɪt̬.ə.mət.li/",
+      "meaning_zh": "合规地"
     }
   ]
 }
