@@ -1,0 +1,319 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-19-fde-fellowship-is-back",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-19-fde-fellowship-is-back",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "www.a16z.news",
+          "content_type": "official_program_announcement"
+        },
+        "title": "The a16z FDE Fellowship is back",
+        "author": [
+          "Anna Owens",
+          "David Booth",
+          "Han Nguyen"
+        ],
+        "published_at": "2026-11-19",
+        "selected_at": "2026-11-20",
+        "url": "https://www.a16z.news/p/the-a16z-fde-fellowship-is-back",
+        "topics": [
+          "Forward deployed engineering",
+          "Applied AI",
+          "Enterprise software"
+        ],
+        "selection_reason": "观察 AI 产品团队为何需要贴近客户交付的工程角色。未取得当天精选对话的原始 JSON，本条目依据官方原文独立生成。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "a16z is launching a second fellowship for engineers deploying AI alongside customers and for applied AI leads. The eight-week program begins in mid-January 2027. It plans events every two weeks, primarily in San Francisco and New York, while welcoming participants based elsewhere.",
+            "zh": "a16z 将开办第二期研修计划，面向与客户共同部署 AI 的工程师及应用 AI 负责人。项目在 2027 年 1 月中旬启动，为期八周，每两周举办活动，地点以旧金山和纽约为主，参与者不必住在当地。"
+          },
+          {
+            "id": "s02",
+            "en": "The announcement links the growth of this role to a change in what customers expect. A model that produces useful answers is not enough when the job also depends on company data, local procedures, and completion outside the chat window.",
+            "zh": "公告把这一角色的兴起与客户预期变化联系起来。模型能给出有用回答并不足够；真正办成一件事往往还要使用企业数据、遵循内部流程，并在聊天窗口之外完成操作。"
+          },
+          {
+            "id": "s03",
+            "en": "The first group included practitioners who had worked on the Palantir model of forward deployment. The new group spans AI labs and software vendors. The announcement describes the participants and program format, not measured deployment outcomes.",
+            "zh": "首期成员中有人曾参与形成 Palantir 的前线部署模式。新一期横跨 AI 实验室与软件供应商。公告介绍了参与者和活动安排，并未报告部署效果。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "企业 AI 的交付难题正在从模型能不能回答，转向系统能不能在真实业务条件下完成工作。前线部署工程师正处在产品能力和客户流程之间。",
+          "supporting_evidence": [
+            "公告面向直接参与客户部署的工程师与应用 AI 负责人，新一期成员来自不同类型的 AI 公司。",
+            "作者把数据接入、适配内部流程以及完成任务列为客户预期，而不只是生成回答。"
+          ],
+          "industry_significance": [
+            "前线工程的价值并不止于解决单个客户问题。若若干客户反复需要同一种审批、数据映射或人工接管机制，这类重复工作才值得收进标准产品。",
+            "销售交付与核心产品的边界需要设计。若每个客户都必须维护一套独立逻辑，可先统一可配置层与观察指标，再判断是否能够规模化。"
+          ],
+          "limitations": [
+            "这是一篇项目招生公告，不能据此判断前线部署模式普遍更有效，或推断任一参与公司的具体成效。"
+          ],
+          "independent_judgment": "试点时先选一个客户有明确业务负责人的流程，用任务最终完成率和人工接管率评估系统，而不是只记录回答质量；之后到第二个客户复测，看看可复用的是工作流能力，还是只能复制工程投入。"
+        },
+        "vocabulary": [
+          {
+            "term": "cohort",
+            "phonetic": "/ˈkoʊ.hɔːrt/",
+            "part_of_speech": "noun",
+            "meaning_zh": "同期学员",
+            "example_en": "The cohort met every other week.",
+            "example_zh": "这期学员每两周见面一次。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/cohort"
+          },
+          {
+            "term": "leader",
+            "phonetic": "/ˈliː.dɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "负责人",
+            "example_en": "An engineering leader sponsored the pilot.",
+            "example_zh": "一位工程负责人支持这次试点。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/leader"
+          },
+          {
+            "term": "model",
+            "phonetic": "/ˈmɑː.dəl/",
+            "part_of_speech": "noun",
+            "meaning_zh": "工作模式",
+            "example_en": "The team revised its delivery model.",
+            "example_zh": "团队调整了交付模式。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/model"
+          },
+          {
+            "term": "adapt",
+            "phonetic": "/əˈdæpt/",
+            "part_of_speech": "verb",
+            "meaning_zh": "调整以适应",
+            "example_en": "We adapted the workflow for a smaller team.",
+            "example_zh": "我们调整了流程以适应更小的团队。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/adapt"
+          },
+          {
+            "term": "ambition",
+            "phonetic": "/æmˈbɪʃ.ən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "长远目标",
+            "example_en": "Their ambition was to serve more industries.",
+            "example_zh": "他们的目标是服务更多行业。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/ambition"
+          },
+          {
+            "term": "capable",
+            "phonetic": "/ˈkeɪ.pə.bəl/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "能力强的",
+            "example_en": "A more capable system still needs review.",
+            "example_zh": "能力更强的系统也需要审查。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/capable"
+          },
+          {
+            "term": "increasingly",
+            "phonetic": "/ɪnˈkriː.sɪŋ.li/",
+            "part_of_speech": "adverb",
+            "meaning_zh": "日益",
+            "example_en": "Buyers increasingly expect integrated tools.",
+            "example_zh": "买家日益看重工具之间的集成。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/increasingly"
+          },
+          {
+            "term": "contour",
+            "phonetic": "/ˈkɑːn.tʊr/",
+            "part_of_speech": "noun",
+            "meaning_zh": "业务具体形态",
+            "example_en": "The design followed the contours of the approval workflow.",
+            "example_zh": "设计贴合审批流程的具体形态。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/contour"
+          },
+          {
+            "term": "process",
+            "phonetic": "/ˈprɑː.ses/",
+            "part_of_speech": "noun",
+            "meaning_zh": "业务流程",
+            "example_en": "Map the process before replacing it.",
+            "example_zh": "先梳理流程，再替换它。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/process"
+          },
+          {
+            "term": "deploy",
+            "phonetic": "/dɪˈplɔɪ/",
+            "part_of_speech": "verb",
+            "meaning_zh": "部署上线",
+            "example_en": "The team deployed the update in stages.",
+            "example_zh": "团队分阶段部署了更新。",
+            "pronunciation_source": "https://dictionary.cambridge.org/us/pronunciation/english/deploy"
+          }
+        ],
+        "copyright_mode": "original_summary_only",
+        "meta": {
+          "content_origin": "independent_original_summary_from_verified_official_source"
+        }
+      },
+      "upstream_title_zh": "a16z 前线部署工程师研修计划回归",
+      "revision": 1,
+      "title": "The a16z FDE Fellowship is back",
+      "title_zh": "a16z 前线部署工程师研修计划回归",
+      "author": "Anna Owens, David Booth, Han Nguyen",
+      "published_at": "2026-11-19",
+      "topics": [
+        "Forward deployed engineering",
+        "Applied AI",
+        "Enterprise software"
+      ],
+      "source": {
+        "name": "www.a16z.news",
+        "url": "https://www.a16z.news/p/the-a16z-fde-fellowship-is-back",
+        "rights": "summary_only",
+        "copyright": "© 2026 Andreessen Horowitz (source).",
+        "permission_note": "Original summary, examples, and analysis only; no reproduction or full translation."
+      },
+      "summary": "观察 AI 产品团队为何需要贴近客户交付的工程角色。未取得当天精选对话的原始 JSON，本条目依据官方原文独立生成。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "a16z is launching a second fellowship for engineers deploying AI alongside customers and for applied AI leads. The eight-week program begins in mid-January 2027. It plans events every two weeks, primarily in San Francisco and New York, while welcoming participants based elsewhere.",
+          "zh": "a16z 将开办第二期研修计划，面向与客户共同部署 AI 的工程师及应用 AI 负责人。项目在 2027 年 1 月中旬启动，为期八周，每两周举办活动，地点以旧金山和纽约为主，参与者不必住在当地。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "The announcement links the growth of this role to a change in what customers expect. A model that produces useful answers is not enough when the job also depends on company data, local procedures, and completion outside the chat window.",
+          "zh": "公告把这一角色的兴起与客户预期变化联系起来。模型能给出有用回答并不足够；真正办成一件事往往还要使用企业数据、遵循内部流程，并在聊天窗口之外完成操作。"
+        },
+        {
+          "id": "s03",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "The first group included practitioners who had worked on the Palantir model of forward deployment. The new group spans AI labs and software vendors. The announcement describes the participants and program format, not measured deployment outcomes.",
+          "zh": "首期成员中有人曾参与形成 Palantir 的前线部署模式。新一期横跨 AI 实验室与软件供应商。公告介绍了参与者和活动安排，并未报告部署效果。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-0a16a86683e128445094f2f0",
+          "segment_id": null,
+          "example_en": "The cohort met every other week.",
+          "example_zh": "这期学员每两周见面一次。",
+          "part_of_speech": "noun",
+          "term": "cohort",
+          "meaning_zh": "同期学员",
+          "phonetic": "/ˈkoʊ.hɔːrt/"
+        },
+        {
+          "id": "up-25cf31ada54a44021312e079",
+          "segment_id": null,
+          "example_en": "An engineering leader sponsored the pilot.",
+          "example_zh": "一位工程负责人支持这次试点。",
+          "part_of_speech": "noun",
+          "term": "leader",
+          "meaning_zh": "负责人",
+          "phonetic": "/ˈliː.dɚ/"
+        },
+        {
+          "id": "up-748019ee33a060cccedfddfb",
+          "segment_id": null,
+          "example_en": "The team revised its delivery model.",
+          "example_zh": "团队调整了交付模式。",
+          "part_of_speech": "noun",
+          "term": "model",
+          "meaning_zh": "工作模式",
+          "phonetic": "/ˈmɑː.dəl/"
+        },
+        {
+          "id": "up-bd6ff66bbb8404de91dbe7d9",
+          "segment_id": null,
+          "example_en": "We adapted the workflow for a smaller team.",
+          "example_zh": "我们调整了流程以适应更小的团队。",
+          "part_of_speech": "verb",
+          "term": "adapt",
+          "meaning_zh": "调整以适应",
+          "phonetic": "/əˈdæpt/"
+        },
+        {
+          "id": "up-e438ef2e9da0ea54e43cf0a2",
+          "segment_id": null,
+          "example_en": "Their ambition was to serve more industries.",
+          "example_zh": "他们的目标是服务更多行业。",
+          "part_of_speech": "noun",
+          "term": "ambition",
+          "meaning_zh": "长远目标",
+          "phonetic": "/æmˈbɪʃ.ən/"
+        },
+        {
+          "id": "up-4682f5d0d01f5db583851eea",
+          "segment_id": null,
+          "example_en": "A more capable system still needs review.",
+          "example_zh": "能力更强的系统也需要审查。",
+          "part_of_speech": "adjective",
+          "term": "capable",
+          "meaning_zh": "能力强的",
+          "phonetic": "/ˈkeɪ.pə.bəl/"
+        },
+        {
+          "id": "up-9a5b0313b64daa3dc4f49dbd",
+          "segment_id": null,
+          "example_en": "Buyers increasingly expect integrated tools.",
+          "example_zh": "买家日益看重工具之间的集成。",
+          "part_of_speech": "adverb",
+          "term": "increasingly",
+          "meaning_zh": "日益",
+          "phonetic": "/ɪnˈkriː.sɪŋ.li/"
+        },
+        {
+          "id": "up-c6a033cb50d7453eafc9f013",
+          "segment_id": null,
+          "example_en": "The design followed the contours of the approval workflow.",
+          "example_zh": "设计贴合审批流程的具体形态。",
+          "part_of_speech": "noun",
+          "term": "contour",
+          "meaning_zh": "业务具体形态",
+          "phonetic": "/ˈkɑːn.tʊr/"
+        },
+        {
+          "id": "up-c994e734db38f982a07200f0",
+          "segment_id": null,
+          "example_en": "Map the process before replacing it.",
+          "example_zh": "先梳理流程，再替换它。",
+          "part_of_speech": "noun",
+          "term": "process",
+          "meaning_zh": "业务流程",
+          "phonetic": "/ˈprɑː.ses/"
+        },
+        {
+          "id": "up-524145c9a18ce20484fa3c8f",
+          "segment_id": null,
+          "example_en": "The team deployed the update in stages.",
+          "example_zh": "团队分阶段部署了更新。",
+          "part_of_speech": "verb",
+          "term": "deploy",
+          "meaning_zh": "部署上线",
+          "phonetic": "/dɪˈplɔɪ/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "企业 AI 的交付难题正在从模型能不能回答，转向系统能不能在真实业务条件下完成工作。前线部署工程师正处在产品能力和客户流程之间。",
+        "key_points": [
+          "公告面向直接参与客户部署的工程师与应用 AI 负责人，新一期成员来自不同类型的 AI 公司。",
+          "作者把数据接入、适配内部流程以及完成任务列为客户预期，而不只是生成回答。"
+        ],
+        "discussion": [
+          "前线工程的价值并不止于解决单个客户问题。若若干客户反复需要同一种审批、数据映射或人工接管机制，这类重复工作才值得收进标准产品。",
+          "销售交付与核心产品的边界需要设计。若每个客户都必须维护一套独立逻辑，可先统一可配置层与观察指标，再判断是否能够规模化。",
+          "试点时先选一个客户有明确业务负责人的流程，用任务最终完成率和人工接管率评估系统，而不是只记录回答质量；之后到第二个客户复测，看看可复用的是工作流能力，还是只能复制工程投入。"
+        ],
+        "limitations": "这是一篇项目招生公告，不能据此判断前线部署模式普遍更有效，或推断任一参与公司的具体成效。",
+        "independent_judgment": "试点时先选一个客户有明确业务负责人的流程，用任务最终完成率和人工接管率评估系统，而不是只记录回答质量；之后到第二个客户复测，看看可复用的是工作流能力，还是只能复制工程投入。"
+      }
+    }
+  ]
+}
