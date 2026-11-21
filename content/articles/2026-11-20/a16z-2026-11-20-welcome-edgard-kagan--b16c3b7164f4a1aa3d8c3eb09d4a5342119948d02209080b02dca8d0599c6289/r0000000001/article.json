@@ -1,0 +1,303 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-20-welcome-edgard-kagan",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-20-welcome-edgard-kagan",
+        "source": {
+          "name": "Andreessen Horowitz",
+          "domain": "a16z.com",
+          "site_url": "https://a16z.com/",
+          "language": "en"
+        },
+        "title": "Welcome Edgard Kagan",
+        "author": [
+          "Anne Neuberger"
+        ],
+        "published_at": "2026-11-20",
+        "selected_at": "2026-11-21",
+        "url": "https://a16z.com/welcome-edgard-kagan/",
+        "topics": [
+          "Global Affairs",
+          "Technology Adoption"
+        ],
+        "selection_reason": "这篇官方任命公告切入一个适合创业团队的问题：国际化不只是翻译界面，还包括理解谁能推动当地实际采用。",
+        "segments": [
+          {
+            "id": "s01",
+            "en": "a16z says it wants to help portfolio companies understand what governments and customers in different Indo-Pacific markets need. It has brought former U.S. diplomat Edgard Kagan in as a Global Affairs advisor.",
+            "zh": "a16z 表示，希望帮助被投企业理解印太各市场的政府与客户需求，并邀请前美国外交官埃德加德·卡根担任全球事务顾问。"
+          },
+          {
+            "id": "s02",
+            "en": "The announcement points to Kagan's experience in Malaysia and elsewhere in the region. It presents that background as a way for founders to understand who makes decisions and which local relationships may help a technology gain acceptance.",
+            "zh": "公告以卡根在马来西亚及该地区其他地方的经历为依据，认为这些经验能帮助创业者理解决策者是谁，以及哪些当地合作关系可能促进技术落地。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "公告把地区知识和合作关系视为技术进入新市场的条件，而不是工程完成后才处理的附属工作。",
+          "supporting_evidence": [
+            "公告明确区分各市场的需求与决策方式，并把顾问经验与被投企业的合作问题联系起来。"
+          ],
+          "industry_significance": [
+            "跨境产品验证应把使用者、采购方和审批方分别列出。产品演示得到使用者认可，不代表预算或合规审批已就绪。"
+          ],
+          "limitations": [
+            "这是一份任命公告，没有公布试点结果、采购周期、采用率或具体合作安排，不能据此判断顾问能否改变商业结果。"
+          ],
+          "independent_judgment": "先挑一个市场和场景，列出采购发起人、审批方和本地实施负责人，再把下一个可验证的采购节点写下来。比起统计见了多少合作方，能否确认试点负责人和下一步承诺更有判断力。"
+        },
+        "vocabulary": [
+          {
+            "term": "underpin",
+            "phonetic": "/ˌʌn.dɚˈpɪn/",
+            "part_of_speech": "verb",
+            "meaning_zh": "为……奠定基础",
+            "example_en": "Reliable connectivity underpins many public services.",
+            "example_zh": "可靠的网络连接为许多公共服务奠定基础。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/underpin"
+          },
+          {
+            "term": "distinct",
+            "phonetic": "/dɪˈstɪŋkt/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "各不相同的",
+            "example_en": "The two markets have distinct procurement rules.",
+            "example_zh": "这两个市场的采购规则各不相同。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/distinct"
+          },
+          {
+            "term": "priority",
+            "phonetic": "/praɪˈɔːr.ə.t̬i/",
+            "part_of_speech": "noun",
+            "meaning_zh": "优先事项",
+            "example_en": "Data residency is a priority for the agency.",
+            "example_zh": "数据驻留是该机构的优先事项。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/priority"
+          },
+          {
+            "term": "mission",
+            "phonetic": "/ˈmɪʃ.ən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "使命",
+            "example_en": "The team's mission is to make the service easier to access.",
+            "example_zh": "团队的使命是降低服务的使用门槛。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/mission"
+          },
+          {
+            "term": "partnership",
+            "phonetic": "/ˈpɑːrt.nɚ.ʃɪp/",
+            "part_of_speech": "noun",
+            "meaning_zh": "合作关系",
+            "example_en": "The partnership pairs a software vendor with a local operator.",
+            "example_zh": "这项合作将软件供应商与本地运营商连接起来。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/partnership"
+          },
+          {
+            "term": "adoption",
+            "phonetic": "/əˈdɑːp.ʃən/",
+            "part_of_speech": "noun",
+            "meaning_zh": "采用",
+            "example_en": "A pilot does not guarantee adoption across an entire agency.",
+            "example_zh": "试点不保证整个机构都会采用。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/adoption"
+          },
+          {
+            "term": "strengthen",
+            "phonetic": "/ˈstreŋ.θən/",
+            "part_of_speech": "verb",
+            "meaning_zh": "增强",
+            "example_en": "Training can strengthen a partner's ability to support customers.",
+            "example_zh": "培训可以增强合作伙伴支持客户的能力。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/strengthen"
+          },
+          {
+            "term": "ambassador",
+            "phonetic": "/æmˈbæs.ə.dɚ/",
+            "part_of_speech": "noun",
+            "meaning_zh": "大使",
+            "example_en": "The ambassador spoke about trade at the forum.",
+            "example_zh": "大使在论坛上谈到了贸易。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/ambassador"
+          },
+          {
+            "term": "diplomatic",
+            "phonetic": "/ˌdɪp.ləˈmæt̬.ɪk/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "外交的",
+            "example_en": "Diplomatic experience can help a team interpret local policy.",
+            "example_zh": "外交经验有助于团队理解当地政策。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/diplomatic"
+          },
+          {
+            "term": "regional",
+            "phonetic": "/ˈriː.dʒən.əl/",
+            "part_of_speech": "adjective",
+            "meaning_zh": "地区的",
+            "example_en": "The team consulted regional partners before choosing a pilot site.",
+            "example_zh": "团队在选定试点地点前咨询了地区合作伙伴。",
+            "pronunciation_source": "https://dictionary.cambridge.org/pronunciation/english/regional"
+          }
+        ],
+        "copyright_mode": "original_summary_only",
+        "meta": {
+          "content_origin": "independent_summary_of_verified_official_source",
+          "notes": [
+            "No same-day original selection JSON was available; prepared independently from the official publication."
+          ]
+        }
+      },
+      "upstream_title_zh": "欢迎埃德加德·卡根加入 a16z",
+      "revision": 1,
+      "title": "Welcome Edgard Kagan",
+      "title_zh": "欢迎埃德加德·卡根加入 a16z",
+      "author": "Anne Neuberger",
+      "published_at": "2026-11-20",
+      "topics": [
+        "Global Affairs",
+        "Technology Adoption"
+      ],
+      "source": {
+        "name": "Andreessen Horowitz",
+        "url": "https://a16z.com/welcome-edgard-kagan/",
+        "rights": "summary_only",
+        "copyright": "Original article copyright belongs to its rights holders.",
+        "permission_note": "Independently written bilingual summaries and analysis only; no full-text reproduction permission claimed."
+      },
+      "summary": "这篇官方任命公告切入一个适合创业团队的问题：国际化不只是翻译界面，还包括理解谁能推动当地实际采用。",
+      "segments": [
+        {
+          "id": "s01",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "a16z says it wants to help portfolio companies understand what governments and customers in different Indo-Pacific markets need. It has brought former U.S. diplomat Edgard Kagan in as a Global Affairs advisor.",
+          "zh": "a16z 表示，希望帮助被投企业理解印太各市场的政府与客户需求，并邀请前美国外交官埃德加德·卡根担任全球事务顾问。"
+        },
+        {
+          "id": "s02",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "The announcement points to Kagan's experience in Malaysia and elsewhere in the region. It presents that background as a way for founders to understand who makes decisions and which local relationships may help a technology gain acceptance.",
+          "zh": "公告以卡根在马来西亚及该地区其他地方的经历为依据，认为这些经验能帮助创业者理解决策者是谁，以及哪些当地合作关系可能促进技术落地。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-64e6c1db24d62ccc97812b67",
+          "segment_id": null,
+          "example_en": "Reliable connectivity underpins many public services.",
+          "example_zh": "可靠的网络连接为许多公共服务奠定基础。",
+          "part_of_speech": "verb",
+          "term": "underpin",
+          "meaning_zh": "为……奠定基础",
+          "phonetic": "/ˌʌn.dɚˈpɪn/"
+        },
+        {
+          "id": "up-43478f53301961236d3e814c",
+          "segment_id": null,
+          "example_en": "The two markets have distinct procurement rules.",
+          "example_zh": "这两个市场的采购规则各不相同。",
+          "part_of_speech": "adjective",
+          "term": "distinct",
+          "meaning_zh": "各不相同的",
+          "phonetic": "/dɪˈstɪŋkt/"
+        },
+        {
+          "id": "up-a9689b11231fe23888612935",
+          "segment_id": null,
+          "example_en": "Data residency is a priority for the agency.",
+          "example_zh": "数据驻留是该机构的优先事项。",
+          "part_of_speech": "noun",
+          "term": "priority",
+          "meaning_zh": "优先事项",
+          "phonetic": "/praɪˈɔːr.ə.t̬i/"
+        },
+        {
+          "id": "up-92ea1ac5f3dc01604a074c52",
+          "segment_id": null,
+          "example_en": "The team's mission is to make the service easier to access.",
+          "example_zh": "团队的使命是降低服务的使用门槛。",
+          "part_of_speech": "noun",
+          "term": "mission",
+          "meaning_zh": "使命",
+          "phonetic": "/ˈmɪʃ.ən/"
+        },
+        {
+          "id": "up-bb269d2cb377aab9366cd74f",
+          "segment_id": null,
+          "example_en": "The partnership pairs a software vendor with a local operator.",
+          "example_zh": "这项合作将软件供应商与本地运营商连接起来。",
+          "part_of_speech": "noun",
+          "term": "partnership",
+          "meaning_zh": "合作关系",
+          "phonetic": "/ˈpɑːrt.nɚ.ʃɪp/"
+        },
+        {
+          "id": "up-5ba9ca95b6c21ccdd2904db6",
+          "segment_id": null,
+          "example_en": "A pilot does not guarantee adoption across an entire agency.",
+          "example_zh": "试点不保证整个机构都会采用。",
+          "part_of_speech": "noun",
+          "term": "adoption",
+          "meaning_zh": "采用",
+          "phonetic": "/əˈdɑːp.ʃən/"
+        },
+        {
+          "id": "up-8eb4bc727f1af35232e9a96c",
+          "segment_id": null,
+          "example_en": "Training can strengthen a partner's ability to support customers.",
+          "example_zh": "培训可以增强合作伙伴支持客户的能力。",
+          "part_of_speech": "verb",
+          "term": "strengthen",
+          "meaning_zh": "增强",
+          "phonetic": "/ˈstreŋ.θən/"
+        },
+        {
+          "id": "up-5422a9ecca432f65d12aa6d1",
+          "segment_id": null,
+          "example_en": "The ambassador spoke about trade at the forum.",
+          "example_zh": "大使在论坛上谈到了贸易。",
+          "part_of_speech": "noun",
+          "term": "ambassador",
+          "meaning_zh": "大使",
+          "phonetic": "/æmˈbæs.ə.dɚ/"
+        },
+        {
+          "id": "up-b8e5f16af9e64c9dfd3ceb5d",
+          "segment_id": null,
+          "example_en": "Diplomatic experience can help a team interpret local policy.",
+          "example_zh": "外交经验有助于团队理解当地政策。",
+          "part_of_speech": "adjective",
+          "term": "diplomatic",
+          "meaning_zh": "外交的",
+          "phonetic": "/ˌdɪp.ləˈmæt̬.ɪk/"
+        },
+        {
+          "id": "up-5a8ca60711e5b2e016c12d3e",
+          "segment_id": null,
+          "example_en": "The team consulted regional partners before choosing a pilot site.",
+          "example_zh": "团队在选定试点地点前咨询了地区合作伙伴。",
+          "part_of_speech": "adjective",
+          "term": "regional",
+          "meaning_zh": "地区的",
+          "phonetic": "/ˈriː.dʒən.əl/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "公告把地区知识和合作关系视为技术进入新市场的条件，而不是工程完成后才处理的附属工作。",
+        "key_points": [
+          "公告明确区分各市场的需求与决策方式，并把顾问经验与被投企业的合作问题联系起来。"
+        ],
+        "discussion": [
+          "跨境产品验证应把使用者、采购方和审批方分别列出。产品演示得到使用者认可，不代表预算或合规审批已就绪。",
+          "先挑一个市场和场景，列出采购发起人、审批方和本地实施负责人，再把下一个可验证的采购节点写下来。比起统计见了多少合作方，能否确认试点负责人和下一步承诺更有判断力。"
+        ],
+        "limitations": "这是一份任命公告，没有公布试点结果、采购周期、采用率或具体合作安排，不能据此判断顾问能否改变商业结果。",
+        "independent_judgment": "先挑一个市场和场景，列出采购发起人、审批方和本地实施负责人，再把下一个可验证的采购节点写下来。比起统计见了多少合作方，能否确认试点负责人和下一步承诺更有判断力。"
+      }
+    }
+  ]
+}
