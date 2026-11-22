@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "article": {
-    "title": "Welcome Edgard Kagan",
-    "title_zh": "欢迎埃德加德·卡根加入 a16z",
+    "title": "Charts of the Week: There is No Gen Z",
+    "title_zh": "本周图表：没有整齐划一的 Z 世代",
     "published_at": "2026-11-20",
-    "url": "https://a16z.com/welcome-edgard-kagan/"
+    "url": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen"
   },
   "words": [
     {
-      "term": "underpin",
-      "ipa": "/ˌʌn.dɚˈpɪn/",
-      "meaning_zh": "为……奠定基础"
+      "term": "fragmentation",
+      "ipa": "/ˌfræɡ.menˈteɪ.ʃən/",
+      "meaning_zh": "群体偏好的碎片化"
     },
     {
-      "term": "distinct",
-      "ipa": "/dɪˈstɪŋkt/",
-      "meaning_zh": "各不相同的"
+      "term": "cohort",
+      "ipa": "/ˈkoʊ.hɔːrt/",
+      "meaning_zh": "具有共同特征的群体"
     },
     {
-      "term": "priority",
-      "ipa": "/praɪˈɔːr.ə.t̬i/",
-      "meaning_zh": "优先事项"
+      "term": "affiliation",
+      "ipa": "/əˌfɪl.iˈeɪ.ʃən/",
+      "meaning_zh": "政治归属"
     },
     {
-      "term": "mission",
-      "ipa": "/ˈmɪʃ.ən/",
-      "meaning_zh": "使命"
+      "term": "maturation",
+      "ipa": "/ˌmætʃ.əˈreɪ.ʃən/",
+      "meaning_zh": "步入成年的过程"
     },
     {
-      "term": "partnership",
-      "ipa": "/ˈpɑːrt.nɚ.ʃɪp/",
-      "meaning_zh": "合作关系"
+      "term": "spiked",
+      "ipa": "/spaɪkt/",
+      "meaning_zh": "突然激增"
     },
     {
-      "term": "adoption",
-      "ipa": "/əˈdɑːp.ʃən/",
-      "meaning_zh": "采用"
+      "term": "resolution",
+      "ipa": "/ˌrez.əˈluː.ʃən/",
+      "meaning_zh": "客服问题的解决"
     },
     {
-      "term": "strengthen",
-      "ipa": "/ˈstreŋ.θən/",
-      "meaning_zh": "增强"
+      "term": "deluge",
+      "ipa": "/ˈdel.juːdʒ/",
+      "meaning_zh": "骤然涌入的大量请求"
     },
     {
-      "term": "ambassador",
-      "ipa": "/æmˈbæs.ə.dɚ/",
-      "meaning_zh": "大使"
+      "term": "uptick",
+      "ipa": "/ˈʌp.tɪk/",
+      "meaning_zh": "小幅上升"
     },
     {
-      "term": "diplomatic",
-      "ipa": "/ˌdɪp.ləˈmæt̬.ɪk/",
-      "meaning_zh": "外交的"
+      "term": "proprietary",
+      "ipa": "/prəˈpraɪə.ter.i/",
+      "meaning_zh": "专有的"
     },
     {
-      "term": "regional",
-      "ipa": "/ˈriː.dʒən.əl/",
-      "meaning_zh": "地区的"
+      "term": "methodological",
+      "ipa": "/ˌmeθ.ə.dəlˈɑː.dʒɪ.kəl/",
+      "meaning_zh": "与研究方法有关的"
     }
   ]
 }
