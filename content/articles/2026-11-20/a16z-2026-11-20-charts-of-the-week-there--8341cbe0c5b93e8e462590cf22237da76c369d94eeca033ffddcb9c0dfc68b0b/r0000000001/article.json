@@ -1,0 +1,322 @@
+{
+  "contract": "bilingual-reader.provisional",
+  "schema_version": "1.0",
+  "articles": [
+    {
+      "id": "a16z-2026-11-20-charts-of-the-week-there-is-no-gen-z",
+      "upstream_snapshot": {
+        "schema_version": "1.0.0",
+        "id": "a16z-2026-11-20-charts-of-the-week-there-is-no-gen-z",
+        "source": {
+          "publisher": "Andreessen Horowitz",
+          "domain": "www.a16z.news",
+          "content_type": "official_article"
+        },
+        "title": "Charts of the Week: There is No Gen Z",
+        "author": [
+          "Moses Sternstein"
+        ],
+        "published_at": "2026-11-20",
+        "selected_at": "2026-11-22",
+        "url": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen",
+        "topics": [
+          "Audience Research",
+          "AI Customer Support",
+          "AI Economics"
+        ],
+        "selection_reason": "它用青年群体调查、旅行中断的运营数据和 AI 使用统计，展示了为什么必须先问清样本与指标口径，再用数据做产品判断。",
+        "segments": [
+          {
+            "id": "s1",
+            "en": "A category can be easy to name and still be a poor shortcut for predicting behavior. The newsletter examines whether young adults who share a birth-era label actually share a recognizable mix of preferences across four countries.",
+            "zh": "一个人群容易命名，不代表用它就能准确预测行为。这期通讯比较了四个国家，探讨同属一个世代的年轻人是否真的拥有一套容易识别的共同偏好。"
+          },
+          {
+            "id": "s2",
+            "en": "In the survey cited by Sternstein, political answers were less useful for identifying national origin among younger respondents than among older respondents. The author suggests different media diets may help explain why, but the comparison does not isolate the effect of recommendations from age, place, or other influences.",
+            "zh": "斯特恩斯坦引用的调查显示，年轻受访者的政治问卷答案不如年长受访者的答案能区分国别。作者认为不同的媒体使用习惯可能是原因之一，但这项比较没有把推荐机制的影响与年龄、地域等因素独立分开。"
+          },
+          {
+            "id": "s3",
+            "en": "An interruption to American air travel provides a different example of why averages can mislead. A business-travel platform recorded a jump in alternative bookings and a much larger volume of automated support chats while its reported share of resolved chats stayed close to normal.",
+            "zh": "美国一次航班运行中断提供了另一个例子，说明均值未必能描述高峰。一个商旅平台记录到替代预订明显增加，自动客服接待量增长更大，但平台公布的会话解决比例接近平时。"
+          },
+          {
+            "id": "s4",
+            "en": "The final section turns to AI investment. Usage and spending measures from different providers offer conflicting pictures because their customer bases and units of analysis differ. Treat each one as a window into a particular market segment rather than a definitive market total.",
+            "zh": "最后一部分转向 AI 投资。不同服务提供方的使用量和支出数据呈现不同图景，因为客户群和统计单位并不一致。每套数据都更适合观察自身覆盖的市场，而不是当成行业总量。"
+          }
+        ],
+        "analysis": {
+          "core_thesis": "贯穿这期通讯的问题不是有没有数据，而是数据代表谁、在测什么。世代、客服解决率和模型用量都容易被误读成更宽泛的结论。",
+          "supporting_evidence": [
+            "四国调查中，同一组政治题更容易区分年长受访者的国别。它支持检验标签的预测力，但不意味着国籍完全无关。",
+            "通讯援引 Navan 的事件数据：自动客服会话量接近平日的五倍，平台所报解决率仍在约八成。",
+            "同为模型使用信号，Databricks 和 OpenRouter 观察的是不同入口和使用群体，不能把两套份额直接拼成行业估算。"
+          ],
+          "industry_significance": [
+            "做青年用户研究时，可同时按年龄和实际任务分组，用同一批留出样本比较哪种分组更能预测转化或复访。",
+            "评估客服自动化时，先定义解决：例如无需人工、七天内不重复来访、退款正确，再把高峰表现与常态基线分开对照。",
+            "写 AI 采购或行业备忘录时，为每张图标注统计单位、渠道、时间窗和排除项。先统一分母，再谈份额与增长。"
+          ],
+          "limitations": [
+            "跨国问卷是相关性证据，不能据此证明短视频平台导致偏好分化。",
+            "一次旅行故障的单平台数据不能证明模型优于人工或在其他服务上有同样效果；解决率也未反映前后案例难度与返工。",
+            "用量与支出代表使用规模或投入，不能直接反推出生产率、收益或整个市场的模型份额。"
+          ],
+          "independent_judgment": "把年龄标签视为初始筛选条件，不当作产品画像。下一步用一份同时覆盖年龄与使用场景的问卷对比两个分组模型，再在留出样本上验证真实行为。若差异不能复现，就保持更简单的分组，而不是为每个小圈层硬做方案。"
+        },
+        "vocabulary": [
+          {
+            "term": "fragmentation",
+            "phonetic": "/ˌfræɡ.menˈteɪ.ʃən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "群体偏好的碎片化",
+            "example_en": "Media fragmentation makes a single campus campaign less reliable.",
+            "example_zh": "媒体渠道碎片化之后，单一校园宣传活动的效果更难预测。"
+          },
+          {
+            "term": "cohort",
+            "phonetic": "/ˈkoʊ.hɔːrt/",
+            "part_of_speech": "n.",
+            "meaning_zh": "具有共同特征的群体",
+            "example_en": "The research team followed the same cohort across two survey waves.",
+            "example_zh": "研究团队在两轮调查中追踪了同一群体。"
+          },
+          {
+            "term": "affiliation",
+            "phonetic": "/əˌfɪl.iˈeɪ.ʃən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "政治归属",
+            "example_en": "The survey did not infer political affiliation from app usage.",
+            "example_zh": "调查没有根据应用使用情况推断政治归属。"
+          },
+          {
+            "term": "maturation",
+            "phonetic": "/ˌmætʃ.əˈreɪ.ʃən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "步入成年的过程",
+            "example_en": "The study followed changes in news habits during the cohort's maturation.",
+            "example_zh": "研究追踪了该群体步入成年过程中的新闻习惯变化。"
+          },
+          {
+            "term": "spiked",
+            "phonetic": "/spaɪkt/",
+            "part_of_speech": "v.",
+            "meaning_zh": "突然激增",
+            "example_en": "Call volume spiked after the station announced a closure.",
+            "example_zh": "车站宣布关闭后，来电量骤增。"
+          },
+          {
+            "term": "resolution",
+            "phonetic": "/ˌrez.əˈluː.ʃən/",
+            "part_of_speech": "n.",
+            "meaning_zh": "客服问题的解决",
+            "example_en": "The help desk tracks the resolution of each disputed charge.",
+            "example_zh": "客服团队追踪每笔有争议扣款的处理结果。"
+          },
+          {
+            "term": "deluge",
+            "phonetic": "/ˈdel.juːdʒ/",
+            "part_of_speech": "n.",
+            "meaning_zh": "骤然涌入的大量请求",
+            "example_en": "A deluge of refund requests arrived just before closing time.",
+            "example_zh": "临近下班时，大量退款请求突然涌入。"
+          },
+          {
+            "term": "uptick",
+            "phonetic": "/ˈʌp.tɪk/",
+            "part_of_speech": "n.",
+            "meaning_zh": "小幅上升",
+            "example_en": "A modest uptick in complaints prompted a review of the booking form.",
+            "example_zh": "投诉小幅增加，促使团队检查预订表单。"
+          },
+          {
+            "term": "proprietary",
+            "phonetic": "/prəˈpraɪə.ter.i/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "专有的",
+            "example_en": "The benchmark distinguished proprietary models from open-weight models.",
+            "example_zh": "该基准将专有模型与开放权重模型分开统计。"
+          },
+          {
+            "term": "methodological",
+            "phonetic": "/ˌmeθ.ə.dəlˈɑː.dʒɪ.kəl/",
+            "part_of_speech": "adj.",
+            "meaning_zh": "与研究方法有关的",
+            "example_en": "A methodological change altered the report's definition of an active user.",
+            "example_zh": "研究方法的变更改变了报告对活跃用户的定义。"
+          }
+        ],
+        "copyright_mode": "original_summary_only"
+      },
+      "upstream_title_zh": "本周图表：没有整齐划一的 Z 世代",
+      "revision": 1,
+      "title": "Charts of the Week: There is No Gen Z",
+      "title_zh": "本周图表：没有整齐划一的 Z 世代",
+      "author": "Moses Sternstein",
+      "published_at": "2026-11-20",
+      "topics": [
+        "Audience Research",
+        "AI Customer Support",
+        "AI Economics"
+      ],
+      "source": {
+        "name": "www.a16z.news",
+        "url": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen",
+        "rights": "summary_only",
+        "copyright": "Source article by Moses Sternstein, published by Andreessen Horowitz. Bilingual summaries, analysis and vocabulary examples are original writing.",
+        "permission_note": "No original article full text or chart reproduction included. Recreated against verified official source; the original daily-selection attachment was unavailable."
+      },
+      "summary": "它用青年群体调查、旅行中断的运营数据和 AI 使用统计，展示了为什么必须先问清样本与指标口径，再用数据做产品判断。",
+      "segments": [
+        {
+          "id": "s1",
+          "order": 0,
+          "kind": "paragraph",
+          "en": "A category can be easy to name and still be a poor shortcut for predicting behavior. The newsletter examines whether young adults who share a birth-era label actually share a recognizable mix of preferences across four countries.",
+          "zh": "一个人群容易命名，不代表用它就能准确预测行为。这期通讯比较了四个国家，探讨同属一个世代的年轻人是否真的拥有一套容易识别的共同偏好。"
+        },
+        {
+          "id": "s2",
+          "order": 1,
+          "kind": "paragraph",
+          "en": "In the survey cited by Sternstein, political answers were less useful for identifying national origin among younger respondents than among older respondents. The author suggests different media diets may help explain why, but the comparison does not isolate the effect of recommendations from age, place, or other influences.",
+          "zh": "斯特恩斯坦引用的调查显示，年轻受访者的政治问卷答案不如年长受访者的答案能区分国别。作者认为不同的媒体使用习惯可能是原因之一，但这项比较没有把推荐机制的影响与年龄、地域等因素独立分开。"
+        },
+        {
+          "id": "s3",
+          "order": 2,
+          "kind": "paragraph",
+          "en": "An interruption to American air travel provides a different example of why averages can mislead. A business-travel platform recorded a jump in alternative bookings and a much larger volume of automated support chats while its reported share of resolved chats stayed close to normal.",
+          "zh": "美国一次航班运行中断提供了另一个例子，说明均值未必能描述高峰。一个商旅平台记录到替代预订明显增加，自动客服接待量增长更大，但平台公布的会话解决比例接近平时。"
+        },
+        {
+          "id": "s4",
+          "order": 3,
+          "kind": "paragraph",
+          "en": "The final section turns to AI investment. Usage and spending measures from different providers offer conflicting pictures because their customer bases and units of analysis differ. Treat each one as a window into a particular market segment rather than a definitive market total.",
+          "zh": "最后一部分转向 AI 投资。不同服务提供方的使用量和支出数据呈现不同图景，因为客户群和统计单位并不一致。每套数据都更适合观察自身覆盖的市场，而不是当成行业总量。"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "up-0f6af801e7f9ff6bbe2bd3b9",
+          "segment_id": null,
+          "example_en": "Media fragmentation makes a single campus campaign less reliable.",
+          "example_zh": "媒体渠道碎片化之后，单一校园宣传活动的效果更难预测。",
+          "part_of_speech": "n.",
+          "term": "fragmentation",
+          "meaning_zh": "群体偏好的碎片化",
+          "phonetic": "/ˌfræɡ.menˈteɪ.ʃən/"
+        },
+        {
+          "id": "up-1c7a95a2b66d7c1421a7f33a",
+          "segment_id": null,
+          "example_en": "The research team followed the same cohort across two survey waves.",
+          "example_zh": "研究团队在两轮调查中追踪了同一群体。",
+          "part_of_speech": "n.",
+          "term": "cohort",
+          "meaning_zh": "具有共同特征的群体",
+          "phonetic": "/ˈkoʊ.hɔːrt/"
+        },
+        {
+          "id": "up-696060d079d756f143b42a4d",
+          "segment_id": null,
+          "example_en": "The survey did not infer political affiliation from app usage.",
+          "example_zh": "调查没有根据应用使用情况推断政治归属。",
+          "part_of_speech": "n.",
+          "term": "affiliation",
+          "meaning_zh": "政治归属",
+          "phonetic": "/əˌfɪl.iˈeɪ.ʃən/"
+        },
+        {
+          "id": "up-8221413b07cc7d14eabebc41",
+          "segment_id": null,
+          "example_en": "The study followed changes in news habits during the cohort's maturation.",
+          "example_zh": "研究追踪了该群体步入成年过程中的新闻习惯变化。",
+          "part_of_speech": "n.",
+          "term": "maturation",
+          "meaning_zh": "步入成年的过程",
+          "phonetic": "/ˌmætʃ.əˈreɪ.ʃən/"
+        },
+        {
+          "id": "up-d0dceba9f3a3cf0e6662a518",
+          "segment_id": null,
+          "example_en": "Call volume spiked after the station announced a closure.",
+          "example_zh": "车站宣布关闭后，来电量骤增。",
+          "part_of_speech": "v.",
+          "term": "spiked",
+          "meaning_zh": "突然激增",
+          "phonetic": "/spaɪkt/"
+        },
+        {
+          "id": "up-e65d73eebe374a90aec56981",
+          "segment_id": null,
+          "example_en": "The help desk tracks the resolution of each disputed charge.",
+          "example_zh": "客服团队追踪每笔有争议扣款的处理结果。",
+          "part_of_speech": "n.",
+          "term": "resolution",
+          "meaning_zh": "客服问题的解决",
+          "phonetic": "/ˌrez.əˈluː.ʃən/"
+        },
+        {
+          "id": "up-ca20d07aba46a212eabf918c",
+          "segment_id": null,
+          "example_en": "A deluge of refund requests arrived just before closing time.",
+          "example_zh": "临近下班时，大量退款请求突然涌入。",
+          "part_of_speech": "n.",
+          "term": "deluge",
+          "meaning_zh": "骤然涌入的大量请求",
+          "phonetic": "/ˈdel.juːdʒ/"
+        },
+        {
+          "id": "up-6aedd3574ab7dd691a8e5fff",
+          "segment_id": null,
+          "example_en": "A modest uptick in complaints prompted a review of the booking form.",
+          "example_zh": "投诉小幅增加，促使团队检查预订表单。",
+          "part_of_speech": "n.",
+          "term": "uptick",
+          "meaning_zh": "小幅上升",
+          "phonetic": "/ˈʌp.tɪk/"
+        },
+        {
+          "id": "up-6a9a73f42e8831c5801401bc",
+          "segment_id": null,
+          "example_en": "The benchmark distinguished proprietary models from open-weight models.",
+          "example_zh": "该基准将专有模型与开放权重模型分开统计。",
+          "part_of_speech": "adj.",
+          "term": "proprietary",
+          "meaning_zh": "专有的",
+          "phonetic": "/prəˈpraɪə.ter.i/"
+        },
+        {
+          "id": "up-bfc065b7a678cc61a79503b0",
+          "segment_id": null,
+          "example_en": "A methodological change altered the report's definition of an active user.",
+          "example_zh": "研究方法的变更改变了报告对活跃用户的定义。",
+          "part_of_speech": "adj.",
+          "term": "methodological",
+          "meaning_zh": "与研究方法有关的",
+          "phonetic": "/ˌmeθ.ə.dəlˈɑː.dʒɪ.kəl/"
+        }
+      ],
+      "analysis": {
+        "summary_zh": "贯穿这期通讯的问题不是有没有数据，而是数据代表谁、在测什么。世代、客服解决率和模型用量都容易被误读成更宽泛的结论。",
+        "key_points": [
+          "四国调查中，同一组政治题更容易区分年长受访者的国别。它支持检验标签的预测力，但不意味着国籍完全无关。",
+          "通讯援引 Navan 的事件数据：自动客服会话量接近平日的五倍，平台所报解决率仍在约八成。",
+          "同为模型使用信号，Databricks 和 OpenRouter 观察的是不同入口和使用群体，不能把两套份额直接拼成行业估算。"
+        ],
+        "discussion": [
+          "做青年用户研究时，可同时按年龄和实际任务分组，用同一批留出样本比较哪种分组更能预测转化或复访。",
+          "评估客服自动化时，先定义解决：例如无需人工、七天内不重复来访、退款正确，再把高峰表现与常态基线分开对照。",
+          "写 AI 采购或行业备忘录时，为每张图标注统计单位、渠道、时间窗和排除项。先统一分母，再谈份额与增长。",
+          "把年龄标签视为初始筛选条件，不当作产品画像。下一步用一份同时覆盖年龄与使用场景的问卷对比两个分组模型，再在留出样本上验证真实行为。若差异不能复现，就保持更简单的分组，而不是为每个小圈层硬做方案。"
+        ],
+        "limitations": "跨国问卷是相关性证据，不能据此证明短视频平台导致偏好分化。\n\n一次旅行故障的单平台数据不能证明模型优于人工或在其他服务上有同样效果；解决率也未反映前后案例难度与返工。\n\n用量与支出代表使用规模或投入，不能直接反推出生产率、收益或整个市场的模型份额。",
+        "independent_judgment": "把年龄标签视为初始筛选条件，不当作产品画像。下一步用一份同时覆盖年龄与使用场景的问卷对比两个分组模型，再在留出样本上验证真实行为。若差异不能复现，就保持更简单的分组，而不是为每个小圈层硬做方案。"
+      }
+    }
+  ]
+}
