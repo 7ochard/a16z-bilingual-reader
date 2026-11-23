@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "article": {
-    "title": "Charts of the Week: There is No Gen Z",
-    "title_zh": "本周图表：没有整齐划一的 Z 世代",
-    "published_at": "2026-11-20",
-    "url": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen"
+    "title": "The Boring Company & the Future Underground",
+    "title_zh": "The Boring Company 与地下交通的未来",
+    "published_at": "2026-11-17",
+    "url": "https://www.a16z.news/p/the-boring-company-and-the-future"
   },
   "words": [
     {
-      "term": "fragmentation",
-      "ipa": "/ˌfræɡ.menˈteɪ.ʃən/",
-      "meaning_zh": "群体偏好的碎片化"
+      "term": "commute",
+      "ipa": "/kəˈmjuːt/",
+      "meaning_zh": "通勤"
     },
     {
-      "term": "cohort",
-      "ipa": "/ˈkoʊ.hɔːrt/",
-      "meaning_zh": "具有共同特征的群体"
+      "term": "vacuum",
+      "ipa": "/ˈvæk.juːm/",
+      "meaning_zh": "真空"
     },
     {
-      "term": "affiliation",
-      "ipa": "/əˌfɪl.iˈeɪ.ʃən/",
-      "meaning_zh": "政治归属"
+      "term": "obstacle",
+      "ipa": "/ˈɑːb.stə.kəl/",
+      "meaning_zh": "施工障碍"
     },
     {
-      "term": "maturation",
-      "ipa": "/ˌmætʃ.əˈreɪ.ʃən/",
-      "meaning_zh": "步入成年的过程"
+      "term": "optimize",
+      "ipa": "/ˈɑːp.tə.maɪz/",
+      "meaning_zh": "优化"
     },
     {
-      "term": "spiked",
-      "ipa": "/spaɪkt/",
-      "meaning_zh": "突然激增"
+      "term": "orbit",
+      "ipa": "/ˈɔːr.bɪt/",
+      "meaning_zh": "运行轨道"
     },
     {
-      "term": "resolution",
-      "ipa": "/ˌrez.əˈluː.ʃən/",
-      "meaning_zh": "客服问题的解决"
+      "term": "playbook",
+      "ipa": "/ˈpleɪ.bʊk/",
+      "meaning_zh": "可复用的策略"
     },
     {
-      "term": "deluge",
-      "ipa": "/ˈdel.juːdʒ/",
-      "meaning_zh": "骤然涌入的大量请求"
+      "term": "transit",
+      "ipa": "/ˈtræn.zɪt/",
+      "meaning_zh": "公共交通"
     },
     {
-      "term": "uptick",
-      "ipa": "/ˈʌp.tɪk/",
-      "meaning_zh": "小幅上升"
+      "term": "destination",
+      "ipa": "/ˌdes.təˈneɪ.ʃən/",
+      "meaning_zh": "目的地"
     },
     {
-      "term": "proprietary",
-      "ipa": "/prəˈpraɪə.ter.i/",
-      "meaning_zh": "专有的"
+      "term": "guidance",
+      "ipa": "/ˈɡaɪ.dəns/",
+      "meaning_zh": "制导"
     },
     {
-      "term": "methodological",
-      "ipa": "/ˌmeθ.ə.dəlˈɑː.dʒɪ.kəl/",
-      "meaning_zh": "与研究方法有关的"
+      "term": "capacity",
+      "ipa": "/kəˈpæs.ə.t̬i/",
+      "meaning_zh": "可用余力"
     }
   ]
 }

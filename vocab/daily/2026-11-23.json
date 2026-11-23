@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-23",
+  "article": {
+    "title": "The Boring Company & the Future Underground",
+    "title_zh": "The Boring Company 与地下交通的未来",
+    "published_at": "2026-11-17",
+    "url": "https://www.a16z.news/p/the-boring-company-and-the-future"
+  },
+  "words": [
+    {
+      "term": "commute",
+      "ipa": "/kəˈmjuːt/",
+      "meaning_zh": "通勤"
+    },
+    {
+      "term": "vacuum",
+      "ipa": "/ˈvæk.juːm/",
+      "meaning_zh": "真空"
+    },
+    {
+      "term": "obstacle",
+      "ipa": "/ˈɑːb.stə.kəl/",
+      "meaning_zh": "施工障碍"
+    },
+    {
+      "term": "optimize",
+      "ipa": "/ˈɑːp.tə.maɪz/",
+      "meaning_zh": "优化"
+    },
+    {
+      "term": "orbit",
+      "ipa": "/ˈɔːr.bɪt/",
+      "meaning_zh": "运行轨道"
+    },
+    {
+      "term": "playbook",
+      "ipa": "/ˈpleɪ.bʊk/",
+      "meaning_zh": "可复用的策略"
+    },
+    {
+      "term": "transit",
+      "ipa": "/ˈtræn.zɪt/",
+      "meaning_zh": "公共交通"
+    },
+    {
+      "term": "destination",
+      "ipa": "/ˌdes.təˈneɪ.ʃən/",
+      "meaning_zh": "目的地"
+    },
+    {
+      "term": "guidance",
+      "ipa": "/ˈɡaɪ.dəns/",
+      "meaning_zh": "制导"
+    },
+    {
+      "term": "capacity",
+      "ipa": "/kəˈpæs.ə.t̬i/",
+      "meaning_zh": "可用余力"
+    }
+  ]
+}
