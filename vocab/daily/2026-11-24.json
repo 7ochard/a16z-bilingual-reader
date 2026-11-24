@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-24",
+  "article": {
+    "title": "Welcome to the B2A Economy: How Agents Buy",
+    "title_zh": "走进 B2A 经济：智能体如何购物",
+    "published_at": "2026-11-23",
+    "url": "https://a16z.com/welcome-to-the-b2a-economy-how-agents-buy/"
+  },
+  "words": [
+    {
+      "term": "influence",
+      "ipa": "/ˈɪn.flu.əns/",
+      "meaning_zh": "影响购买选择"
+    },
+    {
+      "term": "distribution",
+      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
+      "meaning_zh": "商品分发"
+    },
+    {
+      "term": "merchant",
+      "ipa": "/ˈmɝː.tʃənt/",
+      "meaning_zh": "商家"
+    },
+    {
+      "term": "shortlist",
+      "ipa": "/ˈʃɔːrt.lɪst/",
+      "meaning_zh": "候选清单"
+    },
+    {
+      "term": "catalog",
+      "ipa": "/ˈkæt̬.əl.ɑːɡ/",
+      "meaning_zh": "商品目录"
+    },
+    {
+      "term": "metadata",
+      "ipa": "/ˈmet̬.əˌdeɪ.t̬ə/",
+      "meaning_zh": "商品元数据"
+    },
+    {
+      "term": "superiority",
+      "ipa": "/səˌpɪr.iˈɔːr.ə.t̬i/",
+      "meaning_zh": "特定场景下的优势"
+    },
+    {
+      "term": "persona",
+      "ipa": "/pɚˈsoʊ.nə/",
+      "meaning_zh": "用户画像"
+    },
+    {
+      "term": "crawler",
+      "ipa": "/ˈkrɑː.lɚ/",
+      "meaning_zh": "网页爬虫"
+    },
+    {
+      "term": "verification",
+      "ipa": "/ˌver.ə.fəˈkeɪ.ʃən/",
+      "meaning_zh": "信息核验"
+    }
+  ]
+}

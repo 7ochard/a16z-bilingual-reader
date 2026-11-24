@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "article": {
-    "title": "The Boring Company & the Future Underground",
-    "title_zh": "The Boring Company 与地下交通的未来",
-    "published_at": "2026-11-17",
-    "url": "https://www.a16z.news/p/the-boring-company-and-the-future"
+    "title": "Welcome to the B2A Economy: How Agents Buy",
+    "title_zh": "走进 B2A 经济：智能体如何购物",
+    "published_at": "2026-11-23",
+    "url": "https://a16z.com/welcome-to-the-b2a-economy-how-agents-buy/"
   },
   "words": [
     {
-      "term": "commute",
-      "ipa": "/kəˈmjuːt/",
-      "meaning_zh": "通勤"
+      "term": "influence",
+      "ipa": "/ˈɪn.flu.əns/",
+      "meaning_zh": "影响购买选择"
     },
     {
-      "term": "vacuum",
-      "ipa": "/ˈvæk.juːm/",
-      "meaning_zh": "真空"
+      "term": "distribution",
+      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
+      "meaning_zh": "商品分发"
     },
     {
-      "term": "obstacle",
-      "ipa": "/ˈɑːb.stə.kəl/",
-      "meaning_zh": "施工障碍"
+      "term": "merchant",
+      "ipa": "/ˈmɝː.tʃənt/",
+      "meaning_zh": "商家"
     },
     {
-      "term": "optimize",
-      "ipa": "/ˈɑːp.tə.maɪz/",
-      "meaning_zh": "优化"
+      "term": "shortlist",
+      "ipa": "/ˈʃɔːrt.lɪst/",
+      "meaning_zh": "候选清单"
     },
     {
-      "term": "orbit",
-      "ipa": "/ˈɔːr.bɪt/",
-      "meaning_zh": "运行轨道"
+      "term": "catalog",
+      "ipa": "/ˈkæt̬.əl.ɑːɡ/",
+      "meaning_zh": "商品目录"
     },
     {
-      "term": "playbook",
-      "ipa": "/ˈpleɪ.bʊk/",
-      "meaning_zh": "可复用的策略"
+      "term": "metadata",
+      "ipa": "/ˈmet̬.əˌdeɪ.t̬ə/",
+      "meaning_zh": "商品元数据"
     },
     {
-      "term": "transit",
-      "ipa": "/ˈtræn.zɪt/",
-      "meaning_zh": "公共交通"
+      "term": "superiority",
+      "ipa": "/səˌpɪr.iˈɔːr.ə.t̬i/",
+      "meaning_zh": "特定场景下的优势"
     },
     {
-      "term": "destination",
-      "ipa": "/ˌdes.təˈneɪ.ʃən/",
-      "meaning_zh": "目的地"
+      "term": "persona",
+      "ipa": "/pɚˈsoʊ.nə/",
+      "meaning_zh": "用户画像"
     },
     {
-      "term": "guidance",
-      "ipa": "/ˈɡaɪ.dəns/",
-      "meaning_zh": "制导"
+      "term": "crawler",
+      "ipa": "/ˈkrɑː.lɚ/",
+      "meaning_zh": "网页爬虫"
     },
     {
-      "term": "capacity",
-      "ipa": "/kəˈpæs.ə.t̬i/",
-      "meaning_zh": "可用余力"
+      "term": "verification",
+      "ipa": "/ˌver.ə.fəˈkeɪ.ʃən/",
+      "meaning_zh": "信息核验"
     }
   ]
 }
