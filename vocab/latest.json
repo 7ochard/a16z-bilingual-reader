@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "article": {
-    "title": "Welcome to the B2A Economy: How Agents Buy",
-    "title_zh": "走进 B2A 经济：智能体如何购物",
+    "title": "Investing in Embo",
+    "title_zh": "投资 Embo",
     "published_at": "2026-11-23",
-    "url": "https://a16z.com/welcome-to-the-b2a-economy-how-agents-buy/"
+    "url": "https://a16z.com/announcement/investing-in-embo/"
   },
   "words": [
     {
-      "term": "influence",
-      "ipa": "/ˈɪn.flu.əns/",
-      "meaning_zh": "影响购买选择"
+      "term": "fragile",
+      "ipa": "/ˈfrædʒ.əl/",
+      "meaning_zh": "容易因环境变化失效"
     },
     {
-      "term": "distribution",
-      "ipa": "/ˌdɪs.trɪˈbjuː.ʃən/",
-      "meaning_zh": "商品分发"
+      "term": "unfamiliar",
+      "ipa": "/ʌn.fəˈmɪl.i.jɚ/",
+      "meaning_zh": "训练中未见过的"
     },
     {
-      "term": "merchant",
-      "ipa": "/ˈmɝː.tʃənt/",
-      "meaning_zh": "商家"
+      "term": "conviction",
+      "ipa": "/kənˈvɪk.ʃən/",
+      "meaning_zh": "坚定的技术判断"
     },
     {
-      "term": "shortlist",
-      "ipa": "/ˈʃɔːrt.lɪst/",
-      "meaning_zh": "候选清单"
+      "term": "anticipate",
+      "ipa": "/ænˈtɪs.ə.peɪt/",
+      "meaning_zh": "预判动作后果"
     },
     {
-      "term": "catalog",
-      "ipa": "/ˈkæt̬.əl.ɑːɡ/",
-      "meaning_zh": "商品目录"
+      "term": "adapt",
+      "ipa": "/əˈdæpt/",
+      "meaning_zh": "适应新环境"
     },
     {
-      "term": "metadata",
-      "ipa": "/ˈmet̬.əˌdeɪ.t̬ə/",
-      "meaning_zh": "商品元数据"
+      "term": "pursuit",
+      "ipa": "/pɚˈsuːt/",
+      "meaning_zh": "长期研究方向"
     },
     {
-      "term": "superiority",
-      "ipa": "/səˌpɪr.iˈɔːr.ə.t̬i/",
-      "meaning_zh": "特定场景下的优势"
+      "term": "doctoral",
+      "ipa": "/ˈdɑːk.tɚ.əl/",
+      "meaning_zh": "博士阶段的"
     },
     {
-      "term": "persona",
-      "ipa": "/pɚˈsoʊ.nə/",
-      "meaning_zh": "用户画像"
+      "term": "generalization",
+      "ipa": "/ˌdʒen.ər.əl.əˈzeɪ.ʃən/",
+      "meaning_zh": "泛化到未见场景"
     },
     {
-      "term": "crawler",
-      "ipa": "/ˈkrɑː.lɚ/",
-      "meaning_zh": "网页爬虫"
+      "term": "resilience",
+      "ipa": "/rɪˈzɪl.jəns/",
+      "meaning_zh": "受扰后恢复能力"
     },
     {
-      "term": "verification",
-      "ipa": "/ˌver.ə.fəˈkeɪ.ʃən/",
-      "meaning_zh": "信息核验"
+      "term": "reinforcement",
+      "ipa": "/ˌriː.ɪnˈfɔːrs.mənt/",
+      "meaning_zh": "用反馈强化行为"
     }
   ]
 }
