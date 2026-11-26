@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "article": {
-    "title": "Investing in Embo",
-    "title_zh": "投资 Embo",
-    "published_at": "2026-11-23",
-    "url": "https://a16z.com/announcement/investing-in-embo/"
+    "title": "300+ books to read: A gift guide for curious readers",
+    "title_zh": "300 多本书：送给好奇读者的选书指南",
+    "published_at": "2026-11-24",
+    "url": "https://a16zfrontier.com/posts/article/300-books-to-read-gift-guide/"
   },
   "words": [
     {
-      "term": "fragile",
-      "ipa": "/ˈfrædʒ.əl/",
-      "meaning_zh": "容易因环境变化失效"
+      "term": "tradition",
+      "ipa": "/trəˈdɪʃ.ən/",
+      "meaning_zh": "定期分享书单的传统"
     },
     {
-      "term": "unfamiliar",
-      "ipa": "/ʌn.fəˈmɪl.i.jɚ/",
-      "meaning_zh": "训练中未见过的"
+      "term": "embody",
+      "ipa": "/ɪmˈbɑː.di/",
+      "meaning_zh": "以具体形式体现思想"
     },
     {
-      "term": "conviction",
-      "ipa": "/kənˈvɪk.ʃən/",
-      "meaning_zh": "坚定的技术判断"
+      "term": "inspire",
+      "ipa": "/ɪnˈspaɪr/",
+      "meaning_zh": "激发新的想法"
     },
     {
-      "term": "anticipate",
-      "ipa": "/ænˈtɪs.ə.peɪt/",
-      "meaning_zh": "预判动作后果"
+      "term": "curate",
+      "ipa": "/ˈkjʊr.eɪt/",
+      "meaning_zh": "为特定读者精选书籍"
     },
     {
-      "term": "adapt",
-      "ipa": "/əˈdæpt/",
-      "meaning_zh": "适应新环境"
+      "term": "accelerator",
+      "ipa": "/ekˈsel.ɚ.eɪ.t̬ɚ/",
+      "meaning_zh": "创业加速项目"
     },
     {
-      "term": "pursuit",
-      "ipa": "/pɚˈsuːt/",
-      "meaning_zh": "长期研究方向"
+      "term": "recommendation",
+      "ipa": "/ˌrek.ə.menˈdeɪ.ʃən/",
+      "meaning_zh": "推荐的书目"
     },
     {
-      "term": "doctoral",
-      "ipa": "/ˈdɑːk.tɚ.əl/",
-      "meaning_zh": "博士阶段的"
-    },
-    {
-      "term": "generalization",
-      "ipa": "/ˌdʒen.ər.əl.əˈzeɪ.ʃən/",
-      "meaning_zh": "泛化到未见场景"
+      "term": "optimize",
+      "ipa": "/ˈɑːp.tə.maɪz/",
+      "meaning_zh": "按约束改进设计表现"
     },
     {
       "term": "resilience",
       "ipa": "/rɪˈzɪl.jəns/",
-      "meaning_zh": "受扰后恢复能力"
+      "meaning_zh": "面对挫折的恢复力"
     },
     {
-      "term": "reinforcement",
-      "ipa": "/ˌriː.ɪnˈfɔːrs.mənt/",
-      "meaning_zh": "用反馈强化行为"
+      "term": "novelty",
+      "ipa": "/ˈnɑː.vəl.t̬i/",
+      "meaning_zh": "新鲜感或新奇体验"
+    },
+    {
+      "term": "propel",
+      "ipa": "/prəˈpel/",
+      "meaning_zh": "驱动人持续行动"
     }
   ]
 }
