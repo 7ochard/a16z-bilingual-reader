@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "article": {
-    "title": "300+ books to read: A gift guide for curious readers",
-    "title_zh": "300 多本书：送给好奇读者的选书指南",
-    "published_at": "2026-11-24",
-    "url": "https://a16zfrontier.com/posts/article/300-books-to-read-gift-guide/"
+    "title": "Why do math when AI can?",
+    "title_zh": "AI 已经会做数学，人为什么还要研究数学？",
+    "published_at": "2026-11-21",
+    "url": "https://a16zfrontier.com/posts/article/ai-math-human-why/"
   },
   "words": [
     {
-      "term": "tradition",
-      "ipa": "/trəˈdɪʃ.ən/",
-      "meaning_zh": "定期分享书单的传统"
+      "term": "existential",
+      "ipa": "/ˌeɡ.zɪˈsten.ʃəl/",
+      "meaning_zh": "关乎学科存在意义的"
     },
     {
-      "term": "embody",
-      "ipa": "/ɪmˈbɑː.di/",
-      "meaning_zh": "以具体形式体现思想"
+      "term": "conjecture",
+      "ipa": "/kənˈdʒek.tʃɚ/",
+      "meaning_zh": "待证明的数学猜想"
     },
     {
-      "term": "inspire",
-      "ipa": "/ɪnˈspaɪr/",
-      "meaning_zh": "激发新的想法"
+      "term": "manuscript",
+      "ipa": "/ˈmæn.jə.skrɪpt/",
+      "meaning_zh": "尚待评阅的学术稿件"
     },
     {
-      "term": "curate",
-      "ipa": "/ˈkjʊr.eɪt/",
-      "meaning_zh": "为特定读者精选书籍"
+      "term": "bewilderment",
+      "ipa": "/bɪˈwɪl.dɚ.mənt/",
+      "meaning_zh": "面对突变时的困惑"
     },
     {
-      "term": "accelerator",
-      "ipa": "/ekˈsel.ɚ.eɪ.t̬ɚ/",
-      "meaning_zh": "创业加速项目"
+      "term": "cryptography",
+      "ipa": "/krɪpˈtɑː.ɡrə.fi/",
+      "meaning_zh": "研究信息安全的密码学"
     },
     {
-      "term": "recommendation",
-      "ipa": "/ˌrek.ə.menˈdeɪ.ʃən/",
-      "meaning_zh": "推荐的书目"
+      "term": "hypothesis",
+      "ipa": "/haɪˈpɑː.θə.sɪs/",
+      "meaning_zh": "有待证明的数学假说"
     },
     {
-      "term": "optimize",
-      "ipa": "/ˈɑːp.tə.maɪz/",
-      "meaning_zh": "按约束改进设计表现"
+      "term": "verification",
+      "ipa": "/ˌver.ə.fəˈkeɪ.ʃən/",
+      "meaning_zh": "核查证明是否成立"
     },
     {
-      "term": "resilience",
-      "ipa": "/rɪˈzɪl.jəns/",
-      "meaning_zh": "面对挫折的恢复力"
+      "term": "intelligible",
+      "ipa": "/ɪnˈtel.ə.dʒə.bəl/",
+      "meaning_zh": "推理清楚而可理解的"
     },
     {
-      "term": "novelty",
-      "ipa": "/ˈnɑː.vəl.t̬i/",
-      "meaning_zh": "新鲜感或新奇体验"
+      "term": "theorem",
+      "ipa": "/ˈθiː.rəm/",
+      "meaning_zh": "已被证明的定理"
     },
     {
-      "term": "propel",
-      "ipa": "/prəˈpel/",
-      "meaning_zh": "驱动人持续行动"
+      "term": "lattice",
+      "ipa": "/ˈlæt̬.ɪs/",
+      "meaning_zh": "按固定规则排列的格点集"
     }
   ]
 }
