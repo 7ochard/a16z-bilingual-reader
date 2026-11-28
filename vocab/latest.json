@@ -1,61 +1,61 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "article": {
-    "title": "Why do math when AI can?",
-    "title_zh": "AI 已经会做数学，人为什么还要研究数学？",
-    "published_at": "2026-11-21",
-    "url": "https://a16zfrontier.com/posts/article/ai-math-human-why/"
+    "title": "Enterprises need more than payments to put agents to work",
+    "title_zh": "企业要让 AI 智能体真正干活，光有支付还不够",
+    "published_at": "2026-11-17",
+    "url": "https://a16zfrontier.com/posts/article/enterprises-need-more-than-payments/"
   },
   "words": [
     {
-      "term": "existential",
-      "ipa": "/ˌeɡ.zɪˈsten.ʃəl/",
-      "meaning_zh": "关乎学科存在意义的"
+      "term": "infrastructure",
+      "ipa": "/ˈɪn.frəˌstrʌk.tʃɚ/",
+      "meaning_zh": "支撑智能体运行的基础设施"
     },
     {
-      "term": "conjecture",
-      "ipa": "/kənˈdʒek.tʃɚ/",
-      "meaning_zh": "待证明的数学猜想"
+      "term": "inference",
+      "ipa": "/ˈɪn.fɚ.əns/",
+      "meaning_zh": "运行模型得出结果的推理"
     },
     {
-      "term": "manuscript",
-      "ipa": "/ˈmæn.jə.skrɪpt/",
-      "meaning_zh": "尚待评阅的学术稿件"
+      "term": "deployment",
+      "ipa": "/dɪˈplɔɪ.mənt/",
+      "meaning_zh": "把系统投入实际使用的部署"
     },
     {
-      "term": "bewilderment",
-      "ipa": "/bɪˈwɪl.dɚ.mənt/",
-      "meaning_zh": "面对突变时的困惑"
+      "term": "reliability",
+      "ipa": "/rɪˌlaɪ.əˈbɪl.ə.t̬i/",
+      "meaning_zh": "稳定完成任务的可靠性"
     },
     {
-      "term": "cryptography",
-      "ipa": "/krɪpˈtɑː.ɡrə.fi/",
-      "meaning_zh": "研究信息安全的密码学"
+      "term": "authorize",
+      "ipa": "/ˈɑː.θɚ.aɪz/",
+      "meaning_zh": "批准执行具体操作"
     },
     {
-      "term": "hypothesis",
-      "ipa": "/haɪˈpɑː.θə.sɪs/",
-      "meaning_zh": "有待证明的数学假说"
+      "term": "delegate",
+      "ipa": "/ˈdel.ə.ɡeɪt/",
+      "meaning_zh": "把限定任务委托给他者"
     },
     {
-      "term": "verification",
-      "ipa": "/ˌver.ə.fəˈkeɪ.ʃən/",
-      "meaning_zh": "核查证明是否成立"
+      "term": "revoke",
+      "ipa": "/rɪˈvoʊk/",
+      "meaning_zh": "收回先前授予的权限"
     },
     {
-      "term": "intelligible",
-      "ipa": "/ɪnˈtel.ə.dʒə.bəl/",
-      "meaning_zh": "推理清楚而可理解的"
+      "term": "adoption",
+      "ipa": "/əˈdɑːp.ʃən/",
+      "meaning_zh": "组织采纳并使用一项工具"
     },
     {
-      "term": "theorem",
-      "ipa": "/ˈθiː.rəm/",
-      "meaning_zh": "已被证明的定理"
+      "term": "leakage",
+      "ipa": "/ˈliː.kɪdʒ/",
+      "meaning_zh": "信息流向未获授权处的泄露"
     },
     {
-      "term": "lattice",
-      "ipa": "/ˈlæt̬.ɪs/",
-      "meaning_zh": "按固定规则排列的格点集"
+      "term": "autonomy",
+      "ipa": "/ɑːˈtɑː.nə.mi/",
+      "meaning_zh": "无需人工逐步介入的自主性"
     }
   ]
 }
